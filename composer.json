@@ -1,0 +1,15 @@
+{
+    "name": "matacms/matacms-simple-theme",
+    "description": "Basic theme for MATA CMS",
+    "keywords": ["yii2", "mata-simple-theme", "theme", "matacms", "cms", "mata"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "support": {
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "matacms\\theme\\simple": ""
+        }
+    }
+}

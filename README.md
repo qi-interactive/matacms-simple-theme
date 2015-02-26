@@ -1,1 +1,0 @@
-# matacms-simple-theme
