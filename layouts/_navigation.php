@@ -10,6 +10,8 @@ use yii\helpers\Html;
 $modules = ModuleModel::find()->all();
 
 $menuItems = [];
+$subNav = [];
+
 foreach ($modules as $moduleEntry) {
 	$module = MataModuleHelper::getModuleByClass($moduleEntry->Location . "Module");
 
@@ -26,7 +28,6 @@ foreach ($modules as $moduleEntry) {
 	if (!file_exists($asset->sourcePath . $module->mataConfig->icon)) {
 		echo $asset->sourcePath . $module->mataConfig->icon;
 	}
-
 
 	if (is_array($module->getNavigation())) {
 
