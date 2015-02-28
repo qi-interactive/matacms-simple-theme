@@ -14,8 +14,11 @@ foreach ($modules as $moduleEntry) {
 	$module = MataModuleHelper::getModuleByClass($moduleEntry->Location . "Module");
 
 	// Not every module should be loaded as a Yii module
-	if ($module == null || !$module->canShowInNavigation())
+	if ($module == null || !$module->canShowInNavigation()) {
+		\Yii::info(sprintf("Module %s not added to navigation - either not a Yii module, or canShowInNavigation == false", $moduleEntry->Name), 
+			\matacms\theme\simple\Theme::LOG_CATEGORY);
 		continue;
+	}
 
 	$moduleAssetBundle = $module->getModuleAssetBundle();
 	$asset = $moduleAssetBundle::register($this);
@@ -56,7 +59,7 @@ if (empty($menuItems))
 
 
 <style>
-	svg path, svg rect, svg line, svg polyline {
+	svg path, svg rect, svg line, svg polyline, polygon, g {
 		stroke: white !important;
 	}
 
