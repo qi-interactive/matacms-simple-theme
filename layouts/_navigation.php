@@ -48,8 +48,6 @@ foreach ($modules as $moduleEntry) {
 		$menuItems[] = sprintf("<li><a title='%s' href='%s'>%s%s</a></li>", 
 			$module->getDescription(), $module->getNavigation(), file_get_contents($asset->sourcePath . $module->mataConfig->icon), $module->getName());
 	}
-
-	
 	
 }
 
@@ -60,7 +58,7 @@ if (empty($menuItems))
 
 
 <style>
-	svg path, svg rect, svg line, svg polyline, polygon, g {
+	svg path, svg rect, svg line, svg polyline, polygon, g, circle {
 		stroke: white !important;
 	}
 
@@ -89,8 +87,6 @@ if (empty($menuItems))
 		background: linear-gradient(#c96ba5, #b05d90);
 	}
 
-
-
 	#subnav-overlay {
 		text-align: center;
 	}
@@ -118,6 +114,10 @@ if (empty($menuItems))
 	.cd-header {
 		position: relative;
 		z-index: 101;
+	}
+
+	.cd-3d-nav li, .nav-is-visible .cd-marker {
+		width: <?php echo 100 / count($menuItems) ?>%;
 	}
 </style>
 
