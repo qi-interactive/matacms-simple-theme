@@ -58,88 +58,6 @@ if (empty($menuItems))
 
 ?>
 
-
-<style>
-	svg path, svg rect, svg line, svg polyline, polygon, g, circle {
-		stroke: white !important;
-	}
-
-	.nav > li > a {
-		padding: 3.2em 1em 0;
-	}
-
-
-	.nav > li > a > svg {
-		padding-bottom: 10px;
-		display: block;
-		margin: auto;
-		width: 58px;
-		height: 58px;
-	}
-
-	#subnav-overlay {
-		position: fixed;
-		background: red;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		display: none;
-		z-index: 100;
-
-		background: linear-gradient(#c96ba5, #b05d90);
-	}
-
-	#subnav-overlay svg path, 
-	#subnav-overlay svg rect, 
-	#subnav-overlay svg line, 
-	#subnav-overlay svg polyline, 
-	#subnav-overlay polygon, 
-	#subnav-overlay g, 
-	#subnav-overlay circle {
-		stroke: white !important;
-	} 
-
-	#subnav-overlay svg {
-		width: 58px;
-		display: block;
-		margin: auto;
-		margin-bottom: 10px;
-	}
-
-	#subnav-overlay {
-		text-align: center;
-	}
-
-	#subnav-overlay > div {
-		margin-top: 100px;
-	}
-	#subnav-overlay li {
-		width: 100px;
-		height: 100px;
-		margin: 40px;
-		list-style: none;
-		vertical-align: text-bottom;
-		display: inline-block;
-	}
-
-	#subnav-overlay li a {
-		color: #FFF;
-	}
-
-	.cd-3d-nav-trigger {
-		z-index: 1231243234242;
-	}
-
-	.cd-header {
-		position: relative;
-		z-index: 101;
-	}
-
-	.cd-3d-nav li, .cd-3d-nav-container .cd-marker {
-		width: <?php echo 100 / count($menuItems) ?>%;
-	}
-</style>
-
 <header class="cd-header">
 	<div id="progress-bar"></div>
 	<div id="header-content-container">
@@ -151,6 +69,15 @@ if (empty($menuItems))
 	</div>
 </header> <!-- .cd-header -->
 
+
+<style>
+
+
+.cd-3d-nav li, .cd-3d-nav-container .cd-marker {
+  width: <?php echo 100 / count($menuItems) ?>%;
+}
+
+</style>
 
 <nav class="cd-3d-nav-container">
 
