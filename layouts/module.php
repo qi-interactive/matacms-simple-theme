@@ -38,6 +38,7 @@ ThemeAsset::register($this);
 </script>
 
 <body>
+
 	<?php $this->beginBody() ?>
 
 	<div class="container">
