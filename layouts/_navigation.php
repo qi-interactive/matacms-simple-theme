@@ -25,6 +25,7 @@ foreach ($modules as $moduleEntry) {
 	$moduleAssetBundle = $module->getModuleAssetBundle();
 	$asset = $moduleAssetBundle::register($this);
 
+
 	if (!file_exists($asset->sourcePath . $module->mataConfig->icon)) {
 		echo $asset->sourcePath . $module->mataConfig->icon;
 	}
@@ -33,13 +34,14 @@ foreach ($modules as $moduleEntry) {
 
 		$subNav[$module->id] = [];
 
-		foreach ($module->getNavigation() as $subNavLabel => $subNavLink) {
+		foreach ($module->getNavigation() as $navigationItem) {
+
 			$subNav[$module->id][] = [
-			'label' => $subNavLabel,
-			'url' => $subNavLink
+			'label' => $navigationItem["label"],
+			'url' => $navigationItem["url"],
+			'icon' =>  $asset->sourcePath . $navigationItem["icon"]
 			];
 		}
-
 
 		$menuItems[] = sprintf("<li><a data-subnav='%s' title='%s' href='javascript:void(0)'>%s%s</a></li>", 
 			$module->id, $module->getDescription(), file_get_contents($asset->sourcePath . $module->mataConfig->icon), $module->getName());
@@ -85,6 +87,23 @@ if (empty($menuItems))
 		z-index: 100;
 
 		background: linear-gradient(#c96ba5, #b05d90);
+	}
+
+	#subnav-overlay svg path, 
+	#subnav-overlay svg rect, 
+	#subnav-overlay svg line, 
+	#subnav-overlay svg polyline, 
+	#subnav-overlay polygon, 
+	#subnav-overlay g, 
+	#subnav-overlay circle {
+		stroke: white !important;
+	} 
+
+	#subnav-overlay svg {
+		width: 58px;
+		display: block;
+		margin: auto;
+		margin-bottom: 10px;
 	}
 
 	#subnav-overlay {
@@ -146,15 +165,19 @@ if (empty($menuItems))
 	</nav> <!-- .cd-3d-nav-container -->
 
 	<div id="subnav-overlay">
-		<?php foreach ($subNav as $module => $items): ?>
+		<?php foreach ($subNav as $module => $items ):
+		 ?>
 
 			<div id="subnav-<?php echo $module ?>">
 
 				<?php 
+
 				foreach ($items as $item): 
 					?>
 
-				<li><a href="<?= $item["url"] ?>"><?= $item["label"] ?></a></li>
+				<li><a href="<?= $item["url"] ?>">
+				<?= file_get_contents($item["icon"]) ?>
+				<?= $item["label"] ?></a></li>
 			<?php endforeach; ?>
 
 		</div>
