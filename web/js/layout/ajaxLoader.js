@@ -8,8 +8,7 @@ mata.simpleTheme.ajaxLoader = {
 var ajaxLoader = mata.simpleTheme.ajaxLoader;
 
 mata.simpleTheme.ajaxLoader.run = function() {
-
-	$("#progress-bar").width("0%").removeClass("success");
+	$("#progress-bar").width("100%").removeClass("success");
 
 	clearTimeout(ajaxLoader._timeout);
 

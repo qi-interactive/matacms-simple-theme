@@ -24,7 +24,7 @@ $this->title = 'My MATA Application';
         background: #b471a3;
         opacity:0;
         transition: all 0.4s;
-        top: 5px;
+        top: 0px;
         position: absolute;
     }
 
