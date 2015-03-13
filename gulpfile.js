@@ -45,7 +45,7 @@ gulp.task('watch', function() {
 
 	livereload.listen();
 
-	watch(['**/assets/less/*.less', '!assets/less/inuit.css/*.less'], {
+	watch(['assets/less/**/*.less', '!assets/less/inuit.css/*.less'], {
 		name: "Watcher",
 		verbose: true
 	}, function() {
