@@ -116,7 +116,7 @@ if (empty($menuItems))
 		z-index: 101;
 	}
 
-	.cd-3d-nav li, .nav-is-visible .cd-marker {
+	.cd-3d-nav li, .cd-3d-nav-container .cd-marker {
 		width: <?php echo 100 / count($menuItems) ?>%;
 	}
 </style>

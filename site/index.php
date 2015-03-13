@@ -4,10 +4,6 @@ $this->title = 'My MATA Application';
 
 <style type="text/css">
 
-    body.loading, body.loading *, body.loading a  {
-        cursor: url(111095-glowing-green-neon-icon-business-cursor.png), progress;
-    }
-
     #submenus {
         height: 300px;
         width: 100%;
