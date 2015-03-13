@@ -11,7 +11,6 @@ HistoryAsset::register($this);
 	$user = User::find($revision->CreatedBy)->one();
 	$author = $user != null ? $user->getLabel() : "Deleted user";
 	$message = $revision->Revision == 1 ? "created this document" : "wrote this version";
-	
 	?>
 
 	<li>
