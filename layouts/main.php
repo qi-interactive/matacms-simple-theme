@@ -1,9 +1,9 @@
 <?php
-use matacms\assets\AppAsset;
+use matacms\theme\simple\assets\HostAsset;
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 
-AppAsset::register($this);
+HostAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

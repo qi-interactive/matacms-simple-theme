@@ -1,11 +1,9 @@
 <?php
-use matacms\assets\ModuleAsset;
+use matacms\theme\simple\assets\ModuleAsset;
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
-use  matacms\theme\simple\assets\ThemeAsset;
 
 ModuleAsset::register($this);
-ThemeAsset::register($this);
 
 ?>
 <?php $this->beginPage() ?>

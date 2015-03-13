@@ -1,6 +1,6 @@
 <?php 
 use mata\user\models\User;
-use matacms\assets\HistoryAsset;
+use matacms\theme\simple\assets\HistoryAsset;
 
 HistoryAsset::register($this);
 

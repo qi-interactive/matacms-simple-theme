@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-less": "*",
+    "gulp-livereload": "*",
+    "gulp-watch": "*",
+    "gulp-util" : "*",
+    "gulp-plumber" : "*",
+    "less-plugin-clean-css" : "*",
+    "gulp-sourcemaps" : "*",
+    "gulp-rename" : "*"
+  }
+}

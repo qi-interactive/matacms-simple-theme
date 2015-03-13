@@ -4,19 +4,20 @@ namespace matacms\theme\simple\assets;
 
 use yii\web\AssetBundle;
 
-class ThemeAsset extends AssetBundle {
+class HostAsset extends AssetBundle {
    
     public $sourcePath = '@vendor/matacms/matacms-simple-theme/web';
 
    public $css = [
-          'css/site.css',
+          'css/layout/navigation.css'
       ];
       public $js = [
-          'js/lib/modernizr/modernizr.js',
+          'js/layout/main.js',
+          'js/layout/ajaxLoader.js',
+          'js/layout/navigator.js'
       ];
 
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
+        'matacms\theme\simple\assets\ThemeAsset'
     ];
 }
