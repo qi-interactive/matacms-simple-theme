@@ -18,7 +18,8 @@ class ModuleAsset extends AssetBundle {
 
     public $css = [
         'css/site.css',
-        'css/layout/navigation.css'
+        'css/layout/navigation.css',
+        'css/form.css'
     ];
     public $js = [
      'js/layout/theme.js'
