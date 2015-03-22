@@ -81,9 +81,9 @@ jQuery(document).ready(function($){
 	//this function update the .cd-marker position
 	function updateSelectedNav(type) {
 		var selectedItem = $('.cd-selected'),
-			selectedItemPosition = selectedItem.index() + 1, 
-			leftPosition = selectedItem.offset().left,
-			backgroundColor = selectedItem.data('color');
+		selectedItemPosition = selectedItem.index() + 1, 
+		leftPosition = selectedItem.offset().left,
+		backgroundColor = selectedItem.data('color');
 
 		$('.cd-marker').removeClassPrefix('color').addClass('color-'+ selectedItemPosition).css({
 			'left': leftPosition,
@@ -97,12 +97,14 @@ jQuery(document).ready(function($){
 	}
 
 	$.fn.removeClassPrefix = function(prefix) {
-	    this.each(function(i, el) {
-	        var classes = el.className.split(" ").filter(function(c) {
-	            return c.lastIndexOf(prefix, 0) !== 0;
-	        });
-	        el.className = $.trim(classes.join(" "));
-	    });
-	    return this;
+		this.each(function(i, el) {
+			var classes = el.className.split(" ").filter(function(c) {
+				return c.lastIndexOf(prefix, 0) !== 0;
+			});
+			el.className = $.trim(classes.join(" "));
+		});
+		return this;
 	};
 });
+
+
