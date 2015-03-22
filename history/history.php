@@ -4,6 +4,8 @@ use matacms\theme\simple\assets\HistoryAsset;
 
 HistoryAsset::register($this);
 
+$returnUri = Yii::$app->request->get('returnURI');
+
 ?>
 
 <ol class="revisions">
@@ -15,7 +17,7 @@ HistoryAsset::register($this);
 
 	<li>
 
-		<a href="revision=<?php echo $revision->Revision ?>">
+		<a href="<?= $returnUri ?>&revision=<?= $revision->Revision ?>">
 			<span class="avatar">
 				<img src="http://gravatar.com/avatar/<?= $user->profile->gravatar_id ?>?s=24" class="img-rounded" alt="<?= $user->username ?>"/>
 			</span>
