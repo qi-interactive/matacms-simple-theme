@@ -593,7 +593,7 @@ svg path, svg rect, svg line, svg polyline, polygon, g, circle {
   /* line at the bottom of nav selected item */
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -200px;
   height: 3px;
   width: 20%;
   background-color: currentColor;
@@ -638,24 +638,73 @@ svg path, svg rect, svg line, svg polyline, polygon, g, circle {
 
 /* these are the colors of the markers - line + arrow */
 .color-1 {
-  color: #9a57bd;
+  color: #A28DDF;
 }
 
 .color-2 {
-  color: #c96aa4;
+  color: #C96AA4;
 }
 
 .color-3 {
-  color: #d6915e;
+  color: #D6915E;
 }
 
 .color-4 {
-  color: #5397c7;
+  color: #4EB7CD;
 }
 
 .color-5 {
-  color: #77cd91;
+  color: #55C45F;
 }
+
+.color-6 {
+  color: #FF6B6B;
+}
+
+.color-7 {
+  color: #A28DDF;
+}
+
+.color-8 {
+  color: #C96AA4;
+}
+
+.color-9 {
+  color: #D6915E;
+}
+
+.color-10 {
+  color: #4EB7CD;
+}
+
+.color-11 {
+  color: #55C45F;
+}
+
+.color-12 {
+  color: #FF6B6B;
+}
+
+.color-14 {
+  color: #A28DDF;
+}
+
+.color-15 {
+  color: #C96AA4;
+}
+
+.color-16 {
+  color: #D6915E;
+}
+
+.color-17 {
+  color: #4EB7CD;
+}
+
+.color-18 {
+  color: #55C45F;
+}
+
 
 main {
   -webkit-transition: -webkit-transform 0.5s;
