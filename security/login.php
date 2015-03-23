@@ -21,10 +21,13 @@ use mata\user\widgets\Connect;
 
 $this->title = Yii::t('user', 'Sign in');
 $this->params['breadcrumbs'][] = $this->title;
+
+use matacms\theme\simple\assets\LoginAsset;
+loginAsset::register($this);
+
 ?>
 
 <?= $this->render('/_alert', ['module' => Yii::$app->getModule('user')]) ?>
-wefwefewfewwqdqwdqwdqwdqwdq
 <div class="row">
 	<div class="col-md-4 col-md-offset-4">
 		<div class="panel panel-default">
@@ -46,17 +49,31 @@ wefwefewfewwqdqwdqwdqwdqwdq
 						<label class="input__label input__label--ichiro control-label" for="login-form-login">
 							<span class="input__label-content input__label-content--ichiro">Login</span>
 						</label>
-						<input class="input__field input__field--ichiro form-control" type="text" id="login-form-login" tabindex="1"/>
+						<input class="input__field input__field--ichiro form-control" name="login-form[login]" type="text" id="login-form-login" tabindex="1"/>
 					</span>
 					<div class="help-block"></div>
 					<?= $form->endField(); ?>
-					
 
-					<?= $form->field($model, 'password', ['inputOptions' => ['class' => 'form-control', 'tabindex' => '2']])->passwordInput()->label(Yii::t('user', 'Password') . ($module->enablePasswordRecovery ? ' (' . Html::a(Yii::t('user', 'Forgot password?'), ['/user/recovery/request'], ['tabindex' => '5']) . ')' : '')) ?>
 
-					<?= $form->field($model, 'rememberMe')->checkbox(['tabindex' => '4']) ?>
+					<?= $form->beginField($model, 'password') ?>
+					<span class="input input--ichiro">
+						<label class="input__label input__label--ichiro control-label" for="login-form-password">
+							<span class="input__label-content input__label-content--ichiro"><?= \Yii::t('user', 'Password'); ?></span>
+						</label>
+						<input class="input__field input__field--ichiro form-control" name="login-form[password]" type="password" id="login-form-password" tabindex="2"/>
+					</span>
+					<div class="help-block"></div>
+					<?= $form->endField(); ?>
 
-					<?= Html::submitButton(Yii::t('user', 'Sign in'), ['class' => 'btn btn-primary btn-block', 'tabindex' => '3']) ?>
+					<div class="row">
+						<div class="four columns">
+							<?= $form->field($model, 'rememberMe')->checkbox(['tabindex' => '4']) ?>
+						</div>
+						<div class="eight columns">
+							<?= Html::submitButton(Yii::t('user', 'LOG IN'), ['class' => 'btn btn-primary btn-block', 'tabindex' => '3']) ?>
+						</div>
+					</div>
+					<?= $module->enablePasswordRecovery ? Html::a(Yii::t('user', 'Forgot password?'), ['/user/recovery/request'], ['tabindex' => '5']) : '' ?>
 
 					<?php ActiveForm::end(); ?>
 				</div>
@@ -71,146 +88,3 @@ wefwefewfewwqdqwdqwdqwdqwdq
 				]) ?>
 			</div>
 		</div>
-
-		<section class="content">
-			<h2>Ichiro</h2>
-			<span class="input input--ichiro">
-				<input class="input__field input__field--ichiro" type="text" id="input-25" />
-				<label class="input__label input__label--ichiro" for="input-25">
-					<span class="input__label-content input__label-content--ichiro">Bird's Color</span>
-				</label>
-			</span>
-			<span class="input input--ichiro">
-				<input class="input__field input__field--ichiro" type="text" id="input-26" />
-				<label class="input__label input__label--ichiro" for="input-26">
-					<span class="input__label-content input__label-content--ichiro">Wing Span</span>
-				</label>
-			</span>
-			<span class="input input--ichiro">
-				<input class="input__field input__field--ichiro" type="text" id="input-27" />
-				<label class="input__label input__label--ichiro" for="input-27">
-					<span class="input__label-content input__label-content--ichiro">Beak Length</span>
-				</label>
-			</span>
-		</section>
-
-		<script>
-			/*!
-			* classie - class helper functions
- * from bonzo https://github.com/ded/bonzo
- * 
- * classie.has( elem, 'my-class' ) -> true/false
- * classie.add( elem, 'my-new-class' )
- * classie.remove( elem, 'my-unwanted-class' )
- * classie.toggle( elem, 'my-class' )
- */
-
- /*jshint browser: true, strict: true, undef: true */
- /*global define: false */
-
- ( function( window ) {
-
- 	'use strict';
-
-// class helper functions from bonzo https://github.com/ded/bonzo
-
-function classReg( className ) {
-	return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
-}
-
-// classList support for class management
-// altho to be fair, the api sucks because it won't accept multiple classes at once
-var hasClass, addClass, removeClass;
-
-if ( 'classList' in document.documentElement ) {
-	hasClass = function( elem, c ) {
-		return elem.classList.contains( c );
-	};
-	addClass = function( elem, c ) {
-		elem.classList.add( c );
-	};
-	removeClass = function( elem, c ) {
-		elem.classList.remove( c );
-	};
-}
-else {
-	hasClass = function( elem, c ) {
-		return classReg( c ).test( elem.className );
-	};
-	addClass = function( elem, c ) {
-		if ( !hasClass( elem, c ) ) {
-			elem.className = elem.className + ' ' + c;
-		}
-	};
-	removeClass = function( elem, c ) {
-		elem.className = elem.className.replace( classReg( c ), ' ' );
-	};
-}
-
-function toggleClass( elem, c ) {
-	var fn = hasClass( elem, c ) ? removeClass : addClass;
-	fn( elem, c );
-}
-
-var classie = {
-  // full names
-  hasClass: hasClass,
-  addClass: addClass,
-  removeClass: removeClass,
-  toggleClass: toggleClass,
-  // short names
-  has: hasClass,
-  add: addClass,
-  remove: removeClass,
-  toggle: toggleClass
-};
-
-// transport
-if ( typeof define === 'function' && define.amd ) {
-  // AMD
-  define( classie );
-} else {
-  // browser global
-  window.classie = classie;
-}
-
-})( window );
-
-
-
-(function() {
-	// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
-	if (!String.prototype.trim) {
-		(function() {
-			// Make sure we trim BOM and NBSP
-			var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
-			String.prototype.trim = function() {
-				return this.replace(rtrim, '');
-			};
-		})();
-	}
-
-	[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
-		// in case the input is already filled..
-		if( inputEl.value.trim() !== '' ) {
-			classie.add( inputEl.parentNode, 'input--filled' );
-		}
-
-		// events:
-		inputEl.addEventListener( 'focus', onInputFocus );
-		inputEl.addEventListener( 'blur', onInputBlur );
-	} );
-
-	function onInputFocus( ev ) {
-		classie.add( ev.target.parentNode, 'input--filled' );
-	}
-
-	function onInputBlur( ev ) {
-		if( ev.target.value.trim() === '' ) {
-			classie.remove( ev.target.parentNode, 'input--filled' );
-		}
-	}
-})();
-
-
-</script>
