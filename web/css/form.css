@@ -1,1 +1,2 @@
 label{color:#FFF}
+.grid-view .table-striped>tbody>tr:nth-of-type(even){background:#FFF}
