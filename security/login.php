@@ -24,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <?= $this->render('/_alert', ['module' => Yii::$app->getModule('user')]) ?>
-
+wefwefewfewwqdqwdqwdqwdqwdq
 <div class="row">
 	<div class="col-md-4 col-md-offset-4">
 		<div class="panel panel-default">
@@ -41,7 +41,16 @@ $this->params['breadcrumbs'][] = $this->title;
 					'validateOnChange'       => false,
 					]) ?>
 
-					<?= $form->field($model, 'login', ['inputOptions' => ['autofocus' => 'autofocus', 'class' => 'form-control', 'tabindex' => '1']]) ?>
+					<?= $form->beginField($model, 'login') ?>
+					<span class="input input--ichiro">
+						<label class="input__label input__label--ichiro control-label" for="login-form-login">
+							<span class="input__label-content input__label-content--ichiro">Login</span>
+						</label>
+						<input class="input__field input__field--ichiro form-control" type="text" id="login-form-login" tabindex="1"/>
+					</span>
+					<div class="help-block"></div>
+					<?= $form->endField(); ?>
+					
 
 					<?= $form->field($model, 'password', ['inputOptions' => ['class' => 'form-control', 'tabindex' => '2']])->passwordInput()->label(Yii::t('user', 'Password') . ($module->enablePasswordRecovery ? ' (' . Html::a(Yii::t('user', 'Forgot password?'), ['/user/recovery/request'], ['tabindex' => '5']) . ')' : '')) ?>
 
