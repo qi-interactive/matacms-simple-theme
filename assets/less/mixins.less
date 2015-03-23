@@ -1,0 +1,57 @@
+@import "variables.less";
+
+.azure-font-link() {
+	color: @azure;
+
+	&:hover {
+		color: @grey;
+	}
+}
+
+.coral-font-link() {
+	color: @coral;
+
+	&:hover {
+		color: @tomato;
+	}
+}
+.aqua-font-link() {
+	color: @aqua;
+
+	&:hover {
+		color: @cadet-blue;
+	}
+}
+
+.aqua-background-link() {
+	background: @aqua;
+
+	&:hover {
+		background: @cadet-blue;
+	}
+}
+
+
+.transform(@transform) {
+	-moz-transform: @transform; /* FF3.6+ */
+	-webkit-transform: @transform; /* Chrome, Safari */
+	-o-transform: @transform; /* Opera */
+	-ms-transform: @transform; /* IE 9 */
+	transform: @transform;
+}
+
+.transition( @transform) {
+	-moz-transition:  @transform; /* FF3.6+ */
+	-webkit-transition:  @transform; /* Chrome, Safari */
+	-o-transition:  @transform; /* Opera */
+	-ms-transition:  @transform; /* IE 9 */
+	transition:  @transform;
+}
+
+.animation( @transform) {
+	-moz-animation:  @transform; /* FF3.6+ */
+	-webkit-animation:  @transform; /* Chrome, Safari */
+	-o-animation:  @transform; /* Opera */
+	-ms-animation:  @transform; /* IE 9 */
+	animation:  @transform;
+}

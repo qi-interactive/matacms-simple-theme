@@ -29,62 +29,66 @@ loginAsset::register($this);
 
 <?= $this->render('/_alert', ['module' => Yii::$app->getModule('user')]) ?>
 <div class="row">
-	<div class="col-md-4 col-md-offset-4">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title"><?= Html::encode($this->title) ?></h3>
-			</div>
-			<div class="panel-body">
-				<?php $form = ActiveForm::begin([
-					'id'                     => 'login-form',
-					'enableAjaxValidation'   => true,
-					'enableClientValidation' => false,
-					'validateOnBlur'         => false,
-					'validateOnType'         => false,
-					'validateOnChange'       => false,
-					]) ?>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Log in to MATA CMS</h3>
+		</div>
 
-					<?= $form->beginField($model, 'login') ?>
-					<span class="input input--ichiro">
-						<label class="input__label input__label--ichiro control-label" for="login-form-login">
-							<span class="input__label-content input__label-content--ichiro">Login</span>
-						</label>
-						<input class="input__field input__field--ichiro form-control" name="login-form[login]" type="text" id="login-form-login" tabindex="1"/>
-					</span>
-					<div class="help-block"></div>
-					<?= $form->endField(); ?>
+		<div id="header-spacer"> Error message applicable to both fields below</div>
+
+		<div class="panel-body">
+			<?php $form = ActiveForm::begin([
+				'id'                     => 'login-form',
+				'enableAjaxValidation'   => true,
+				'enableClientValidation' => false,
+				'validateOnBlur'         => false,
+				'validateOnType'         => false,
+				'validateOnChange'       => false,
+				]) ?>
+
+				<?= $form->beginField($model, 'login') ?>
+				<span class="input input--ichiro">
+					<label class="input__label input__label--ichiro control-label" for="login-form-login">
+						<span class="input__label-content input__label-content--ichiro">Username</span>
+					</label>
+					<input class="input__field input__field--ichiro form-control" name="login-form[login]" type="text" id="login-form-login" tabindex="1"/>
+				</span>
+				<!-- <div class="help-block"></div> -->
+				<?= $form->endField(); ?>
 
 
-					<?= $form->beginField($model, 'password') ?>
-					<span class="input input--ichiro">
-						<label class="input__label input__label--ichiro control-label" for="login-form-password">
-							<span class="input__label-content input__label-content--ichiro"><?= \Yii::t('user', 'Password'); ?></span>
-						</label>
-						<input class="input__field input__field--ichiro form-control" name="login-form[password]" type="password" id="login-form-password" tabindex="2"/>
-					</span>
-					<div class="help-block"></div>
-					<?= $form->endField(); ?>
+				<?= $form->beginField($model, 'password') ?>
+				<span class="input input--ichiro">
+					<label class="input__label input__label--ichiro control-label" for="login-form-password">
+						<span class="input__label-content input__label-content--ichiro"><?= \Yii::t('user', 'Password'); ?></span>
+					</label>
+					<input class="input__field input__field--ichiro form-control" name="login-form[password]" type="password" id="login-form-password" tabindex="2"/>
+				</span>
+				<!-- <div class="help-block"></div> -->
+				<?= $form->endField(); ?>
 
-					<div class="row">
-						<div class="four columns">
-							<?= $form->field($model, 'rememberMe')->checkbox(['tabindex' => '4']) ?>
-						</div>
-						<div class="eight columns">
-							<?= Html::submitButton(Yii::t('user', 'LOG IN'), ['class' => 'btn btn-primary btn-block', 'tabindex' => '3']) ?>
-						</div>
+				<div class="row" id="submit-remember-me-container">
+					<div class="five columns">
+						<?= $form->field($model, 'rememberMe')->checkbox(['label'=>'<div><i class="fa fa-dribbble">&#10004;</i></div><span>'.$model->getAttributeLabel('rememberMe'). '</span>', 'tabindex'=>"4"]) ?>
 					</div>
+					<div class="seven columns">
+						<?= Html::submitButton(Yii::t('user', 'LOG IN'), ['class' => 'btn btn-primary btn-block', 'tabindex' => '3']) ?>
+					</div>
+				</div>
+				<?php ActiveForm::end(); ?>
+			</div>
+			<div id="forgotten-password-bar" class="row">
+				<div class="six columns">
 					<?= $module->enablePasswordRecovery ? Html::a(Yii::t('user', 'Forgot password?'), ['/user/recovery/request'], ['tabindex' => '5']) : '' ?>
-
-					<?php ActiveForm::end(); ?>
+				</div>
+				<div class="six columns">
+					<div id="get-in-touch-container"> <span> No account? </span> <a href=""> Get in touch </a> </div>
+					<div id="footer-caption"> <span> Created by </span><img src="http://placehold.it/26/ffffff/" alt="Qi Interactive Ltd"/> </div>
 				</div>
 			</div>
-			<?php if ($module->enableConfirmation): ?>
-				<p class="text-center">
-					<?= Html::a(Yii::t('user', 'Didn\'t receive confirmation message?'), ['/user/registration/resend']) ?>
-				</p>
-			<?php endif ?>
-			<?= Connect::widget([
-				'baseAuthUrl' => ['/user/security/auth']
-				]) ?>
-			</div>
+		</div>
+
+		<?= Connect::widget([
+			'baseAuthUrl' => ['/user/security/auth']
+			]) ?>
 		</div>

@@ -1,44 +1,67 @@
-.input__field,.input__label{float:right;font-weight:700}
-.input{position:relative;z-index:1;display:inline-block;margin:1em;max-width:350px;width:calc(98%);vertical-align:top}
-.input__field{position:relative;display:block;padding:.8em;width:60%;border:none;border-radius:0;background:#f0f0f0;color:#aaa;-webkit-appearance:none}
+body,html{height:100%;font-family:proxima-nova,sans-serif}
+body{background:#485274;display:table}
+.container{display:table-cell;vertical-align:middle;width:100%;text-align:left}
+.panel{background:#5f6885;border:0;max-width:460px;margin:0 auto;height:auto;padding:0}
+.panel .panel-heading{background:#5f6885;border:0;padding:20px 37px;border-bottom:2px solid #4d546b;text-align:left}
+.panel .panel-heading h3{font-size:24px;color:#9fa7b7;font-weight:700}
+.panel .panel-body{padding:0 37px}
+#forgotten-password-bar{background:#212635;padding:24px 37px;margin:24px 0 0;text-align:left;font-weight:600}
+#forgotten-password-bar a{color:#9fa7b7;font-weight:600}
+#forgotten-password-bar a:hover{color:#858b99;text-decoration:none}
+#forgotten-password-bar .col-md-6{padding-right:0;padding-left:0}
+#forgotten-password-bar #footer-caption{color:#4d7877;font-size:12px;float:right}
+#forgotten-password-bar #footer-caption span{padding-right:5px}
+#forgotten-password-bar #get-in-touch-container{font-size:14px;float:right;display:none;font-weight:600}
+#forgotten-password-bar #get-in-touch-container span{color:#9fa7b7;font-size:14px}
+#forgotten-password-bar #get-in-touch-container a{color:#ff6b6b;font-size:14px}
+#forgotten-password-bar #get-in-touch-container a:hover{color:#bd5659}
+#submit-remember-me-container{margin-top:39px}
+button,button.btn-primary{background:#4eb7cd;border:0;border-radius:2px;padding-top:14px;padding-bottom:14px;font-weight:700}
+button.btn-primary:hover,button:hover{background:#539fb8}
+.btn-primary:active,.btn.active.focus,.btn.active:focus,.btn.focus,.btn:active,.btn:active.focus,.btn:active:focus,.btn:focus{outline:0;box-shadow:none;background:#4eb7cd}
+.btn-primary:active:hover,.btn.active.focus:hover,.btn.active:focus:hover,.btn.focus:hover,.btn:active.focus:hover,.btn:active:focus:hover,.btn:active:hover,.btn:focus:hover{background:#539fb8}
+.has-success .form-control:focus{box-shadow:none;border:0}
+.has-success .checkbox,.has-success .checkbox-inline,.has-success .control-label,.has-success .help-block,.has-success .radio,.has-success .radio-inline,.has-success.checkbox label,.has-success.checkbox-inline label,.has-success.radio label,.has-success.radio-inline label{color:#9fa7b7}
+.form-group{margin-bottom:20px}
+.field-login-form-rememberme{font-size:12px;color:#9fa7b7;font-weight:600;margin-top:13px;text-align:left}
+.field-login-form-rememberme:hover{color:#858b99}
+.field-login-form-rememberme span{vertical-align:middle;padding-left:12px;font-weight:600}
+.field-login-form-rememberme input,.field-login-form-rememberme label{cursor:pointer}
+.field-login-form-rememberme label:hover input[type=checkbox]+div:before{opacity:1;-moz-transition:opacity .3s;-webkit-transition:opacity .3s;-o-transition:opacity .3s;-ms-transition:opacity .3s;transition:opacity .3s}
+.form-control,.form-control:focus{box-shadow:none}
+form{margin-top:20px}
+.has-error .checkbox,.has-error .checkbox-inline,.has-error .control-label,.has-error .help-block,.has-error .radio,.has-error .radio-inline,.has-error.checkbox label,.has-error.checkbox-inline label,.has-error.radio label,.has-error.radio-inline label{color:#9fa7b7;box-shadow:none}
+.has-error .form-control,.has-error .form-control:focus{box-shadow:none;border-bottom:2px solid #ff6b6b}
+#header-spacer{display:none;background:#343c55;width:100%;color:#ff6b6b;padding:15px 37px;font-size:14px;text-align:left;font-weight:700}
+.input{position:relative;z-index:1;display:inline-block;margin:0;width:100%;vertical-align:top}
+.input__field{position:relative;display:block;float:right;padding:.8em;width:60%;border:none;background:#f0f0f0;color:#aaa;font-weight:700;-webkit-appearance:none;border-radius:2px}
 .input__field:focus{outline:0}
-.input__label{display:inline-block;padding:0 1em;width:40%;color:#6a7989;font-size:70.25%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
-.input__label-content{position:relative;display:block;padding:1.6em 0;width:100%}
+.input__label{display:inline-block;float:right;padding:0 15px;width:40%;color:#9fa7b7;font-weight:700;font-size:18px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.input__label-content{position:relative;display:block;padding:.6em 0;width:100%;line-height:normal;font-weight:700}
 .graphic{position:absolute;top:0;left:0;fill:none}
 .icon{color:#ddd;font-size:150%}
-.input--haruki{margin:4em 1em 1em}
-.input__field--haruki{padding:.4em .25em;width:100%;background:0 0;color:#AFB5BB;font-size:1.55em}
-.input__label--haruki{position:absolute;width:100%;text-align:left;pointer-events:none}
-.input__label-content--haruki{-webkit-transition:-webkit-transform .3s;transition:transform .3s}
-.input__label--haruki::after,.input__label--haruki::before{content:'';position:absolute;left:0;z-index:-1;width:100%;height:4px;background:#6a7989;-webkit-transition:-webkit-transform .3s;transition:transform .3s}
-.input__label--haruki::before{top:0}
-.input__label--haruki::after{bottom:0}
-.input--filled .input__label-content--haruki,.input__field--haruki:focus+.input__label--haruki .input__label-content--haruki{-webkit-transform:translate3d(0,-90%,0);transform:translate3d(0,-90%,0)}
-.input--filled .input__label--haruki::before,.input__field--haruki:focus+.input__label--haruki::before{-webkit-transform:translate3d(0,-.5em,0);transform:translate3d(0,-.5em,0)}
-.input--filled .input__label--haruki::after,.input__field--haruki:focus+.input__label--haruki::after{-webkit-transform:translate3d(0,.5em,0);transform:translate3d(0,.5em,0)}
-.input--hoshi{overflow:hidden}
-.input__field--hoshi{margin-top:1em;padding:.85em .15em;width:100%;background:0 0;color:#595F6E}
-.input__label--hoshi{position:absolute;bottom:0;left:0;padding:0 .25em;width:100%;height:calc(99%);text-align:left;pointer-events:none}
-.input__label-content--hoshi{position:absolute}
-.input__label--hoshi::after,.input__label--hoshi::before{content:'';position:absolute;top:0;left:0;width:100%;height:calc(90%);border-bottom:1px solid #B9C1CA}
-.input__label--hoshi::after{margin-top:2px;border-bottom:4px solid red;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);-webkit-transition:-webkit-transform .3s;transition:transform .3s}
-.input__label--hoshi-color-1::after{border-color:#0af}
-.input__label--hoshi-color-2::after{border-color:#0fa}
-.input__label--hoshi-color-3::after{border-color:#f50}
-.input--filled .input__label--hoshi::after,.input__field--hoshi:focus+.input__label--hoshi::after{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
-.input--filled .input__label-content--hoshi,.input__field--hoshi:focus+.input__label--hoshi .input__label-content--hoshi{-webkit-animation:anim-1 .3s forwards;animation:anim-1 .3s forwards}
-@-webkit-keyframes anim-1{50%{opacity:0;-webkit-transform:translate3d(1em,0,0);transform:translate3d(1em,0,0)}
-51%{opacity:0;-webkit-transform:translate3d(-1em,-40%,0);transform:translate3d(-1em,-40%,0)}
-100%{opacity:1;-webkit-transform:translate3d(0,-40%,0);transform:translate3d(0,-40%,0)}}
-@keyframes anim-1{50%{opacity:0;-webkit-transform:translate3d(1em,0,0);transform:translate3d(1em,0,0)}
-51%{opacity:0;-webkit-transform:translate3d(-1em,-40%,0);transform:translate3d(-1em,-40%,0)}
-100%{opacity:1;-webkit-transform:translate3d(0,-40%,0);transform:translate3d(0,-40%,0)}}
 .input--ichiro{margin-top:2em}
-.input__field--ichiro{position:absolute;top:4px;left:4px;z-index:100;display:block;padding:0 .55em;width:calc(92%);height:calc(92%);background:#f0f0f0;color:#7F8994;opacity:0;-webkit-transform:scale3d(1,0,1);transform:scale3d(1,0,1);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-transition:opacity .3s,-webkit-transform .3s;transition:opacity .3s,transform .3s}
+.input__field--ichiro{position:absolute;bottom:4px;left:4px;right:4px;z-index:100;display:block;padding:0 15px;width:calc(98%);height:38px;background:#9fa7b7;color:#343c55;opacity:0;font-size:19px;-webkit-transform:scale3d(1,0,1);transform:scale3d(1,0,1);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-transition:opacity .3s,-webkit-transform .3s;transition:opacity .3s,transform .3s}
 .input__label--ichiro{width:100%;text-align:left;cursor:text}
-.input__label--ichiro::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:#fff;-webkit-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-transition:-webkit-transform .3s;transition:transform .3s}
+.input__label--ichiro::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:#343c55;-webkit-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-transition:-webkit-transform .3s;transition:transform .3s;border-radius:2px}
 .input__label-content--ichiro{-webkit-transform-origin:0 50%;transform-origin:0 50%;-webkit-transition:-webkit-transform .3s;transition:transform .3s}
 .input--filled .input__field--ichiro,.input__field--ichiro:focus{opacity:1;-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}
 .input--filled .input__label--ichiro,.input__field--ichiro:focus+.input__label--ichiro{cursor:default;pointer-events:none}
 .input--filled .input__label--ichiro::before,.input__field--ichiro:focus+.input__label--ichiro::before{-webkit-transform:scale3d(1,1.5,1);transform:scale3d(1,1.5,1)}
-.input--filled .input__label-content--ichiro,.input__field--ichiro:focus+.input__label--ichiro .input__label-content--ichiro{-webkit-transform:translate3d(0,-3.15em,0)scale3d(.8,.8,1);transform:translate3d(0,-3.15em,0)scale3d(.8,.8,1)translateZ(1px)}
+.input--filled .input__label-content--ichiro,.input__field--ichiro:focus+.input__label--ichiro .input__label-content--ichiro{-webkit-transform:translate3d(0,-1.8em,0)scale3d(.8,.8,1)translateZ(1px);transform:translate3d(0,-1.8em,0)scale3d(.8,.8,1)translateZ(1px)}
+@-webkit-keyframes show-a{0%{-moz-transform:scale(.2);-webkit-transform:scale(.2);-o-transform:scale(.2);-ms-transform:scale(.2);transform:scale(.2)}
+50%{-moz-transform:scale(1.2);-webkit-transform:scale(1.2);-o-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)}
+100%{-moz-transform:scale(1);-webkit-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}}
+@-webkit-keyframes show-b{0%,50%{-moz-transform:scale(0);-webkit-transform:scale(0);-o-transform:scale(0);-ms-transform:scale(0);transform:scale(0)}
+90%{-moz-transform:scale(1.2);-webkit-transform:scale(1.2);-o-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)}
+100%{-moz-transform:scale(1);-webkit-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}}
+label input[type=checkbox]{display:none}
+label input[type=checkbox]+div{height:20px;width:20px;background:#343c55;border-radius:2px;position:relative;cursor:pointer;display:inline-block;text-align:center;line-height:60px;color:#BEC7C7;-moz-transition:all .3s;-webkit-transition:all .3s;-o-transition:all .3s;-ms-transition:all .3s;transition:all .3s;vertical-align:middle;border:2px solid #343c55}
+label input[type=checkbox]+div i.fa{font-size:12px;color:#5f6885;opacity:0;top:0;position:absolute;line-height:16px;left:3px;right:auto}
+label input[type=checkbox]+div:before{content:"";display:block;opacity:0;height:100%;width:100%;position:absolute;top:0;right:0;background:#9fa7b7}
+label input[type=checkbox]+div:after{font-family:FontAwesome;content:"\f00c";display:none;opacity:0;height:100%;width:100%;position:absolute;top:0;right:0;color:#fff;line-height:32px;text-align:center}
+label input[type=checkbox]:checked+div{background:0 0}
+label input[type=checkbox]:checked+div:before{opacity:1;-moz-animation:show-a .3s;-webkit-animation:show-a .3s;-o-animation:show-a .3s;-ms-animation:show-a .3s;animation:show-a .3s}
+label input[type=checkbox]:checked+div i.fa{opacity:1;-moz-animation:show-b .3s;-webkit-animation:show-b .3s;-o-animation:show-b .3s;-ms-animation:show-b .3s;animation:show-b .3s}
+body.login-form-error #forgotten-password-bar #get-in-touch-container,body.login-form-error #header-spacer{display:block}
+body.login-form-error #forgotten-password-bar #footer-caption{display:none}

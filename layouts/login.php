@@ -16,6 +16,10 @@ ThemeAsset::register($this);
 	<?= Html::csrfMetaTags() ?>
 	<title><?= Html::encode($this->title) ?></title>
 	<?php $this->head() ?>
+
+	<script src="//use.typekit.net/xnl0kun.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	
 </head>
 
 <body>
