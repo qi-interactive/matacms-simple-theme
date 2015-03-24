@@ -489,41 +489,41 @@ Main Components
 
   .cd-3d-nav-container .cd-3d-nav a {
    padding: 3.2em 1em 0;
-  }
+ }
 
 
-  .nav > li > a > svg {
-    padding-bottom: 10px;
-    display: block;
-    margin: auto;
-    width: 58px;
-    height: 58px;
-  }
+ .nav > li > a > svg {
+  padding-bottom: 10px;
+  display: block;
+  margin: auto;
+  width: 58px;
+  height: 58px;
+}
 
 
-  .cd-3d-nav a {
-    padding: 7.6em 1em 0;
-    color: #ffffff;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-align: center;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    /* truncate text with ellipsis if too long */
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .cd-3d-nav a::before {
-    top: 4.4em;
-    left: 50%;
-    right: auto;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
+.cd-3d-nav a {
+  padding: 7.6em 1em 0;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* truncate text with ellipsis if too long */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cd-3d-nav a::before {
+  top: 4.4em;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
 }
 
 
@@ -770,11 +770,16 @@ body.theme-simple #container {
 }
 
 body.theme-simple #container iframe#mata-content {
-
   width: 100%;
   height: 100%;
   border: none;
 
+}
+
+
+iframe body, iframe html {
+  height: 100%;
+  overflow: auto;
 }
 
 /*<!-- end custom -->*/
