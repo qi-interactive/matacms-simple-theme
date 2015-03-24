@@ -18,14 +18,14 @@ class HistoryAsset extends AssetBundle
     public $sourcePath = '@vendor/matacms/matacms-simple-theme/web';
 
     public $css = [
-        'css/history.css',
+    'css/history/history.css',
     ];
     public $js = [
-        'js/lib/timeago/timeago.js',
-        'js/history.js'
+    'js/lib/timeago/timeago.js',
+    'js/history/history.js'
     ];
 
     public $depends = [
-        'matacms\theme\simple\assets\ThemeAsset',
+    'matacms\theme\simple\assets\ThemeAsset',
     ];
 }

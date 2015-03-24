@@ -23,12 +23,18 @@ $this->title = Yii::t('user', 'Sign in');
 $this->params['breadcrumbs'][] = $this->title;
 
 use matacms\theme\simple\assets\LoginAsset;
-loginAsset::register($this);
+
+$loginAsset = LoginAsset::register($this);
 
 ?>
 
 <?= $this->render('/_alert', ['module' => Yii::$app->getModule('user')]) ?>
 <div class="row">
+
+	<h1 class="logo">
+		<img src="<?= $loginAsset->baseUrl ?>/images/login/gear-mata-logo@2x.png" alt="mata-cms"/> 
+	</h1>
+
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h3 class="panel-title">Log in to MATA CMS</h3>
@@ -58,18 +64,18 @@ loginAsset::register($this);
 
 
 				<?= $form->beginField($model, 'password') ?>
-				<span class="input input--ichiro input--filled">
+				<span class="input input--ichiro">
 					<label class="input__label input__label--ichiro control-label" for="login-form-password">
 						<span class="input__label-content input__label-content--ichiro"><?= \Yii::t('user', 'Password'); ?></span>
 					</label>
 					<input class="input__field input__field--ichiro form-control" name="login-form[password]" type="password" id="login-form-password" tabindex="2"/>
 				</span>
-				<!-- <div class="help-block"></div> -->
+				<!-- 	<div class="help-block"></div> -->
 				<?= $form->endField(); ?>
 
 				<div class="row" id="submit-remember-me-container">
 					<div class="five columns">
-						<?= $form->field($model, 'rememberMe')->checkbox(['label'=>'<div><i class="fa fa-dribbble">&#10004;</i></div><span>'.$model->getAttributeLabel('rememberMe'). '</span>', 'tabindex'=>"4"]) ?>
+						<?= $form->field($model, 'rememberMe')->checkbox(['label'=>'<div><img class="fa fa-dribbble" src="'. $loginAsset->baseUrl . '/images/login/tick@2x.png" alt="tick"/></div><span>'.$model->getAttributeLabel('rememberMe'). '</span>', 'tabindex'=>"4"]) ?>
 					</div>
 					<div class="seven columns">
 						<?= Html::submitButton(Yii::t('user', 'LOG IN'), ['class' => 'btn btn-primary btn-block', 'tabindex' => '3']) ?>
@@ -83,7 +89,7 @@ loginAsset::register($this);
 				</div>
 				<div class="six columns">
 					<div id="get-in-touch-container"> <span> No account? </span> <a href=""> Get in touch </a> </div>
-					<div id="footer-caption"> <span> Created by </span><img src="http://placehold.it/26/ffffff/" alt="Qi Interactive Ltd"/> </div>
+					<div id="footer-caption"> <span> Created by </span><img src="<?= $loginAsset->baseUrl ?>/images/login/qi-logo@2x.png" alt="Qi Interactive Ltd"/> </div>
 				</div>
 			</div>
 		</div>

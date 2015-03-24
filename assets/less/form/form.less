@@ -1,0 +1,213 @@
+@import "../imports/variables.less";
+@import "../imports/mixins.less";
+
+
+label {
+	color: @azure;
+	font-weight: @proxima-bold;
+	font-size: @font-size-second-base;
+	padding: 0px 13px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin: 0px;
+	line-height: normal;
+}
+
+input, textarea, .redactor-editor, .redactor-box, .redactor-box textarea, input.form-control {
+	font-weight: @proxima-semibold;
+	background: @alice-blue;
+	outline: none;
+	font-size: @font-size-second-base;
+	color: @blue-corn;
+	margin: 0px;
+	padding: 13px;
+	border: none;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+	border-radius: 2px;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+input, input.form-control {
+	height: 38px;
+}
+
+
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
+	color: @azure;
+	box-shadow: none;
+	outline: none;
+}
+
+.help-block {
+	margin: 0px;
+	font-size: 13px;
+}
+
+.has-error .help-block {
+	color: @coral;
+	padding: 0px 13px;
+	margin: 10px 0px;
+}
+
+.has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label {
+	color: @azure;
+	outline: none;
+}
+
+.has-error .form-control, .has-error .form-control:focus {
+	box-shadow: none;
+	border-bottom: 2px solid @coral;
+	outline: none;
+}
+
+.form-control:focus, .form-control {
+	box-shadow: none;
+}
+
+.has-success .form-control, .has-success .form-control:focus, .selectize-input:focus,.selectize-input.focus  {
+	box-shadow: none;
+	border: 0px;
+	outline: none;
+}
+
+
+
+button, button.btn-primary {
+	.aqua-background-link();
+	border: 0px;
+	border-radius: 2px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-weight: @proxima-bold;
+	letter-spacing: 0px;
+	font-size: @font-size-medium;
+	outline: none;
+	min-height: 45px;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus,
+.btn-primary:active, .btn:active {
+	outline: 0px;
+	box-shadow: none;
+	.aqua-background-link();
+	outline: none;
+}
+
+
+@-webkit-keyframes show-a {
+	0% {
+		.transform(scale(0.2));
+	}
+	50% {
+		.transform(scale(1.2));
+	}
+	100% {
+		.transform(scale(1));
+	}
+}
+
+@-webkit-keyframes show-b {
+	0% {
+		.transform(scale(0));
+	}
+	50% {
+		.transform(scale(0));
+	}
+	90% {
+		.transform(scale(1.2));
+	}
+	100% {
+		.transform(scale(1));
+	}
+}
+
+
+label span {
+	vertical-align: middle;
+	padding-left: 12px;
+	font-weight: @proxima-semibold;
+	color: @azure;
+}
+
+label input[type="checkbox"] {
+	display: none;
+}
+
+label input[type="checkbox"] + div {
+	height: 20px;
+	width: 20px;
+	background: @blue-corn;
+	border-radius: 2px;
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	line-height: 60px;
+	.transition(all 0.3s);
+	vertical-align: middle;
+	border: 2px solid  @blue-corn;
+
+	.fa {
+		font-size: 12px;
+		color: @slate-grey;
+		opacity: 0;
+		top: 2px;
+		position: absolute;
+		line-height: 16px;
+		left: 2px;
+		right: auto;
+		width: 12px;
+		height: 12px;
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		opacity: 0;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		background: @alice-blue;
+	}
+
+	&:after {
+		font-family: FontAwesome;
+		content: "\f00c";
+		display: none;
+		opacity: 0;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		color: #fff;
+		line-height: 32px;
+		text-align: center;       
+	}
+
+}
+
+label input[type="checkbox"]:checked + div {
+	background: transparent;
+
+	&:before {
+		opacity: 1;
+		.animation(show-a 0.3s);
+	}
+
+	.fa {
+		opacity: 1;
+		.animation(show-b 0.3s);
+	}
+}

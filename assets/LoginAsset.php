@@ -17,7 +17,7 @@ class LoginAsset extends AssetBundle {
     public $sourcePath = '@vendor/matacms/matacms-simple-theme/web';
 
     public $css = [
-    'css/login.css',
+    'css/login/login.css',
     ];
     public $js = [
     'js/login/login.js',

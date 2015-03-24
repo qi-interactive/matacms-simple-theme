@@ -1,0 +1,87 @@
+@import "../imports/variables.less";
+@import "../imports/mixins.less";
+
+body, html {
+	background-color: @slate-grey;
+}
+
+.form-group {
+	padding: 4px 4px 4px 4px;
+	background: @blue-corn;
+	border-radius: 2px;
+
+	label {
+		font-size: 13px;
+	}
+
+	// input, textarea, .redactor-editor, .redactor-box, .redactor-box textarea {
+	// 	position: relative;
+	// 	display: block;
+	// 	padding: 0.8em;
+	// 	border: none;
+	// 	border-radius: 0;
+	// 	color: @blue-corn;
+	// 	-webkit-appearance: none; /* for box shadows to show on iOS */
+	// 	border-radius: 2px;
+	// 	box-shadow: none;
+	// 	outline: none;
+	// 	&:focus {
+	// 		box-shadow: none;
+	// 		outline: none;
+	// 	}
+	// }
+}
+
+.redactor-box {
+	margin-bottom: 0px;
+}
+
+
+.redactor-toolbar {
+	background: @blue-corn;
+
+	li {
+		.re-html:before {
+			content: "\e616";
+		}
+		.re-formatting:before {
+			content: "\e612";
+		}
+		.re-bold:before {
+			content: "\e618";
+		}
+		.re-italic:before {
+			content: "\e60d";
+		}
+		.re-deleted:before {
+			content: "\e615";
+		}
+		.re-unorderedlist:before {
+			content: "\e601";
+		}
+		.re-orderedlist:before {
+			content: "\e60a";
+		}
+		.re-outdent:before {
+			content: "\e609";
+		}
+		.re-indent:before {
+			content: "\e60e";
+		}
+		.re-image:before {
+			content: "\e60f";
+		}
+		.re-file:before {
+			content: "\e61a";
+		}
+		.re-link:before {
+			content: "\e60b";
+		}
+		.re-alignment:before, .re-alignleft:before {
+			content: "\e61c";
+		}
+		.re-horizontalrule:before {
+			content: "\e60c";
+		}
+	}
+}
