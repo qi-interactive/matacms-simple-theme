@@ -232,12 +232,12 @@ form {
 }
 
 .input__label-content {
-   position: relative;
-   display: block;
-   padding: 0.6em 0px;
-   width: 100%;
-   line-height: normal;
-   font-weight: @proxima-bold;
+ position: relative;
+ display: block;
+ padding: 0.6em 0px;
+ width: 100%;
+ line-height: normal;
+ font-weight: @proxima-bold;
 }
 
 .graphic {
@@ -262,12 +262,12 @@ form {
 .input__field--ichiro {
     position: absolute;
     bottom: 4px;
-    left: 4px;
-    right: 4px;
+    left: 50%;
     z-index: 100;
     display: block;
     padding: 0px 15px;
-    width: calc(100% - 2px);
+    width: 98%;
+    margin-left: -49%;
     height: 38px;
     background: @azure;
     color: @blue-corn;
@@ -343,22 +343,22 @@ form {
       .transform(scale(1.2));
   }
   100% {
-     .transform(scale(1));
- }
+   .transform(scale(1));
+}
 }
 
 @-webkit-keyframes show-b {
     0% {
-     .transform(scale(0));
- }
- 50% {
-     .transform(scale(0));
- }
- 90% {
-  .transform(scale(1.2));
-}
-100% {
- .transform(scale(1));
+       .transform(scale(0));
+   }
+   50% {
+       .transform(scale(0));
+   }
+   90% {
+      .transform(scale(1.2));
+  }
+  100% {
+   .transform(scale(1));
 }
 }
 
@@ -423,14 +423,14 @@ label input[type="checkbox"] + div {
 }
 
 label input[type="checkbox"]:checked + div {
- background: transparent;
+   background: transparent;
 
- &:before {
-     opacity: 1;
-     .animation(show-a 0.3s);
- }
+   &:before {
+       opacity: 1;
+       .animation(show-a 0.3s);
+   }
 
- i.fa {
+   i.fa {
     opacity: 1;
     .animation(show-b 0.3s);
 }
@@ -442,12 +442,12 @@ label input[type="checkbox"]:checked + div {
 }
 
 body.login-form-error {
-   #header-spacer, #forgotten-password-bar  #get-in-touch-container {
+ #header-spacer, #forgotten-password-bar  #get-in-touch-container {
     display: block;
 }
 
 #forgotten-password-bar {
-   #footer-caption {
+ #footer-caption {
     display: none;
 }
 }

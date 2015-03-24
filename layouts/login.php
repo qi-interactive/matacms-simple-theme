@@ -15,11 +15,12 @@ ThemeAsset::register($this);
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?= Html::csrfMetaTags() ?>
 	<title><?= Html::encode($this->title) ?></title>
-	<?php $this->head() ?>
 
 	<script src="//use.typekit.net/xnl0kun.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	
+	<?php $this->head() ?>
+
 </head>
 
 <body>

@@ -58,7 +58,7 @@ loginAsset::register($this);
 
 
 				<?= $form->beginField($model, 'password') ?>
-				<span class="input input--ichiro">
+				<span class="input input--ichiro input--filled">
 					<label class="input__label input__label--ichiro control-label" for="login-form-password">
 						<span class="input__label-content input__label-content--ichiro"><?= \Yii::t('user', 'Password'); ?></span>
 					</label>
