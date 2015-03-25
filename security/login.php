@@ -40,12 +40,18 @@ $loginAsset = LoginAsset::register($this);
 			<h3 class="panel-title">Log in to MATA CMS</h3>
 		</div>
 
-		<div id="header-spacer"> Username</div>
+
+		<?php if ($model->hasErrors()): 
+			$firstError = current(current($model->getErrors()));
+		?>
+		<div style="display: block" id="header-spacer"><?= $firstError ?></div>
+
+	<?php endif;?>
 
 		<div class="panel-body">
 			<?php $form = ActiveForm::begin([
 				'id'                     => 'login-form',
-				'enableAjaxValidation'   => true,
+				'enableAjaxValidation'   => false,
 				'enableClientValidation' => false,
 				'validateOnBlur'         => false,
 				'validateOnType'         => false,
@@ -59,7 +65,7 @@ $loginAsset = LoginAsset::register($this);
 					</label>
 					<input class="input__field input__field--ichiro form-control" name="login-form[login]" type="text" id="login-form-login" tabindex="1"/>
 				</span>
-				<!-- <div class="help-block"></div> -->
+				<!-- <div class="Ï"></div> -->
 				<?= $form->endField(); ?>
 
 

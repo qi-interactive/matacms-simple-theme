@@ -33,13 +33,3 @@ window.mata = window.mata || {};
 		}
 	}
 })();
-
-
-$(window).ready(function() {
-	$('#login-form button.btn-primary').on('click', function() {
-
-		setTimeout(function() { 
-			$('#login-form .form-group').hasClass('has-error') ? $('body').addClass('login-form-error') : $('body').removeClass('login-form-error');
-		}, 300);
-	})
-})
