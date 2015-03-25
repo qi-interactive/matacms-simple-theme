@@ -40,7 +40,7 @@ $loginAsset = LoginAsset::register($this);
 			<h3 class="panel-title">Log in to MATA CMS</h3>
 		</div>
 
-		<div id="header-spacer"> Error message applicable to both fields below</div>
+		<div id="header-spacer"> Username</div>
 
 		<div class="panel-body">
 			<?php $form = ActiveForm::begin([
@@ -55,7 +55,7 @@ $loginAsset = LoginAsset::register($this);
 				<?= $form->beginField($model, 'login') ?>
 				<span class="input input--ichiro">
 					<label class="input__label input__label--ichiro control-label" for="login-form-login">
-						<span class="input__label-content input__label-content--ichiro">Username</span>
+						<span class="input__label-content input__label-content--ichiro"><?= $model->getAttributeLabel('login') ?></span>
 					</label>
 					<input class="input__field input__field--ichiro form-control" name="login-form[login]" type="text" id="login-form-login" tabindex="1"/>
 				</span>
@@ -66,7 +66,7 @@ $loginAsset = LoginAsset::register($this);
 				<?= $form->beginField($model, 'password') ?>
 				<span class="input input--ichiro">
 					<label class="input__label input__label--ichiro control-label" for="login-form-password">
-						<span class="input__label-content input__label-content--ichiro"><?= \Yii::t('user', 'Password'); ?></span>
+						<span class="input__label-content input__label-content--ichiro"><?= $model->getAttributeLabel('password') ?></span>
 					</label>
 					<input class="input__field input__field--ichiro form-control" name="login-form[password]" type="password" id="login-form-password" tabindex="2"/>
 				</span>

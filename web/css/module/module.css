@@ -1,19 +1,6 @@
 body,html{background-color:#5f6885}
 .form-group,.redactor-toolbar{background:#343c55}
-.form-group{padding:4px;border-radius:2px}
-.form-group label{font-size:13px}
+.form-group{padding:0 4px 4px;border-radius:2px}
+.form-group label{font-size:13px;padding-top:5px;padding-bottom:3px;line-height:23px}
 .redactor-box{margin-bottom:0}
-.redactor-toolbar li .re-html:before{content:"\e616"}
-.redactor-toolbar li .re-formatting:before{content:"\e612"}
-.redactor-toolbar li .re-bold:before{content:"\e618"}
-.redactor-toolbar li .re-italic:before{content:"\e60d"}
-.redactor-toolbar li .re-deleted:before{content:"\e615"}
-.redactor-toolbar li .re-unorderedlist:before{content:"\e601"}
-.redactor-toolbar li .re-orderedlist:before{content:"\e60a"}
-.redactor-toolbar li .re-outdent:before{content:"\e609"}
-.redactor-toolbar li .re-indent:before{content:"\e60e"}
-.redactor-toolbar li .re-image:before{content:"\e60f"}
-.redactor-toolbar li .re-file:before{content:"\e61a"}
-.redactor-toolbar li .re-link:before{content:"\e60b"}
-.redactor-toolbar li .re-alignleft:before,.redactor-toolbar li .re-alignment:before{content:"\e61c"}
-.redactor-toolbar li .re-horizontalrule:before{content:"\e60c"}
+.redactor-toolbar li a{color:#fff}

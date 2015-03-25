@@ -6,12 +6,15 @@ body, html {
 }
 
 .form-group {
-	padding: 4px 4px 4px 4px;
+	padding: 0px 4px 4px 4px;
 	background: @blue-corn;
 	border-radius: 2px;
 
 	label {
 		font-size: 13px;
+		  padding-top: 5px;
+		  padding-bottom: 3px;
+		  line-height: 23px;
 	}
 
 	// input, textarea, .redactor-editor, .redactor-box, .redactor-box textarea {
@@ -41,47 +44,10 @@ body, html {
 	background: @blue-corn;
 
 	li {
-		.re-html:before {
-			content: "\e616";
-		}
-		.re-formatting:before {
-			content: "\e612";
-		}
-		.re-bold:before {
-			content: "\e618";
-		}
-		.re-italic:before {
-			content: "\e60d";
-		}
-		.re-deleted:before {
-			content: "\e615";
-		}
-		.re-unorderedlist:before {
-			content: "\e601";
-		}
-		.re-orderedlist:before {
-			content: "\e60a";
-		}
-		.re-outdent:before {
-			content: "\e609";
-		}
-		.re-indent:before {
-			content: "\e60e";
-		}
-		.re-image:before {
-			content: "\e60f";
-		}
-		.re-file:before {
-			content: "\e61a";
-		}
-		.re-link:before {
-			content: "\e60b";
-		}
-		.re-alignment:before, .re-alignleft:before {
-			content: "\e61c";
-		}
-		.re-horizontalrule:before {
-			content: "\e60c";
+
+		a {
+			color: @white;
 		}
 	}
 }
+

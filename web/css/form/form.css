@@ -3,8 +3,8 @@ label{color:#9fa7b7;font-weight:700;font-size:18px;padding:0 13px;-webkit-font-s
 .redactor-box textarea:focus,.redactor-box:focus,.redactor-editor:focus,input.form-control:focus,input:focus,textarea:focus{outline:0}
 input,input.form-control{height:38px}
 .has-error .checkbox,.has-error .checkbox-inline,.has-error .control-label,.has-error .help-block,.has-error .radio,.has-error .radio-inline,.has-error.checkbox label,.has-error.checkbox-inline label,.has-error.radio label,.has-error.radio-inline label{color:#9fa7b7;box-shadow:none;outline:0}
-.help-block{margin:0;font-size:13px}
-.has-error .help-block{color:#ff6b6b;padding:0 13px;margin:10px 0}
+.help-block{margin:0;font-size:13px;line-height:23px}
+.has-error .help-block{color:#ff6b6b;margin:5px 13px 0}
 .has-success .checkbox,.has-success .checkbox-inline,.has-success .control-label,.has-success .help-block,.has-success .radio,.has-success .radio-inline,.has-success.checkbox label,.has-success.checkbox-inline label,.has-success.radio label,.has-success.radio-inline label{color:#9fa7b7;outline:0}
 .has-error .form-control,.has-error .form-control:focus{box-shadow:none;border-bottom:2px solid #ff6b6b;outline:0}
 .form-control,.form-control:focus{box-shadow:none}
