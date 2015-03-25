@@ -9,8 +9,9 @@ input,input.form-control{height:38px}
 .has-error .form-control,.has-error .form-control:focus{box-shadow:none;border-bottom:2px solid #ff6b6b;outline:0}
 .form-control,.form-control:focus{box-shadow:none}
 .has-success .form-control,.has-success .form-control:focus,.selectize-input.focus,.selectize-input:focus{box-shadow:none;border:0;outline:0}
-button,button.btn-primary{background:#4eb7cd;border:0;border-radius:2px;padding-top:12px;padding-bottom:12px;font-weight:700;letter-spacing:0;font-size:15px;outline:0;min-height:45px}
-button.btn-primary:hover,button:hover{background:#539fb8}
+.btn,button,button.btn-primary{background:#4eb7cd;border:0;border-radius:2px;font-weight:700;letter-spacing:0;font-size:15px;outline:0;min-height:38px;padding:0 20px}
+.btn:hover,button.btn-primary:hover,button:hover{background:#539fb8}
+button[type=submit]{text-transform:uppercase;min-height:45px}
 .btn-primary:active,.btn.active.focus,.btn.active:focus,.btn.focus,.btn:active,.btn:active.focus,.btn:active:focus,.btn:focus{box-shadow:none;background:#4eb7cd;outline:0}
 .btn-primary:active:hover,.btn.active.focus:hover,.btn.active:focus:hover,.btn.focus:hover,.btn:active.focus:hover,.btn:active:focus:hover,.btn:active:hover,.btn:focus:hover{background:#539fb8}
 @-webkit-keyframes show-a{0%{-moz-transform:scale(.2);-webkit-transform:scale(.2);-o-transform:scale(.2);-ms-transform:scale(.2);transform:scale(.2)}

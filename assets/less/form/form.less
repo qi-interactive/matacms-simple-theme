@@ -81,19 +81,23 @@ input, input.form-control {
 
 
 
-button, button.btn-primary {
+button, button.btn-primary, .btn {
 	.aqua-background-link();
 	border: 0px;
 	border-radius: 2px;
-	padding-top: 12px;
-	padding-bottom: 12px;
 	font-weight: @proxima-bold;
 	letter-spacing: 0px;
 	font-size: @font-size-medium;
 	outline: none;
-	min-height: 45px;
+	min-height: 38px;
+	padding: 0px 20px;
 }
 
+
+button[type="submit"] {
+	text-transform: uppercase;
+	min-height: 45px;
+}
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus,
 .btn-primary:active, .btn:active {
 	outline: 0px;
