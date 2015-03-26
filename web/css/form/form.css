@@ -1,7 +1,8 @@
 label{color:#9fa7b7;font-weight:700;font-size:18px;padding:0 13px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;margin:0;line-height:normal}
-.redactor-box,.redactor-box textarea,.redactor-editor,input,input.form-control,textarea{font-weight:600;background:#d5deeb;outline:0;font-size:18px;color:#343c55;margin:0;padding:13px;border:none;-webkit-appearance:none;border-radius:2px}
-.redactor-box textarea:focus,.redactor-box:focus,.redactor-editor:focus,input.form-control:focus,input:focus,textarea:focus{outline:0}
+.redactor-box,.redactor-box textarea,.redactor-editor,.selectize-dropdown,.selectize-input,input,input.form-control,textarea{font-weight:600;background:#d5deeb;outline:0;font-size:18px;color:#343c55;margin:0;padding:13px;border:none;-webkit-appearance:none;border-radius:2px}
+.redactor-box textarea:focus,.redactor-box:focus,.redactor-editor:focus,.selectize-dropdown:focus,.selectize-input:focus,input.form-control:focus,input:focus,textarea:focus{outline:0}
 input,input.form-control{height:38px}
+select.form-control{-webkit-appearance:none;-moz-appearance:none;border:0!important;border-radius:2px;width:50%;background-color:#9fa7b7;font-size:15px;font-weight:700;color:#343c55;padding-left:13px;padding-right:13px;display:block;background-image:url(http://placehold.it/16/343C55);background-repeat:no-repeat;background-position:95% center}
 .has-error .checkbox,.has-error .checkbox-inline,.has-error .control-label,.has-error .help-block,.has-error .radio,.has-error .radio-inline,.has-error.checkbox label,.has-error.checkbox-inline label,.has-error.radio label,.has-error.radio-inline label{color:#9fa7b7;box-shadow:none;outline:0}
 .help-block{margin:0;font-size:13px;line-height:23px}
 .has-error .help-block{color:#ff6b6b;margin:5px 13px 0}

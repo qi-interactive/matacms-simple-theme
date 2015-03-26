@@ -19,7 +19,7 @@ label {
 	line-height: normal;
 }
 
-input, textarea, .redactor-editor, .redactor-box, .redactor-box textarea, input.form-control {
+input, textarea, .redactor-editor, .redactor-box, .redactor-box textarea, input.form-control, .selectize-input, .selectize-dropdown {
 	font-weight: @proxima-semibold;
 	background: @alice-blue;
 	outline: none;
@@ -40,6 +40,23 @@ input, input.form-control {
 	height: 38px;
 }
 
+select.form-control {
+	-webkit-appearance: none;  /*REMOVES DEFAULT CHROME & SAFARI STYLE*/
+	-moz-appearance: none;  /*REMOVES DEFAULT FIREFOX STYLE*/
+	border: 0 !important;  /*REMOVES BORDER*/
+	border-radius: 2px;
+	width: 50%;
+	background-color: @azure;
+	font-size: @font-size-medium;
+	font-weight: @proxima-bold;
+	color: @blue-corn;
+	padding-left: 13px;
+	padding-right: 13px;
+	display: block;
+	background-image: url(http://placehold.it/16/343C55);
+	background-repeat: no-repeat;
+	background-position: 95% center;
+}
 
 .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
 	color: @azure;

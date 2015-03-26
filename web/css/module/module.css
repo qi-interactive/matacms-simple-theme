@@ -3,5 +3,6 @@ body,html{background-color:#5f6885}
 .container{padding-bottom:30px}
 .form-group{padding:0 4px 4px;border-radius:2px}
 .form-group label{font-size:13px;padding-top:5px;padding-bottom:3px;line-height:23px}
+.form-group .redactor-box,.form-group .redactor-box textarea,.form-group .redactor-editor,.form-group input,.form-group input.form-control,.form-group textarea{font-size:14px;font-weight:500}
 .redactor-box{margin-bottom:0}
 .redactor-toolbar li a{color:#fff}
