@@ -6,3 +6,4 @@ body,html{background-color:#5f6885}
 .form-group .redactor-box,.form-group .redactor-box textarea,.form-group .redactor-editor,.form-group input,.form-group input.form-control,.form-group textarea{font-size:14px;font-weight:500}
 .redactor-box{margin-bottom:0}
 .redactor-toolbar li a{color:#fff}
+input[type=checkbox]{height:auto;background:0 0;-webkit-appearance:checkbox}
