@@ -1,6 +1,7 @@
 .drop-area__item,.dummy,.grid__item{border-radius:4px}
 .grid{margin:0 auto;max-width:50em;padding:0 1em}
 .grid__item{float:left;margin:.5%;width:49%;height:2.05em;padding:.35em .5em;background:#62b989;color:#a3e0be;font-size:1.5em;text-align:left}
+.drop-area,.drop-area.show .main-body{height:100%}
 .grid__item:hover{cursor:move;cursor:-webkit-grab;cursor:grab}
 .grid__item:active{cursor:-webkit-grabbing;cursor:grabbing}
 .is-dragging{background:#575e5a}
@@ -8,7 +9,7 @@
 .is-dropped{opacity:0;-webkit-transform:scale3d(.7,.7,1)!important;transform:scale3d(.7,.7,1)!important}
 .is-complete{opacity:1;-webkit-transition:opacity .3s,-webkit-transform .3s!important;transition:opacity .3s,transform .3s!important;-webkit-transform:scale3d(1,1,1)!important;transform:scale3d(1,1,1)!important}
 .animate{-webkit-transition:all .3s ease-out;transition:all .3s ease-out}
-.drop-area{position:fixed;top:100%;left:0;z-index:99;width:100%;height:100%;background:#343c55;text-align:center;overflow:auto;-webkit-transition:-webkit-transform .5s cubic-bezier(.6,0,.4,1);transition:transform .5s cubic-bezier(.6,0,.4,1);-webkit-transform:translate3d(0,20px,0);transform:translate3d(0,20px,0)}
+.drop-area{position:fixed;top:100%;left:0;z-index:99;width:100%;background:#343c55;text-align:center;overflow:auto;-webkit-transition:-webkit-transform .5s cubic-bezier(.6,0,.4,1);transition:transform .5s cubic-bezier(.6,0,.4,1);-webkit-transform:translate3d(0,20px,0);transform:translate3d(0,20px,0)}
 .drop-area.show{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}
 .drop-area__item{position:relative;display:inline-block;margin:.4em 0;width:100%;max-width:30em;height:3em;background:#fff;color:#919f97;font-size:1.5em;text-align:left;padding:.9em 1em;-webkit-transition:-webkit-transform .3s,background .3s,color .3s;transition:transform .3s,background .3s,color .3s}
 .drop-area__item.highlight{background:rgba(0,0,0,.15);color:#fff;-webkit-transform:scale3d(1.08,1.08,1);transform:scale3d(1.08,1.08,1)}
@@ -18,4 +19,6 @@
 .dummy{margin:1em auto 2.5em;width:50%;max-width:30em;height:1.5em;background:rgba(0,0,0,.1);box-shadow:0 1.5em 0 -.6em rgba(0,0,0,.1)}
 .drop-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.3);opacity:0;-webkit-transition:opacity .3s;transition:opacity .3s;pointer-events:none}
 .drop-area.show+.drop-overlay{opacity:1}
+.main-body{-webkit-transition:all .5s cubic-bezier(.6,0,.4,1);transition:all .5s cubic-bezier(.6,0,.4,1);height:-100%;-webkit-transition-delay:2s;transition-delay:2s}
 .close-character{width:50px;height:50px;position:absolute;z-index:102;background:url(http://placehold.it/30/ffffff/000000)center no-repeat;background-size:30px;top:20px;right:50px;cursor:pointer}
+iframe{width:100%;height:auto;max-width:100%}

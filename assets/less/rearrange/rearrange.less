@@ -80,6 +80,9 @@
 .drop-area.show {
 	-webkit-transform: translate3d(0,-100%,0);
 	transform: translate3d(0,-100%,0);
+	.main-body {
+		height: 100%;
+	}
 }
 
 
@@ -169,7 +172,13 @@
 	opacity: 1;
 }
 
-
+.main-body {
+	-webkit-transition: all 0.5s cubic-bezier(0.6,0,0.4,1);
+	transition: all 0.5s cubic-bezier(0.6,0,0.4,1);
+	height: -100%;
+	-webkit-transition-delay: 2s; /* Safari */
+	transition-delay: 2s;
+}
 
 
 .close-character {
@@ -184,4 +193,10 @@
 	background-position: center;
 	right: 50px;
 	cursor: pointer;
+}
+
+iframe {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
 }
