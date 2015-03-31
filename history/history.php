@@ -1,6 +1,7 @@
 <?php 
 use mata\user\models\User;
 use matacms\theme\simple\assets\HistoryAsset;
+use matacms\environment\models\ItemEnvironment;
 
 HistoryAsset::register($this);
 
@@ -29,10 +30,27 @@ $returnUri = Yii::$app->request->get('returnURI');
 				<?php echo $message; ?>
 			</span>
 
+
 			<span title="<?php echo $revision->DateCreated; ?>" class="date">
 			</span>
-		</li>
+
+			<?php
+
+			$ie = ItemEnvironment::find()->where([
+				"DocumentId" => $revision->DocumentId,
+				"Revision" => $revision->Revision,
+				])->one();
+
+			if ($ie != null):
+
+				?>
+			<span class="badge">
+				<?= $ie->Status ?>
+			</span>
+		<?php endif; ?>
+
 	</li>
+</li>
 
 <?php endforeach; ?>
 
