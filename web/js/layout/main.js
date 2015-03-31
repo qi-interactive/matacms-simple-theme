@@ -42,7 +42,12 @@ jQuery(document).ready(function($){
 
 	$(window).on('resize', function(){
 		window.requestAnimationFrame(updateSelectedNav);
+		resizeSubnav();
 	});
+
+	$(window).on('resize', function(){
+		resizeSubnav();
+	}).resize();
 
 	function toggle3dBlock(addOrRemove) {
 		if(typeof(addOrRemove)==='undefined') addOrRemove = true;	
@@ -56,13 +61,13 @@ jQuery(document).ready(function($){
 	}
 
 	function showSubnav(subnavId) {
-
 		var overlay = $("#subnav-overlay");
 		
 		overlay.find("> div").hide();
 		overlay.css({
 			height: $(window).height() - $("nav").height(),
 			top: $("nav").height(),
+			overflow: 'auto',
 			backgroundColor: $('.cd-header').css("color")
 		}).fadeIn();
 
@@ -77,6 +82,33 @@ jQuery(document).ready(function($){
 		$("#subnav-overlay").fadeOut().find("> div").fadeOut();
 	}
 
+	function resizeSubnav() {
+		var overlay = $("#subnav-overlay");
+		var overlayHeight = overlay.height();
+		var subnavItem = $("#subnav-overlay .subnav-item:visible");
+
+
+		if(subnavItem !== null && subnavItem !== undefined) {
+			var subnavItemHeight = $("#subnav-overlay .subnav-item:visible").outerHeight(true);
+
+			if(subnavItemHeight >= overlayHeight) {
+				overlay.css({
+					height: $(window).height() - $("nav").height(),
+					top: $("nav").height(),
+					overflow: 'auto'
+				});
+				console.log('overlay.height() 1 ', overlayHeight);
+			} else {
+				overlay.css({
+					height: $(window).height() - $("nav").height(),
+					top: $("nav").height(),
+					overflow: 'auto'
+				});
+				console.log('overlay.height() 2 ', overlayHeight);
+			}
+		}
+				
+	}
 
 	//this function update the .cd-marker position
 	function updateSelectedNav(type) {

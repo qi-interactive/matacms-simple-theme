@@ -95,7 +95,7 @@ if (empty($menuItems))
 		<?php foreach ($subNav as $module => $items ):
 		 ?>
 
-			<div id="subnav-<?php echo $module ?>">
+			<div id="subnav-<?php echo $module ?>" class="subnav-item">
 
 				<?php 
 

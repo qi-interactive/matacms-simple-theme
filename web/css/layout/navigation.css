@@ -535,10 +535,9 @@ svg path, svg rect, svg line, svg polyline, polygon, g, circle {
   position: fixed;
   background: red;
   width: 100%;
-  height: 100%;
-  position: fixed;
   display: none;
   z-index: 100;
+  overflow-y: auto;
 
   background: linear-gradient(#c96ba5, #b05d90);
 }
