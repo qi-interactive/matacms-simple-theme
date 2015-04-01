@@ -42,65 +42,65 @@ $loginAsset = LoginAsset::register($this);
 
 
 		<?php if ($model->hasErrors()): 
-			$firstError = current(current($model->getErrors()));
+		$firstError = current(current($model->getErrors()));
 		?>
 		<div style="display: block" id="header-spacer"><?= $firstError ?></div>
 
 	<?php endif;?>
 
-		<div class="panel-body">
-			<?php $form = ActiveForm::begin([
-				'id'                     => 'login-form',
-				'enableAjaxValidation'   => false,
-				'enableClientValidation' => false,
-				'validateOnBlur'         => false,
-				'validateOnType'         => false,
-				'validateOnChange'       => false,
-				]) ?>
-
-				<?= $form->beginField($model, 'login') ?>
-				<span class="input input--ichiro">
-					<label class="input__label input__label--ichiro control-label" for="login-form-login">
-						<span class="input__label-content input__label-content--ichiro"><?= $model->getAttributeLabel('login') ?></span>
-					</label>
-					<input class="input__field input__field--ichiro form-control" name="login-form[login]" type="text" id="login-form-login" tabindex="1"/>
-				</span>
-				<!-- <div class="Ï"></div> -->
-				<?= $form->endField(); ?>
-
-
-				<?= $form->beginField($model, 'password') ?>
-				<span class="input input--ichiro">
-					<label class="input__label input__label--ichiro control-label" for="login-form-password">
-						<span class="input__label-content input__label-content--ichiro"><?= $model->getAttributeLabel('password') ?></span>
-					</label>
-					<input class="input__field input__field--ichiro form-control" name="login-form[password]" type="password" id="login-form-password" tabindex="2"/>
-				</span>
-				<!-- 	<div class="help-block"></div> -->
-				<?= $form->endField(); ?>
-
-				<div class="row" id="submit-remember-me-container">
-					<div class="five columns">
-						<?= $form->field($model, 'rememberMe')->checkbox(['label'=>'<div><img class="fa fa-dribbble" src="'. $loginAsset->baseUrl . '/images/login/tick@2x.png" alt="tick"/></div><span>'.$model->getAttributeLabel('rememberMe'). '</span>', 'tabindex'=>"4"]) ?>
-					</div>
-					<div class="seven columns">
-						<?= Html::submitButton(Yii::t('user', 'LOG IN'), ['class' => 'btn btn-primary btn-block', 'tabindex' => '3']) ?>
-					</div>
-				</div>
-				<?php ActiveForm::end(); ?>
-			</div>
-			<div id="forgotten-password-bar" class="row">
-				<div class="six columns">
-					<?= $module->enablePasswordRecovery ? Html::a(Yii::t('user', 'Forgot password?'), ['/user/recovery/request'], ['tabindex' => '5']) : '' ?>
-				</div>
-				<div class="six columns">
-					<div id="get-in-touch-container"> <span> No account? </span> <a href=""> Get in touch </a> </div>
-					<div id="footer-caption"> <span> Created by </span><img src="<?= $loginAsset->baseUrl ?>/images/login/qi-logo@2x.png" alt="Qi Interactive Ltd"/> </div>
-				</div>
-			</div>
-		</div>
-
-		<?= Connect::widget([
-			'baseAuthUrl' => ['/user/security/auth']
+	<div class="panel-body">
+		<?php $form = ActiveForm::begin([
+			'id'                     => 'login-form',
+			'enableAjaxValidation'   => false,
+			'enableClientValidation' => false,
+			'validateOnBlur'         => false,
+			'validateOnType'         => false,
+			'validateOnChange'       => false,
 			]) ?>
+
+			<?= $form->beginField($model, 'login') ?>
+			<span class="input input--ichiro">
+				<label class="input__label input__label--ichiro control-label" for="login-form-login">
+					<span class="input__label-content input__label-content--ichiro"><?= $model->getAttributeLabel('login') ?></span>
+				</label>
+				<input class="input__field input__field--ichiro form-control" name="login-form[login]" type="text" id="login-form-login" tabindex="1"/>
+			</span>
+			<!-- <div class="Ï"></div> -->
+			<?= $form->endField(); ?>
+
+
+			<?= $form->beginField($model, 'password') ?>
+			<span class="input input--ichiro">
+				<label class="input__label input__label--ichiro control-label" for="login-form-password">
+					<span class="input__label-content input__label-content--ichiro"><?= $model->getAttributeLabel('password') ?></span>
+				</label>
+				<input class="input__field input__field--ichiro form-control" name="login-form[password]" type="password" id="login-form-password" tabindex="2"/>
+			</span>
+			<!-- 	<div class="help-block"></div> -->
+			<?= $form->endField(); ?>
+
+			<div class="row" id="submit-remember-me-container">
+				<div class="five columns">
+					<?= $form->field($model, 'rememberMe')->checkbox(['label'=>'<div><img class="fa fa-dribbble" src="'. $loginAsset->baseUrl . '/images/login/tick@2x.png" alt="tick"/></div><span>'.$model->getAttributeLabel('rememberMe'). '</span>', 'tabindex'=>"4"]) ?>
+				</div>
+				<div class="seven columns">
+					<?= Html::submitButton(Yii::t('user', 'LOG IN'), ['class' => 'btn btn-primary btn-block', 'tabindex' => '3']) ?>
+				</div>
+			</div>
+			<?php ActiveForm::end(); ?>
 		</div>
+		<div id="forgotten-password-bar" class="row">
+			<div class="six columns">
+				<?= $module->enablePasswordRecovery ? Html::a(Yii::t('user', 'Forgot password?'), ['/user/recovery/request'], ['tabindex' => '5']) : '' ?>
+			</div>
+			<div class="six columns">
+				<div id="get-in-touch-container"> <span> No account? </span> <a href=""> Get in touch </a> </div>
+				<div id="footer-caption"> <span> Created by </span><a href="http://qi-interactive.com/" target="blank"><img src="<?= $loginAsset->baseUrl ?>/images/login/qi-logo@2x.png" alt="Qi Interactive Ltd"/> </a></div>
+			</div>
+		</div>
+	</div>
+
+	<?= Connect::widget([
+		'baseAuthUrl' => ['/user/security/auth']
+		]) ?>
+	</div>

@@ -1,4 +1,4 @@
-label{color:#9fa7b7;font-weight:700;font-size:18px;padding:0 13px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;margin:0;line-height:normal}
+label{color:#fff;font-weight:700;font-size:18px;padding:0 13px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;margin:0;line-height:normal}
 .redactor-box,.redactor-box textarea,.redactor-editor,.selectize-dropdown,.selectize-input,input,input.form-control,textarea{font-weight:600;background:#d5deeb;outline:0;font-size:18px;color:#343c55;margin:0;padding:13px;border:none;-webkit-appearance:none;border-radius:2px}
 .redactor-box textarea:focus,.redactor-box:focus,.redactor-editor:focus,.selectize-dropdown:focus,.selectize-input:focus,input.form-control:focus,input:focus,textarea:focus{outline:0}
 input,input.form-control{height:38px}
@@ -9,8 +9,9 @@ input,input.form-control{height:38px}
 .has-error .form-control,.has-error .form-control:focus{box-shadow:none;border-bottom:2px solid #ff6b6b;outline:0}
 .form-control,.form-control:focus{box-shadow:none}
 .has-success .form-control,.has-success .form-control:focus,.selectize-input.focus,.selectize-input:focus{box-shadow:none;border:0;outline:0}
-.btn,button,button.btn-primary{background:#4eb7cd;border:0;border-radius:2px;font-weight:700;letter-spacing:0;font-size:15px;outline:0;min-height:38px;padding:8px 20px}
-.btn:hover,button.btn-primary:hover,button:hover{background:#539fb8}
+.btn,.btn[type=submit],.qq-upload-button,button,button.btn-primary{background:#4eb7cd;border:0;border-radius:2px;font-weight:700;letter-spacing:0;font-size:15px;outline:0;min-height:38px;padding:8px 20px;width:auto;display:inline-block}
+.btn:hover,.btn[type=submit]:hover,.qq-upload-button:hover,button.btn-primary:hover,button:hover{background:#539fb8}
+.btn[type=submit]{margin-right:8px}
 button[type=submit]{text-transform:uppercase;min-height:45px}
 .btn-primary:active,.btn.active.focus,.btn.active:focus,.btn.focus,.btn:active,.btn:active.focus,.btn:active:focus,.btn:focus{box-shadow:none;background:#4eb7cd;outline:0}
 .btn-primary:active:hover,.btn.active.focus:hover,.btn.active:focus:hover,.btn.focus:hover,.btn:active.focus:hover,.btn:active:focus:hover,.btn:active:hover,.btn:focus:hover{background:#539fb8}
@@ -20,11 +21,33 @@ button[type=submit]{text-transform:uppercase;min-height:45px}
 @-webkit-keyframes show-b{0%,50%{-moz-transform:scale(0);-webkit-transform:scale(0);-o-transform:scale(0);-ms-transform:scale(0);transform:scale(0)}
 90%{-moz-transform:scale(1.2);-webkit-transform:scale(1.2);-o-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)}
 100%{-moz-transform:scale(1);-webkit-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}}
-.selectize-control .selectize-input,.selectize-control.multi .selectize-input.has-items{background:#9fa7b7}
-.selectize-control.multi .selectize-input>div{background:#d5deeb;font-size:14px;font-weight:600}
+@-moz-keyframes show-a{0%{-moz-transform:scale(.2);-webkit-transform:scale(.2);-o-transform:scale(.2);-ms-transform:scale(.2);transform:scale(.2)}
+50%{-moz-transform:scale(1.2);-webkit-transform:scale(1.2);-o-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)}
+100%{-moz-transform:scale(1);-webkit-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}}
+@-moz-keyframes show-b{0%,50%{-moz-transform:scale(0);-webkit-transform:scale(0);-o-transform:scale(0);-ms-transform:scale(0);transform:scale(0)}
+90%{-moz-transform:scale(1.2);-webkit-transform:scale(1.2);-o-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)}
+100%{-moz-transform:scale(1);-webkit-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}}
+@-o-keyframes show-a{0%{-moz-transform:scale(.2);-webkit-transform:scale(.2);-o-transform:scale(.2);-ms-transform:scale(.2);transform:scale(.2)}
+50%{-moz-transform:scale(1.2);-webkit-transform:scale(1.2);-o-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)}
+100%{-moz-transform:scale(1);-webkit-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}}
+@-o-keyframes show-b{0%,50%{-moz-transform:scale(0);-webkit-transform:scale(0);-o-transform:scale(0);-ms-transform:scale(0);transform:scale(0)}
+90%{-moz-transform:scale(1.2);-webkit-transform:scale(1.2);-o-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)}
+100%{-moz-transform:scale(1);-webkit-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}}
+@keyframes show-a{0%{-moz-transform:scale(.2);-webkit-transform:scale(.2);-o-transform:scale(.2);-ms-transform:scale(.2);transform:scale(.2)}
+50%{-moz-transform:scale(1.2);-webkit-transform:scale(1.2);-o-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)}
+100%{-moz-transform:scale(1);-webkit-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}}
+@keyframes show-b{0%,50%{-moz-transform:scale(0);-webkit-transform:scale(0);-o-transform:scale(0);-ms-transform:scale(0);transform:scale(0)}
+90%{-moz-transform:scale(1.2);-webkit-transform:scale(1.2);-o-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)}
+100%{-moz-transform:scale(1);-webkit-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}}
+.selectize-control .selectize-input,.selectize-control.multi .selectize-input.has-items{background:#9fa7b7;padding:0 38px 0 13px}
+.qq-upload-button,.selectize-control.multi{margin-bottom:-6px}
+.qq-upload-list li{margin-top:8px}
+.selectize-control.multi .selectize-input>div{background:#d5deeb;font-size:14px;font-weight:600;margin:7px 4px 7px 0}
 .selectize-control .selectize-control.single .selectize-input.dropdown-active,.selectize-control .selectize-input,.selectize-control .selectize-input.dropdown-active,.selectize-control.single .selectize-control.single .selectize-input.dropdown-active,.selectize-control.single .selectize-input,.selectize-control.single .selectize-input.dropdown-active{border-radius:2px}
 .selectize-control .selectize-control.single .selectize-input.dropdown-active:after,.selectize-control .selectize-input.dropdown-active:after,.selectize-control .selectize-input:after,.selectize-control.single .selectize-control.single .selectize-input.dropdown-active:after,.selectize-control.single .selectize-input.dropdown-active:after,.selectize-control.single .selectize-input:after{position:absolute;top:50%;right:17px;margin-top:-2px;width:0;height:0;border-style:solid;border-width:8px 8px 0;border-color:#343c55 transparent transparent}
 .form-group.single-choice-dropdown{width:50%}
+.selectize-control .selectize-input{height:auto;min-height:38px;padding:0 13px}
+.selectize-control.single{height:38px}
 .selectize-control.single .selectize-control .selectize-input.full,.selectize-control.single .selectize-input,.selectize-control.single .selectize-input.input-active{width:100%;background:#9fa7b7;padding:0 38px 0 13px;line-height:normal;border-radius:2px;height:38px;min-height:38px;font-size:14px;font-weight:600;color:#343c55}
 .selectize-control.single .selectize-control .selectize-input.full div.item,.selectize-control.single .selectize-control .selectize-input.full input,.selectize-control.single .selectize-input div.item,.selectize-control.single .selectize-input input,.selectize-control.single .selectize-input.input-active div.item,.selectize-control.single .selectize-input.input-active input{font-size:14px;font-weight:500;color:#343c55;line-height:normal;height:100%;width:80%!important}
 .selectize-control.single .selectize-control .selectize-input.full div.item,.selectize-control.single .selectize-input div.item,.selectize-control.single .selectize-input.input-active div.item{line-height:42px;width:auto!important;font-weight:500}
@@ -37,3 +60,10 @@ button[type=submit]{text-transform:uppercase;min-height:45px}
 .selectize-dropdown .optgroup-header:hover,.selectize-dropdown [data-selectable]:hover{background:#d5deeb}
 .selectize-dropdown,.selectize-dropdown.form-control{color:#343c55;background:#9fa7b7;font-size:14px;font-weight:500;border:0;outline:0;box-shadow:none;border-radius:0 0 2px 2px;padding:0 0 6px}
 .selectize-dropdown-content{padding:0}
+.form-group.submit-form-group{background:0 0}
+.btn.btn-info,.qq-upload-button{background:#a28ddf;font-size:14px}
+.btn.btn-info:hover,.qq-upload-button:hover{background:#8376b4}
+.btn.publish-btn{background:#d6915e}
+.btn.publish-btn:hover{background:#aa7c5d}
+.btn.cancel.btn{background:#ff6b6b}
+.btn.cancel.btn:hover{background:#bd5659}
