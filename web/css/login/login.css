@@ -55,3 +55,5 @@ label input[type=checkbox]+div:after{font-family:FontAwesome;content:"\f00c";dis
 label input[type=checkbox]:checked+div{background:0 0}
 label input[type=checkbox]:checked+div:before{opacity:1;-moz-animation:show-a .3s;-webkit-animation:show-a .3s;-o-animation:show-a .3s;-ms-animation:show-a .3s;animation:show-a .3s}
 label input[type=checkbox]:checked+div .fa{opacity:1;-moz-animation:show-b .3s;-webkit-animation:show-b .3s;-o-animation:show-b .3s;-ms-animation:show-b .3s;animation:show-b .3s}
+.btn,.btn[type=submit],.qq-upload-button,button,button.btn-primary{background:#4eb7cd;border:0;border-radius:2px;font-weight:700;letter-spacing:0;font-size:15px;outline:0;min-height:38px;padding:8px 20px;width:auto;display:inline-block;line-height:normal}
+.btn:hover,.btn[type=submit]:hover,.qq-upload-button:hover,button.btn-primary:hover,button:hover{background:#539fb8}

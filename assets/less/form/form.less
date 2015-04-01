@@ -87,15 +87,21 @@ button, button.btn-primary, .btn, .btn[type="submit"], .qq-upload-button {
 	border-radius: 2px;
 	font-weight: @proxima-bold;
 	letter-spacing: 0px;
-	font-size: @font-size-medium;
+	font-size: 14px;
 	outline: none;
 	min-height: 38px;
 	padding: 8px 20px;
 	width: auto;
 	display: inline-block;
+	color: @white;
 }
 .btn[type="submit"] {
 	margin-right: 8px;
+	height: 44px;
+	padding: 5px 17px;
+	text-transform: uppercase;
+	min-width: 130px;
+	line-height: 37px;
 }
 
 button[type="submit"] {
@@ -231,6 +237,7 @@ button[type="submit"] {
 
 .qq-upload-list li {
 	margin-top: 8px;
+	background: @alice-blue;
 }
 
 .selectize-control.multi .selectize-input > div {
@@ -239,6 +246,9 @@ button[type="submit"] {
 	font-weight: @proxima-semibold;
 	margin: 7px 0px;
 	margin-right: 4px;
+	padding-right: 26px !important;
+	padding: 3px 10px;
+	color: @blue-corn;
 }
 
 .selectize-control, .selectize-control.single {
@@ -257,10 +267,6 @@ button[type="submit"] {
 			border-color: @blue-corn transparent transparent transparent;
 		}
 	}
-}
-
-.form-group.single-choice-dropdown {
-	width: 50%;
 }
 
 
@@ -396,5 +402,29 @@ button[type="submit"] {
 	.coral-background-link();
 }
 
+.selectize-control.plugin-remove_button [data-value] .remove {
+	width: 25px;
+	line-height: 24px;
+}
+
+.qq-progress-bar-container-selector {
+	background-image: none !important;
+	display: none !important;
+}
+.qq-upload-spinner {
+	
+	height: 3px;
+	width: 0%;
+	background: #b471a3;
+	.transition(width 0.4s);
+	opacity: 0;
+	position: absolute;
+	top: -31px;
+	left: 0px;
+}
+
+.qq-hide {
+	display: none !important;
+}
 
 @import "form_desktop.less";
