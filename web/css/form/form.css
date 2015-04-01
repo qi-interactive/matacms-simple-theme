@@ -63,6 +63,7 @@ button[type=submit]{text-transform:uppercase;min-height:45px}
 .form-group.submit-form-group{background:0 0}
 .btn.btn-info,.qq-upload-button{background:#a28ddf;font-size:14px}
 .btn.btn-info:hover,.qq-upload-button:hover{background:#8376b4}
+.btn.btn-info{margin-left:-3px}
 .btn.publish-btn{background:#d6915e}
 .btn.publish-btn:hover{background:#aa7c5d}
 .btn.cancel.btn{background:#ff6b6b}
