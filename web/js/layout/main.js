@@ -97,14 +97,12 @@ jQuery(document).ready(function($){
 					top: $("nav").height(),
 					overflow: 'auto'
 				});
-				console.log('overlay.height() 1 ', overlayHeight);
 			} else {
 				overlay.css({
 					height: $(window).height() - $("nav").height(),
 					top: $("nav").height(),
 					overflow: 'auto'
 				});
-				console.log('overlay.height() 2 ', overlayHeight);
 			}
 		}
 				
