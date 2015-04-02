@@ -74,4 +74,6 @@ button[type=submit]{text-transform:uppercase;min-height:45px}
 .qq-hide{display:none!important}
 .form-group.half-max-width-item{width:49%;float:left;margin-right:1%;min-height:1px;clear:none}
 .form-group.half-max-width-item:last-child{margin-right:0}
+img.current-media{margin-bottom:10px}
+#add-media-container{border-radius:3px}
 @media (max-width:768px){.form-group.half-max-width-item{width:100%}}

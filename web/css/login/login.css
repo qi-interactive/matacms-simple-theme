@@ -1,5 +1,5 @@
-.btn.btn-primary.btn-block,.container,body,html{width:100%}
-body{background:#485274;display:table}
+.btn.btn-primary.btn-block,.container,html,html>body{width:100%}
+html>body{background:#485274;display:table}
 .container{text-align:left;padding-top:131px;padding-bottom:100px}
 .logo{color:#fff;text-align:center;margin-bottom:72px;margin-top:0}
 .logo img{width:276px}

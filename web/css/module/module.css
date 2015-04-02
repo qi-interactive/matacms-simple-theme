@@ -1,4 +1,5 @@
-.redactor-toolbar li a,h1{color:#fff}
+.modal-content,.redactor-toolbar li a,h1{color:#fff}
+.modal-content #media-type-buttons a,.modal-content .modal-header .close{-moz-transition:all .4s;-webkit-transition:all .4s;-o-transition:all .4s}
 body,html{background-color:#5f6885}
 .form-group,.redactor-toolbar{background:#343c55}
 .container{padding-bottom:30px}
@@ -7,3 +8,13 @@ body,html{background-color:#5f6885}
 .form-group .redactor-box,.form-group .redactor-box textarea,.form-group .redactor-editor,.form-group input,.form-group input.form-control,.form-group textarea{font-size:14px;font-weight:500}
 .redactor-box{margin-bottom:0}
 input[type=checkbox]{height:auto;background:0 0;-webkit-appearance:checkbox}
+.modal-content{background:#485274;border-radius:3px}
+.modal-content #media-type-buttons a{border:1px solid #fff;color:#fff;text-align:center;padding:27px 15px;-ms-transition:all .4s;transition:all .4s}
+.modal-content #media-type-buttons a:hover{background:#fff;color:#343c55}
+.modal-content #media-type-buttons{padding:10px 0}
+.modal-content .modal-header .close{color:#fff;opacity:1;font-weight:500;-ms-transition:all .4s;transition:all .4s;text-shadow:none}
+.modal-content .modal-header .close:hover{opacity:1;background:0 0;color:#ff6b6b}
+.badge{height:21px;line-height:1.5}
+.badge.live{background:#55c45f}
+.badge.draft{background:#d6915e}
+.versions,.versions:focus,.versions:hover{color:#fff}
