@@ -1,4 +1,5 @@
 .drop-area__item,.dummy,.grid__item{border-radius:4px}
+body{background:0 0}
 .grid{margin:0 auto;max-width:50em;padding:0 1em}
 .grid__item{float:left;margin:.5%;width:49%;height:2.05em;padding:.35em .5em;background:#62b989;color:#a3e0be;font-size:1.5em;text-align:left}
 .drop-area,.drop-area.show .main-body{height:100%}

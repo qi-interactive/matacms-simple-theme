@@ -28,6 +28,7 @@ class RearrangeAsset extends AssetBundle
     ];
 
     public $depends = [
-    'matacms\theme\simple\assets\ThemeAsset',
+    'matacms\theme\simple\assets\SortableAsset',
+    'matacms\theme\simple\assets\ThemeAsset'
     ];
 }
