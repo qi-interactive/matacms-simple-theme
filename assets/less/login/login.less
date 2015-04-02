@@ -4,17 +4,22 @@
 html {
     width: 100%;
 }
-body {
+html > body {
     background: @slate-purple;
     display: table;
+    width: 100%;
+
+}
+
+.btn.btn-primary.btn-block {
     width: 100%;
 }
 
 .container {
-    display: table-cell;
-    vertical-align: middle;
     width: 100%;
     text-align: left;
+    padding-top: 131px;
+    padding-bottom: 100px;
 }
 
 .logo {
@@ -175,7 +180,16 @@ form {
 }
 
 form#login-form {
-
+    label span {
+        vertical-align: middle;
+        padding-left: 12px;
+        font-weight: @proxima-semibold;
+        color: @azure;
+    }
+    label {
+        padding-left:0px;
+        padding-right: 0px;
+    }
 
     .input {
         position: relative;
@@ -207,6 +221,8 @@ form#login-form {
         line-height: normal;
         font-weight: @proxima-bold;
         font-size: @font-size-second-base;
+        color: @white;
+        padding-left: 12px;
     }
 
     .graphic {
@@ -304,25 +320,17 @@ form#login-form {
 }
 
 body.login-form-error {
- #header-spacer, #forgotten-password-bar  #get-in-touch-container {
+   #header-spacer, #forgotten-password-bar  #get-in-touch-container {
     display: block;
 }
 
 #forgotten-password-bar {
- #footer-caption {
+   #footer-caption {
     display: none;
 }
 }
 }
 
-
-
-label span {
-    vertical-align: middle;
-    padding-left: 12px;
-    font-weight: @proxima-semibold;
-    color: @azure;
-}
 
 label input[type="checkbox"] {
     display: none;
@@ -398,3 +406,18 @@ label input[type="checkbox"]:checked + div {
     }
 }
 
+
+button, button.btn-primary, .btn, .btn[type="submit"], .qq-upload-button {
+    .aqua-background-link();
+    border: 0px;
+    border-radius: 2px;
+    font-weight: @proxima-bold;
+    letter-spacing: 0px;
+    font-size: @font-size-medium;
+    outline: none;
+    min-height: 38px;
+    padding: 8px 20px;
+    width: auto;
+    display: inline-block;
+    line-height: normal;
+}

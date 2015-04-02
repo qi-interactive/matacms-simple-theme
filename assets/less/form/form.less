@@ -3,7 +3,7 @@
 
 
 label {
-	color: @azure;
+	color: @white;
 	font-weight: @proxima-bold;
 	font-size: @font-size-second-base;
 	padding: 0px 13px;
@@ -19,7 +19,7 @@ label {
 	line-height: normal;
 }
 
-input, textarea, .redactor-editor, .redactor-box, .redactor-box textarea, input.form-control, .selectize-input, .selectize-dropdown {
+input, textarea, .redactor-editor, .redactor-box, .redactor-box textarea, input.form-control, .selectize-input, .selectize-dropdown, textarea.form-control {
 	font-weight: @proxima-semibold;
 	background: @alice-blue;
 	outline: none;
@@ -42,7 +42,7 @@ input, input.form-control {
 
 
 .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
-	color: @azure;
+	color: @white;
 	box-shadow: none;
 	outline: none;
 }
@@ -59,7 +59,7 @@ input, input.form-control {
 }
 
 .has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label {
-	color: @azure;
+	color: @white;
 	outline: none;
 }
 
@@ -81,18 +81,28 @@ input, input.form-control {
 
 
 
-button, button.btn-primary, .btn {
+button, button.btn-primary, .btn, .btn[type="submit"], .qq-upload-button {
 	.aqua-background-link();
 	border: 0px;
 	border-radius: 2px;
 	font-weight: @proxima-bold;
 	letter-spacing: 0px;
-	font-size: @font-size-medium;
+	font-size: 14px;
 	outline: none;
 	min-height: 38px;
 	padding: 8px 20px;
+	width: auto;
+	display: inline-block;
+	color: @white;
 }
-
+.btn[type="submit"] {
+	margin-right: 8px;
+	height: 44px;
+	padding: 5px 17px;
+	text-transform: uppercase;
+	min-width: 130px;
+	line-height: 37px;
+}
 
 button[type="submit"] {
 	text-transform: uppercase;
@@ -134,13 +144,111 @@ button[type="submit"] {
 	}
 }
 
+@-moz-keyframes show-a {
+	0% {
+		.transform(scale(0.2));
+	}
+	50% {
+		.transform(scale(1.2));
+	}
+	100% {
+		.transform(scale(1));
+	}
+}
+
+@-moz-keyframes show-b {
+	0% {
+		.transform(scale(0));
+	}
+	50% {
+		.transform(scale(0));
+	}
+	90% {
+		.transform(scale(1.2));
+	}
+	100% {
+		.transform(scale(1));
+	}
+}
+
+@-o-keyframes show-a {
+	0% {
+		.transform(scale(0.2));
+	}
+	50% {
+		.transform(scale(1.2));
+	}
+	100% {
+		.transform(scale(1));
+	}
+}
+
+@-o-keyframes show-b {
+	0% {
+		.transform(scale(0));
+	}
+	50% {
+		.transform(scale(0));
+	}
+	90% {
+		.transform(scale(1.2));
+	}
+	100% {
+		.transform(scale(1));
+	}
+}
+
+@keyframes show-a {
+	0% {
+		.transform(scale(0.2));
+	}
+	50% {
+		.transform(scale(1.2));
+	}
+	100% {
+		.transform(scale(1));
+	}
+}
+
+@keyframes show-b {
+	0% {
+		.transform(scale(0));
+	}
+	50% {
+		.transform(scale(0));
+	}
+	90% {
+		.transform(scale(1.2));
+	}
+	100% {
+		.transform(scale(1));
+	}
+}
+
 .selectize-control.multi .selectize-input.has-items, .selectize-control .selectize-input {
 	background: @azure;
+	padding-top: 0px;
+	padding: 0px 13px;
+	padding-right: 38px;
 }
+.selectize-control.multi, .qq-upload-button  {
+	margin-bottom: -6px;
+}
+
+.qq-upload-list li {
+	margin-top: 8px;
+	background: @alice-blue;
+}
+
 .selectize-control.multi .selectize-input > div {
 	background: @alice-blue;
 	font-size: 14px;
 	font-weight: @proxima-semibold;
+	margin: 7px 0px;
+	margin-right: 4px;
+	padding-right: 26px !important;
+	padding: 3px 10px;
+	color: @blue-corn;
 }
 
 .selectize-control, .selectize-control.single {
@@ -161,12 +269,15 @@ button[type="submit"] {
 	}
 }
 
-.form-group.single-choice-dropdown {
-	width: 50%;
+
+.selectize-control .selectize-input {
+	height: auto;
+	min-height: 38px;
+	padding: 0px 13px;
 }
-
-
-
+.selectize-control.single {
+	height: 38px;
+}
 .selectize-control.single , .selectize-control.single {
 	.selectize-input,  .selectize-input.input-active, 
 	.selectize-control .selectize-input.full {
@@ -269,5 +380,77 @@ button[type="submit"] {
 	padding: 0px;
 }
 
+.form-group.submit-form-group {
+	background: none;
+	float: none;
+	clear: both;
+}
 
+.form-group {
+	float: none;
+	clear: both;
+}
 
+.qq-upload-button, .btn.btn-info {
+	.light-purple-background-link();
+	font-size: 14px;
+}
+
+.btn.btn-info {
+	margin-left: -3px;
+}
+
+.btn.publish-btn {
+	.sandy-brown-background-link();
+}
+
+.btn.cancel.btn {
+	.coral-background-link();
+}
+
+.selectize-control.plugin-remove_button [data-value] .remove {
+	width: 25px;
+	line-height: 24px;
+}
+
+.qq-progress-bar-container-selector {
+	background-image: none !important;
+	display: none !important;
+}
+.qq-upload-spinner {
+	
+	height: 3px;
+	width: 0%;
+	background: #b471a3;
+	.transition(width 0.4s);
+	opacity: 0;
+	position: absolute;
+	top: -31px;
+	left: 0px;
+}
+
+.qq-hide {
+	display: none !important;
+}
+
+.form-group.half-max-width-item {
+	width: 49%;
+	float: left;
+	margin-right: 1%;
+	min-height: 1px;
+	clear: none;
+
+	&:last-child {
+		margin-right: 0%;
+	}
+
+}
+
+img.current-media {
+	margin-bottom: 10px;
+}
+
+#add-media-container {
+	border-radius: 3px;
+}
+@import "form_desktop.less";

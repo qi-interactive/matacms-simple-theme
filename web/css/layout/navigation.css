@@ -73,7 +73,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
-  background-color: #485274;
+  background-color: #5F6885;
 }
 
 a {
@@ -442,7 +442,7 @@ Main Components
   background-color: #212635;
 }
 .no-touch .cd-3d-nav .cd-selected a:hover {
-  background-color: #212635;
+ background-color: #2b3145;
 }
 .cd-3d-nav .cd-selected a::before {
   background-position: 0 -32px;
@@ -480,6 +480,9 @@ Main Components
   padding-top: 1.6em
 }
 
+.nav > li > a:focus {
+ background-color: #212635;
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -489,41 +492,39 @@ Main Components
 
   .cd-3d-nav-container .cd-3d-nav a {
    padding: 3.2em 1em 0;
-  }
+ }
+ .nav > li > a > svg {
+  padding-bottom: 10px;
+  display: block;
+  margin: auto;
+  width: 58px;
+  height: 58px;
+}
 
 
-  .nav > li > a > svg {
-    padding-bottom: 10px;
-    display: block;
-    margin: auto;
-    width: 58px;
-    height: 58px;
-  }
-
-
-  .cd-3d-nav a {
-    padding: 7.6em 1em 0;
-    color: #ffffff;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-align: center;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    /* truncate text with ellipsis if too long */
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .cd-3d-nav a::before {
-    top: 4.4em;
-    left: 50%;
-    right: auto;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
+.cd-3d-nav a {
+  padding: 7.6em 1em 0;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* truncate text with ellipsis if too long */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cd-3d-nav a::before {
+  top: 4.4em;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
 }
 
 
