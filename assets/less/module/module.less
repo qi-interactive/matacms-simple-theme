@@ -10,6 +10,10 @@ h1 {
 }
 .container {
 	padding-bottom: 30px;
+
+	// a {
+	// 	color: @white;
+	// }
 }
 .form-group {
 	padding: 0px 4px 4px 4px;
@@ -50,4 +54,61 @@ input[type="checkbox"] {
 	height: auto;
 	background: transparent;
 	-webkit-appearance: checkbox;
+}
+
+
+.modal-content {
+	background: @slate-purple;
+	color: @white;
+	border-radius: 3px;
+
+	#media-type-buttons a {
+		border: 1px solid @white;
+		color: @white;
+		text-align: center;
+		padding: 27px 15px;
+		.transition(all 0.4s);
+
+		&:hover {
+			background: @white;
+			color: @blue-corn;
+		}
+	}
+	#media-type-buttons {
+		padding: 10px 0px;
+	}
+	.modal-header .close {
+		color: #fff;
+		opacity: 1;
+		font-weight: 500;
+		.transition(all 0.4s);
+		text-shadow: none;
+
+		&:hover {
+			opacity: 1;
+			background: transparent;
+			color: @coral;
+		}
+	}
+}
+
+.badge {
+	height: 21px;
+	line-height: 1.5;
+}
+
+.badge.live {
+	background: @green;
+}
+
+.badge.draft {
+	background: @sandy-brown;
+}
+
+.versions {
+	color: @white;
+
+	&:hover, &:focus {
+		color: @white;
+	}
 }

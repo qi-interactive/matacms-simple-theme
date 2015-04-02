@@ -15,6 +15,7 @@ class ThemeAsset extends AssetBundle {
   ];
   public $js = [
   'js/lib/modernizr/modernizr.js',
+  'js/layout/theme.js'
   ];
 
   public $depends = [

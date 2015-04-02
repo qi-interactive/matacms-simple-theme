@@ -238,66 +238,9 @@ $(document).ready(function() {
           }
         }
       }
-    },
-    finish: function(event, ui) {
-      // Disable dragging while animating.        
-      $('.smooth-sortable li').draggable('disable');
-
-      var actionUrl = $('.smooth-sortable').data('rearrange-action-url');
-
-      
-      // var pks = $.map(items, function(item) {
-      //     return $(item).data("entity-pk");
-      // });
-
-      // $.ajax({
-      //     type: "POST",
-      //     url: actionUrl,
-      //     data: {"pks":pks},
-      //     dataType: "json",
-      //     success: function(data) {
-      //         console.log("success");
-      //     },
-      //     error: function() {
-      //         console.log("error");
-      //     }
-      // });
-
-
-
-      $(sortable.items[sortable.dragItemIndex].node).css({
-        'top': sortable.items[sortable.dragItemIndex].displacement,
-        'z-index': 9999
-      });
-
-      setTimeout(function() {
-        // Keep the dragged item on top of other items during transition and then reset the Z-Index
-        $(sortable.items[sortable.dragItemIndex].node)[0].style.zIndex = '';
-
-        // Rewrite the dom to match the new order after everthing else is done.
-        sortable.items.forEach(function(item, i, items) {
-          $(item.node).css('top', 0);
-          $('.smooth-sortable').append(item.node);
-        });
-
-        // Re-enable dragging.
-        $('.smooth-sortable li').draggable('enable');
-      }, sortable.transitionDuration);
     }
   };
 
   sortable.init();
 
-
-  $('.smooth-sortable li').draggable(
-    {
-      axis: 'y',
-      containment: 'parent',
-      scroll: 'true',
-      helper: 'original',
-      start: sortable.start,
-      drag: sortable.drag.throttle(17), //run drag handler at maximum every 17ms, that's about 60fps
-      stop: sortable.finish
-    }
-  );
 });
