@@ -12,6 +12,7 @@ $(window).resize(function() {
 
 jQuery(document).ready(function($){
 
+
 	//toggle 3d navigation
 	$('.cd-3d-nav-trigger').on('click', function(){
 		toggle3dBlock(!$('.cd-header').hasClass('nav-is-visible'));
@@ -107,7 +108,7 @@ jQuery(document).ready(function($){
 				console.log('overlay.height() 2 ', overlayHeight);
 			}
 		}
-				
+		
 	}
 
 	//this function update the .cd-marker position

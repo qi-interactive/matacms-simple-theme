@@ -19,7 +19,7 @@ label {
 	line-height: normal;
 }
 
-input, textarea, .redactor-editor, .redactor-box, .redactor-box textarea, input.form-control, .selectize-input, .selectize-dropdown {
+input, textarea, .redactor-editor, .redactor-box, .redactor-box textarea, input.form-control, .selectize-input, .selectize-dropdown, textarea.form-control {
 	font-weight: @proxima-semibold;
 	background: @alice-blue;
 	outline: none;
@@ -42,7 +42,7 @@ input, input.form-control {
 
 
 .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
-	color: @azure;
+	color: @white;
 	box-shadow: none;
 	outline: none;
 }
@@ -59,7 +59,7 @@ input, input.form-control {
 }
 
 .has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label {
-	color: @azure;
+	color: @white;
 	outline: none;
 }
 
@@ -382,8 +382,14 @@ button[type="submit"] {
 
 .form-group.submit-form-group {
 	background: none;
+	float: none;
+	clear: both;
 }
 
+.form-group {
+	float: none;
+	clear: both;
+}
 
 .qq-upload-button, .btn.btn-info {
 	.light-purple-background-link();
@@ -427,4 +433,16 @@ button[type="submit"] {
 	display: none !important;
 }
 
+.form-group.half-max-width-item {
+	width: 49%;
+	float: left;
+	margin-right: 1%;
+	min-height: 1px;
+	clear: none;
+
+	&:last-child {
+		margin-right: 0%;
+	}
+
+}
 @import "form_desktop.less";

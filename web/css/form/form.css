@@ -1,11 +1,11 @@
 label{color:#fff;font-weight:700;font-size:18px;padding:0 13px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;margin:0;line-height:normal}
-.redactor-box,.redactor-box textarea,.redactor-editor,.selectize-dropdown,.selectize-input,input,input.form-control,textarea{font-weight:600;background:#d5deeb;outline:0;font-size:18px;color:#343c55;margin:0;padding:13px;border:none;-webkit-appearance:none;border-radius:2px}
-.redactor-box textarea:focus,.redactor-box:focus,.redactor-editor:focus,.selectize-dropdown:focus,.selectize-input:focus,input.form-control:focus,input:focus,textarea:focus{outline:0}
+.redactor-box,.redactor-box textarea,.redactor-editor,.selectize-dropdown,.selectize-input,input,input.form-control,textarea,textarea.form-control{font-weight:600;background:#d5deeb;outline:0;font-size:18px;color:#343c55;margin:0;padding:13px;border:none;-webkit-appearance:none;border-radius:2px}
+.redactor-box textarea:focus,.redactor-box:focus,.redactor-editor:focus,.selectize-dropdown:focus,.selectize-input:focus,input.form-control:focus,input:focus,textarea.form-control:focus,textarea:focus{outline:0}
 input,input.form-control{height:38px}
-.has-error .checkbox,.has-error .checkbox-inline,.has-error .control-label,.has-error .help-block,.has-error .radio,.has-error .radio-inline,.has-error.checkbox label,.has-error.checkbox-inline label,.has-error.radio label,.has-error.radio-inline label{color:#9fa7b7;box-shadow:none;outline:0}
+.has-error .checkbox,.has-error .checkbox-inline,.has-error .control-label,.has-error .help-block,.has-error .radio,.has-error .radio-inline,.has-error.checkbox label,.has-error.checkbox-inline label,.has-error.radio label,.has-error.radio-inline label{color:#fff;box-shadow:none;outline:0}
 .help-block{margin:0;font-size:13px;line-height:23px}
 .has-error .help-block{color:#ff6b6b;margin:5px 13px 0}
-.has-success .checkbox,.has-success .checkbox-inline,.has-success .control-label,.has-success .help-block,.has-success .radio,.has-success .radio-inline,.has-success.checkbox label,.has-success.checkbox-inline label,.has-success.radio label,.has-success.radio-inline label{color:#9fa7b7;outline:0}
+.has-success .checkbox,.has-success .checkbox-inline,.has-success .control-label,.has-success .help-block,.has-success .radio,.has-success .radio-inline,.has-success.checkbox label,.has-success.checkbox-inline label,.has-success.radio label,.has-success.radio-inline label{color:#fff;outline:0}
 .has-error .form-control,.has-error .form-control:focus{box-shadow:none;border-bottom:2px solid #ff6b6b;outline:0}
 .form-control,.form-control:focus{box-shadow:none}
 .has-success .form-control,.has-success .form-control:focus,.selectize-input.focus,.selectize-input:focus{box-shadow:none;border:0;outline:0}
@@ -59,7 +59,8 @@ button[type=submit]{text-transform:uppercase;min-height:45px}
 .selectize-dropdown .optgroup-header:hover,.selectize-dropdown [data-selectable]:hover{background:#d5deeb}
 .selectize-dropdown,.selectize-dropdown.form-control{color:#343c55;background:#9fa7b7;font-size:14px;font-weight:500;border:0;outline:0;box-shadow:none;border-radius:0 0 2px 2px;padding:0 0 6px}
 .selectize-dropdown-content{padding:0}
-.form-group.submit-form-group{background:0 0}
+.form-group.submit-form-group{background:0 0;float:none;clear:both}
+.form-group{float:none;clear:both}
 .btn.btn-info,.qq-upload-button{background:#a28ddf;font-size:14px}
 .btn.btn-info:hover,.qq-upload-button:hover{background:#8376b4}
 .btn.btn-info{margin-left:-3px}
@@ -71,5 +72,6 @@ button[type=submit]{text-transform:uppercase;min-height:45px}
 .qq-progress-bar-container-selector{background-image:none!important;display:none!important}
 .qq-upload-spinner{height:3px;width:0;background:#b471a3;-moz-transition:width .4s;-webkit-transition:width .4s;-o-transition:width .4s;-ms-transition:width .4s;transition:width .4s;opacity:0;position:absolute;top:-31px;left:0}
 .qq-hide{display:none!important}
-@media (min-width:992px){.form-group.half-max-width-item{width:50%}}
+.form-group.half-max-width-item{width:49%;float:left;margin-right:1%;min-height:1px;clear:none}
+.form-group.half-max-width-item:last-child{margin-right:0}
 @media (max-width:768px){.form-group.half-max-width-item{width:100%}}
