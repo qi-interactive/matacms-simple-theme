@@ -15,6 +15,19 @@
 		min-height: 45px;
 		line-height: 30px;
 		float: right;
+		min-width: 130px;
+	}
+
+	.seven.columns {
+		float: left;
+	}
+
+	.five.columns {
+		float: right;
+
+		.eight.columns {
+			margin-left: 0px;
+		}
 	}
 
 	.top-bar-sort-by-container {
@@ -78,4 +91,39 @@
 	}
 }
 
+
+@media (max-width: 760px) {
+	.content-block-top-bar {
+		.seven.columns {
+			float: none;
+			width: 100%;
+			margin-top: 20px;
+			margin-left: 0px;
+		}
+
+		.btn.btn-success  {
+			width: auto;
+		}
+
+		.five.columns{
+			float: none;
+			width: 100%;
+			text-align: right;
+
+			.eight.columns {
+				width: auto;
+				float: none;
+				display: inline-block;
+				margin-left: 25px;
+			}
+
+			.four.columns {
+				width: 45px;
+				display: inline-block;
+				float: none;
+			}
+		}
+	}
+
+}
 
