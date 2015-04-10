@@ -433,7 +433,7 @@ button[type="submit"] {
 	display: none !important;
 }
 
-.form-group.half-max-width-item {
+.form-group.partial-max-width-item {
 	width: 49%;
 	float: left;
 	margin-right: 1%;
@@ -443,6 +443,14 @@ button[type="submit"] {
 	&:last-child {
 		margin-right: 0%;
 	}
+
+	&.clear-left {
+		clear: left;
+	}
+
+	// &:nth-child(2n+1) {
+	// 	margin-right: 0%;
+	// }
 
 }
 
