@@ -9,24 +9,27 @@
 .content-block-top-bar {
 	border-bottom: 2px solid @night-lake;
 	padding-bottom: 10px;
+
 	.btn.btn-success {
 		text-transform: uppercase;
-		width: 100%;
 		min-height: 45px;
 		line-height: 30px;
 		float: right;
 		min-width: 130px;
 	}
 
-	.seven.columns {
+	.search-container {
 		float: left;
+		margin-left: 0px;
+		// min-width: 260px;
 	}
 
-	.five.columns {
+	.btns-container {
 		float: right;
-
-		.eight.columns {
-			margin-left: 0px;
+		// font-size: 0;
+		.elements {
+			display: inline-block;
+			margin-left: 30px;
 		}
 	}
 
@@ -92,38 +95,9 @@
 }
 
 
-@media (max-width: 760px) {
-	.content-block-top-bar {
-		.seven.columns {
-			float: none;
-			width: 100%;
-			margin-top: 20px;
-			margin-left: 0px;
-		}
 
-		.btn.btn-success  {
-			width: auto;
-		}
 
-		.five.columns{
-			float: none;
-			width: 100%;
-			text-align: right;
 
-			.eight.columns {
-				width: auto;
-				float: none;
-				display: inline-block;
-				margin-left: 25px;
-			}
 
-			.four.columns {
-				width: 45px;
-				display: inline-block;
-				float: none;
-			}
-		}
-	}
 
-}
 

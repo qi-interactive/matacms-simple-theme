@@ -26,6 +26,27 @@ $(window).ready(function() {
 	mata.simpleTheme.addAClassToSelectizeAndFileUploaderAndUriParent();
 	mata.simpleTheme.addAClassToMainActionButtonsParent();
 	mata.simpleTheme.addSelectedAscendingDescendingClassesToSortBy();
+
+	$(window).on('resize', function() { 
+		var btnsContainerWidth = $('.content-block-top-bar .btns-container').outerWidth(true);
+		var contentsBlockTopBarWidth = $('.content-block-top-bar').outerWidth(true);
+		var searchContainerWidth = $('.content-block-top-bar .search-container').width(((contentsBlockTopBarWidth - btnsContainerWidth) - 1) + 'px');
+		
+
+		if($('.content-block-top-bar .search-container').width() <= 260) {
+			$('.content-block-top-bar .search-container').css({
+				width:  '100%',
+				'margin-top': '20px'
+			});
+		} else {
+			searchContainerWidth;
+			$('.content-block-top-bar .search-container').css('margin-top', '0px');
+		}
+		
+
+
+	}).resize();
+
 })
 
 mata.simpleTheme.addSelectedAscendingDescendingClassesToSortBy = function() {
