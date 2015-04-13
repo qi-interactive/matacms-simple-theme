@@ -33,7 +33,7 @@ mata.simpleTheme.navigator.navigate = function(href) {
 }
 
 mata.simpleTheme.navigator.updateURL = function(href) {
-	window.history.pushState(null, "", href)
+	window.history.pushState(null, "", href);
 }
 
 

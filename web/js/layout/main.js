@@ -16,6 +16,7 @@ jQuery(document).ready(function($){
 	//toggle 3d navigation
 	$('.cd-3d-nav-trigger').on('click', function(){
 		toggle3dBlock(!$('.cd-header').hasClass('nav-is-visible'));
+		return false;
 	});
 
 	//select a new item from the 3d navigation

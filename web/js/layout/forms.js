@@ -9,13 +9,18 @@ $(window).ready(function() {
 	mata.form.setFormGroups();
 
 	$('#back-to-list-view').on('click', function () {
-		if(mata.form.hasChanged) {
-			return window.top.confirm("Are you sure you want to navigate away from the form?");
-		} else {
-			return true;
-		}
+		return mata.form.checkFormChange();
 	});
-})
+	$(window.parent.document).trigger('myCustomTrigger');
+});
+
+$(window.parent).on('popstate pushstate', function(e) {
+	return mata.form.checkFormChange();
+});
+
+$("#w0 a, #subnav-overlay a", window.parent.document).on("click", function() {
+	return mata.form.checkFormChange();
+});
 
 mata.form.trackFormChange = function() {
 	$('.container form input, .container form select, .container form textarea').on("change keyup paste", function() {
@@ -45,4 +50,19 @@ mata.form.setFormGroups = function() {
 		}
 
 	});
+}
+
+mata.form.checkFormChange = function() {
+	console.log('mata.form.hasChanged', mata.form.hasChanged)
+	if(mata.form.hasChanged) {
+		var result = window.top.confirm("Are you sure you want to navigate away from the form?");
+		if(result) {
+			mata.form.hasChanged = false;
+			return true;
+		} else {
+			return false;
+		}
+	} else {
+		return true;
+	}
 }
