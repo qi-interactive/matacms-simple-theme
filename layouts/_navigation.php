@@ -73,9 +73,9 @@ if (empty($menuItems))
 <style>
 
 
-.cd-3d-nav li, .cd-3d-nav-container .cd-marker {
-  width: <?php echo 100 / count($menuItems) ?>%;
-}
+	.cd-3d-nav li, .cd-3d-nav-container .cd-marker {
+		width: <?php echo 100 / count($menuItems) ?>%;
+	}
 
 </style>
 
@@ -93,16 +93,16 @@ if (empty($menuItems))
 
 	<div id="subnav-overlay">
 		<?php foreach ($subNav as $module => $items ):
-		 ?>
+		?>
 
-			<div id="subnav-<?php echo $module ?>" class="subnav-item">
+		<div id="subnav-<?php echo $module ?>" class="subnav-item">
 
-				<?php 
+			<?php 
 
-				foreach ($items as $item): 
-					?>
+			foreach ($items as $item): 
+				?>
 
-				<li><a href="<?= $item["url"] ?>">
+			<li><a href="<?= $item["url"] ?>">
 				<?= file_get_contents($item["icon"]) ?>
 				<?= $item["label"] ?></a></li>
 			<?php endforeach; ?>

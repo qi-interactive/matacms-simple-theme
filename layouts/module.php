@@ -23,8 +23,8 @@ ModuleAsset::register($this);
  * Hitting any link directly will cause the layout not to show. 
  * Detect it, and if we are not in an iFrame redirect to layout.
  */
- if (inIframe() == false)
- 	window.location.href = "/mata-cms/#" + window.location.href;
+ // if (inIframe() == false)
+ // 	window.location.href = "/mata-cms/#" + window.location.href;
 
  function inIframe () {
  	try {

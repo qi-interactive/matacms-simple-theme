@@ -1,6 +1,8 @@
-.list-container{background:#d5deeb;padding:21px 42px 21px 19px;color:#343c55;border-radius:2px;margin-top:28px;position:relative;height:90px}
-.list-container span{color:#343c55}
+.list-container{background:#d5deeb;color:#343c55;border-radius:2px;margin-top:28px;position:relative;height:90px}
+.list-container a,.list-container span{color:#343c55}
+.list-container .list-link{display:block}
 .list-container .fadding-container{height:100%;background-image:linear-gradient(rgba(213,222,235,0)0,#d5deeb 80%,#d5deeb 100%);width:44px;position:absolute;top:0}
+.list-container .delete-btn{display:block;background-image:url(../../images/icons/remove.svg);background-repeat:no-repeat;background-position:center;height:46px;width:42px;position:absolute;right:0;background-size:cover;bottom:0;z-index:1}
 .list-container .list-version-container{background-color:#d6915e;color:#fff;position:absolute;z-index:1;right:0;top:0;height:44px;display:table;padding:11px 10px 7px 30px;width:130px;margin-right:-108px;-moz-transition:.25s all linear;-webkit-transition:.25s all linear;-o-transition:.25s all linear;-ms-transition:.25s all linear;transition:.25s all linear;cursor:pointer}
 .list-container .list-version-container .fadding-container{height:98%;background-image:linear-gradient(rgba(213,222,235,0)0,#d5deeb 80%,#d5deeb 100%);left:-43px}
 .list-container .list-version-container .list-version-inner-container{vertical-align:middle;display:table-cell}
@@ -10,13 +12,13 @@
 .list-container .list-version-container:after{content:"";background:0 0;height:100%;width:21px;position:absolute;left:-4px;top:0;cursor:pointer;z-index:1}
 .list-container .list-version-container:hover{margin-right:0}
 .list-container .list-version-container.live:after{background:url(../../images/list/tick-status@2x.png)center left no-repeat;background-size:20px 16px}
-.list-container .list-thumbnail{margin-right:1.5625%;background:#fff;padding:6px 9px;width:52px;height:52px;position:absolute}
-.list-container .list-thumbnail img{height:auto;width:100%}
-.list-container .list-contents-container{margin-left:0;overflow:hidden}
+.list-container .list-thumbnail{background:#fff;padding:6px;width:52px;height:52px;position:absolute;margin:21px 1.5625% 21px 19px}
+.list-container .list-thumbnail .list-thumbnail-img{width:100%;height:100%;background-size:cover;background-repeat:no-repeat;background-position:center}
+.list-container .list-contents-container{margin-left:0;overflow:hidden;padding:21px 0 21px 19px}
 .list-container .list-contents-container .list-label{font-weight:700;font-size:16px;overflow:hidden;white-space:nowrap;border-bottom:1px solid #343c55}
 .list-container .list-contents-container .list-sub-details{font-weight:500;padding-top:8px;font-size:12px;white-space:nowrap}
 .list-container .list-contents-container .list-sub-details span{font-size:12px;font-weight:500}
 .list-container .list-contents-container .list-sub-details .label{padding:0}
 .list-container .list-contents-container .list-sub-details .fadding-container{right:0;width:25px}
 .list-container .list-contents-container .list-sub-details .columns{position:relative}
-.list-container .list-contents-container.thumbnail-active{padding-left:72px}
+.list-container .list-contents-container.thumbnail-active{padding-left:90px}
