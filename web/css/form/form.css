@@ -60,7 +60,7 @@ button[type=submit]{text-transform:uppercase;min-height:45px}
 .selectize-dropdown,.selectize-dropdown.form-control{color:#343c55;background:#9fa7b7;font-size:14px;font-weight:500;border:0;outline:0;box-shadow:none;border-radius:0 0 2px 2px;padding:0 0 6px}
 .selectize-dropdown-content{padding:0}
 .selectize-input.items.has-options.full.has-items{background:#d5deeb}
-.form-row{margin:0}
+.form-row{margin:0;clear:both}
 .form-group.submit-form-group{background:0 0;float:none;clear:both}
 .form-group{float:none;clear:both}
 .btn.btn-info,.qq-upload-button{background:#a28ddf;font-size:14px}
