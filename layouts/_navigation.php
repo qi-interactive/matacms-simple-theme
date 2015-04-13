@@ -13,7 +13,7 @@ $menuItems = [];
 $subNav = [];
 
 foreach ($modules as $moduleEntry) {
-	$module = MataModuleHelper::getModuleByClass($moduleEntry->Location . "Module");
+	$module = Yii::$app->getModule($moduleEntry->Id);
 
 	// Not every module should be loaded as a Yii module
 	if ($module == null || !$module->canShowInNavigation() || $module->getNavigation() == null) {
