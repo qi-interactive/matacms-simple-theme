@@ -18,7 +18,7 @@ $(window.parent).on('popstate pushstate', function(e) {
 	return mata.form.checkFormChange();
 });
 
-$("#w0 a, #subnav-overlay a", window.parent.document).on("click", function() {
+$("#w0 a, #subnav-overlay a, .cd-3d-nav a", window.parent.document).on("click", function() {
 	return mata.form.checkFormChange();
 });
 
@@ -53,7 +53,6 @@ mata.form.setFormGroups = function() {
 }
 
 mata.form.checkFormChange = function() {
-	console.log('mata.form.hasChanged', mata.form.hasChanged)
 	if(mata.form.hasChanged) {
 		var result = window.top.confirm("Are you sure you want to navigate away from the form?");
 		if(result) {
