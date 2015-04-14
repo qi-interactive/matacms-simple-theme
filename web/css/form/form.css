@@ -1,4 +1,5 @@
-label{color:#fff;font-weight:700;font-size:18px;padding:0 13px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;margin:0;line-height:normal}
+#back-to-list-view,label{color:#fff}
+label{font-weight:700;font-size:18px;padding:0 13px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;margin:0;line-height:normal}
 .redactor-box,.redactor-box textarea,.redactor-editor,.selectize-dropdown,.selectize-input,input,input.form-control,textarea,textarea.form-control{font-weight:600;background:#d5deeb;outline:0;font-size:18px;color:#343c55;margin:0;padding:13px;border:none;-webkit-appearance:none;border-radius:2px}
 .redactor-box textarea:focus,.redactor-box:focus,.redactor-editor:focus,.selectize-dropdown:focus,.selectize-input:focus,input.form-control:focus,input:focus,textarea.form-control:focus,textarea:focus{outline:0}
 input,input.form-control{height:38px}
