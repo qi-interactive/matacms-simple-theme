@@ -1,6 +1,17 @@
 @import "../imports/variables.less";
 @import "../imports/mixins.less";
 
+a#back-to-list-view {
+	color: @white;
+	font-size: @font-size-medium;
+	text-transform: uppercase;
+}
+
+a#versions-link {
+	color: @white;
+}
+
+
 
 label {
 	color: @white;
@@ -382,9 +393,9 @@ button[type="submit"] {
 }
 
 
-.selectize-input.items.has-options.full.has-items {
-	background: @alice-blue;
-}
+// .selectize-input.items.has-options.full.has-items {
+// 	background: @alice-blue;
+// }
 
 .form-row {
 	margin: 0;
@@ -478,6 +489,11 @@ button[type="submit"] {
 	margin-right: 1%;
 	min-height: 1px;
 	clear: none;
+
+	&:first-child:last-child {
+		margin-left: 0%;
+		margin-right: 1%;
+	}
 
 	&:last-child {
 		margin-left: 1%;
