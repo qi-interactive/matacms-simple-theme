@@ -7,7 +7,7 @@ h1{font-size:26px;font-weight:700;margin-bottom:23px;text-transform:uppercase}
 .form-group{padding:0 4px 4px;border-radius:2px}
 .form-group label{font-size:13px;padding-top:5px;padding-bottom:3px;line-height:23px}
 .form-group .redactor-box,.form-group .redactor-box textarea,.form-group .redactor-editor,.form-group input,.form-group input.form-control,.form-group textarea{font-size:14px;font-weight:500}
-.form-group .redactor-editor{-moz-appearance:textfield-multiline;-webkit-appearance:textarea;resize:both;overflow:auto}
+.form-group .redactor-editor{-moz-appearance:textfield-multiline;-webkit-appearance:textarea;resize:vertical;overflow:auto}
 .redactor-box{margin-bottom:0}
 input[type=checkbox]{height:auto;background:0 0;-webkit-appearance:checkbox}
 .modal-content{background:#485274;border-radius:3px}
