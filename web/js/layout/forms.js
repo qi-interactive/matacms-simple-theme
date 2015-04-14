@@ -34,7 +34,7 @@ mata.form.setFormGroups = function() {
 
 	formGroups.each(function(index) {
 		if($(this).hasClass('partial-max-width-item')) {
-			if(formGroups.eq(index-2).hasClass('partial-max-width-item') && formGroups.eq(index-1).hasClass('partial-max-width-item') && !formGroups.eq(index+1).hasClass('partial-max-width-item')) {
+			if(formGroups.eq(index-2).hasClass('partial-max-width-item') && formGroups.eq(index-1).hasClass('partial-max-width-item') && (formGroups.length <= index+1 && !formGroups.eq(index+1).hasClass('partial-max-width-item'))) {
 				$(this).removeClass('partial-max-width-item');
 			}
 			if(formGroups.eq(index-3).hasClass('partial-max-width-item') && formGroups.eq(index-2).hasClass('partial-max-width-item') && formGroups.eq(index-1).hasClass('partial-max-width-item') && !formGroups.eq(index+1).hasClass('partial-max-width-item')) {
@@ -44,9 +44,10 @@ mata.form.setFormGroups = function() {
 				$(this).next().addBack().wrapAll('<div class="form-row" />');
 			}
 			// set last form-group to full width
-			// if(index === formGroups.length-2) {
-			// 	$(this).removeClass('partial-max-width-item');
-			// }
+			if(index === formGroups.length-2) {
+				$(this).wrap('<div class="form-row" />');
+				// $(this).removeClass('partial-max-width-item');
+			}
 		}
 
 	});
