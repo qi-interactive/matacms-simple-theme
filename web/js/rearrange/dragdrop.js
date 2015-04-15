@@ -355,5 +355,4 @@
 	}
 
 	window.Droppable = Droppable;
-	window.Draggable = Draggable;
 })();

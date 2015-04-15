@@ -72,6 +72,12 @@ Function.prototype.debounce = function (milliseconds) {
 *     indicated number of milliseconds between calls before
 *     calling the original function.
 */
+
+window.matacms = window.matacms || {};
+matacms.rearrange = matacms.rearrange || {
+  sortable: null
+};  
+
 Function.prototype.throttle = function (milliseconds) {
     var baseFunction = this,
         lastEventTimestamp = null,
@@ -89,11 +95,12 @@ Function.prototype.throttle = function (milliseconds) {
     };
 };
 
-$(document).ready(function() {
+matacms.rearrange.init = function() {
+
   /*Sortable is an object with stuff
     sortable:
       node:
-      items: childern of sortable.node
+      items: childern of matacms.rearrange.sortable.node
       transitionDuration: 
       init: should maybe bind events and stuff here
       start: when dragging starts, go through the items, add necessary inline styles and read their properties for sorting
@@ -104,14 +111,14 @@ $(document).ready(function() {
   //TODO: remove dependency on the ui object so any draggable library could be used
   //TODO: 
 
-  var sortable = {
+  matacms.rearrange.sortable = {
     node: $('.smooth-sortable')[0],
     items: [],
     transitionDuration: 0,
     init: function(options) {
 
-      sortable.transitionDuration = (function() {
-        var item = $(sortable.node).children(':first');
+      matacms.rearrange.sortable.transitionDuration = (function() {
+        var item = $(matacms.rearrange.sortable.node).children(':first');
         var duration =
           item.css('-webkit-transition-duration') ||
           item.css('-moz-transition-duration') ||
@@ -121,39 +128,39 @@ $(document).ready(function() {
         if (duration) {
           return parseInt(duration.substring(2, 5));
         } else {
-          return sortable.transitionDuration;
+          return matacms.rearrange.sortable.transitionDuration;
         }
       })()
     },
     start: function(event, ui) {
       //build list of sortable items
       //dom element coordinates and sorting coordinates need to be decoupled so the sorting and animations are not dependent on each other
-
-      sortable.running = false;
+      console.log('start');
+      matacms.rearrange.sortable.running = false;
 
       $('.smooth-sortable li').each(function(i) {
         $this = $(this);
         if (this == event.target){
-          sortable.dragItemIndex = i;
+          matacms.rearrange.sortable.dragItemIndex = i;
         }
-        sortable.items[i] = {};
-        sortable.items[i].top = $this.offset().top;
-        sortable.items[i].height = $this.outerHeight();
-        sortable.items[i].bottom = sortable.items[i].top + sortable.items[i].height;
-        sortable.items[i].node = this;
-        sortable.items[i].displacement = 0;
+        matacms.rearrange.sortable.items[i] = {};
+        matacms.rearrange.sortable.items[i].top = $this.offset().top;
+        matacms.rearrange.sortable.items[i].height = $this.outerHeight();
+        matacms.rearrange.sortable.items[i].bottom = matacms.rearrange.sortable.items[i].top + matacms.rearrange.sortable.items[i].height;
+        matacms.rearrange.sortable.items[i].node = this;
+        matacms.rearrange.sortable.items[i].displacement = 0;
         $this.css({
           'top': '0px',
           'position': 'relative'
         });
       });
 
-      //TODO: inconsistency in how we get sortable.top and sortable.height, will get borked if sortable.node has padding
-      sortable.top = sortable.items[0].top;
-      sortable.bottom = sortable.items[sortable.items.length - 1].bottom;
-      sortable.height = $(sortable.node).outerHeight();
+      //TODO: inconsistency in how we get matacms.rearrange.sortable.top and matacms.rearrange.sortable.height, will get borked if matacms.rearrange.sortable.node has padding
+      matacms.rearrange.sortable.top = matacms.rearrange.sortable.items[0].top;
+      matacms.rearrange.sortable.bottom = matacms.rearrange.sortable.items[matacms.rearrange.sortable.items.length - 1].bottom;
+      matacms.rearrange.sortable.height = $(matacms.rearrange.sortable.node).outerHeight();
 
-      console.log('dragstart with item ' + sortable.dragItemIndex);
+      console.log('dragstart with item ' + matacms.rearrange.sortable.dragItemIndex);
     },
     drag: function(event, ui) {
       /*
@@ -166,32 +173,32 @@ $(document).ready(function() {
         5.1 prevent new drag operations until animations are over
       */
 
-      if (sortable.running){
+      if (matacms.rearrange.sortable.running){
         console.log('throttle');
       } else {
-        //TODO: sortable.running feels inelegant, using .throttle for functions feels more readable
-        sortable.running = Date.now();
+        //TODO: matacms.rearrange.sortable.running feels inelegant, using .throttle for functions feels more readable
+        matacms.rearrange.sortable.running = Date.now();
 
-        var dragItem = sortable.items[sortable.dragItemIndex];
+        var dragItem = matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex];
 
-        while (sortable.running) { 
+        while (matacms.rearrange.sortable.running) { 
 
-          if (sortable.dragItemIndex != 0){
-            var topItem = sortable.items[sortable.dragItemIndex - 1];
+          if (matacms.rearrange.sortable.dragItemIndex != 0){
+            var topItem = matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex - 1];
           } else {
             var topItem = {};
-            topItem.bottom = sortable.top;
-            topItem.top = sortable.top-sortable.height;
-            topItem.height = sortable.height;
+            topItem.bottom = matacms.rearrange.sortable.top;
+            topItem.top = matacms.rearrange.sortable.top-matacms.rearrange.sortable.height;
+            topItem.height = matacms.rearrange.sortable.height;
           }
 
-          if (sortable.dragItemIndex != sortable.items.length - 1) {
-            var bottomItem = sortable.items[sortable.dragItemIndex + 1];
+          if (matacms.rearrange.sortable.dragItemIndex != matacms.rearrange.sortable.items.length - 1) {
+            var bottomItem = matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex + 1];
           } else {
             var bottomItem = {};
-            bottomItem.top = sortable.bottom;
-            bottomItem.bottom = sortable.bottom + sortable.height;
-            bottomItem.height = sortable.height;
+            bottomItem.top = matacms.rearrange.sortable.bottom;
+            bottomItem.bottom = matacms.rearrange.sortable.bottom + matacms.rearrange.sortable.height;
+            bottomItem.height = matacms.rearrange.sortable.height;
           }
 
           var dragMiddle = $(event.target).offset().top + ($(event.target).outerHeight() / 2);
@@ -204,16 +211,16 @@ $(document).ready(function() {
             bottomItem.displacement -= dragItem.height;
             $(bottomItem.node).css('top', bottomItem.displacement);
 
-            sortable.items[sortable.dragItemIndex] = bottomItem;
-            sortable.items[sortable.dragItemIndex].top = dragItem.top;
-            sortable.items[sortable.dragItemIndex].bottom = sortable.items[sortable.dragItemIndex].top + bottomItem.height;
+            matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex] = bottomItem;
+            matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex].top = dragItem.top;
+            matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex].bottom = matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex].top + bottomItem.height;
 
-            sortable.items[sortable.dragItemIndex + 1] = dragItem;
-            sortable.items[sortable.dragItemIndex + 1].top = bottomItem.bottom ;
-            sortable.items[sortable.dragItemIndex + 1].bottom = sortable.items[sortable.dragItemIndex + 1 ].top + sortable.items[sortable.dragItemIndex + 1].height;
-            sortable.items[sortable.dragItemIndex + 1].displacement += bottomItem.height;
+            matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex + 1] = dragItem;
+            matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex + 1].top = bottomItem.bottom ;
+            matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex + 1].bottom = matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex + 1 ].top + matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex + 1].height;
+            matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex + 1].displacement += bottomItem.height;
 
-            sortable.dragItemIndex++;
+            matacms.rearrange.sortable.dragItemIndex++;
 
           } else if (dragMiddle < topThreshold){
 
@@ -222,25 +229,48 @@ $(document).ready(function() {
 
             var tempTop = topItem.top;
 
-            sortable.items[sortable.dragItemIndex] = topItem;
-            sortable.items[sortable.dragItemIndex].bottom = dragItem.bottom;
-            sortable.items[sortable.dragItemIndex].top = dragItem.bottom - topItem.height;
+            matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex] = topItem;
+            matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex].bottom = dragItem.bottom;
+            matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex].top = dragItem.bottom - topItem.height;
 
-            sortable.items[sortable.dragItemIndex - 1] = dragItem;
-            sortable.items[sortable.dragItemIndex - 1].top = tempTop;
-            sortable.items[sortable.dragItemIndex - 1].bottom = tempTop + dragItem.height;
-            sortable.items[sortable.dragItemIndex - 1].displacement -= topItem.height;
+            matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex - 1] = dragItem;
+            matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex - 1].top = tempTop;
+            matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex - 1].bottom = tempTop + dragItem.height;
+            matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex - 1].displacement -= topItem.height;
 
-            sortable.dragItemIndex--;
+            matacms.rearrange.sortable.dragItemIndex--;
 
           } else {
-            sortable.running = false;
+            matacms.rearrange.sortable.running = false;
           }
         }
       }
+    },
+    finish: function(event, ui) {
+      // Disable dragging while animating.        
+      $('.smooth-sortable li').draggable('disable');
+
+      $(matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex].node).css({
+        'top': matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex].displacement,
+        'z-index': 9999
+      });
+
+      setTimeout(function() {
+        // Keep the dragged item on top of other items during transition and then reset the Z-Index
+        $(matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex].node)[0].style.zIndex = '';
+
+        // Rewrite the dom to match the new order after everthing else is done.
+        matacms.rearrange.sortable.items.forEach(function(item, i, items) {
+          $(item.node).css('top', 0);
+          $('.smooth-sortable').append(item.node);
+        });
+
+        // Re-enable dragging.
+        $('.smooth-sortable li').draggable('enable');
+      }, matacms.rearrange.sortable.transitionDuration);
     }
   };
 
-  sortable.init();
+  matacms.rearrange.sortable.init();
 
-});
+}
