@@ -10,6 +10,8 @@
 	margin-bottom: 0px;
 	cursor: pointer;
 	overflow: hidden;
+	width: @snippet-carousel-width;
+	height: @snippet-carousel-height;
 }
 
 .sortable li:focus, .sortable li:hover {
@@ -69,6 +71,9 @@
 	height: 100%;
 	display: table-cell;
 	vertical-align: middle;
+	-webkit-transition: opacity 0.45s;
+	transition: opacity 0.45s;
+	width: 100%;
 }
 
 /* Common style */
@@ -165,7 +170,7 @@ figure.effect-winston figcaption::before {
 
 
 	position: absolute;
-	top: -180px;
+	top: -187px;
 	left: 76px;
 	background: url(../../images/carousel/triangle.svg)center center no-repeat;
 	background-size: 200px 200px;
@@ -190,10 +195,17 @@ figure.effect-winston .caption-text {
 	height: 33px;
 	width: 100%;
 	background: rgba(255,255,255,0.8);
-	white-space: nowrap;
 	padding: 11px 10px;
 	position: absolute;
 	bottom: 0px;
+	overflow: hidden;
+
+	span {
+		white-space: nowrap;
+		width: 100%;
+		display: block;
+		overflow: hidden;
+	}
 
 	.fadding-container {
 		width: 25px;
@@ -224,7 +236,7 @@ figure.effect-winston p a span{
 	transform: translate3d(0,-50px,0);
 }
 
-figure.effect-winston:hover img {
+figure.effect-winston:hover .img-container {
 	opacity: 0.8;
 }
 
@@ -247,28 +259,31 @@ figure.effect-winston:hover p span {
 }
 
 figure.effect-winston:hover p a:last-child span{
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
-}
-
-figure.effect-winston:hover p a:first-child span {
 	-webkit-transition-delay: 0.15s;
 	transition-delay: 0.15s;
 }
 
-.sortable.grid li a.edit-media {
-	position: absolute;
-	top: 12px;
-	right: 11px;
+figure.effect-winston:hover p a:first-child span {
+	-webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
 }
 
-.sortable.grid li a.delete-media {
+.sortable.grid li a.edit-media, li a.edit-media  {
 	position: absolute;
-	top: 11px;
-	right: -4px;
+	top: 9px;
+	right: 25px;
+	width: 25px;
+	margin: 0px;
 }
 
-.sortable.grid li a.delete-media span {
+.sortable.grid li a.delete-media, li a.delete-media {
+	position: absolute;
+	top: 9px;
+	right: 4px;
+	margin: 0px;
+}
+
+.sortable.grid li a.delete-media span, li a.delete-media span {
 	background-image: url(../../images/icons/remove.svg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -278,7 +293,7 @@ figure.effect-winston:hover p a:first-child span {
 	background-size: 155%;
 }
 
-.sortable.grid li a.edit-media span {
+.sortable.grid li a.edit-media span, li a.edit-media span {
 	background-image: url(../../images/icons/edit.svg);
 	display: block;
 	background-size: 132%;
@@ -288,3 +303,36 @@ figure.effect-winston:hover p a:first-child span {
 	width: 32px;
 }
 
+
+.qq-upload-list li.qq-upload-success {
+	background-color: transparent;
+}
+
+.qq-upload-file, .qq-upload-size {
+	display: none;
+}
+
+.qq-upload-list li {
+	width: @snippet-carousel-width;
+	height: @snippet-carousel-height;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.qq-upload-drop-area, .qq-upload-extra-drop-area {
+	background: @blue-corn;
+	color: @light-purple;
+	border: 3px dashed @light-purple;
+	border-radius: 2px;
+
+	span {
+		font-weight: @proxima-bold;
+		font-size: @font-size-extra-medium;
+	}
+
+}
+
+.qq-drop-processing-selector.qq-drop-processing {
+	display: none;
+}
