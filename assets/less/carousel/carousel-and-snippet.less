@@ -14,6 +14,7 @@
 	height: @snippet-carousel-height;
 }
 
+
 .sortable li:focus, .sortable li:hover {
 	background-color: @blue-corn;
 
@@ -56,7 +57,7 @@
 }
 
 
-.grid {
+.grid-item, .sortable.grid li .grid-item {
 	position: relative;
 	clear: both;
 	margin: 0 auto;
@@ -65,19 +66,22 @@
 	width: 100%;
 	list-style: none;
 	text-align: center;
+	display: block;
+
 }
 
 .img-container {
 	height: 100%;
-	display: table-cell;
-	vertical-align: middle;
+	// display: table-cell;
+	// vertical-align: middle;
 	-webkit-transition: opacity 0.45s;
 	transition: opacity 0.45s;
 	width: 100%;
+
 }
 
 /* Common style */
-.grid figure {
+.grid-item figure {
 	position: relative;
 	float: left;
 	overflow: hidden;
@@ -89,27 +93,34 @@
 	display: table;
 }
 
-.grid figure img {
+.grid-item figure img, .sortable.grid li .grid-item img {
 	position: relative;
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-height: none;
 }
 
-.grid figure figcaption {
+.grid-item figure figcaption {
 	padding: 0px;
 	color: @blue-corn;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
-.grid figure figcaption::before,
-.grid figure figcaption::after {
+.grid-item figure figcaption::before,
+.grid-item figure figcaption::after {
 	pointer-events: none;
 }
 
-.grid figure figcaption,
-.grid figure figcaption > a {
+.grid-item figure figcaption,
+.grid-item figure figcaption > a {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -119,7 +130,7 @@
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.grid figure figcaption > a {
+.grid-item figure figcaption > a {
 	z-index: 1000;
 	text-indent: 200%;
 	white-space: nowrap;
@@ -127,12 +138,12 @@
 	opacity: 0;
 }
 
-.grid figure .caption-text,
-.grid figure p {
+.grid-item figure .caption-text,
+.grid-item figure p {
 	margin: 0;
 }
 
-.grid figure p {
+.grid-item figure p {
 	letter-spacing: 1px;
 	font-size: 68.5%;
 }
@@ -181,6 +192,7 @@ figure.effect-winston figcaption::before {
 	transform: rotate3d(0,0,1,0deg);
 	-webkit-transform-origin: 0 100%;
 	transform-origin: 0% 100%;
+	z-index: 1;
 }
 
 
@@ -199,6 +211,7 @@ figure.effect-winston .caption-text {
 	position: absolute;
 	bottom: 0px;
 	overflow: hidden;
+	z-index: 1;
 
 	span {
 		white-space: nowrap;
@@ -219,6 +232,7 @@ figure.effect-winston p {
 	right: 0;
 	top: 0;
 	padding: 0 1.5em 7% 0;
+	z-index: 1;
 }
 
 figure.effect-winston a {
