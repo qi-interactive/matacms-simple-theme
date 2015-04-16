@@ -39,7 +39,8 @@ foreach ($modules as $moduleEntry) {
 			$subNav[$module->id][] = [
 			'label' => $navigationItem["label"],
 			'url' => $navigationItem["url"],
-			'icon' =>  $asset->sourcePath . $navigationItem["icon"]
+			'icon' =>  $asset->sourcePath . $navigationItem["icon"],
+			'class' => isset($navigationItem["class"]) ? $navigationItem["class"] : null
 			];
 		}
 
@@ -102,7 +103,7 @@ if (empty($menuItems))
 			foreach ($items as $item): 
 				?>
 
-			<li><a href="<?= $item["url"] ?>">
+			<li><a href="<?= $item["url"] ?>" <?php if(isset($item["class"])) echo 'class="' . $item['class']  . '"'; ?>>
 				<?= file_get_contents($item["icon"]) ?>
 				<?= $item["label"] ?></a></li>
 			<?php endforeach; ?>

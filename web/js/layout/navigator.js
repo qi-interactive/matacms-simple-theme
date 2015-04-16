@@ -5,6 +5,9 @@ mata.simpleTheme.navigator = mata.simpleTheme.navigator || {};
 var navigatorNamespace = mata.simpleTheme.navigator;
 
 mata.simpleTheme.navigator.handleLink = function() {
+	if($(this).hasClass('hard-link'))
+		return true;
+
 	navigatorNamespace.navigate($(this).attr("href"));
 	return false;
 }
