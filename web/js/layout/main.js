@@ -22,24 +22,32 @@ jQuery(document).ready(function($){
 	//select a new item from the 3d navigation
 
 
-	$('.cd-3d-nav a').on('click', function(e){
+	$('.cd-3d-nav a').on('click', function(e) {
 
 		if ($(this).attr("data-subnav") != null) {
 			showSubnav($(this).attr("data-subnav"))
 			e.stopPropagation();
 			return false;
 		} else {
-
+			$('#progress-bar').css('background', $('.cd-marker').css('color'));
 			mata.simpleTheme.iframe.one(mata.simpleTheme.events.IFRAME_LOADED, function() {
 				$('.cd-3d-nav-trigger').trigger("click");
 			});
 		}
+
+		var activeItem = $(this);
+		activeItem.parent('li').addClass('cd-active').siblings('li').removeClass('cd-active');
+
 	})
 
 	$('.cd-3d-nav a').on('mouseover', function(e){
 		var selected = $(this);
 		selected.parent('li').addClass('cd-selected').siblings('li').removeClass('cd-selected');
 		updateSelectedNav();
+
+		$(this).on('mouseout', function() {
+			$('.cd-marker').css('left',  $('.cd-active').offset().left);
+		});
 	});
 
 	$(window).on('resize', function(){
@@ -111,7 +119,7 @@ jQuery(document).ready(function($){
 	}
 
 	//this function update the .cd-marker position
-	function updateSelectedNav(type) {
+	function updateSelectedNav(type, item) {
 		var selectedItem = $('.cd-selected'),
 		selectedItemPosition = selectedItem.index() + 1, 
 		leftPosition = selectedItem.offset().left,

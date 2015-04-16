@@ -29,18 +29,19 @@ $this->title = 'My MATA Application';
     }
 
     #progress-bar.success {
-        background: #78b572;
-    }
+      /*  background: #78b572;*/
+      background: inherit;
+  }
 
-    #header-content-container {
-        width: 90%;
-        margin: auto;
-    }
+  #header-content-container {
+    width: 90%;
+    margin: auto;
+}
 
-    header.cd-header {
-        width: 100%;
+header.cd-header {
+    width: 100%;
 
-    }
+}
 
 </style>
 

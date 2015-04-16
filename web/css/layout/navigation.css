@@ -438,13 +438,13 @@ Main Components
 .no-touch .cd-3d-nav a:hover {
   background-color: #2b3145;
 }
-.cd-3d-nav .cd-selected a {
+.cd-3d-nav .cd-active a {
   background-color: #212635;
 }
-.no-touch .cd-3d-nav .cd-selected a:hover {
- background-color: #2b3145;
+.no-touch .cd-3d-nav .cd-active a:hover {
+  background-color: #212635;
 }
-.cd-3d-nav .cd-selected a::before {
+.cd-3d-nav .cd-selected a::before, .cd-3d-nav .cd-active a::before {
   background-position: 0 -32px;
 }
 .nav-is-visible .cd-3d-nav {
