@@ -5,10 +5,12 @@ a,a:focus,a:hover{outline:0;text-decoration:none}
 li{list-style-type:none}
 .container{max-width:900px}
 .content-block-top-bar{border-bottom:2px solid #4d546b;padding-bottom:10px}
-.content-block-top-bar .btn.btn-success{text-transform:uppercase;min-height:45px;line-height:30px;float:right;min-width:130px}
+.content-block-top-bar .btn.btn-success{text-transform:uppercase;height:45px;line-height:30px;float:right;min-width:130px;margin-top:-3px}
 .content-block-top-bar .search-container{float:left;margin-left:0}
 .content-block-top-bar .btns-container{float:right}
-.content-block-top-bar .btns-container .elements{display:inline-block;margin-left:30px}
+.content-block-top-bar .btns-container .elements{display:inline-block;margin-left:30px;vertical-align:middle}
+.content-block-top-bar .btns-container .hi-icon{height:41px;width:41px}
+.content-block-top-bar .btns-container .hi-icon-effect-2{margin-top:2px}
 .content-block-top-bar .top-bar-sort-by-container{display:block;position:relative;text-align:right;margin-top:30px}
 .content-block-top-bar .top-bar-sort-by-container ul{margin-bottom:0}
 .content-block-top-bar .top-bar-sort-by-container ul li{display:inline-block;padding:3px 21px 2px 5px;font-weight:600;font-size:12px;color:#9fa7b7;cursor:pointer;line-height:20px}
