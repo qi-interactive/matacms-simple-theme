@@ -50,10 +50,10 @@
 		height: 44px;
 		padding-right: 19px;
 		display: table;
-		padding: 11px 10px 7px 30px;
-		width: 130px;
+		padding: 11px 13px 7px 28px;
+		// width: 130px;
 		margin-right: -108px;
-		.transition(0.25s all linear);
+		.transition(0.25s all ease-in-out);
 		cursor: pointer;
 
 		.fadding-container {
@@ -89,6 +89,7 @@
 			top: 0px;
 			cursor: pointer;
 			z-index: 1;
+			.transition(0.25s all ease-in-out);
 		}
 
 		&:after {
@@ -101,11 +102,12 @@
 			top: 0px;
 			cursor: pointer;
 			z-index: 1;
+			.transition(0.25s all ease-in-out);
 		}
 
-		&:hover {
-			margin-right: 0px;
-		}
+	}
+	.list-version-container.is-hover {
+		margin-right: 0px !important;
 	}
 
 	.list-version-container.live {

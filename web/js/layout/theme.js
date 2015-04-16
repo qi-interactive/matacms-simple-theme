@@ -47,7 +47,30 @@ $(window).ready(function() {
 
 	}).resize();
 
+	mata.simpleTheme.addHoverBehaviourToVersionTooltip();
+
+
 })
+
+mata.simpleTheme.addHoverBehaviourToVersionTooltip = function() {
+	$('.list-container .list-version-container').each(function(el) {
+		var popUpWidth = $(this).outerWidth();
+		$(this).css('margin-right', -(popUpWidth - 25));
+
+		$(this).on('mouseover', function() {
+			$(this).addClass('is-hover');
+
+			$(this).on('mouseout', function() {
+				$(this).removeClass('is-hover');
+
+			})
+		})
+
+	})
+
+
+};
+
 
 mata.simpleTheme.addSelectedAscendingDescendingClassesToSortBy = function() {
 
