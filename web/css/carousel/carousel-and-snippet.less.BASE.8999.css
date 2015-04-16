@@ -3,7 +3,7 @@
 .carousel-view,.carousel-view ul,.grid-item figure{text-align:center}
 .grid-item figure figcaption,figure.effect-winston img{-webkit-backface-visibility:hidden;backface-visibility:hidden}
 .img-container,figure.effect-winston img{-webkit-transition:opacity .45s;transition:opacity .45s}
-.sortable li{border:0;float:none;display:inline-block;padding:0;cursor:pointer;overflow:hidden;width:200px;height:200px;margin-top:8px}
+.sortable li{border:0;float:none;display:inline-block;padding:0;cursor:pointer;overflow:hidden;width:200px;height:200px}
 .sortable li:focus .hi-icon:after,.sortable li:hover .hi-icon:after{-webkit-transform:scale(.85);-moz-transform:scale(.85);-ms-transform:scale(.85);transform:scale(.85)}
 .sortable li:hover .icons-container:before{opacity:.7;-webkit-transform:rotate3d(0,0,1,20deg);transform:rotate3d(0,0,1,20deg)}
 .sortable.grid{font-size:0}
@@ -34,11 +34,11 @@ figure.effect-winston:hover p span{opacity:1;-webkit-transform:translate3d(0,0,0
 figure.effect-winston:hover p a:last-child span{-webkit-transition-delay:.15s;transition-delay:.15s}
 figure.effect-winston:hover p a:first-child span{-webkit-transition-delay:.25s;transition-delay:.25s}
 .sortable.grid li a.edit-media,li a.edit-media{position:absolute;top:9px;right:25px;width:25px;margin:0}
-.sortable.grid li a.delete-media,li a.delete-file{position:absolute;top:9px;right:4px;margin:0}
-.sortable.grid li a.delete-media span,li a.delete-file span{background-image:url(../../images/icons/remove.svg);background-repeat:no-repeat;background-position:center;height:23px;width:22px;display:block;background-size:155%}
+.sortable.grid li a.delete-media,li a.delete-media{position:absolute;top:9px;right:4px;margin:0}
+.sortable.grid li a.delete-media span,li a.delete-media span{background-image:url(../../images/icons/remove.svg);background-repeat:no-repeat;background-position:center;height:23px;width:22px;display:block;background-size:155%}
 .sortable.grid li a.edit-media span,li a.edit-media span{background-image:url(../../images/icons/edit.svg);display:block;background-size:132%;background-repeat:no-repeat;background-position:center;height:21px;width:32px}
 .qq-drop-processing-selector.qq-drop-processing,.qq-upload-file,.qq-upload-size{display:none}
-.qq-upload-list li.qq-upload-success{background-color:transparent;margin:0 auto}
-.qq-upload-list li{width:200px;height:200px;padding:0;margin:0 auto}
+.qq-upload-list li.qq-upload-success{background-color:transparent}
+.qq-upload-list li{width:200px;height:200px;padding:0;margin-top:0;margin-bottom:0}
 .qq-upload-drop-area,.qq-upload-extra-drop-area{background:#343c55;color:#a28ddf;border:3px dashed #a28ddf;border-radius:2px}
 .qq-upload-drop-area span,.qq-upload-extra-drop-area span{font-weight:700;font-size:16px}
