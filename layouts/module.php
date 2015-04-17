@@ -2,6 +2,7 @@
 use matacms\theme\simple\assets\ModuleAsset;
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
+use yii\web\View;
 
 ModuleAsset::register($this);
 
