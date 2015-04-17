@@ -28,6 +28,19 @@ ol {
 	transition: all .33s ease;
 	border-radius: 2px;
 	margin-bottom: 5px;
+	cursor: pointer;
+	height: 40px;
+
+	svg {
+		width: 17px;
+		position: absolute;
+		right: 10px;
+		top: 14px;
+
+		polyline {
+			stroke: #60a5bc;
+		}
+	}
 }
 .smooth-sortable li:after {
 	display: block;
@@ -38,7 +51,7 @@ ol {
 	height: 100%;
 	width: 13px;
 	opacity: .5;
-	background: url(../../images/rearrange/handle.png) center center no-repeat;
+	// background: url(../../images/rearrange/handle.png) center center no-repeat;
 	background-size: 13px 13px;
 }
 .smooth-sortable li:active, .ui-draggable-dragging {
