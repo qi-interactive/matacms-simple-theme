@@ -77,6 +77,8 @@ button[type=submit]{text-transform:uppercase;min-height:45px}
 .btn.btn-info{margin-left:-3px}
 .btn.publish-btn{background:#d6915e}
 .btn.publish-btn:hover{background:#aa7c5d}
+.btn.schedule-btn{background-color:#c96aa4}
+.btn.schedule-btn:hover{background-color:#9e5d8b}
 .btn.cancel.btn{background:#ff6b6b}
 .btn.cancel.btn:hover{background:#bd5659}
 .selectize-control.plugin-remove_button [data-value] .remove{width:25px;line-height:28px}

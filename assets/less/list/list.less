@@ -105,6 +105,14 @@
 			.transition(0.25s all ease-in-out);
 		}
 
+		&.scheduled {
+			background-color: @orchid;
+
+			&:before {
+				background: url(../../images/list/scheduled-arrow-end@2x.png) no-repeat center left;
+			}
+		}
+
 	}
 	.list-version-container.is-hover {
 		margin-right: 0px !important;
@@ -114,6 +122,13 @@
 		&:after {
 			background: url(../../images/list/tick-status@2x.png) no-repeat center left;
 			background-size: 20px 16px;
+		}
+	}
+
+	.list-version-container.scheduled {
+		&:after {
+			background: url(../../images/list/clock-status@2x.png) no-repeat center left;
+			background-size: 21px 21px;
 		}
 	}
 
