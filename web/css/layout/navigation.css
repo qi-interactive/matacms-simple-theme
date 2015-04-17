@@ -767,6 +767,13 @@ body.theme-simple #container {
   width: 100%;
   height: 100%;
   padding: 0px;
+
+/*  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  transition: hight 0.5s;*/
+
 }
 
 body.theme-simple #container iframe#mata-content {
