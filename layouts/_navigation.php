@@ -7,7 +7,7 @@ use mata\helpers\MataModuleHelper;
 use yii\web\HttpException;
 use yii\helpers\Html;
 
-$modules = ModuleModel::find()->orderBy('Order ASC')->all();
+$modules = ModuleModel::find()->orderBy('Order ASC, Id ASC')->all();
 
 $menuItems = [];
 $subNav = [];
