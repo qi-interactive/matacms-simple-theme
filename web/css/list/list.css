@@ -10,8 +10,11 @@
 .list-container .list-version-container .list-version-inner-container .revision-delta{font-size:9px;font-weight:600}
 .list-container .list-version-container:before{content:"";background:url(../../images/list/published-arrow-end@2x.png)center left no-repeat;background-size:21px 44px;height:100%;width:21px;position:absolute;left:-20px}
 .list-container .list-version-container:after{content:"";background:0 0;height:100%;width:21px;position:absolute;left:-4px}
+.list-container .list-version-container.scheduled{background-color:#c96aa4}
+.list-container .list-version-container.scheduled:before{background:url(../../images/list/scheduled-arrow-end@2x.png)center left no-repeat}
 .list-container .list-version-container.is-hover{margin-right:0!important}
 .list-container .list-version-container.live:after{background:url(../../images/list/tick-status@2x.png)center left no-repeat;background-size:20px 16px}
+.list-container .list-version-container.scheduled:after{background:url(../../images/list/clock-status@2x.png)center left no-repeat;background-size:21px 21px}
 .list-container .list-thumbnail{background:#fff;padding:6px;width:52px;height:52px;position:absolute;margin:21px 1.5625% 21px 19px}
 .list-container .list-thumbnail .list-thumbnail-img{width:100%;height:100%;background-size:cover;background-repeat:no-repeat;background-position:center}
 .list-container .list-contents-container{margin-left:0;overflow:hidden;padding:21px 49px 21px 19px}
