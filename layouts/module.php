@@ -2,6 +2,7 @@
 use matacms\theme\simple\assets\ModuleAsset;
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
+use yii\web\View;
 
 ModuleAsset::register($this);
 
@@ -14,6 +15,8 @@ ModuleAsset::register($this);
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?= Html::csrfMetaTags() ?>
 	<title><?= Html::encode($this->title) ?></title>
+	<script src="//use.typekit.net/xnl0kun.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 	<?php $this->head() ?>
 </head>
 
@@ -38,11 +41,18 @@ ModuleAsset::register($this);
 <body>
 
 	<?php $this->beginBody() ?>
+	<?php
+	$this->registerJs("
+		$(window).ready(function() {	        
+			mata.addActiveStateToMenuItemsOnLoad('" . $this->context->id . "');
+		});", View::POS_READY);
 
-	<div class="container">
-		<?= $content ?>
-	</div>
-	<?php $this->endBody() ?>
-</body>
-</html>
-<?php $this->endPage() ?>
+		?>
+
+		<div class="container">
+			<?= $content ?>
+		</div>
+		<?php $this->endBody() ?>
+	</body>
+	</html>
+	<?php $this->endPage() ?>

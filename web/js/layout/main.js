@@ -10,9 +10,8 @@ $(window).resize(function() {
 	$("#container").height($(this).height() - $(".cd-header").height());
 }).resize();
 
+
 jQuery(document).ready(function($){
-
-
 	//toggle 3d navigation
 	$('.cd-3d-nav-trigger').on('click', function(){
 		toggle3dBlock(!$('.cd-header').hasClass('nav-is-visible'));
@@ -40,15 +39,18 @@ jQuery(document).ready(function($){
 
 	})
 
-	$('.cd-3d-nav a').on('mouseover', function(e){
+
+	$('.cd-3d-nav a').on('mouseover', function(e) {
 		var selected = $(this);
 		selected.parent('li').addClass('cd-selected').siblings('li').removeClass('cd-selected');
 		updateSelectedNav();
 
 		$(this).on('mouseout', function() {
-			$('.cd-marker').css('left',  $('.cd-active').offset().left);
+			$('li.cd-active').addClass('cd-selected').siblings('li').removeClass('cd-selected');
+			updateSelectedNav();
 		});
 	});
+
 
 	$(window).on('resize', function(){
 		window.requestAnimationFrame(updateSelectedNav);
@@ -118,8 +120,19 @@ jQuery(document).ready(function($){
 		
 	}
 
+	mata.addActiveStateToMenuItemsOnLoad = function(controllerIdParam) {
+		$('a[data-module-name]', window.top.document).each(function(index, value) { 
+			if ($(this).attr("data-module-name") == controllerIdParam) {
+				$(this).parent('li').addClass("cd-active").siblings('li').removeClass('cd-active');
+			}
+
+		});
+
+	};
+
+
 	//this function update the .cd-marker position
-	function updateSelectedNav(type, item) {
+	function updateSelectedNav(type) {
 		var selectedItem = $('.cd-selected'),
 		selectedItemPosition = selectedItem.index() + 1, 
 		leftPosition = selectedItem.offset().left,
@@ -146,5 +159,4 @@ jQuery(document).ready(function($){
 		return this;
 	};
 });
-
 

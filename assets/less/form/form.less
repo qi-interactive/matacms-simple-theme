@@ -479,10 +479,15 @@ button[type="submit"] {
 	width: 0%;
 	background: #b471a3;
 	.transition(width 0.4s);
-	opacity: 0;
+	opacity: 1;
+	display: block !important;
 	position: absolute;
 	top: -31px;
 	left: 0px;
+
+	&.success {
+		background: #78b572;
+	}
 }
 
 .qq-hide {
@@ -553,7 +558,7 @@ img.current-media {
 	display: inline-block;
 	font-size: 0px;
 	cursor: pointer;
-	width: 45px;
+	width: 44px;
 	border-radius: 2px;
 	text-align: center;
 	position: relative;

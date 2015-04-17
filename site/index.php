@@ -29,8 +29,7 @@ $this->title = 'My MATA Application';
     }
 
     #progress-bar.success {
-      /*  background: #78b572;*/
-      background: inherit;
+     background: inherit;
   }
 
   #header-content-container {
