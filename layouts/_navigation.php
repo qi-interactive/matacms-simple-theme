@@ -48,8 +48,8 @@ foreach ($modules as $moduleEntry) {
 			$module->id, $module->getDescription(), file_get_contents($asset->sourcePath . $module->mataConfig->icon), $module->getName());
 
 	} else {
-		$menuItems[] = sprintf("<li><a title='%s' href='%s'>%s%s</a></li>", 
-			$module->getDescription(), $module->getNavigation(), file_get_contents($asset->sourcePath . $module->mataConfig->icon), $module->getName());
+		$menuItems[] = sprintf("<li><a data-module-name='%s' title='%s' href='%s'>%s%s</a></li>", 
+			$module->id, $module->getDescription(), $module->getNavigation(), file_get_contents($asset->sourcePath . $module->mataConfig->icon), $module->getName());
 	}
 	
 }
@@ -112,3 +112,4 @@ if (empty($menuItems))
 
 	<?php endforeach; ?>
 </div>
+
