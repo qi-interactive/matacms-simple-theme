@@ -126,7 +126,6 @@ jQuery(document).ready(function($){
 				$(this).parent('li').addClass("cd-active").siblings('li').removeClass('cd-active');
 			}
 
-			// $('.cd-marker').css('left',  $('.cd-active').offset().left);
 		});
 
 	};
@@ -160,8 +159,4 @@ jQuery(document).ready(function($){
 		return this;
 	};
 });
-
-$(window).ready(function() {
-	$('li.cd-active a').trigger('click');
-})
 
