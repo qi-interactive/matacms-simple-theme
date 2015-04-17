@@ -6,12 +6,9 @@ mata.simpleTheme.events = {
 	IFRAME_LOADED: "st-IFRAME_LOADED"
 }
 
-$(window).resize(function() {
-	$("#container").height($(this).height() - $(".cd-header").height());
-}).resize();
 
 
-jQuery(document).ready(function($){
+jQuery(document).ready(function($) {
 	//toggle 3d navigation
 	$('.cd-3d-nav-trigger').on('click', function(){
 		toggle3dBlock(!$('.cd-header').hasClass('nav-is-visible'));
@@ -160,3 +157,47 @@ jQuery(document).ready(function($){
 	};
 });
 
+mata.addHeightToContainer = function() { 
+	if($('.cd-3d-nav-container').hasClass('nav-is-visible')) {
+		$('#container').height($(this).height() - ($('.cd-header').height() + $('.cd-3d-nav-container').height()));
+	} else {
+		$('#container').height($(this).height() - $('.cd-header').height());
+	}
+}
+
+
+
+$(window).ready(function() {
+	that = $(window);
+	$('.cd-3d-nav-trigger').on('click', function() {
+		addHeightToContainer(that);
+		// if($('.cd-header').hasClass('nav-is-visible')) {
+		// 	$('#container').height(that.height() - ($('.cd-3d-nav-container').height() + $('.cd-header').height()));
+		// } else {
+		// 	$('#container').height(that.height() - $('.cd-header').height());
+		// }
+
+	});
+	// 
+	$(window).resize(function() {
+
+		that = $(this);
+		addHeightToContainer(that)
+		// if($('.cd-header').hasClass('nav-is-visible')) {
+		// 	$('#container').height($(this).height() - ($('.cd-3d-nav-container').height() + $('.cd-header').height()));
+		// } else {
+		// 	$('#container').height($(this).height() - $('.cd-header').height());
+		// }
+
+	}).resize();
+
+});
+
+
+function addHeightToContainer(that) {
+	if($('.cd-header').hasClass('nav-is-visible')) {
+		$('#container').height(that.height() - ($('.cd-3d-nav-container').height() + $('.cd-header').height()));
+	} else {
+		$('#container').height(that.height() - $('.cd-header').height());
+	}
+}

@@ -26,7 +26,6 @@ $(window).ready(function() {
 	mata.simpleTheme.addAClassToSelectizeAndFileUploaderAndUriParent();
 	mata.simpleTheme.addAClassToMainActionButtonsParent();
 	mata.simpleTheme.addSelectedAscendingDescendingClassesToSortBy();
-
 	$(window).on('resize', function() { 
 		var btnsContainerWidth = $('.content-block-top-bar .btns-container').outerWidth(true);
 		var contentsBlockTopBarWidth = $('.content-block-top-bar').outerWidth(true);
@@ -44,13 +43,13 @@ $(window).ready(function() {
 		}
 		
 
-
 	}).resize();
 
 	mata.simpleTheme.addHoverBehaviourToVersionTooltip();
 
 
 })
+
 
 mata.simpleTheme.addHoverBehaviourToVersionTooltip = function() {
 	$('.list-container .list-version-container').each(function(el) {

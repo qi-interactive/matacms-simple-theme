@@ -51,6 +51,10 @@ input, input.form-control {
 	height: 38px;
 }
 
+.redactor-editor div, .redactor-editor p, .redactor-editor ul, .redactor-editor ol, .redactor-editor table, .redactor-editor dl, .redactor-editor figure, .redactor-editor blockquote, .redactor-editor pre {
+	font-family: @font-family-base;
+}
+
 
 .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
 	color: @white;
@@ -408,6 +412,7 @@ button[type="submit"] {
 	background: none;
 	float: none;
 	clear: both;
+	padding-left: 0px;
 }
 
 .form-group {
