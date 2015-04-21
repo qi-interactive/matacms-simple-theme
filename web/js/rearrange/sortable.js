@@ -42,26 +42,26 @@ Elementtien sorttaus siis position:absolute koordinaatteina tai transformeina ja
  *     indicated number of milliseconds after the last call before
  *     calling the original function.
  */
-Function.prototype.debounce = function (milliseconds) {
-    var baseFunction = this,
-        timer = null,
-        wait = milliseconds;
+ Function.prototype.debounce = function (milliseconds) {
+  var baseFunction = this,
+  timer = null,
+  wait = milliseconds;
 
-    return function () {
-        var self = this,
-            args = arguments;
+  return function () {
+    var self = this,
+    args = arguments;
 
-        function complete() {
-            baseFunction.apply(self, args);
-            timer = null;
-        }
+    function complete() {
+      baseFunction.apply(self, args);
+      timer = null;
+    }
 
-        if (timer) {
-            clearTimeout(timer);
-        }
+    if (timer) {
+      clearTimeout(timer);
+    }
 
-        timer = setTimeout(complete, wait);
-    };
+    timer = setTimeout(complete, wait);
+  };
 };
 
 /**
@@ -79,20 +79,20 @@ matacms.rearrange = matacms.rearrange || {
 };  
 
 Function.prototype.throttle = function (milliseconds) {
-    var baseFunction = this,
-        lastEventTimestamp = null,
-        limit = milliseconds;
+  var baseFunction = this,
+  lastEventTimestamp = null,
+  limit = milliseconds;
 
-    return function () {
-        var self = this,
-            args = arguments,
-            now = Date.now();
+  return function () {
+    var self = this,
+    args = arguments,
+    now = Date.now();
 
-        if (!lastEventTimestamp || now - lastEventTimestamp >= limit) {
-            lastEventTimestamp = now;
-            baseFunction.apply(self, args);
-        }
-    };
+    if (!lastEventTimestamp || now - lastEventTimestamp >= limit) {
+      lastEventTimestamp = now;
+      baseFunction.apply(self, args);
+    }
+  };
 };
 
 matacms.rearrange.init = function() {
@@ -106,7 +106,7 @@ matacms.rearrange.init = function() {
       start: when dragging starts, go through the items, add necessary inline styles and read their properties for sorting
       drag: the meat, on each drag event, sort stuff around
       finish: write changed order to dom and stuff
-  */
+      */
 
   //TODO: remove dependency on the ui object so any draggable library could be used
   //TODO: 
@@ -120,11 +120,11 @@ matacms.rearrange.init = function() {
       matacms.rearrange.sortable.transitionDuration = (function() {
         var item = $(matacms.rearrange.sortable.node).children(':first');
         var duration =
-          item.css('-webkit-transition-duration') ||
-          item.css('-moz-transition-duration') ||
-          item.css('-ms-transition-duration') ||
-          item.css('-o-transition-duration') ||
-          item.css('transition-duration');
+        item.css('-webkit-transition-duration') ||
+        item.css('-moz-transition-duration') ||
+        item.css('-ms-transition-duration') ||
+        item.css('-o-transition-duration') ||
+        item.css('transition-duration');
         if (duration) {
           return parseInt(duration.substring(2, 5));
         } else {
@@ -171,11 +171,11 @@ matacms.rearrange.init = function() {
       4. iterate until the helper midpoint is not beyond any threshold
       5. once sorting is complete, update dom nodes with new coordinates (and let css transitions take care of any animation)
         5.1 prevent new drag operations until animations are over
-      */
+        */
 
-      if (matacms.rearrange.sortable.running){
-        console.log('throttle');
-      } else {
+        if (matacms.rearrange.sortable.running){
+          console.log('throttle');
+        } else {
         //TODO: matacms.rearrange.sortable.running feels inelegant, using .throttle for functions feels more readable
         matacms.rearrange.sortable.running = Date.now();
 
@@ -267,6 +267,13 @@ matacms.rearrange.init = function() {
 
         // Re-enable dragging.
         $('.smooth-sortable li').draggable('enable');
+
+
+        $('.tick-icon').fadeIn(100, function() {
+          
+        });
+
+
       }, matacms.rearrange.sortable.transitionDuration);
     }
   };
