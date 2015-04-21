@@ -44,8 +44,8 @@ foreach ($modules as $moduleEntry) {
 			];
 		}
 
-		$menuItems[] = sprintf("<li><a data-subnav='%s' title='%s' href='javascript:void(0)'>%s%s</a></li>", 
-			$module->id, $module->getDescription(), file_get_contents($asset->sourcePath . $module->mataConfig->icon), $module->getName());
+		$menuItems[] = sprintf("<li><a data-module-name='%s' data-subnav='%s' title='%s' href='javascript:void(0)'>%s%s</a></li>", 
+			$module->id, $module->id, $module->getDescription(), file_get_contents($asset->sourcePath . $module->mataConfig->icon), $module->getName());
 
 	} else {
 		$menuItems[] = sprintf("<li><a data-module-name='%s' title='%s' href='%s'>%s%s</a></li>", 

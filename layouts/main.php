@@ -29,16 +29,7 @@ HostAsset::register($this);
         </main>
     </div>
 
- <!--    <footer class="footer">
-        <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
-        </div>
-    </footer> -->
-    get
-    <?php $this->endBody() ?>
-
-    
+    <?php $this->endBody() ?>   
 
 </body>
 </html>

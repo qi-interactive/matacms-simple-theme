@@ -118,7 +118,9 @@ jQuery(document).ready(function($) {
 	}
 
 	mata.addActiveStateToMenuItemsOnLoad = function(controllerIdParam) {
+
 		$('a[data-module-name]', window.top.document).each(function(index, value) { 
+
 			if ($(this).attr("data-module-name") == controllerIdParam) {
 				$(this).parent('li').addClass("cd-active").siblings('li').removeClass('cd-active');
 			}
