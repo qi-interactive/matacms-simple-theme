@@ -60,6 +60,13 @@ button[type=submit]{text-transform:uppercase;min-height:45px}
 .selectize-control.single .selectize-control .selectize-input.full :-moz-placeholder,.selectize-control.single .selectize-input :-moz-placeholder,.selectize-control.single .selectize-input.input-active :-moz-placeholder{font-size:15px!important;font-weight:700;color:#343c55;opacity:1}
 .selectize-control.single .selectize-control .selectize-input.full ::-moz-placeholder,.selectize-control.single .selectize-input ::-moz-placeholder,.selectize-control.single .selectize-input.input-active ::-moz-placeholder{font-size:15px!important;font-weight:700;color:#343c55;opacity:1}
 .selectize-control.single .selectize-control .selectize-input.full :-ms-input-placeholder,.selectize-control.single .selectize-input :-ms-input-placeholder,.selectize-control.single .selectize-input.input-active :-ms-input-placeholder{font-size:15px;font-weight:700;color:#343c55}
+.selectize-control.multi :not(.has-items) input{width:80%!important}
+.selectize-control.multi .has-items input{width:auto!important}
+.selectize-control.multi .full input{width:0!important}
+.selectize-control.multi ::-webkit-input-placeholder{font-size:15px!important;font-weight:700!important;color:#343c55;padding-right:10px!important}
+.selectize-control.multi :-moz-placeholder{font-size:15px!important;font-weight:700;color:#343c55;opacity:1}
+.selectize-control.multi ::-moz-placeholder{font-size:15px!important;font-weight:700;color:#343c55;opacity:1}
+.selectize-control.multi :-ms-input-placeholder{font-size:15px;font-weight:700;color:#343c55}
 .selectize-control .selectize-input.input-active,.selectize-control.single .selectize-input.input-active{border-bottom-left-radius:0;border-bottom-right-radius:0}
 .selectize-dropdown .optgroup-header,.selectize-dropdown [data-selectable]{color:#343c55;background:#9fa7b7;font-size:14px;font-weight:500;height:30px;min-height:30px;padding:0 38px 0 13px;line-height:32px}
 .selectize-dropdown .optgroup-header:hover,.selectize-dropdown [data-selectable]:hover{background:#d5deeb}
