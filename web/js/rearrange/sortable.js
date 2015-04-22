@@ -145,7 +145,7 @@ matacms.rearrange.init = function() {
         }
         matacms.rearrange.sortable.items[i] = {};
         matacms.rearrange.sortable.items[i].top = $this.offset().top;
-        matacms.rearrange.sortable.items[i].height = $this.outerHeight();
+        matacms.rearrange.sortable.items[i].height = $this.outerHeight(true);
         matacms.rearrange.sortable.items[i].bottom = matacms.rearrange.sortable.items[i].top + matacms.rearrange.sortable.items[i].height;
         matacms.rearrange.sortable.items[i].node = this;
         matacms.rearrange.sortable.items[i].displacement = 0;
@@ -161,6 +161,12 @@ matacms.rearrange.init = function() {
       matacms.rearrange.sortable.height = $(matacms.rearrange.sortable.node).outerHeight();
 
       console.log('dragstart with item ' + matacms.rearrange.sortable.dragItemIndex);
+
+      var tickIcon = $('.tick-icon');
+      var rearrangeableIcon = $('.rearrangeable-icon');
+      
+      tickIcon.fadeOut(100);
+      rearrangeableIcon.fadeIn(100);
     },
     drag: function(event, ui) {
       /*
@@ -182,6 +188,7 @@ matacms.rearrange.init = function() {
         var dragItem = matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex];
 
         while (matacms.rearrange.sortable.running) { 
+          console.log('matacms.rearrange.sortable.running 1', matacms.rearrange.sortable.running)
 
           if (matacms.rearrange.sortable.dragItemIndex != 0){
             var topItem = matacms.rearrange.sortable.items[matacms.rearrange.sortable.dragItemIndex - 1];
@@ -207,7 +214,6 @@ matacms.rearrange.init = function() {
           var bottomThreshold = (topItem.bottom + bottomItem.bottom) / 2;
 
           if (dragMiddle >= bottomThreshold) {
-
             bottomItem.displacement -= dragItem.height;
             $(bottomItem.node).css('top', bottomItem.displacement);
 
@@ -223,7 +229,6 @@ matacms.rearrange.init = function() {
             matacms.rearrange.sortable.dragItemIndex++;
 
           } else if (dragMiddle < topThreshold){
-
             topItem.displacement += dragItem.height;
             $(topItem.node).css('top', topItem.displacement);
 
@@ -265,14 +270,12 @@ matacms.rearrange.init = function() {
           $('.smooth-sortable').append(item.node);
         });
 
-        // Re-enable dragging.
-        $('.smooth-sortable li').draggable('enable');
-
-
         $('.tick-icon').fadeIn(100, function() {
           
         });
 
+        // Re-enable dragging.
+        $('.smooth-sortable li').draggable('enable');
 
       }, matacms.rearrange.sortable.transitionDuration);
     }
