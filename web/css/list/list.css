@@ -2,7 +2,7 @@
 .list-container{background:#d5deeb;color:#343c55;border-radius:2px;margin-top:28px;position:relative;height:90px}
 .list-container a,.list-container span{color:#343c55}
 .list-container .list-link{display:block}
-.list-container .delete-btn{display:block;background-image:url(../../images/icons/remove.svg);background-repeat:no-repeat;background-position:center;height:46px;width:42px;position:absolute;right:0;background-size:cover;bottom:0;z-index:1}
+.list-container .delete-btn{display:block;background-image:url(../../images/icons/remove.svg);background-repeat:no-repeat;background-position:center;height:46px;width:42px;position:absolute;right:0;background-size:42px 46px;bottom:0;z-index:1}
 .list-container .list-version-container{background-color:#d6915e;color:#fff;position:absolute;right:0;height:44px;display:table;padding:11px 13px 7px 28px;margin-right:-108px}
 .list-container .list-version-container .fadding-container{height:98%;background-image:linear-gradient(rgba(213,222,235,0)0,#d5deeb 80%,#d5deeb 100%);left:-43px}
 .list-container .list-version-container .list-version-inner-container{vertical-align:middle;display:table-cell}
@@ -25,3 +25,9 @@
 .list-container .list-contents-container .list-sub-details .fadding-container{right:0;width:25px}
 .list-container .list-contents-container .list-sub-details .columns{position:relative}
 .list-container .list-contents-container.thumbnail-active{padding-left:90px}
+.simple-list-container{height:60px}
+.simple-list-container .delete-btn,.simple-list-container .list-link{height:100%}
+.simple-list-container .list-thumbnail{width:40px;height:40px;margin-top:10px;margin-bottom:10px}
+.simple-list-container .list-contents-container{padding:0 49px 0 19px;height:100%;display:table;width:100%}
+.simple-list-container .list-contents-container .list-label{border-bottom:0;display:table-cell;vertical-align:middle}
+.simple-list-container .list-contents-container.thumbnail-active{padding-left:78px}
