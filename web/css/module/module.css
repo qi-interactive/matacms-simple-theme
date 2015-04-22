@@ -1,5 +1,4 @@
-.modal-content,.redactor-toolbar li a,h1{color:#fff}
-.modal-content #media-type-buttons a,.modal-content .modal-header .close{-moz-transition:all .4s;-webkit-transition:all .4s;-o-transition:all .4s}
+.redactor-toolbar li a,.versions,.versions:focus,.versions:hover,h1{color:#fff}
 body,html{background-color:#5f6885}
 .form-group,.redactor-toolbar{background:#343c55}
 h1{font-size:26px;font-weight:700;margin-bottom:23px;text-transform:uppercase}
@@ -10,13 +9,6 @@ h1{font-size:26px;font-weight:700;margin-bottom:23px;text-transform:uppercase}
 .form-group .redactor-editor{-moz-appearance:textfield-multiline;-webkit-appearance:textarea;resize:vertical;overflow:auto;padding-left:0;padding-bottom:0;padding-right:0}
 .redactor-box{margin-bottom:0}
 input[type=checkbox]{height:auto;background:0 0;-webkit-appearance:checkbox}
-.modal-content{background:#485274;border-radius:3px}
-.modal-content #media-type-buttons a{border:1px solid #fff;color:#fff;text-align:center;padding:27px 15px;-ms-transition:all .4s;transition:all .4s}
-.modal-content #media-type-buttons a:hover{background:#fff;color:#343c55}
-.modal-content #media-type-buttons{padding:10px 0}
-.modal-content .modal-header .close{color:#fff;opacity:1;font-weight:500;-ms-transition:all .4s;transition:all .4s;text-shadow:none}
-.modal-content .modal-header .close:hover{opacity:1;background:0 0;color:#ff6b6b}
 .badge{height:21px;line-height:1.5}
 .badge.live{background:#55c45f}
 .badge.draft{background:#d6915e}
-.versions,.versions:focus,.versions:hover{color:#fff}

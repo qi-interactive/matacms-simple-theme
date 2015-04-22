@@ -1,0 +1,112 @@
+@import "../imports/variables.less";
+@import "../imports/mixins.less";
+
+.modal-content {
+	background: @blue-corn;
+	color: @white;
+	border-radius: 3px;
+	border: 0px;
+	box-shadow: 0px;
+
+	#media-type-buttons a {
+		border: 1px solid @white;
+		color: @white;
+		text-align: center;
+		padding: 27px 15px;
+		.transition(all 0.4s);
+
+		&:hover {
+			background: @white;
+			color: @blue-corn;
+		}
+	}
+	#media-type-buttons {
+		padding: 10px 0px;
+	}
+
+	.modal-body {
+		padding: 0px 50px 35px 50px;
+		text-align: center;
+
+		.hi-icon-effect-2 {
+			background: @midnight-blue;
+			margin-top: 20px;
+			width: 100%;
+			text-align: center;
+			height: 110px;
+			padding: 24px 15px 22px 15px;
+
+			&:first-child {
+				margin-top: 0px;
+			}
+
+			.inner-container {
+				display: table;
+				margin: 0 auto;
+				width: 100%;
+				overflow: visible;
+				max-width: 88%;
+
+				.columns {
+					overflow: visible;
+				}
+
+				.five.columns {
+					text-align: center;
+				}
+			}
+			span {
+				font-size: @font-size-extra-medium;
+				font-weight: @proxima-bold;
+				display: table-cell;
+				vertical-align: middle;
+				line-height: 68px;
+			}
+
+			.hi-icon {
+				// margin-right: 50px;
+				width: 64px;
+				height: 64px;
+			}
+		}
+	}
+	.modal-header  {
+		padding: 29px 15px 29px 50px;
+		border: 0px;
+
+		h3 {
+			margin-right: 15px;
+			text-transform: uppercase;
+			font-size: 20px;
+			font-weight: @proxima-bold;
+			margin-top: 0px;
+			margin-bottom: 0px;
+
+		}
+		.close {
+			color: #fff;
+			opacity: 1;
+			font-weight: 500;
+			.transition(all 0.4s);
+			text-shadow: none;
+			font-size: 34px;
+			margin-top: -21px;
+			height: auto;
+			min-height: 0px;
+
+			&:hover {
+				opacity: 1;
+				background: transparent;
+				color: @coral;
+			}
+		}
+
+	}
+}
+
+.modal-backdrop.in {
+	opacity: 0.7;
+}
+
+
+@import "modal_mobile.less";

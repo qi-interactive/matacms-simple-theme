@@ -12,6 +12,7 @@ class ThemeAsset extends AssetBundle {
   'css/form/form.css',
   'css/grid/grid.css',
   'css/carousel/carousel-and-snippet.css',
+  'css/modal/modal.css',
   'css/theme.css',
   ];
   public $js = [
