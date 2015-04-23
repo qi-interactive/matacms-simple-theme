@@ -1,7 +1,8 @@
 .modal-content{background:#343c55;color:#fff;border-radius:3px;border:0;box-shadow:0}
-.modal-content #media-type-buttons a{border:1px solid #fff;color:#fff;text-align:center;padding:27px 15px;-moz-transition:all .4s;-webkit-transition:all .4s;-o-transition:all .4s;-ms-transition:all .4s;transition:all .4s}
-.modal-content #media-type-buttons a:hover{background:#fff;color:#343c55}
-.modal-content #media-type-buttons{padding:10px 0}
+.modal-content #media-type-buttons{width:100%;height:auto}
+.modal-content #media-type-buttons a.hi-icon-effect-2,.modal-content a.hi-icon-effect-2{display:block;width:100%;border:0;border-radius:0;float:none;margin:20px 0 0;color:#fff;padding:24px 15px 22px;height:110px}
+.modal-content #media-type-buttons a.hi-icon-effect-2:hover,.modal-content a.hi-icon-effect-2:hover{color:#fff}
+.modal-content #media-type-buttons a.hi-icon-effect-2:first-child,.modal-content a.hi-icon-effect-2:first-child{margin-top:0}
 .modal-content .modal-body{padding:0 50px 35px;text-align:center}
 .modal-content .modal-body .hi-icon-effect-2{background:#212635;margin-top:20px;width:100%;text-align:center;height:110px;padding:24px 15px 22px}
 .modal-content .modal-body .hi-icon-effect-2:first-child{margin-top:0}
