@@ -10,7 +10,7 @@
 .modal-content .modal-body .hi-icon-effect-2 .inner-container .five.columns{text-align:center}
 .modal-content .modal-body .hi-icon-effect-2 span{font-size:16px;font-weight:700;display:table-cell;vertical-align:middle;line-height:68px}
 .modal-content .modal-body .hi-icon-effect-2 .hi-icon{width:64px;height:64px}
-.modal-content .modal-header{padding:29px 15px 29px 50px;border:0}
+.modal-content .modal-header{padding:29px 15px 29px 50px;border:0;text-align:left}
 .modal-content .modal-header h3{margin-right:15px;text-transform:uppercase;font-size:20px;font-weight:700;margin-bottom:0;margin-top:0}
 .modal-content .modal-header .close{color:#fff;opacity:1;text-shadow:none;font-size:0;margin-top:-21px;min-height:0;background-image:url(../../images/icons/close.svg);background-repeat:no-repeat;background-size:13px;background-position:center;width:30px;height:30px}
 .modal-content .modal-header .close:hover{opacity:.7;background-color:transparent}
