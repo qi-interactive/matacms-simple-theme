@@ -8,21 +8,36 @@
 	border: 0px;
 	box-shadow: 0px;
 
-	#media-type-buttons a {
-		border: 1px solid @white;
-		color: @white;
-		text-align: center;
-		padding: 27px 15px;
-		.transition(all 0.4s);
 
-		&:hover {
-			background: @white;
-			color: @blue-corn;
+	#media-type-buttons {
+		width: 100%;
+		height: auto;
+
+		a {
+			display: block;
+			width: 100%;
+			border: 0px;
+			border-radius: 0px;
+			float: none;
+			height: auto;
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-bottom: 0px;
+			color: @white;
+			margin-top: 20px;
+			padding: 24px 15px 22px;
+			height: 110px;
+
+			&:hover {
+				color: @white;
+			}
+
+			&:first-child {
+				margin-top: 0px;
+			}
 		}
 	}
-	#media-type-buttons {
-		padding: 10px 0px;
-	}
+
 
 	.modal-body {
 		padding: 0px 50px 35px 50px;
