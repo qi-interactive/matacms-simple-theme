@@ -24,7 +24,6 @@ $("#w0 a, #subnav-overlay a, .cd-3d-nav a", window.parent.document).on("click", 
 
 mata.form.trackFormChange = function() {
 	$('.container form input, .container form select, .container form textarea').on("change keyup paste", function() {
-		console.log($(this).attr('id'));
 		mata.form.hasChanged = true;
 	});
 }
