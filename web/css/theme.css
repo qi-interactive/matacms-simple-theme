@@ -8,7 +8,7 @@ li{list-style-type:none}
 .content-block-top-bar .btn.btn-success{text-transform:uppercase;height:45px;line-height:30px;float:right;min-width:130px}
 .content-block-top-bar .search-container{float:left;margin-left:0}
 .content-block-top-bar .btns-container{float:right}
-.content-block-top-bar .btns-container .elements{display:inline-block;margin-left:30px;vertical-align:middle}
+.content-block-top-bar .btns-container .elements{display:inline-block;margin-left:30px;vertical-align:top}
 .content-block-top-bar .btns-container .hi-icon{height:41px;width:41px}
 .content-block-top-bar .btns-container .hi-icon-effect-2{margin-top:2px}
 .content-block-top-bar .top-bar-sort-by-container{display:block;position:relative;text-align:right;margin-top:30px}
