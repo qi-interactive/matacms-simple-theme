@@ -1,6 +1,5 @@
-.modal-content #media-type-buttons a,.modal-content .modal-header .close{-moz-transition:all .4s;-webkit-transition:all .4s;-o-transition:all .4s}
 .modal-content{background:#343c55;color:#fff;border-radius:3px;border:0;box-shadow:0}
-.modal-content #media-type-buttons a{border:1px solid #fff;color:#fff;text-align:center;padding:27px 15px;-ms-transition:all .4s;transition:all .4s}
+.modal-content #media-type-buttons a{border:1px solid #fff;color:#fff;text-align:center;padding:27px 15px;-moz-transition:all .4s;-webkit-transition:all .4s;-o-transition:all .4s;-ms-transition:all .4s;transition:all .4s}
 .modal-content #media-type-buttons a:hover{background:#fff;color:#343c55}
 .modal-content #media-type-buttons{padding:10px 0}
 .modal-content .modal-body{padding:0 50px 35px;text-align:center}
@@ -12,9 +11,9 @@
 .modal-content .modal-body .hi-icon-effect-2 span{font-size:16px;font-weight:700;display:table-cell;vertical-align:middle;line-height:68px}
 .modal-content .modal-body .hi-icon-effect-2 .hi-icon{width:64px;height:64px}
 .modal-content .modal-header{padding:29px 15px 29px 50px;border:0}
-.modal-content .modal-header h3{margin-right:15px;text-transform:uppercase;font-size:20px;font-weight:700;margin-top:0;margin-bottom:0}
-.modal-content .modal-header .close{color:#fff;opacity:1;font-weight:500;-ms-transition:all .4s;transition:all .4s;text-shadow:none;font-size:34px;margin-top:-21px;height:auto;min-height:0}
-.modal-content .modal-header .close:hover{opacity:1;background:0 0;color:#ff6b6b}
+.modal-content .modal-header h3{margin-right:15px;text-transform:uppercase;font-size:20px;font-weight:700;margin-bottom:0;margin-top:0}
+.modal-content .modal-header .close{color:#fff;opacity:1;text-shadow:none;font-size:0;margin-top:-21px;min-height:0;background-image:url(../../images/icons/close.svg);background-repeat:no-repeat;background-size:13px;background-position:center;width:30px;height:30px}
+.modal-content .modal-header .close:hover{opacity:.7;background-color:transparent}
 .modal-backdrop.in{opacity:.7}
 @media (min-width:555px){.modal-dialog{width:529px;margin:30px auto}}
 @media (max-width:554px){.modal-content .modal-body .hi-icon-effect-2 .inner-container{max-width:100%}}
