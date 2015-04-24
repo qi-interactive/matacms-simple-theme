@@ -25,4 +25,3 @@ li{list-style-type:none}
 .alert{border:0;border-bottom:2px solid #55c45f;border-radius:2px;font-size:14px;background-color:#343c55;padding:12px 15px}
 .alert-success{border-color:#55c45f;color:#55c45f}
 .alert-error{border-color:#ff6b6b;color:#ff6b6b;font-weight:700}
-.cd-header.disable{position:absolute;height:0;z-index:0}
