@@ -94,17 +94,17 @@ button[type=submit]{text-transform:uppercase;min-height:45px}
 .qq-upload-spinner.success{background:#78b572}
 .qq-hide{display:none!important}
 .form-group.partial-max-width-item{width:49%;float:left;margin-right:1%;min-height:1px;clear:none}
+.hi-icon,.rearrangeable-btn-container .hi-icon{width:41px}
 .form-group.partial-max-width-item:first-child:last-child{margin-left:0;margin-right:1%}
 .form-group.partial-max-width-item:last-child{margin-left:1%;margin-right:0}
 .form-group.partial-max-width-item.clear-left{clear:left}
 img.current-media{margin-bottom:10px}
 #add-media-container{border-radius:3px}
 .rearrangeable-btn-container{text-align:center;vertical-align:middle}
-.rearrangeable-btn-container .hi-icon{width:41px}
 .rearrangeable-btn-container .hi-icon:before{background-image:url(../../images/rearrange/rearrange.svg);background-size:24px 18px}
 .rearrangeable-btn-container .hi-icon-effect-2 .hi-icon{box-shadow:0 0 0 2px #c96aa4}
 .rearrangeable-btn-container .hi-icon-effect-2 .hi-icon:after{background-color:#c96aa4}
-.hi-icon{display:inline-block;font-size:0;width:44px;border-radius:2px;text-align:center;position:relative;z-index:1;color:#fff;height:44px}
+.hi-icon{display:inline-block;font-size:0;border-radius:2px;text-align:center;position:relative;z-index:1;color:#fff;height:41px}
 .hi-icon:after{pointer-events:none;position:absolute;width:100%;height:100%;border-radius:2px;content:'';-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}
 .hi-icon:before{content:"";speak:none;width:100%;height:100%;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;display:block;background-image:url(../../images/icons/plus.svg);background-repeat:no-repeat;background-size:24px 24px;background-position:center}
 .hi-icon-effect-2 .hi-icon{box-shadow:0 0 0 2px #a28ddf;-webkit-transition:color .3s;-moz-transition:color .3s;transition:color .3s}
