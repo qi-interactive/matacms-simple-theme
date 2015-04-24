@@ -123,7 +123,11 @@ body.theme-simple {
 					&:hover {
 						color: @alice-blue;
 					}
-				}
+&.selected-descending, &.selected-ascending {
+						&:after {
+							display: none;
+						}
+					}				}
 			}
 		}
 	}
@@ -168,4 +172,87 @@ body.theme-simple {
 	color: @coral;
 	font-weight: @proxima-bold;
 }
+
+
+.cd-header {
+	height: auto;
+	padding: 25px 0px;
+
+	.header-inner-container {
+		max-width: 900px;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+		h1 {
+			font-size: 26px;
+			font-weight: @proxima-bold;
+			color: @white;
+			max-width: 75%;
+			text-transform: uppercase;
+			line-height: 30px;
+			display: inline-block;
+		}
+
+		.hi-icon-effect-2 {
+			display: inline-block;
+			float: right;
+			margin-top: 5px;
+
+			.hi-icon {
+				box-shadow: 0 0 0 2px @orchid;
+
+				&:before {
+					background-image: url(../images/icons/versions.png); //to be replaced with @2x or svg
+				}
+				&:after {
+					background-color: @orchid;
+				}
+			}
+		}
+	}
+
+	#header-content-container {
+		position: absolute;
+		top: 0px;
+		height: 46px;
+		right: 5%;
+	}
+
+}
+
+.back-btn {
+	display: inline-block;
+	.azure-font-link();
+	font-weight: @proxima-bold;
+	text-transform: uppercase;
+	font-size: @font-size-base;
+	padding-top: 20px;
+	position: relative;
+	padding-left: 20px;
+
+	svg {
+		height: 42px;
+		position: absolute;
+		left: -15px;
+		top: 4px;
+
+		polyline {
+			stroke: @azure !important;
+		}
+
+	}
+
+	&:focus, &:hover {
+		.azure-font-link();
+
+		svg polyline {
+			stroke: @grey !important;
+		}
+	}
+}
+
+@import "theme_responsive.less";
+
+
 

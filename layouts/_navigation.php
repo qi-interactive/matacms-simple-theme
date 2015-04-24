@@ -61,6 +61,27 @@ if (empty($menuItems))
 
 <header class="cd-header">
 	<div id="progress-bar"></div>
+	<div class="header-inner-container">
+		<h1> Update project: Sample very long long very long very long very long very loong name </h1>
+		<div class="hi-icon-effect-2">
+			<div class="hi-icon hi-icon-cog rearrangeable-trigger-btn"></div>
+		</div>
+		<div>
+			<a class="back-btn" href="#">
+
+				<?xml version="1.0" encoding="utf-8"?>
+				<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+				<svg version="1.1" id="back-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+				<polyline fill="none" stroke="#9FA7B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				23,28.6 19.4,24.9 23,21.3 "/>
+				<polyline fill="none" stroke="#9FA7B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				19.4,24.9 31.6,24.9 31.6,28.7 "/>
+			</svg>
+
+			Back To List View  </a>
+		</div>
+	</div>
 	<div id="header-content-container">
 
 		<a href="#" class="cd-3d-nav-trigger">

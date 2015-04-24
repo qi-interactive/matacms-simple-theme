@@ -213,20 +213,21 @@ Main Components
 
 -------------------------------- */
 .cd-header {
-  height: 80px;
-  width: 90%;
-  margin: 0 auto;
-  -webkit-transition: -webkit-transform 0.5s;
-  -moz-transition: -moz-transform 0.5s;
-  transition: transform 0.5s;
-  /* Force Hardware Acceleration in WebKit */
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+ /* height: 80px;*/
+ /*  width: 90%;*/
+ margin: 0 auto;
+ width: 100%;
+ -webkit-transition: -webkit-transform 0.5s;
+ -moz-transition: -moz-transform 0.5s;
+ transition: transform 0.5s;
+ /* Force Hardware Acceleration in WebKit */
+ -webkit-transform: translateZ(0);
+ -moz-transform: translateZ(0);
+ -ms-transform: translateZ(0);
+ -o-transform: translateZ(0);
+ transform: translateZ(0);
+ -webkit-backface-visibility: hidden;
+ backface-visibility: hidden;
 }
 .cd-header:after {
   content: "";
