@@ -35,8 +35,8 @@ li{list-style-type:none}
 .cd-header .header-inner-container .hi-icon-effect-2 .hi-icon:before{background-image:url(../images/icons/versions.png)}
 .cd-header .header-inner-container .hi-icon-effect-2 .hi-icon:after{background-color:#c96aa4}
 .cd-header #header-content-container{position:absolute;top:0;height:46px;right:5%}
-.back-btn{font-size:12px;padding-top:20px;position:relative;padding-left:20px}
-.back-btn svg{height:42px;position:absolute;left:-15px;top:4px}
+.back-btn{font-size:14px;padding-top:20px;position:relative;padding-left:20px}
+.back-btn svg{height:42px;position:absolute;left:-15px;top:5px}
 .back-btn svg polyline{stroke:#9fa7b7!important}
 .back-btn:focus:hover,.back-btn:hover:hover{color:#858b99}
 .back-btn:focus svg polyline,.back-btn:hover svg polyline{stroke:#858b99!important}
