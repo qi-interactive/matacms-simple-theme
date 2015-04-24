@@ -177,8 +177,8 @@ $(window).ready(function() {
 
 function addHeightToContainer(that) {
 	if($('.cd-header').hasClass('nav-is-visible')) {
-		$('#container').height(that.height() - ($('.cd-3d-nav-container').height() + $('.cd-header').height()));
+		$('#container').height(that.height() - ($('.cd-3d-nav-container').outerHeight(true) + $('.cd-header').outerHeight(true)));
 	} else {
-		$('#container').height(that.height() - $('.cd-header').height());
+		$('#container').height(that.height() - $('.cd-header').outerHeight(true));
 	}
 }
