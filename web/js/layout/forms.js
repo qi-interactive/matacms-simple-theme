@@ -26,6 +26,14 @@ mata.form.trackFormChange = function() {
 	$('.container form input, .container form select, .container form textarea').on("change keyup paste", function() {
 		mata.form.hasChanged = true;
 	});
+
+	$('.container form').on('submit', function() {
+		setTimeout(function() {
+			if(mata.form.hasChanged)
+				mata.form.hasChanged = false;
+		},100);		
+	});
+
 }
 
 mata.form.setFormGroups = function() {
