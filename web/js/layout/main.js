@@ -89,6 +89,7 @@ jQuery(document).ready(function($) {
 
 	function hideSubnav() {
 		$("#subnav-overlay").fadeOut().find("> div").fadeOut();
+		$("#container").css({'height':''});
 	}
 
 	function resizeSubnav() {
