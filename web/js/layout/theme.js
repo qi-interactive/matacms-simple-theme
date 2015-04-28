@@ -47,9 +47,7 @@ $(window).ready(function() {
 
 	mata.simpleTheme.addHoverBehaviourToVersionTooltip();
 
-
-})
-
+});
 
 mata.simpleTheme.addHoverBehaviourToVersionTooltip = function() {
 	$('.list-container .list-version-container').each(function(el) {

@@ -89,6 +89,7 @@ jQuery(document).ready(function($) {
 
 	function hideSubnav() {
 		$("#subnav-overlay").fadeOut().find("> div").fadeOut();
+		$("#container").css({'height':''});
 	}
 
 	function resizeSubnav() {
@@ -159,14 +160,6 @@ jQuery(document).ready(function($) {
 	};
 });
 
-mata.addHeightToContainer = function() { 
-	if($('.cd-3d-nav-container').hasClass('nav-is-visible')) {
-		$('#container').height($(this).height() - ($('.cd-header').height() + $('.cd-3d-nav-container').height()));
-	} else {
-		$('#container').height($(this).height() - $('.cd-header').height());
-	}
-}
-
 
 
 $(window).ready(function() {
@@ -179,6 +172,7 @@ $(window).ready(function() {
 		that = $(this);
 		addHeightToContainer(that)
 	}).resize();
+
 
 });
 

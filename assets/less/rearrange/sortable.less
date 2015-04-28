@@ -13,7 +13,7 @@ ol {
 }
 .smooth-sortable li {
 	position: relative;
-	padding: 10px 10px 10px 20px;
+	padding: 10px 30px 10px 20px;
 	font-weight: @proxima-bold;
 	font-size: 14px;
 	text-align: left;
@@ -30,12 +30,22 @@ ol {
 	margin-bottom: 5px;
 	cursor: pointer;
 	height: 40px;
+	white-space: nowrap;
+
+	.svg-icon-container {
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		width: 30px;
+		height: 100%;
+		background: @alice-blue;
+	}
 
 	svg {
 		width: 17px;
-		position: absolute;
 		right: 10px;
 		top: 14px;
+		position: absolute;
 
 		.rearrangeable-icon {
 			polyline {
@@ -47,6 +57,11 @@ ol {
 			display: none;
 		}
 	} 
+
+	.fadding-container {
+		right: 30px;
+		width: 20px;
+	}
 }
 .smooth-sortable li:after {
 	display: block;
