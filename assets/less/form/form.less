@@ -480,10 +480,45 @@ button[type="submit"] {
 	.qq-upload-button {
 		height: 100%;
 		width: inherit;
+		padding: 0;
+		border-bottom: none;
 	}
 
 	.qq-upload-spinner {
 		top: 0px;
+	}
+
+	.qq-upload-drop-area, .qq-upload-extra-drop-area {
+		background: @blue-corn;
+		color: @light-purple;
+		border: 3px dashed @light-purple;
+		border-radius: 2px;
+
+		span {
+			font-weight: @proxima-bold;
+			font-size: @font-size-extra-medium;
+		}
+
+	}
+
+	.qq-drop-processing-selector.qq-drop-processing {
+		display: none;
+	}
+
+	.qq-upload-spinner {	
+		height: 3px;
+		width: 0%;
+		background: #b471a3;
+		.transition(width 0.4s);
+		opacity: 1;
+		display: block !important;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+
+		&.success {
+			background: #78b572;
+		}
 	}
 }
 
