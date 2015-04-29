@@ -25,7 +25,6 @@ $(window).ready(function() {
 
 	mata.simpleTheme.addAClassToSelectizeAndFileUploaderAndUriParent();
 	mata.simpleTheme.addAClassToMainActionButtonsParent();
-	mata.simpleTheme.addSelectedAscendingDescendingClassesToSortBy();
 	
 
 	$(window).on('resize', function() {
@@ -54,7 +53,6 @@ $(window).ready(function() {
 $(window).on("pjax:success", function() {
 	mata.simpleTheme.addAClassToSelectizeAndFileUploaderAndUriParent();
 	mata.simpleTheme.addAClassToMainActionButtonsParent();
-	mata.simpleTheme.addSelectedAscendingDescendingClassesToSortBy();
 	
 	$(window).resize();
 	mata.simpleTheme.addHoverBehaviourToVersionTooltip();
@@ -80,15 +78,6 @@ mata.simpleTheme.addHoverBehaviourToVersionTooltip = function() {
 
 };
 
-
-mata.simpleTheme.addSelectedAscendingDescendingClassesToSortBy = function() {
-
-	$('.top-bar-sort-by-container ul li').not('.sort-by-label').on('click', function() {
-		$(this).addClass('selected-asc').siblings('li').removeClass('selected-asc');
-
-	})
-
-}
 
 
 mata.simpleTheme.addAClassToSelectizeAndFileUploaderAndUriParent = function() {
