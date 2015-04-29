@@ -1,5 +1,5 @@
 a#versions-link,label{color:#fff}
-.hi-icon,.hi-icon-effect-2{cursor:pointer}
+#upload-image-container-modal .qq-upload-spinner,.qq-upload-spinner{-ms-transition:width .4s;transition:width .4s;opacity:1;position:absolute;left:0;-moz-transition:width .4s;-webkit-transition:width .4s;-o-transition:width .4s}
 .hi-icon:before,label{-webkit-font-smoothing:antialiased}
 a#back-to-list-view{color:#fff;font-size:15px;text-transform:uppercase}
 label{font-weight:700;font-size:18px;padding:0 13px;-moz-osx-font-smoothing:grayscale;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;margin:0;line-height:normal}
@@ -78,8 +78,16 @@ button[type=submit]{text-transform:uppercase;min-height:45px}
 .form-group{float:none;clear:both}
 .btn.btn-info{background:#a28ddf;font-size:14px}
 .btn.btn-info:hover{background:#8376b4}
+#upload-image-container-modal .qq-upload-button{height:100%;width:inherit;padding:0;border-bottom:none}
+#upload-image-container-modal .qq-upload-drop-area,#upload-image-container-modal .qq-upload-extra-drop-area{background:#343c55;color:#a28ddf;border:3px dashed #a28ddf;border-radius:2px}
+#upload-image-container-modal .qq-upload-drop-area span,#upload-image-container-modal .qq-upload-extra-drop-area span{font-weight:700;font-size:16px}
+#upload-image-container-modal .qq-drop-processing-selector.qq-drop-processing{display:none}
+#upload-image-container-modal .qq-upload-spinner{height:3px;width:0;background:#b471a3;display:block!important;top:0}
+#upload-image-container-modal .qq-upload-spinner.success{background:#78b572}
+#add-media-container .qq-upload-spinner{top:0}
 .qq-upload-button{height:200px;width:200px;background:#343c55;outline:0;padding:0;display:table;margin:0 auto;border:0}
 .qq-upload-button .hi-icon{z-index:0}
+.hi-icon,.img-preview{font-size:0;z-index:1}
 .qq-upload-button .add-media-inner-wrapper span{font-size:16px}
 .btn.btn-info{margin-left:-3px}
 .btn.publish-btn{background:#d6915e}
@@ -90,7 +98,8 @@ button[type=submit]{text-transform:uppercase;min-height:45px}
 .btn.cancel.btn:hover{background:#bd5659}
 .selectize-control.plugin-remove_button [data-value] .remove{width:25px;line-height:28px}
 .qq-progress-bar-container-selector{background-image:none!important;display:none!important}
-.qq-upload-spinner{height:3px;width:0;background:#b471a3;-moz-transition:width .4s;-webkit-transition:width .4s;-o-transition:width .4s;-ms-transition:width .4s;transition:width .4s;opacity:1;display:block!important;position:absolute;top:-31px;left:0}
+.qq-upload-spinner{height:3px;width:0;background:#b471a3;display:block!important;top:-31px}
+.hi-icon,.img-preview{display:inline-block;position:relative}
 .qq-upload-spinner.success{background:#78b572}
 .qq-hide{display:none!important}
 .form-group.partial-max-width-item{width:49%;float:left;margin-right:1%;min-height:1px;clear:none}
@@ -104,7 +113,10 @@ img.current-media{margin-bottom:10px}
 .rearrangeable-btn-container .hi-icon:before{background-image:url(../../images/rearrange/rearrange.svg);background-size:24px 18px}
 .rearrangeable-btn-container .hi-icon-effect-2 .hi-icon{box-shadow:0 0 0 2px #c96aa4}
 .rearrangeable-btn-container .hi-icon-effect-2 .hi-icon:after{background-color:#c96aa4}
-.hi-icon{display:inline-block;font-size:0;border-radius:2px;text-align:center;position:relative;z-index:1;color:#fff;height:41px}
+.hi-icon-effect-2{cursor:pointer}
+.hi-icon{cursor:pointer;border-radius:2px;text-align:center;color:#fff;height:41px}
+.img-preview{width:64px;height:64px;cursor:pointer;border-radius:2px;text-align:center;color:#fff;overflow:hidden}
+.img-preview img{display:block;max-width:100%;position:absolute;margin:auto;top:0;left:0;right:0;bottom:0;max-height:none}
 .hi-icon:after{pointer-events:none;position:absolute;width:100%;height:100%;border-radius:2px;content:'';-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}
 .hi-icon:before{content:"";speak:none;width:100%;height:100%;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;display:block;background-image:url(../../images/icons/plus.svg);background-repeat:no-repeat;background-size:24px 24px;background-position:center}
 .hi-icon-effect-2 .hi-icon{box-shadow:0 0 0 2px #a28ddf;-webkit-transition:color .3s;-moz-transition:color .3s;transition:color .3s}

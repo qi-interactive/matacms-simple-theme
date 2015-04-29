@@ -476,6 +476,58 @@ button[type="submit"] {
 	font-size: 14px;
 }
 
+#upload-image-container-modal {
+	.qq-upload-button {
+		height: 100%;
+		width: inherit;
+		padding: 0;
+		border-bottom: none;
+	}
+
+	.qq-upload-spinner {
+		top: 0px;
+	}
+
+	.qq-upload-drop-area, .qq-upload-extra-drop-area {
+		background: @blue-corn;
+		color: @light-purple;
+		border: 3px dashed @light-purple;
+		border-radius: 2px;
+
+		span {
+			font-weight: @proxima-bold;
+			font-size: @font-size-extra-medium;
+		}
+
+	}
+
+	.qq-drop-processing-selector.qq-drop-processing {
+		display: none;
+	}
+
+	.qq-upload-spinner {	
+		height: 3px;
+		width: 0%;
+		background: #b471a3;
+		.transition(width 0.4s);
+		opacity: 1;
+		display: block !important;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+
+		&.success {
+			background: #78b572;
+		}
+	}
+}
+
+#add-media-container {
+	.qq-upload-spinner {
+		top: 0px;
+	}
+}
+
 .qq-upload-button {
 	height: 200px;
 	width: 200px;
@@ -621,6 +673,32 @@ img.current-media {
 	z-index: 1;
 	color: #fff;
 	height: 41px;
+}
+
+.img-preview {
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+	font-size: 0px;
+	cursor: pointer;
+	border-radius: 2px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	overflow: hidden;
+
+	img {
+		display: block;
+		max-width: 100%;
+		position: absolute;
+		margin: auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		max-height: none;
+	}
 }
 
 .hi-icon:after {
