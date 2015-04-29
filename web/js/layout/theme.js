@@ -26,7 +26,6 @@ $(window).ready(function() {
 	mata.simpleTheme.addAClassToSelectizeAndFileUploaderAndUriParent();
 	mata.simpleTheme.addAClassToMainActionButtonsParent();
 	
-
 	$(window).on('resize', function() {
 		var btnsContainerWidth = $('.content-block-top-bar .btns-container').outerWidth(true);
 		var contentsBlockTopBarWidth = $('.content-block-top-bar').outerWidth(true);
@@ -51,13 +50,18 @@ $(window).ready(function() {
 
 
 $(window).on("pjax:success", function() {
+
+	mata.simpleTheme.onPjaxSuccess();
+	
+});
+
+mata.simpleTheme.onPjaxSuccess = function() {
 	mata.simpleTheme.addAClassToSelectizeAndFileUploaderAndUriParent();
 	mata.simpleTheme.addAClassToMainActionButtonsParent();
 	
 	$(window).resize();
 	mata.simpleTheme.addHoverBehaviourToVersionTooltip();
-
-});
+}
 
 mata.simpleTheme.addHoverBehaviourToVersionTooltip = function() {
 	$('.list-container .list-version-container').each(function(el) {
