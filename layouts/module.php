@@ -36,6 +36,8 @@ ModuleAsset::register($this);
  		return true;
  	}
  }
+
+
 </script>
 
 <body>
@@ -44,6 +46,7 @@ ModuleAsset::register($this);
 	<?php
 	
 	$this->registerJs("
+
 		$(window).ready(function() {	        
 			mata.addActiveStateToMenuItemsOnLoad('" . $this->context->module->id . "');
 		});", View::POS_READY);

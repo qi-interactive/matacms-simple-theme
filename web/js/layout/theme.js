@@ -21,12 +21,14 @@ mata.simpleTheme = mata.simpleTheme || {};
 // mata.simpleTheme.attachLoaderHandlers();
 
 
-
 $(window).ready(function() {
+
 	mata.simpleTheme.addAClassToSelectizeAndFileUploaderAndUriParent();
 	mata.simpleTheme.addAClassToMainActionButtonsParent();
 	mata.simpleTheme.addSelectedAscendingDescendingClassesToSortBy();
-	$(window).on('resize', function() { 
+	
+
+	$(window).on('resize', function() {
 		var btnsContainerWidth = $('.content-block-top-bar .btns-container').outerWidth(true);
 		var contentsBlockTopBarWidth = $('.content-block-top-bar').outerWidth(true);
 		var searchContainerWidth = $('.content-block-top-bar .search-container').width(((contentsBlockTopBarWidth - btnsContainerWidth) - 1) + 'px');
@@ -45,6 +47,16 @@ $(window).ready(function() {
 
 	}).resize();
 
+	mata.simpleTheme.addHoverBehaviourToVersionTooltip();
+})
+
+
+$(window).on("pjax:success", function() {
+	mata.simpleTheme.addAClassToSelectizeAndFileUploaderAndUriParent();
+	mata.simpleTheme.addAClassToMainActionButtonsParent();
+	mata.simpleTheme.addSelectedAscendingDescendingClassesToSortBy();
+	
+	$(window).resize();
 	mata.simpleTheme.addHoverBehaviourToVersionTooltip();
 
 });
