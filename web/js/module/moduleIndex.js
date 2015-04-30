@@ -1,15 +1,15 @@
 $(document).on("ready pjax:success", function() {
-	$.pjax.defaults.timeout = 10000;
-
-	$(window).on("ready pjax:success", function() {
-	    $("#item-search").focus();
-	    parent.mata.simpleTheme.ajaxLoader.stop()
-	})
-
-	$(window).on("pjax:start", function() {
-	    parent.mata.simpleTheme.ajaxLoader.run()
-	})
 	
+	// $.pjax.defaults.timeout = 10000;
+
+	// $(window).on("ready pjax:success", function() {
+	//     $("#item-search").focus();
+	//     parent.mata.simpleTheme.ajaxLoader.stop()
+	// })
+
+	// $(window).on("pjax:start", function() {
+	//     parent.mata.simpleTheme.ajaxLoader.run()
+	// })
 })
 
 $('body').on("click", "a.delete-btn", function() {
