@@ -5,6 +5,8 @@ input:-webkit-autofill,input:-webkit-autofill:focus,select:-webkit-autofill,text
 body,html{overflow:auto;height:100%;font-family:proxima-nova}
 a,a:focus,a:hover{outline:0;text-decoration:none}
 li{list-style-type:none}
+body{height:auto}
+body.theme-simple{height:100%}
 .container{max-width:900px}
 .content-block-top-bar{border-bottom:2px solid #4d546b;padding-bottom:10px}
 .content-block-top-bar .btn.btn-success{text-transform:uppercase;height:45px;line-height:30px;float:right;min-width:130px}
