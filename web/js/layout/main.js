@@ -6,8 +6,6 @@ mata.simpleTheme.events = {
 	IFRAME_LOADED: "st-IFRAME_LOADED"
 }
 
-
-
 jQuery(document).ready(function($) {
 	//toggle 3d navigation
 	$('.cd-3d-nav-trigger').on('click', function(){
