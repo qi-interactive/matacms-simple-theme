@@ -1,4 +1,5 @@
 $(document).on("ready pjax:success", function() {
+	
 	$.pjax.defaults.timeout = 10000;
 
 	$(window).on("ready pjax:success", function() {
@@ -9,7 +10,6 @@ $(document).on("ready pjax:success", function() {
 	$(window).on("pjax:start", function() {
 	    parent.mata.simpleTheme.ajaxLoader.run()
 	})
-	
 })
 
 $('body').on("click", "a.delete-btn", function() {
