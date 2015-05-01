@@ -543,10 +543,6 @@ button[type="submit"] {
 		z-index: 0;
 	}
 
-	.add-media-inner-wrapper span {
-		font-size: @font-size-extra-medium;
-	}
-
 	&:hover {
 		.hi-icon:after {
 			-webkit-transform: scale(0.85);
@@ -832,9 +828,9 @@ img.current-media {
 
 	span {
 		display: block;
-		line-height: 20px;
+		line-height: 16px;
 		color: @purple;
-		font-size: @font-size-base;
+		font-size: 14px;
 		font-weight: @proxima-bold;
 	}
 
@@ -844,6 +840,12 @@ img.current-media {
 	position: relative;
 }
 
+
+.redactor-toolbar {
+	position: relative !important;
+	top: 0px !important;
+	width: auto !important;
+}
 
 
 @import "form_desktop.less";
