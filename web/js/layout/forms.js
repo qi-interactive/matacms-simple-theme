@@ -60,6 +60,9 @@ mata.form.setFormGroups = function() {
 			if($(this).hasClass('partial-max-width-item') && $(this).prev().hasClass('partial-max-width-item')) {
 				$(this).prev().addBack().wrapAll('<div class="form-row" />');
 			}
+			// if(!formGroups.eq(index-1).hasClass('partial-max-width-item') && $(this).hasClass('partial-max-width-item') && index == formGroups.length-2) {
+			// 	$(this).wrapAll('<div class="form-row" />');
+			// }
 			// set last form-group to full width
 			// if(formGroups.eq(index-1).hasClass('partial-max-width-item') && formGroups.eq(index).hasClass('partial-max-width-item') && index === formGroups.length-2) {
 			// 	return true;
