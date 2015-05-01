@@ -1,5 +1,5 @@
 .list-container .list-version-container,.list-container .list-version-container:after,.list-container .list-version-container:before{-ms-transition:.25s all ease-in-out;transition:.25s all ease-in-out;-webkit-transition:.25s all ease-in-out;-o-transition:.25s all ease-in-out;top:0;cursor:pointer;z-index:1;-moz-transition:.25s all ease-in-out}
-.list-container{background:#d5deeb;color:#343c55;border-radius:2px;margin-top:28px;position:relative;height:90px}
+.list-container{background:#d5deeb;color:#343c55;border-radius:2px;margin-bottom:30px;position:relative;height:90px}
 .list-container a,.list-container span{color:#343c55}
 .list-container .list-link{display:block}
 .list-container .delete-btn{display:block;background-image:url(../../images/icons/remove.svg);background-repeat:no-repeat;background-position:center;height:46px;width:42px;position:absolute;right:0;background-size:42px 46px;bottom:0;z-index:1}
@@ -16,6 +16,7 @@
 .list-container .list-version-container.live:after{background:url(../../images/list/tick-status@2x.png)center left no-repeat;background-size:20px 16px}
 .list-container .list-version-container.scheduled:after{background:url(../../images/list/clock-status@2x.png)center left no-repeat;background-size:21px 21px}
 .list-container .list-thumbnail{background:#fff;padding:6px;width:52px;height:52px;position:absolute;margin:21px 1.5625% 21px 19px}
+.list-view,.list-view:first-child{margin-top:30px}
 .list-container .list-thumbnail .list-thumbnail-img{width:100%;height:100%;background-size:cover;background-repeat:no-repeat;background-position:center}
 .list-container .list-contents-container{margin-left:0;overflow:hidden;padding:21px 49px 21px 19px}
 .list-container .list-contents-container .list-label{font-weight:700;font-size:16px;overflow:hidden;white-space:nowrap;border-bottom:1px solid #343c55}
@@ -26,7 +27,6 @@
 .list-container .list-contents-container .list-sub-details .columns{position:relative}
 .list-container .list-contents-container.thumbnail-active{padding-left:90px}
 .list-view{overflow:hidden}
-.list-view:first-child{margin-top:30px}
 .list-view .loader,.list-view .loader:after,.list-view .loader:before{border-radius:50%;width:2.5em;height:2.5em;-webkit-animation:load7 1.8s infinite ease-in-out;animation:load7 1.8s infinite ease-in-out}
 .list-view .loader{display:none;margin:0 auto 2em;font-size:10px;position:relative;text-indent:-9999em;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);-webkit-animation-delay:-.16s;animation-delay:-.16s;-moz-transform:scale(.5);-webkit-transform:scale(.5);-o-transform:scale(.5);-ms-transform:scale(.5);transform:scale(.5)}
 .list-view .loader:before{left:-3.5em;-webkit-animation-delay:-.32s;animation-delay:-.32s}
