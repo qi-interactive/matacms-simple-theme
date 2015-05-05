@@ -1,7 +1,7 @@
 .redactor-toolbar li a,.versions,.versions:focus,.versions:hover,h1{color:#fff}
 body,html{background-color:#5f6885}
 .form-group,.redactor-toolbar{background:#343c55}
-h1{font-size:26px;font-weight:700;margin-bottom:23px;text-transform:uppercase}
+h1{font-size:26px;font-weight:700;margin-bottom:23px;text-transform:uppercase;display:none}
 .container{padding-bottom:30px}
 .form-group{padding:0 4px 4px;border-radius:2px}
 .form-group label{font-size:13px;padding-top:5px;padding-bottom:3px;line-height:23px}

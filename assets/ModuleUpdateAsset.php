@@ -13,18 +13,17 @@ use yii\web\AssetBundle;
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
-class ModuleAsset extends AssetBundle {
+class ModuleUpdateAsset extends AssetBundle
+{
     public $sourcePath = '@vendor/matacms/matacms-simple-theme/web';
 
     public $css = [
-    'css/module/module.css'
     ];
     public $js = [
-    'js/module/module.js',
-    'js/layout/forms.js'
+    	'js/module/moduleUpdate.js',
     ];
 
     public $depends = [
-    'matacms\theme\simple\assets\ThemeAsset',
+    	'matacms\theme\simple\assets\RearrangeAsset',
     ];
 }

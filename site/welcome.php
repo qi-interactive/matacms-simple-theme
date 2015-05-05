@@ -16,5 +16,5 @@
 
 </style>
 <main>
-	<h1>Welcome to <?php echo \Yii::$app->name ?></h1>
+	<h1 style="display: block">Welcome to <?php echo \Yii::$app->name ?></h1>
 </main>
