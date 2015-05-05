@@ -13,6 +13,7 @@ class HostAsset extends AssetBundle {
       ];
       public $js = [
           'js/layout/main.js',
+          'js/layout/header.js',
           'js/layout/ajaxLoader.js',
           'js/layout/navigator.js'
       ];

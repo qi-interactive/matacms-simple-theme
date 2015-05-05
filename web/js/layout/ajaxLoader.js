@@ -58,5 +58,4 @@ mata.simpleTheme.ajaxLoader.stop = function() {
 
 $(window).ready(function() {
 	mata.simpleTheme.iframe.on(mata.simpleTheme.events.IFRAME_LOADED, mata.simpleTheme.ajaxLoader.stop);
-
 })

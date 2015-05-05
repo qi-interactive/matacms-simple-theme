@@ -61,9 +61,9 @@ if (empty($menuItems))
 
 <header class="cd-header">
 	<div id="progress-bar"></div>
-	<div class="header-inner-container">
-		<h1> Update project: Sample very long long very long very long very long very loong name </h1>
-		<div class="hi-icon-effect-2">
+	<div id="header-inner-container" class="header-inner-container">
+		<h1 id="header-inner-container-header"></h1>
+		<div id="header-inner-versions" class="hi-icon-effect-2">
 			<div class="hi-icon hi-icon-cog rearrangeable-trigger-btn"></div>
 		</div>
 		<div>

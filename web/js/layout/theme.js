@@ -1,6 +1,5 @@
 window.mata = window.mata || {};
 mata.simpleTheme = mata.simpleTheme || {};
-
 // mata.simpleTheme.attachLoaderHandlers = function() {
 
 // 	$(window).on('beforeunload', function(e) {
@@ -25,8 +24,8 @@ $(window).ready(function() {
 
 	mata.simpleTheme.addAClassToSelectizeAndFileUploaderAndUriParent();
 	mata.simpleTheme.addAClassToMainActionButtonsParent();
-	
-	$(window).on('resize', function() {
+	mata.simpleTheme.addSelectedAscendingDescendingClassesToSortBy();
+	$(window).on('resize', function() { 
 		var btnsContainerWidth = $('.content-block-top-bar .btns-container').outerWidth(true);
 		var contentsBlockTopBarWidth = $('.content-block-top-bar').outerWidth(true);
 		var searchContainerWidth = $('.content-block-top-bar .search-container').width(((contentsBlockTopBarWidth - btnsContainerWidth) - 1) + 'px');
@@ -83,13 +82,21 @@ mata.simpleTheme.addHoverBehaviourToVersionTooltip = function() {
 };
 
 
+mata.simpleTheme.addSelectedAscendingDescendingClassesToSortBy = function() {
+
+	$('.top-bar-sort-by-container ul li').not('.sort-by-label').on('click', function() {
+		$(this).addClass('selected-asc').siblings('li').removeClass('selected-asc');
+
+	})
+
+}
+
 
 mata.simpleTheme.addAClassToSelectizeAndFileUploaderAndUriParent = function() {
 	$('select, .file-uploader, #generate-uri').each(function(el) {
 		$(this).parents('.form-group:not(.full-width)').addClass('partial-max-width-item');
 	})
 }
-
 
 mata.simpleTheme.addAClassToMainActionButtonsParent = function() {
 	$('button[type=submit], input[type=submit]').each(function(el) {
