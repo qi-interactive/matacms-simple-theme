@@ -42,24 +42,64 @@ mata.form.setFormGroups = function() {
 
 	formGroups.each(function(index) {
 		if(!$(this).hasClass('submit-form-group') && !$(this).hasClass('full-width')) {
-			if(formGroups.eq(index-2).hasClass('partial-max-width-item') && formGroups.eq(index-1).hasClass('partial-max-width-item') && (formGroups.length <= index+1 && !formGroups.eq(index+1).hasClass('partial-max-width-item'))) {
-				$(this).removeClass('partial-max-width-item');
-			}
-			if(formGroups.eq(index-3).hasClass('partial-max-width-item') && formGroups.eq(index-2).hasClass('partial-max-width-item') && formGroups.eq(index-1).hasClass('partial-max-width-item') && !formGroups.eq(index+1).hasClass('partial-max-width-item')) {
+
+			if(formGroups.eq(index-3).hasClass('partial-max-width-item') && formGroups.eq(index-2).hasClass('partial-max-width-item') && formGroups.eq(index-1).hasClass('partial-max-width-item') && !formGroups.eq(index+1).hasClass('partial-max-width-item') && !formGroups.eq(index).hasClass('full-width-item')) {
 				$(this).addClass('partial-max-width-item');
 			}
-			if(formGroups.eq(index-2).hasClass('partial-max-width-item') && formGroups.eq(index-1).hasClass('partial-max-width-item') && !formGroups.eq(index+1).hasClass('partial-max-width-item')) {
-				$(this).addClass('partial-max-width-item');
+
+			if(formGroups.eq(index-1).hasClass('field-media') && formGroups.eq(index).hasClass('field-media')) {
+				$(this).prev().addBack().wrapAll('<div class="form-row" />');
+				return;
 			}
-			if(formGroups.eq(index-1).hasClass('field-media') && !formGroups.eq(index+1).hasClass('field-media')) {
-				$(this).prev().wrapAll('<div class="form-row" />');
-			}
-			if(formGroups.eq(index-1).hasClass('partial-max-width-item') && !formGroups.eq(index+1).hasClass('partial-max-width-item') && formGroups.eq(index).hasClass('field-media')) {
-				$(this).addClass('partial-max-width-item');
-			}
+
+			if(formGroups.eq(index).hasClass('field-media') && !formGroups.eq(index+1).hasClass('field-media')) {
+				$(this).addBack().wrapAll('<div class="form-row" />');
+				return;
+			}			
+
 			if($(this).hasClass('partial-max-width-item') && $(this).prev().hasClass('partial-max-width-item')) {
 				$(this).prev().addBack().wrapAll('<div class="form-row" />');
 			}
+
+			if(!formGroups.eq(index).parent().hasClass('form-row') && index === formGroups.length-2) {
+				$(this).addBack().wrapAll('<div class="form-row" />');
+			}
+
+			// if(formGroups.eq(index-1).hasClass('field-media') && formGroups.eq(index).hasClass('field-media')) {
+			// 	$(this).prev().addBack().wrapAll('<div class="form-row" />');
+			// }
+
+			// if($(this).hasClass('partial-max-width-item') && $(this).prev().hasClass('partial-max-width-item')) {
+			// 	$(this).prev().addBack().wrapAll('<div class="form-row" />');
+			// }
+
+			// // if(formGroups.eq(index-2).hasClass('partial-max-width-item') && formGroups.eq(index-1).hasClass('partial-max-width-item') && !formGroups.eq(index+1).hasClass('partial-max-width-item')) {
+			// // 	$(this).addClass('partial-max-width-item');
+			// // }
+
+			// if(index === formGroups.length-2) {
+			// 	$(this).addBack().wrapAll('<div class="form-row" />');
+			// }
+
+
+			// if(formGroups.eq(index-2).hasClass('partial-max-width-item') && formGroups.eq(index-1).hasClass('partial-max-width-item') && (formGroups.length <= index+1 && !formGroups.eq(index+1).hasClass('partial-max-width-item'))) {
+			// 	$(this).removeClass('partial-max-width-item');
+			// }
+			// if(formGroups.eq(index-3).hasClass('partial-max-width-item') && formGroups.eq(index-2).hasClass('partial-max-width-item') && formGroups.eq(index-1).hasClass('partial-max-width-item') && !formGroups.eq(index+1).hasClass('partial-max-width-item')) {
+			// 	$(this).addClass('partial-max-width-item');
+			// }
+			// if(formGroups.eq(index-2).hasClass('partial-max-width-item') && formGroups.eq(index-1).hasClass('partial-max-width-item') && !formGroups.eq(index+1).hasClass('partial-max-width-item')) {
+			// 	$(this).addClass('partial-max-width-item');
+			// }
+			// if(formGroups.eq(index-1).hasClass('field-media') && !formGroups.eq(index+1).hasClass('field-media')) {
+			// 	$(this).prev().wrapAll('<div class="form-row" />');
+			// }
+			// if(formGroups.eq(index-1).hasClass('partial-max-width-item') && !formGroups.eq(index+1).hasClass('partial-max-width-item') && formGroups.eq(index).hasClass('field-media')) {
+			// 	$(this).addClass('partial-max-width-item');
+			// }
+			// if($(this).hasClass('partial-max-width-item') && $(this).prev().hasClass('partial-max-width-item')) {
+			// 	$(this).prev().addBack().wrapAll('<div class="form-row" />');
+			// }
 			// if(!formGroups.eq(index-1).hasClass('partial-max-width-item') && $(this).hasClass('partial-max-width-item') && index == formGroups.length-2) {
 			// 	$(this).wrapAll('<div class="form-row" />');
 			// }
