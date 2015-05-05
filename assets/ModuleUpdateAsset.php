@@ -24,6 +24,6 @@ class ModuleUpdateAsset extends AssetBundle
     ];
 
     public $depends = [
-    	'matacms\theme\simple\assets\RearrangeAsset',
-    ];
+    'yii\web\YiiAsset',
+    ]; 
 }

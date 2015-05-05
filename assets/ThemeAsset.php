@@ -11,9 +11,9 @@ class ThemeAsset extends AssetBundle {
   public $css = [
   'css/form/form.css',
   'css/grid/grid.css',
-  'css/carousel/carousel-and-snippet.css',
   'css/modal/modal.css',
   'css/theme.css',
+  'css/carousel/carousel-and-snippet.css',
   ];
   public $js = [
   'js/lib/modernizr/modernizr.js',
