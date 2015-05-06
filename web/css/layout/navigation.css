@@ -587,7 +587,7 @@ svg path, svg rect, svg line, svg polyline, polygon, g, circle {
 
 .cd-header {
   position: relative;
-  z-index: 101;
+  z-index: 99;
 }
 
 .cd-marker {
