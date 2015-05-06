@@ -22,6 +22,10 @@ mata.simpleTheme = mata.simpleTheme || {};
 
 $(window).ready(function() {
 
+	mata.simpleTheme.addClickEventToRearrangeAndVersionsBtns();
+
+	mata.simpleTheme.closeOverlay();
+
 	mata.simpleTheme.addAClassToSelectizeAndFileUploaderAndUriParent();
 	mata.simpleTheme.addAClassToMainActionButtonsParent();
 	mata.simpleTheme.addSelectedAscendingDescendingClassesToSortBy();
@@ -46,6 +50,37 @@ $(window).ready(function() {
 
 	mata.simpleTheme.addHoverBehaviourToVersionTooltip();
 })
+
+mata.simpleTheme.addClickEventToRearrangeAndVersionsBtns = function() {
+
+	var body = document.body,
+	dropArea = document.getElementById( 'drop-area' );
+
+	$('.rearrangeable-trigger-btn, #versions-link').on('click', function() {
+		classie.add( body, 'drag-active' );
+
+		var url = $(this).attr("data-url");
+
+		$.ajax(url).done(function(data) {
+			$('#drop-area .main-body').html(data);
+			classie.add( dropArea, 'show' );
+		});
+
+		return false;
+	})
+};
+
+mata.simpleTheme.closeOverlay = function() {
+
+	var body = document.body,
+	dropArea = document.getElementById( 'drop-area' );
+	
+	$('#drop-area .close-character').on('click', function() {
+		classie.remove( body, 'drag-active' );
+		classie.remove( dropArea, 'show' );
+		$('#drop-area .main-body').empty();
+	})
+};
 
 
 $(window).on("pjax:success", function() {

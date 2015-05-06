@@ -5,44 +5,44 @@ body {
 	background: transparent;;
 }
 
-.grid {
-	margin: 0 auto;
-	max-width: 50em;
-	padding: 0 1em;
-}
+// .grid {
+// 	margin: 0 auto;
+// 	max-width: 50em;
+// 	padding: 0 1em;
+// }
 
-.grid__item {
-	float: left;
-	margin: 0.5%;
-	width: 49%;
-	height: 2.05em;
-	padding: 0.35em 0.5em;
-	border-radius: 4px;
-	background: #62b989;
-	color: #a3e0be;
-	font-size: 1.5em;
-	text-align: left;
-}
+// .grid__item {
+// 	float: left;
+// 	margin: 0.5%;
+// 	width: 49%;
+// 	height: 2.05em;
+// 	padding: 0.35em 0.5em;
+// 	border-radius: 4px;
+// 	background: #62b989;
+// 	color: #a3e0be;
+// 	font-size: 1.5em;
+// 	text-align: left;
+// }
 
 
-.grid__item:hover {
-	cursor: move;
-	cursor: -webkit-grab;
-	cursor: grab;
-}
+// .grid__item:hover {
+// 	cursor: move;
+// 	cursor: -webkit-grab;
+// 	cursor: grab;
+// }
 
-.grid__item:active {
-	cursor: -webkit-grabbing;
-	cursor: grabbing;
-}
+// .grid__item:active {
+// 	cursor: -webkit-grabbing;
+// 	cursor: grabbing;
+// }
 
-.is-dragging {
-	background: #575e5a;
-}
+// .is-dragging {
+// 	background: #575e5a;
+// }
 
-.is-active {
-	z-index: 100;
-}
+// .is-active {
+// 	z-index: 100;
+// }
 
 .is-dropped {
 	opacity: 0;
@@ -67,7 +67,7 @@ body {
 	position: fixed;
 	top: 100%;
 	left: 0;
-	z-index: 99;
+	z-index: 2000;
 	width: 100%;
 	// width: calc(100% + 20px);
 	height: 100%;
@@ -177,7 +177,7 @@ body {
 	opacity: 1;
 }
 
-.main-body {
+.drop-area .main-body {
 	-webkit-transition: all 0.5s cubic-bezier(0.6,0,0.4,1);
 	transition: all 0.5s cubic-bezier(0.6,0,0.4,1);
 	height: -100%;
@@ -185,8 +185,7 @@ body {
 	transition-delay: 2s;
 }
 
-
-.close-character {
+.drop-area .close-character {
 	width: 45px;
 	height: 24px;
 	position: absolute;
@@ -202,3 +201,5 @@ iframe {
 	height: auto;
 	max-width: 100%;
 }
+
+@import "overlayListItems.less";

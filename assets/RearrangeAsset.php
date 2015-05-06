@@ -18,13 +18,9 @@ class RearrangeAsset extends AssetBundle
     public $sourcePath = '@vendor/matacms/matacms-simple-theme/web';
 
     public $css = [
-    'css/rearrange/rearrange.css',
     'css/rearrange/sortable.css'
     ];
     public $js = [
-    'js/rearrange/draggabilly.pkgd.min.js',
-    'js/rearrange/dragdrop.js',
-    'js/rearrange/rearrange.js',
     ];
 
     public $depends = [

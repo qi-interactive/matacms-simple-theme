@@ -1,11 +1,8 @@
-.smooth-sortable{min-height:32px;overflow:hidden;padding:0;max-width:520px;margin:0 auto}
-ol{list-style-position:inside}
-.smooth-sortable li{position:relative;padding:10px 30px 10px 20px;font-weight:700;font-size:14px;text-align:left;color:#343c55;border-bottom:none;background-color:#d5deeb;-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-transition:all .33s ease;-moz-transition:all .33s ease;transition:all .33s ease;border-radius:2px;margin-bottom:5px;cursor:pointer;height:40px;white-space:nowrap}
+.smooth-sortable{max-width:520px}
+.smooth-sortable li{padding:10px 30px 10px 20px;color:#343c55}
 .smooth-sortable li .svg-icon-container{position:absolute;right:0;top:0;width:30px;height:100%;background:#d5deeb}
 .smooth-sortable li svg{width:17px;right:10px;top:14px;position:absolute}
 .smooth-sortable li svg .rearrangeable-icon polyline{stroke:#60a5bc}
 .smooth-sortable li svg .tick-icon{display:none}
-.smooth-sortable li .fadding-container{right:30px;width:20px}
 .smooth-sortable li:after{display:block;content:"";position:absolute;top:0;right:68px;height:100%;width:13px;opacity:.5;background-size:13px 13px}
 .smooth-sortable li:active,.ui-draggable-dragging{cursor:-webkit-grabbing;cursor:-moz-grabbing;opacity:.8;box-shadow:0 2px 10px rgba(0,0,0,.7),inset 0 1px 0 #fff,inset 0 -1px 0 #ddd,inset 1px 0 0 #ddd,inset -1px 0 0 #ddd;z-index:9999;-webkit-transition:none}
-.main-body h3{color:#fff;display:inline-block;margin:0 auto 45px;font-size:26px;font-weight:700;text-transform:uppercase;padding:0 15px;max-width:80%}

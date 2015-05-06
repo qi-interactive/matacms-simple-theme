@@ -14,15 +14,19 @@ class ThemeAsset extends AssetBundle {
   'css/modal/modal.css',
   'css/theme.css',
   'css/carousel/carousel-and-snippet.css',
+  'css/overlay/overlay.css',
   ];
   public $js = [
   'js/lib/modernizr/modernizr.js',
   'js/layout/theme.js',
-  'js/layout/main.js'
+  'js/layout/main.js',
+  'js/rearrange/draggabilly.pkgd.min.js',
+  'js/rearrange/dragdrop.js',
   ];
 
   public $depends = [
   'yii\web\YiiAsset',
   'yii\bootstrap\BootstrapAsset',
+
   ];
 }

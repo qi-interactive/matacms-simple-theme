@@ -1,0 +1,4 @@
+.overlay-container ol.overlay-list-container{min-height:32px;overflow:hidden;padding:0 0 50px;margin:0 auto;list-style-position:inside}
+.overlay-container ol.overlay-list-container li{position:relative;font-weight:700;font-size:14px;text-align:left;border-bottom:none;background-color:#d5deeb;-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-transition:all .33s ease;-moz-transition:all .33s ease;transition:all .33s ease;border-radius:2px;margin-bottom:5px;cursor:pointer;height:40px;white-space:nowrap}
+.overlay-container ol.overlay-list-container li .fadding-container{right:30px;width:20px}
+.overlay-container .main-body h3{color:#fff;display:inline-block;margin:0 auto 45px;font-size:26px;font-weight:700;text-transform:uppercase;padding:0 15px;max-width:80%}
