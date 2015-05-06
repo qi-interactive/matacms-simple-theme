@@ -53,7 +53,7 @@ if (inIframe() == false)
 
 		?>
 
-		<div class="container">
+		<div class="container module-<?= $this->context->module->id ?>">
 			<?= $content ?>
 		</div>
 		<?php $this->endBody() ?>
