@@ -154,5 +154,133 @@
 	opacity: 0.7;
 }
 
+#edit-image-container-modal {
+
+	.qq-upload-drop-area, .qq-upload-extra-drop-area {
+		background: @midnight-blue;
+	}
+	.file-uploader {
+		background: @midnight-blue;
+		width: 100%;
+		margin-bottom: 20px;
+		display: block;
+		height: 165px;
+		text-align: left;
+		border-radius: 2px;
+		position: relative;
+
+		.qq-uploader {
+			height: 100%;
+		}
+		.img-container {
+			background: @alice-blue;
+			width: auto;
+			display: inline-block;
+			// position: relative;
+			position: absolute;
+			height: 120px;
+			width: 120px;
+			left: 22px;
+			top: 22px;
+			bottom: 22px;
+
+			img {
+				display: block;
+				max-width: 100%;
+				position: absolute;
+				margin: auto;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				max-height: 100%;
+			}
+		}
+
+		.qq-upload-button {
+			background: none;
+			padding: 22px;
+			display: inline-block;
+			width: auto;
+			float: right;
+			height: auto;
+		}
+		.fine-uploader {
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+			height: 100%;
+			.add-media-inner-wrapper {
+				width: auto;
+				display: inline-block;
+				float: right;
+				width: 200px;
+
+				.hi-icon-effect-2 {
+					margin-bottom: 0px;
+					height: 100%;
+
+					.hi-icon {
+						width: 41px;
+						height: 41px;
+					}
+
+					span {
+						font-size: 14px;
+						line-height: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+
+#update-carousel-item-form {
+	.form-group.field-carouselitem-caption {
+		background: @midnight-blue;
+	}
+
+	.submit-btn-container {
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+	.form-group {
+		text-align: left;
+	}
+}
+
+.video-url {
+	width: 100%;
+
+	.video-preview-container {
+		width: 100%;
+		height: 120px;
+		background: @midnight-blue;
+		height: 165px;
+		padding: 22px;
+
+		#player, .fallback, body, html, iframe {
+			background: @alice-blue;
+		}
+
+		iframe {
+			width: 120px;
+			height: 100%;
+			margin: 0 auto;
+
+		}
+	}
+
+
+	.form-group.field-videourlform-videourl {
+		text-align: left;
+		background: @midnight-blue;
+	}
+}
+
+.player .video-wrapper .video {
+	background-color: @alice-blue !important;
+}
+
 
 @import "modal_mobile.less";

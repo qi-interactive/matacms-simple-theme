@@ -20,5 +20,29 @@
 .modal-content .modal-header .close{color:#fff;opacity:1;text-shadow:none;font-size:0;margin-top:-21px;min-height:0;background-image:url(../../images/icons/close.svg);background-repeat:no-repeat;background-size:13px;background-position:center;width:30px;height:30px}
 .modal-content .modal-header .close:hover{opacity:.7;background-color:transparent}
 .modal-backdrop.in{opacity:.7}
+#edit-image-container-modal .qq-upload-drop-area,#edit-image-container-modal .qq-upload-extra-drop-area{background:#212635}
+#edit-image-container-modal .file-uploader{background:#212635;width:100%;margin-bottom:20px;display:block;height:165px;text-align:left;border-radius:2px;position:relative}
+#edit-image-container-modal .file-uploader .qq-uploader{height:100%}
+#edit-image-container-modal .file-uploader .img-container{background:#d5deeb;display:inline-block;position:absolute;height:120px;width:120px;left:22px;top:22px;bottom:22px}
+#edit-image-container-modal .file-uploader .img-container img{display:block;max-width:100%;position:absolute;margin:auto;top:0;left:0;right:0;bottom:0;max-height:100%}
+#edit-image-container-modal .file-uploader .qq-upload-button{background:0 0;padding:22px;display:inline-block;width:auto;float:right;height:auto}
+#edit-image-container-modal .file-uploader .fine-uploader{display:inline-block;vertical-align:top;width:100%;height:100%}
+#edit-image-container-modal .file-uploader .fine-uploader .add-media-inner-wrapper{display:inline-block;float:right;width:200px}
+#edit-image-container-modal .file-uploader .fine-uploader .add-media-inner-wrapper .hi-icon-effect-2{margin-bottom:0;height:100%}
+#edit-image-container-modal .file-uploader .fine-uploader .add-media-inner-wrapper .hi-icon-effect-2 .hi-icon{width:41px;height:41px}
+#edit-image-container-modal .file-uploader .fine-uploader .add-media-inner-wrapper .hi-icon-effect-2 span{font-size:14px;line-height:16px}
+#update-carousel-item-form .form-group.field-carouselitem-caption{background:#212635}
+#update-carousel-item-form .submit-btn-container{margin-bottom:0;padding-bottom:0}
+#update-carousel-item-form .form-group{text-align:left}
+.video-url{width:100%}
+.video-url .video-preview-container{width:100%;background:#212635;height:165px;padding:22px}
+.video-url .video-preview-container #player,.video-url .video-preview-container .fallback,.video-url .video-preview-container body,.video-url .video-preview-container html,.video-url .video-preview-container iframe{background:#d5deeb}
+.video-url .video-preview-container iframe{width:120px;height:100%;margin:0 auto}
+.video-url .form-group.field-videourlform-videourl{text-align:left;background:#212635}
+.player .video-wrapper .video{background-color:#d5deeb!important}
 @media (min-width:555px){.modal-dialog{width:529px;margin:30px auto}}
 @media (max-width:554px){.modal-content .modal-body .hi-icon-effect-2 .inner-container{max-width:100%}}
+@media (max-width:488px){#edit-image-container-modal .file-uploader{text-align:center;min-height:295px}
+#edit-image-container-modal .file-uploader .fine-uploader .add-media-inner-wrapper{float:none;width:100%;display:block}
+#edit-image-container-modal .file-uploader .qq-upload-button{float:none;padding-top:0;position:absolute!important;bottom:0;width:200px;display:block;margin:0 auto 0 -100px;left:50%}
+#edit-image-container-modal .file-uploader .img-container{left:50%;margin-left:-60px}}
