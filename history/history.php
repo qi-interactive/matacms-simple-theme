@@ -25,7 +25,7 @@ $returnUri = Yii::$app->request->get('returnURI');
 
 		<a href="<?= $returnUri ?>&revision=<?= $revision->Revision ?>">
 			<span class="avatar">
-				<img src="http://gravatar.com/avatar/<?= $user->profile->gravatar_id ?>?s=24" class="img-rounded" alt="<?= $user->username ?>"/>
+				<img src="<?= $user->profile->getMediaAvatar()->URI ?>" alt="<?= $user->username ?>"/>
 			</span>
 			<div class="text-container">
 				<span class="author">

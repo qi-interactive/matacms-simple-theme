@@ -1,8 +1,36 @@
+@import "../imports/variables.less";
+@import "../imports/mixins.less";
+
+
+
 .container.module-user {
 
 	max-width: 930px;
 	
+	.panel-body {
+		padding: 37px;
+
+		.form-group:last-child {
+			margin-bottom: 0px;
+		}
+	}
+
+	.panel-heading {
+		padding: 20px 37px;
+		color: @alice-blue;
+		background-color: #535d7c;
+		border-color: @slate-grey;
+		font-weight: @proxima-bold;
+		font-size: 18px;
+		border-width: 2px;
+	}
 	.panel {
-		 border: none;
+		border: none;
+		background-color: #535d7c;
+		margin-bottom: 37px;
+	}
+
+	.form-group.submit-form-group {
+		padding-left: 37px;
 	}
 }

@@ -90,8 +90,8 @@ button[type=submit]{text-transform:uppercase;min-height:45px}
 .qq-upload-button{height:200px;width:200px;background:#343c55;outline:0;padding:0;display:table;margin:0 auto;border:0}
 .qq-upload-button .hi-icon{z-index:0}
 .btn.btn-info{margin-left:-3px}
-.btn.publish-btn{background:#d6915e}
-.btn.publish-btn:hover{background:#aa7c5d}
+.btn.publish-btn{background-color:#55c45f}
+.btn.publish-btn:hover{background-color:#469450}
 .btn.schedule-btn{background-color:#c96aa4}
 .btn.schedule-btn:hover{background-color:#9e5d8b}
 .btn.cancel.btn{background:#ff6b6b}
