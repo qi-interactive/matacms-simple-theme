@@ -50,13 +50,40 @@ $(window).ready(function() {
 		
 
 	}).resize();
-
 	mata.simpleTheme.addHoverBehaviourToVersionTooltip();
 })
 
+mata.simpleTheme.addHoverBehaviourToVersionTooltip = function() {
+	$('.list-version-container').each(function(el) {
+		addHoverEffectToVersionsTooltip($(this));
+	})
+
+	$('#mata-content').contents().find('.list-version-container').each(function(el) {
+		addHoverEffectToVersionsTooltip($(this));
+	})
+
+};
+
+
+function addHoverEffectToVersionsTooltip(el) {
+	var popUpWidth = el.outerWidth();
+	el.css('margin-right', -(popUpWidth - 23));
+
+	el.on('mouseover', function() {
+		$('#mata-content').contents().find('ol.revisions li .list-version-container').removeClass('is-hover');
+		el.addClass('is-hover');
+
+		el.on('mouseout', function() {
+			el.removeClass('is-hover');
+
+		})
+	})
+}
+
+
 mata.simpleTheme.addClickEventToRearrangeAndVersionsBtns = function() {
 
-$('.rearrangeable-trigger-btn').on('click', function() {
+	$('.rearrangeable-trigger-btn').on('click', function() {
 		classie.add( body, 'drag-active' );
 
 		var url = $(this).attr("data-url");
@@ -81,7 +108,10 @@ $('.rearrangeable-trigger-btn').on('click', function() {
 
 		$.ajax(url).done(function(data) {
 			$('#mata-content').contents().find('#drop-area .main-body').html(data);
+			mata.simpleTheme.addHoverBehaviourToVersionTooltip();
+			$('#mata-content').contents().find('ol.revisions li .list-version-container.live').trigger('mouseover');
 			classie.add(iframeDropArea, 'show');
+			
 		});
 
 	})
@@ -110,25 +140,6 @@ mata.simpleTheme.onPjaxSuccess = function() {
 	$(window).resize();
 	mata.simpleTheme.addHoverBehaviourToVersionTooltip();
 }
-
-mata.simpleTheme.addHoverBehaviourToVersionTooltip = function() {
-	$('.list-version-container').each(function(el) {
-		var popUpWidth = $(this).outerWidth();
-		$(this).css('margin-right', -(popUpWidth - 25));
-
-		$(this).on('mouseover', function() {
-			$(this).addClass('is-hover');
-
-			$(this).on('mouseout', function() {
-				$(this).removeClass('is-hover');
-
-			})
-		})
-
-	})
-
-
-};
 
 
 mata.simpleTheme.addSelectedAscendingDescendingClassesToSortBy = function() {
