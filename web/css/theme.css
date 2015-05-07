@@ -1,13 +1,13 @@
-body,body.theme-simple,html{height:100%}
 .content-block-top-bar .top-bar-sort-by-container ul li a,.content-block-top-bar .top-bar-sort-by-container ul li:first-child{line-height:20px;padding:3px 21px 2px 5px;font-weight:600;font-size:12px}
 .alert,.content-block-top-bar .top-bar-sort-by-container ul{margin-bottom:0}
 .back-btn,.cd-header .header-inner-container h1{display:inline-block;font-weight:700;text-transform:uppercase}
 *,::before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-smoothing:antialiased;font-smooth:always;-webkit-font-smoothing:antialiased}
 input:-webkit-autofill,input:-webkit-autofill:focus,select:-webkit-autofill,textarea:-webkit-autofill{-webkit-box-shadow:none!important;-webkit-box-shadow:0 0 0 1000px #d5deeb inset!important;background-color:#d5deeb!important;color:#343c55!important;-webkit-text-fill-color:#343c55!important}
-body,html{overflow:auto;font-family:proxima-nova}
+body,html{overflow:auto;height:100%;font-family:proxima-nova}
 a,a:focus,a:hover{outline:0;text-decoration:none}
 li{list-style-type:none}
-body{overflow:visible}
+body{height:auto;overflow:visible}
+body.theme-simple{height:100%}
 .container{max-width:900px}
 .border{background:#4d546b;height:2px;width:100%}
 .content-block-top-bar{padding-bottom:30px}
