@@ -5,7 +5,6 @@ mata.simpleTheme.header = {};
 $(window).ready(function() {
 
 	$("#header-inner-container .back-btn").on("click", mata.simpleTheme.navigator.handleLink);
-	$("#header-inner-versions").on("click", mata.simpleTheme.navigator.handleLink);
 
 })
 
@@ -25,7 +24,7 @@ mata.simpleTheme.header.setBackToListViewURL = function(url) {
 }
 
 mata.simpleTheme.header.setVersionsURL = function(url) {
-	$("#header-inner-versions").attr("href", url);
+	$("#header-inner-versions").attr("data-url", url);
 	return mata.simpleTheme.header;
 }
 

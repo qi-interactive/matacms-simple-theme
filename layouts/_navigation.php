@@ -64,7 +64,7 @@ if (empty($menuItems))
 	<div id="header-inner-container" class="header-inner-container">
 		<h1 id="header-inner-container-header"></h1>
 		<div id="header-inner-versions" class="hi-icon-effect-2">
-			<div class="hi-icon hi-icon-cog rearrangeable-trigger-btn"></div>
+			<div class="hi-icon hi-icon-cog"></div>
 		</div>
 		<div>
 			<a class="back-btn" href="#">
