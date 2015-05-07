@@ -7,6 +7,7 @@ ol.revisions {
 	li {
 		margin: 10px 0;
 		color: @slate-purple;
+		overflow: hidden;
 
 		a {
 			padding: 5px 30px 10px 20px;
@@ -34,9 +35,22 @@ ol.revisions {
 				height: 100%;
 			}
 		}
+		.author {
+			font-weight: bold;
+		}
+
+		.list-version-container {
+			height: 100%;
+			padding-top: 9px;
+
+			&:after {
+				background-size: 17px 14px;
+			}
+		}
+
+		.list-version-container.draft:after {
+			background-size: cover;
+		}
 	}
 
-	.author {
-		font-weight: bold;
-	}
 }

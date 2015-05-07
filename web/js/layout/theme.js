@@ -1,5 +1,8 @@
 window.mata = window.mata || {};
 mata.simpleTheme = mata.simpleTheme || {};
+
+var body = document.body,
+dropArea = document.getElementById( 'drop-area' );
 // mata.simpleTheme.attachLoaderHandlers = function() {
 
 // 	$(window).on('beforeunload', function(e) {
@@ -53,9 +56,6 @@ $(window).ready(function() {
 
 mata.simpleTheme.addClickEventToRearrangeAndVersionsBtns = function() {
 
-	var body = document.body,
-	dropArea = document.getElementById( 'drop-area' );
-
 	$('.rearrangeable-trigger-btn, #versions-link').on('click', function() {
 		classie.add( body, 'drag-active' );
 
@@ -64,6 +64,8 @@ mata.simpleTheme.addClickEventToRearrangeAndVersionsBtns = function() {
 		$.ajax(url).done(function(data) {
 			$('#drop-area .main-body').html(data);
 			classie.add( dropArea, 'show' );
+
+			
 		});
 
 		return false;
@@ -71,9 +73,6 @@ mata.simpleTheme.addClickEventToRearrangeAndVersionsBtns = function() {
 };
 
 mata.simpleTheme.closeOverlay = function() {
-
-	var body = document.body,
-	dropArea = document.getElementById( 'drop-area' );
 	
 	$('#drop-area .close-character').on('click', function() {
 		classie.remove( body, 'drag-active' );
@@ -98,7 +97,7 @@ mata.simpleTheme.onPjaxSuccess = function() {
 }
 
 mata.simpleTheme.addHoverBehaviourToVersionTooltip = function() {
-	$('.list-container .list-version-container').each(function(el) {
+	$('.list-version-container').each(function(el) {
 		var popUpWidth = $(this).outerWidth();
 		$(this).css('margin-right', -(popUpWidth - 25));
 
