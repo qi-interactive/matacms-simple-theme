@@ -1,12 +1,12 @@
-body,body.theme-simple,html{height:100%}
 .content-block-top-bar .top-bar-sort-by-container ul li a,.content-block-top-bar .top-bar-sort-by-container ul li:first-child{line-height:20px;padding:3px 21px 2px 5px;font-weight:600;font-size:12px}
 .alert,.content-block-top-bar .top-bar-sort-by-container ul{margin-bottom:0}
 *,::before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-smoothing:antialiased;font-smooth:always;-webkit-font-smoothing:antialiased}
 input:-webkit-autofill,input:-webkit-autofill:focus,select:-webkit-autofill,textarea:-webkit-autofill{-webkit-box-shadow:none!important;-webkit-box-shadow:0 0 0 1000px #d5deeb inset!important;background-color:#d5deeb!important;color:#343c55!important;-webkit-text-fill-color:#343c55!important}
-body,html{overflow:auto;font-family:proxima-nova}
+body,html{overflow:auto;height:100%;font-family:proxima-nova}
 a,a:focus,a:hover{outline:0;text-decoration:none}
 li{list-style-type:none}
-body{overflow:visible}
+body{height:auto;overflow:visible}
+body.theme-simple{height:100%}
 .container{max-width:900px}
 .border{background:#4d546b;height:2px;width:100%}
 .content-block-top-bar{padding-bottom:30px}
@@ -32,7 +32,7 @@ body{overflow:visible}
 .alert-success{border-color:#55c45f;color:#55c45f}
 .alert-error{border-color:#ff6b6b;color:#ff6b6b;font-weight:700}
 .cd-header{height:auto;padding:25px 0}
-.cd-header .header-inner-container{max-width:900px;padding-right:15px;opacity:0;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;padding-left:15px;margin-right:auto;margin-left:auto;height:94px}
+.cd-header .header-inner-container{max-width:900px;padding-right:15px;opacity:0;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;padding-left:15px;margin-right:auto;margin-left:auto}
 .list-version-container:after,.list-version-container:before{-ms-transition:.25s all ease-in-out;-o-transition:.25s all ease-in-out;transition:.25s all ease-in-out;-moz-transition:.25s all ease-in-out}
 .list-version-container,.list-version-container:after,.list-version-container:before{top:0;position:absolute;-webkit-transition:.25s all ease-in-out}
 .cd-header .header-inner-container h1{font-size:26px;font-weight:700;color:#fff;max-width:75%;text-transform:uppercase;line-height:30px;display:inline-block}
