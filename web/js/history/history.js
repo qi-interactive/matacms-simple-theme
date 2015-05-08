@@ -1,3 +1,4 @@
 $(document).ready(function() {
-  $(".revisions .date").timeago();
+	var iframeDocument = $('#mata-content').contents()[0];
+  $(".revisions .date", iframeDocument).timeago();
 });

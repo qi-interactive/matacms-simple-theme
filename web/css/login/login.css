@@ -4,8 +4,8 @@ html>body{background:#485274;display:table}
 .logo{color:#fff;text-align:center;margin-bottom:72px;margin-top:0}
 .logo img{width:276px}
 .panel{background:#5f6885;border:0;max-width:460px;margin:0 auto;height:auto;padding:0}
-.panel .panel-heading{background:#5f6885;border:0;padding:20px 37px;border-bottom:2px solid #4d546b;text-align:left}
-.panel .panel-heading h3{font-size:24px;color:#9fa7b7;font-weight:700;letter-spacing:0}
+.panel .panel-heading{background:#5f6885;border:0;padding:20px 37px;border-bottom:2px solid #485274;text-align:left}
+.panel .panel-heading h3{font-size:24px;color:#d5deeb;font-weight:700;letter-spacing:0}
 .panel .panel-body{padding:0 37px}
 #forgotten-password-bar{background:#212635;padding:24px 37px;margin:31px 0 0;text-align:left;font-weight:600}
 #forgotten-password-bar a{color:#9fa7b7;font-weight:600;line-height:26px}
@@ -27,8 +27,8 @@ html>body{background:#485274;display:table}
 .field-login-form-rememberme label span{color:#9fa7b7}
 .field-login-form-rememberme label span:hover{color:#858b99}
 .field-login-form-rememberme label:hover input[type=checkbox]+div:before{opacity:1;-moz-transition:opacity .3s;-webkit-transition:opacity .3s;-o-transition:opacity .3s;-ms-transition:opacity .3s;transition:opacity .3s}
-form{margin-top:20px}
-#header-spacer{display:none;background:#343c55;width:100%;color:#ff6b6b;padding:15px 37px;font-size:14px;text-align:left;font-weight:700;border-bottom:2px solid #4d546b}
+form{margin-top:15px}
+#header-spacer{display:none;background:#343c55;width:100%;color:#ff6b6b;padding:15px 37px;font-size:14px;text-align:left;font-weight:700;border-bottom:2px solid #535d7c}
 form#login-form label span{vertical-align:middle;padding-left:12px;font-weight:600;color:#9fa7b7}
 form#login-form label{padding-left:0;padding-right:0}
 form#login-form .input{position:relative;z-index:1;display:inline-block;margin:0;width:100%;vertical-align:top}

@@ -91,6 +91,10 @@ body.theme-simple {
 					line-height: 20px;
 					display: block;
 
+					&:hover {
+						color: @alice-blue;
+					}
+
 					&:after {
 						content: '';
 						width: 0; 
@@ -120,11 +124,11 @@ body.theme-simple {
 
 
 				&:first-child, .sort-by-label{
-					color: @alice-blue;
+					color: @white;
 					cursor: default;
 
 					&:hover {
-						color: @alice-blue;
+						color: @white;
 					}
 					&.selected-descending, &.selected-ascending {
 						&:after {
@@ -203,6 +207,10 @@ body.theme-simple {
 			text-transform: uppercase;
 			line-height: 30px;
 			display: inline-block;
+
+			span {
+				text-transform: lowercase;
+			}
 		}
 
 		.hi-icon-effect-2 {

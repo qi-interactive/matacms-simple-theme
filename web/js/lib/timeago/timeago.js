@@ -176,7 +176,7 @@
 
   function refresh() {
     //check if it's still visible
-    if(!$.contains(document.documentElement,this)){
+    if(!$.contains(this.ownerDocument,this)){
       //stop if it has been removed
       $(this).timeago("dispose");
       return this;

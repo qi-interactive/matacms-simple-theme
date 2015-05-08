@@ -2,7 +2,7 @@
 .list-container a,.list-container span{color:#343c55}
 .list-container .list-link{display:block}
 .list-container .delete-btn{display:block;background-image:url(../../images/icons/remove.svg);background-repeat:no-repeat;background-position:center;height:46px;width:42px;position:absolute;right:0;background-size:42px 46px;bottom:0;z-index:1}
-.list-container .list-thumbnail{background:#fff;padding:6px;width:52px;height:52px;position:absolute;margin:21px 1.5625% 21px 19px}
+.list-container .list-thumbnail{background:#fff;padding:6px;width:52px;height:52px;position:absolute;margin:21px 1.5625% 21px 19px;border-radius:2px}
 .list-view,.list-view:first-child{margin-top:30px}
 .list-container .list-thumbnail .list-thumbnail-img{width:100%;height:100%;background-size:cover;background-repeat:no-repeat;background-position:center}
 .list-container .list-contents-container{margin-left:0;overflow:hidden;padding:21px 49px 21px 19px}
