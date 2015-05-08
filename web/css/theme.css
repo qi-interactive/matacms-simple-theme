@@ -1,5 +1,4 @@
-.content-block-top-bar .top-bar-sort-by-container ul li a,.content-block-top-bar .top-bar-sort-by-container ul li:first-child{line-height:20px;padding:3px 21px 2px 5px;font-weight:600;font-size:12px}
-.alert,.content-block-top-bar .top-bar-sort-by-container ul{margin-bottom:0}
+.content-block-top-bar .top-bar-sort-by-container ul li a,.content-block-top-bar .top-bar-sort-by-container ul li:first-child{padding:3px 21px 2px 5px;line-height:20px;font-weight:600;font-size:12px}
 *,::before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-smoothing:antialiased;font-smooth:always;-webkit-font-smoothing:antialiased}
 input:-webkit-autofill,input:-webkit-autofill:focus,select:-webkit-autofill,textarea:-webkit-autofill{-webkit-box-shadow:none!important;-webkit-box-shadow:0 0 0 1000px #d5deeb inset!important;background-color:#d5deeb!important;color:#343c55!important;-webkit-text-fill-color:#343c55!important}
 body,html{overflow:auto;height:100%;font-family:proxima-nova}
@@ -17,6 +16,7 @@ body.theme-simple{height:100%}
 .content-block-top-bar .btns-container .hi-icon{height:41px;width:41px}
 .content-block-top-bar .btns-container .hi-icon-effect-2{margin-top:2px}
 .content-block-top-bar .top-bar-sort-by-container{display:block;position:relative;text-align:right}
+.content-block-top-bar .top-bar-sort-by-container ul{margin-bottom:0;padding-left:0;padding-right:0}
 .content-block-top-bar .top-bar-sort-by-container ul li{display:inline-block}
 .content-block-top-bar .top-bar-sort-by-container ul li a{color:#9fa7b7;cursor:pointer;display:block}
 .alert button.close,.content-block-top-bar .top-bar-sort-by-container ul li .sort-by-label.selected-ascending:after,.content-block-top-bar .top-bar-sort-by-container ul li .sort-by-label.selected-descending:after,.content-block-top-bar .top-bar-sort-by-container ul li:first-child.selected-ascending:after,.content-block-top-bar .top-bar-sort-by-container ul li:first-child.selected-descending:after{display:none}
@@ -28,7 +28,7 @@ body.theme-simple{height:100%}
 .content-block-top-bar .top-bar-sort-by-container ul li .sort-by-label,.content-block-top-bar .top-bar-sort-by-container ul li:first-child{color:#d5deeb;cursor:default}
 .sort-by-wrapper{padding-bottom:5px;margin-top:-10px}
 .fadding-container{height:100%;background-image:linear-gradient(rgba(213,222,235,0)0,#d5deeb 80%,#d5deeb 100%);width:44px;position:absolute;top:0;right:0}
-.alert{border:0;border-bottom:2px solid #55c45f;border-radius:2px;font-size:14px;background-color:#343c55;padding:12px 15px}
+.alert{border:0;border-bottom:2px solid #55c45f;border-radius:2px;font-size:14px;background-color:#343c55;margin-bottom:0;padding:12px 15px}
 .alert-success{border-color:#55c45f;color:#55c45f}
 .alert-error{border-color:#ff6b6b;color:#ff6b6b;font-weight:700}
 .cd-header{height:auto;padding:25px 0}
@@ -55,8 +55,8 @@ body.theme-simple{height:100%}
 .list-version-container:before{content:"";background:url(../images/tooltips/published-arrow-end@2x.png)center left no-repeat;background-size:21px 44px;height:100%;width:21px;left:-20px;cursor:pointer;z-index:1}
 .list-version-container:after{content:"";height:100%;width:21px;left:-5px;cursor:pointer;z-index:1;background:url(../images/icons/tick-status@2x.png)center left no-repeat;background-size:20px 16px}
 .list-version-container.is-hover{margin-right:0!important}
-.list-version-container.live{background-color:#55c45f}
-.list-version-container.live:before{background-image:url(../images/tooltips/live-arrow-end@2x.png)}
+.list-version-container.confirm,.list-version-container.live{background-color:#55c45f}
+.list-version-container.confirm:before,.list-version-container.live:before{background-image:url(../images/tooltips/live-arrow-end@2x.png)}
 .list-version-container.draft{background-color:#4eb7cd}
 .list-version-container.draft:before{background-image:url(../images/tooltips/draft-arrow-end@2x.png)}
 .list-version-container.draft:after{width:52px;background:url(../images/icons/edit-white.svg)-16px center no-repeat;background-size:cover}
@@ -64,5 +64,6 @@ body.theme-simple{height:100%}
 .list-version-container.scheduled{background-color:#c96aa4}
 .list-version-container.scheduled:before{background-image:url(../images/tooltips/scheduled-arrow-end@2x.png)}
 .list-version-container.scheduled:after{background:url(../images/icons/clock-status@2x.png)center left no-repeat;background-size:21px 21px}
+.user-main-alert-container{padding-left:0;padding-right:0;margin-bottom:30px}
 @media (min-width:768px){.cd-header .header-inner-container{width:750px}}
 @media (min-width:992px){.cd-header .header-inner-container{width:970px}}

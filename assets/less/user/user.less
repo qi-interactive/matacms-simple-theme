@@ -1,8 +1,6 @@
 @import "../imports/variables.less";
 @import "../imports/mixins.less";
 
-
-
 .container.module-user {
 
 	max-width: 930px;
@@ -13,7 +11,16 @@
 		.form-group:last-child {
 			margin-bottom: 0px;
 		}
+
 	}
+	.alert-section {
+		background: transparent;
+		.alert:first-child {
+			margin-bottom: 15px;
+		}
+	}
+
+
 
 	.panel-heading {
 		padding: 20px 37px;
@@ -28,8 +35,21 @@
 		border: none;
 		background-color: #535d7c;
 		margin-bottom: 37px;
+		border-radius: 2px;
 	}
 
+	a.btn {
+		margin-right: 8px;
+		height: 45px;
+		padding: 5px 17px;
+		text-transform: uppercase;
+		min-width: 130px;
+		line-height: 37px;
+
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
 	.form-group.submit-form-group {
 		padding-left: 37px;
 	}

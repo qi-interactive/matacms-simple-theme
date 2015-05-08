@@ -63,6 +63,8 @@ body.theme-simple {
 		text-align: right;
 		ul {
 			margin-bottom: 0px;
+			padding-left: 0px;
+			padding-right: 0px;
 			li {
 				display: inline-block;
 
@@ -333,7 +335,7 @@ body.theme-simple {
 	margin-right: 0px !important;
 }
 
-.list-version-container.live {
+.list-version-container.live, .list-version-container.confirm {
 	background-color: @green;
 	&:before {
 		background-image: url(../images/tooltips/live-arrow-end@2x.png);
@@ -368,6 +370,13 @@ body.theme-simple {
 		background-size: 21px 21px;
 	}
 }
+
+.user-main-alert-container {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 30px;
+}
+
 
 @import "theme_responsive.less";
 

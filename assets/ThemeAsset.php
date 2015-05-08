@@ -15,6 +15,7 @@ class ThemeAsset extends AssetBundle {
   'css/theme.css',
   'css/carousel/carousel-and-snippet.css',
   'css/overlay/overlay.css',
+  'css/datepicker/datepicker.css'
   ];
   public $js = [
   'js/lib/modernizr/modernizr.js',
