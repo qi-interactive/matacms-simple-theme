@@ -39,12 +39,18 @@ mata.simpleTheme.header.showBackToListView = function() {
 }
 
 mata.simpleTheme.header.hideVersions = function() {
-	$("#header-inner-versions").css("opacity", 0);
+	$("#header-inner-versions").css({
+		"opacity": 0,
+		"position": 'absolute'
+	});
 	return mata.simpleTheme.header;
 }
 
 mata.simpleTheme.header.showVersions = function() {
-	$("#header-inner-versions").css("opacity", 1);
+	$("#header-inner-versions").css({
+		"opacity": 1,
+		"position": 'relative'
+	});
 	return mata.simpleTheme.header;
 }
 
