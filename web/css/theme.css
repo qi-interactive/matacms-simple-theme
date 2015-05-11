@@ -66,5 +66,6 @@ body.theme-simple{height:100%}
 .list-version-container.scheduled:before{background-image:url(../images/tooltips/scheduled-arrow-end@2x.png)}
 .list-version-container.scheduled:after{background:url(../images/icons/clock-status@2x.png)center left no-repeat;background-size:21px 21px}
 .user-main-alert-container{padding-left:0;padding-right:0;margin-bottom:30px}
+.user-registered-date{font-size:12px;text-align:right;color:#9fa7b7;padding-bottom:25px;font-weight:600}
 @media (min-width:768px){.cd-header .header-inner-container{width:750px}}
 @media (min-width:992px){.cd-header .header-inner-container{width:970px}}
