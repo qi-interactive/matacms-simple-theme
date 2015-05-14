@@ -24,9 +24,11 @@ $returnUri = Yii::$app->request->get('returnURI');
 	<li>
 
 		<a href="<?= $returnUri ?>&revision=<?= $revision->Revision ?>">
-			<span class="avatar">
-				<img src="<?= $user->profile->getMediaAvatar()->URI ?>" alt="<?= $user->username ?>"/>
-			</span>
+			<?php if($user->profile->getMediaAvatar()): ?>
+				<span class="avatar">
+					<img src="<?= $user->profile->getMediaAvatar()->URI ?>" alt="<?= $user->username ?>"/>
+				</span>
+			<?php endif; ?>
 			<div class="text-container">
 				<span class="author">
 					<?php echo $author; ?>
