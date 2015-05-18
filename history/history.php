@@ -1,4 +1,5 @@
 <?php 
+
 use mata\user\models\User;
 use matacms\theme\simple\assets\HistoryAsset;
 use matacms\environment\models\ItemEnvironment;
@@ -9,8 +10,6 @@ HistoryAsset::register($this);
 $returnUri = Yii::$app->request->get('returnURI');
 
 ?>
-
-
 
 <h3>Versions of <?= \Yii::$app->controller->id ?>: Sample Name</h3>
 
@@ -73,5 +72,3 @@ $returnUri = Yii::$app->request->get('returnURI');
 <?php endforeach; ?>
 
 </ol>
-
-
