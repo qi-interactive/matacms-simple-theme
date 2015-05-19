@@ -4,11 +4,10 @@ window.mata.form = window.mata.form || {
 
 
 $(window).ready(function() {
-	
 	mata.form.trackFormChange();
 	mata.form.setFormGroups();
 
-	$('#back-to-list-view').on('click', function () {
+	$('.back-btn', window.parent.document).on('click', function () {
 		return mata.form.checkFormChange();
 	});
 	$(window.parent.document).trigger('myCustomTrigger');
