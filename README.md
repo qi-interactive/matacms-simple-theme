@@ -20,9 +20,13 @@ Installation
 Changelog
 ---------
 
+## 1.0.2-alpha, May 19, 2015
+
+- 'Back to list view' bugfix.
+
 ## 1.0.1-alpha, May 19, 2015
 
-- Styling changes
+- Styling changes.
 
 
 ## 1.0.0-alpha, May 18, 2015
