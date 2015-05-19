@@ -19,6 +19,7 @@ input,input.form-control{height:38px}
 button[type=submit]{text-transform:uppercase;min-height:45px}
 .btn-primary:active,.btn.active.focus,.btn.active:focus,.btn.focus,.btn:active,.btn:active.focus,.btn:active:focus,.btn:focus{box-shadow:none;background:#4eb7cd;outline:0}
 .btn-primary:active:hover,.btn.active.focus:hover,.btn.active:focus:hover,.btn.focus:hover,.btn:active.focus:hover,.btn:active:focus:hover,.btn:active:hover,.btn:focus:hover{background:#539fb8}
+button.btn-primary[disabled]{opacity:.45}
 @-webkit-keyframes show-a{0%{-moz-transform:scale(.2);-webkit-transform:scale(.2);-o-transform:scale(.2);-ms-transform:scale(.2);transform:scale(.2)}
 50%{-moz-transform:scale(1.2);-webkit-transform:scale(1.2);-o-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)}
 100%{-moz-transform:scale(1);-webkit-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}
