@@ -20,6 +20,11 @@ Installation
 Changelog
 ---------
 
+## 1.0.1-alpha, May 19, 2015
+
+- Styling changes
+
+
 ## 1.0.0-alpha, May 18, 2015
 
 - Initial release.
