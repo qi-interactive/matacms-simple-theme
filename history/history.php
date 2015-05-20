@@ -9,13 +9,15 @@ HistoryAsset::register($this);
 
 $returnUri = Yii::$app->request->get('returnURI');
 
+$environmentModule = \Yii::$app->getModule("environment");
+
 ?>
 
 <h3>Versions of <?= \Yii::$app->controller->id ?>: Sample Name</h3>
 
 <ol class="revisions overlay-list-container">
 	<?php foreach ($revisions as $revision): 
-	$user = User::find($revision->CreatedBy)->one();
+	$user = User::findOne($revision->CreatedBy);
 	$author = $user != null ? $user->getLabel() : "Deleted user";
 	$message = $revision->Revision == 1 ? "created this document" : "wrote this version";
 	?>
@@ -42,7 +44,7 @@ $returnUri = Yii::$app->request->get('returnURI');
 				</span>
 			</div>
 
-			<?php
+			<?php if($environmentModule->hasEnvironmentBehavior($revision->DocumentId->getModel())):
 
 			$ie = ItemEnvironment::find()->where([
 				"DocumentId" => $revision->DocumentId,
@@ -64,11 +66,23 @@ $returnUri = Yii::$app->request->get('returnURI');
 
 				</div>
 			</div>
-		<?php endif; ?>
-
+			<?php endif; ?>
+			<?php endif; ?>
 	</a>
 </li>
 
 <?php endforeach; ?>
 
 </ol>
+
+<?php 
+
+$script = <<< JS
+
+mata.history.init();
+
+JS;
+
+$this->registerJs($script, $this::POS_READY);
+
+?>
