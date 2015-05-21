@@ -3,7 +3,7 @@ use matacms\theme\simple\assets\HostAsset;
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 
-HostAsset::register($this);
+$bundle = HostAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -18,6 +18,7 @@ HostAsset::register($this);
     <script>try{Typekit.load();}catch(e){}</script>
     
     <?php $this->head() ?>
+    <link rel="icon" href="<?= $bundle->baseUrl ?>/images/favicon/mata-logo-favicon.png" type="image/png" />
 </head>
 <body class="theme-simple">
     <?php $this->beginBody() ?>

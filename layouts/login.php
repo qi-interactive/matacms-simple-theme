@@ -5,7 +5,7 @@ use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 use matacms\theme\simple\assets\ThemeAsset;
 
-ThemeAsset::register($this);
+$bundle = ThemeAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -20,6 +20,7 @@ ThemeAsset::register($this);
 	<script>try{Typekit.load();}catch(e){}</script>
 	
 	<?php $this->head() ?>
+	<link rel="icon" href="<?= $bundle->baseUrl ?>/images/favicon/mata-logo-favicon.png" type="image/png" />
 
 </head>
 

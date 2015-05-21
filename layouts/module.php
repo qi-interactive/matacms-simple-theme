@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 use yii\web\View;
 
-ModuleAsset::register($this);
+$bundle = ModuleAsset::register($this);
 
 ?>
 <?php $this->beginPage() ?>
@@ -18,6 +18,7 @@ ModuleAsset::register($this);
 	<script src="//use.typekit.net/xnl0kun.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	<?php $this->head() ?>
+	<link rel="icon" href="<?= $bundle->baseUrl ?>/images/favicon/mata-logo-favicon.png" type="image/png" />
 </head>
 
 <script>
