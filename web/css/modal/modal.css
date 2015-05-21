@@ -1,6 +1,6 @@
 .modal-content{background:#343c55;color:#fff;border-radius:3px;border:0;box-shadow:0}
 .modal-content #media-type-buttons{width:100%;height:auto}
-.modal-content #media-type-buttons a.hi-icon-effect-2,.modal-content a.hi-icon-effect-2{display:block;width:100%;border:0;border-radius:2px;float:none;color:#fff;padding:24px 15px 22px;height:110px;margin:20px 0 0}
+.modal-content #media-type-buttons a.hi-icon-effect-2,.modal-content a.hi-icon-effect-2{display:block;width:100%;border:0;border-radius:2px;float:none;margin:20px 0 0;color:#fff;padding:24px 15px 22px;height:110px}
 .modal-content #media-type-buttons a.hi-icon-effect-2:hover,.modal-content a.hi-icon-effect-2:hover{color:#fff}
 .modal-content #media-type-buttons a.hi-icon-effect-2:first-child,.modal-content a.hi-icon-effect-2:first-child{margin-top:0}
 .modal-content .modal-body{padding:0 50px 35px;text-align:center}
@@ -40,12 +40,9 @@
 .video-url .video-preview-container iframe{width:120px;height:100%;margin:0 auto}
 .video-url .form-group.field-videourlform-videourl{text-align:left;background:#212635}
 .player .video-wrapper .video{background-color:#d5deeb!important}
-@media (min-width:555px){.modal-dialog{width:529px;margin:30px auto}
-}
-@media (max-width:554px){.modal-content .modal-body .hi-icon-effect-2 .inner-container{max-width:100%}
-}
+@media (min-width:555px){.modal-dialog{width:529px;margin:30px auto}}
+@media (max-width:554px){.modal-content .modal-body .hi-icon-effect-2 .inner-container{max-width:100%}}
 @media (max-width:488px){#edit-image-container-modal .file-uploader{text-align:center;min-height:295px}
 #edit-image-container-modal .file-uploader .fine-uploader .add-media-inner-wrapper{float:none;width:100%;display:block}
 #edit-image-container-modal .file-uploader .qq-upload-button{float:none;padding-top:0;position:absolute!important;bottom:0;width:200px;display:block;margin:0 auto 0 -100px;left:50%}
-#edit-image-container-modal .file-uploader .img-container{left:50%;margin-left:-60px}
-}
+#edit-image-container-modal .file-uploader .img-container{left:50%;margin-left:-60px}}
