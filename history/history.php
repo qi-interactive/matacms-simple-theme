@@ -54,7 +54,7 @@ $environmentModule = \Yii::$app->getModule("environment");
 			if ($ie != null):
 
 				?>
-			<div class="list-version-container <?= strtolower($ie->Status) ?>" style="margin-right: -98px;"> 
+			<div class="small-list list-version-container <?= strtolower($ie->Status) ?>" style="margin-right: -98px;"> 
 				<div class="fadding-container"> </div>
 				<div class="list-version-inner-container">
 					<div class="version-status"> 
@@ -66,9 +66,9 @@ $environmentModule = \Yii::$app->getModule("environment");
 
 				</div>
 			</div>
-			<?php endif; ?>
-			<?php endif; ?>
-	</a>
+		<?php endif; ?>
+	<?php endif; ?>
+</a>
 </li>
 
 <?php endforeach; ?>

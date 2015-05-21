@@ -90,6 +90,7 @@ mata.simpleTheme.addClickEventToRearrangeAndVersionsBtns = function() {
 
 		$.ajax(url).done(function(data) {
 			$('#drop-area .main-body').html(data);
+			mata.simpleTheme.addHoverBehaviourToVersionTooltip();
 			classie.add( dropArea, 'show' );
 
 			
