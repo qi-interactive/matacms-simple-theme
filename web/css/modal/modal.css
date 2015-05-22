@@ -28,7 +28,7 @@
 #edit-image-container-modal .file-uploader .qq-uploader{height:100%}
 #edit-image-container-modal .file-uploader .img-container{background:#d5deeb;display:inline-block;position:absolute;height:120px;width:120px;left:22px;top:22px;bottom:22px}
 #edit-image-container-modal .file-uploader .img-container img{display:block;max-width:100%;position:absolute;margin:auto;top:0;left:0;right:0;bottom:0;max-height:100%}
-#edit-image-container-modal .file-uploader .qq-upload-button{background:0 0;padding:22px;display:inline-block;width:auto;float:right;height:auto}
+#edit-image-container-modal .file-uploader .qq-upload-button{background:0 0;padding:22px;display:inline-block;width:auto;float:right;height:auto;border-bottom:0;outline:0}
 #edit-image-container-modal .file-uploader .fine-uploader{display:inline-block;vertical-align:top;width:100%;height:100%}
 #edit-image-container-modal .file-uploader .fine-uploader .add-media-inner-wrapper{display:inline-block;float:right;width:200px}
 #edit-image-container-modal .file-uploader .fine-uploader .add-media-inner-wrapper .hi-icon-effect-2{margin-bottom:0;height:100%}

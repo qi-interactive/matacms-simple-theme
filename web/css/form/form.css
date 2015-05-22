@@ -49,6 +49,7 @@ button.btn-primary[disabled]{opacity:.45}
 .hi-icon-effect-2:hover .hi-icon:after,.qq-upload-button:hover .hi-icon:after{-moz-transform:scale(.85);transform:scale(.85);-webkit-transform:scale(.85);-ms-transform:scale(.85)}
 .selectize-control .selectize-input,.selectize-control.multi .selectize-input.has-items{background:#9fa7b7;padding:0 38px 0 13px}
 .qq-upload-button,.selectize-control.multi{margin-bottom:-6px}
+.qq-upload-button-focus{outline:0}
 .qq-upload-list li{margin-top:8px;background:#d5deeb}
 .selectize-control.multi .selectize-input>div{background:#d5deeb;font-size:14px;font-weight:600;margin:7px 4px 7px 0;padding-right:26px!important;padding:5px 10px 3px;color:#343c55}
 .selectize-control .selectize-control.single .selectize-input.dropdown-active,.selectize-control .selectize-input,.selectize-control .selectize-input.dropdown-active,.selectize-control.single .selectize-control.single .selectize-input.dropdown-active,.selectize-control.single .selectize-input,.selectize-control.single .selectize-input.dropdown-active{border-radius:2px}
