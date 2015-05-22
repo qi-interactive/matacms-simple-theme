@@ -1,13 +1,13 @@
 {
   "devDependencies": {
     "gulp": "*",
-    "gulp-less": "*",
-    "gulp-livereload": "*",
-    "gulp-watch": "*",
-    "gulp-util" : "*",
-    "gulp-plumber" : "*",
-    "less-plugin-clean-css" : "*",
-    "gulp-sourcemaps" : "*",
-    "gulp-rename" : "*"
+    "gulp-less": "^3.0.3",
+    "gulp-livereload": "^3.8.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-util": "^3.0.4",
+    "gulp-watch": "^4.2.4",
+    "less-plugin-clean-css": "^1.5.0"
   }
 }
