@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.0.5-alpha, May 22, 2015
+
+- Styling changes.
+
 ## 1.0.4-alpha, May 21, 2015
 
 - Favicon update.
