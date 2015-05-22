@@ -1,3 +1,6 @@
+.content-block-top-bar .top-bar-sort-by-container ul li a,.content-block-top-bar .top-bar-sort-by-container ul li:first-child{padding:3px 21px 2px 5px;line-height:20px;font-weight:600;font-size:12px}
+.list-version-container:after,.list-version-container:before{-ms-transition:.25s all ease-in-out;transition:.25s all ease-in-out;-webkit-transition:.25s all ease-in-out;-o-transition:.25s all ease-in-out}
+.list-version-container,.list-version-container:after,.list-version-container:before{z-index:1;-moz-transition:.25s all ease-in-out}
 *,::before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-smoothing:antialiased;font-smooth:always;-webkit-font-smoothing:antialiased}
 input:-webkit-autofill,input:-webkit-autofill:focus,select:-webkit-autofill,textarea:-webkit-autofill{-webkit-box-shadow:none!important;-webkit-box-shadow:0 0 0 1000px #d5deeb inset!important;background-color:#d5deeb!important;color:#343c55!important;-webkit-text-fill-color:#343c55!important}
 body,html{overflow:auto;height:100%;font-family:proxima-nova}
@@ -16,18 +19,18 @@ body.theme-simple{height:100%}
 .content-block-top-bar .btns-container .hi-icon-effect-2{margin-top:2px}
 .content-block-top-bar .top-bar-sort-by-container{display:block;position:relative;text-align:right}
 .content-block-top-bar .top-bar-sort-by-container ul{margin-bottom:0;padding-left:0;padding-right:0}
-.content-block-top-bar .top-bar-sort-by-container ul li a,.content-block-top-bar .top-bar-sort-by-container ul li:first-child{font-weight:600;font-size:12px;line-height:20px;padding:3px 21px 2px 5px}
 .content-block-top-bar .top-bar-sort-by-container ul li{display:inline-block}
 .content-block-top-bar .top-bar-sort-by-container ul li a{color:#9fa7b7;cursor:pointer;display:block}
 .alert button.close,.content-block-top-bar .top-bar-sort-by-container ul li .sort-by-label.selected-ascending:after,.content-block-top-bar .top-bar-sort-by-container ul li .sort-by-label.selected-descending:after,.content-block-top-bar .top-bar-sort-by-container ul li:first-child.selected-ascending:after,.content-block-top-bar .top-bar-sort-by-container ul li:first-child.selected-descending:after{display:none}
 .content-block-top-bar .top-bar-sort-by-container ul li a.asc,.content-block-top-bar .top-bar-sort-by-container ul li a.desc,.content-block-top-bar .top-bar-sort-by-container ul li a:hover{color:#d5deeb}
 .content-block-top-bar .top-bar-sort-by-container ul li a:after{content:'';width:0;height:0;position:absolute;top:10px;margin-left:6px}
+.list-version-container:after,.list-version-container:before{height:100%;top:0;width:21px;cursor:pointer;content:""}
 .content-block-top-bar .top-bar-sort-by-container ul li a.asc:after{border-left:5px solid transparent;border-right:5px solid transparent;border-top:6px solid #d5deeb}
 .content-block-top-bar .top-bar-sort-by-container ul li a.desc:after{border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:6px solid #d5deeb}
 .content-block-top-bar .top-bar-sort-by-container ul li .sort-by-label,.content-block-top-bar .top-bar-sort-by-container ul li:first-child{color:#fff;cursor:default}
 .content-block-top-bar .top-bar-sort-by-container ul li .sort-by-label:hover,.content-block-top-bar .top-bar-sort-by-container ul li:first-child:hover{color:#fff}
 .sort-by-wrapper{padding-bottom:5px;margin-top:-10px}
-.fadding-container{height:100%;background-image:linear-gradient(rgba(213,222,235,0) 0,#d5deeb 80%,#d5deeb 100%);width:44px;position:absolute;top:0;right:0}
+.fadding-container{height:100%;background-image:linear-gradient(rgba(213,222,235,0)0,#d5deeb 80%,#d5deeb 100%);width:44px;position:absolute;top:0;right:0}
 .alert{border:0;border-bottom:2px solid #55c45f;border-radius:2px;font-size:14px;background-color:#343c55;margin-bottom:0;padding:12px 15px}
 .alert-success{border-color:#55c45f;color:#55c45f}
 .alert-error{border-color:#ff6b6b;color:#ff6b6b;font-weight:700}
@@ -46,20 +49,19 @@ body.theme-simple{height:100%}
 .back-btn svg polyline{stroke:#9fa7b7!important}
 .back-btn:focus:hover,.back-btn:hover:hover{color:#858b99}
 .back-btn:focus svg polyline,.back-btn:hover svg polyline{stroke:#858b99!important}
-.list-version-container{background-color:#55c45f;color:#fff;position:absolute;z-index:1;right:0;top:0;height:44px;display:table;padding:11px 13px 7px 28px;margin-right:-108px;-moz-transition:.25s all ease-in-out;-webkit-transition:.25s all ease-in-out;-o-transition:.25s all ease-in-out;-ms-transition:.25s all ease-in-out;transition:.25s all ease-in-out;cursor:pointer}
-.list-version-container .fadding-container{height:98%;background-image:linear-gradient(rgba(213,222,235,0) 0,#d5deeb 80%,#d5deeb 100%);left:-43px}
+.list-version-container{background-color:#55c45f;color:#fff;position:absolute;right:0;top:0;height:44px;display:table;padding:11px 13px 7px 28px;margin-right:-108px;-webkit-transition:.25s all ease-in-out;-o-transition:.25s all ease-in-out;-ms-transition:.25s all ease-in-out;transition:.25s all ease-in-out;cursor:pointer}
+.list-version-container .fadding-container{height:98%;background-image:linear-gradient(rgba(213,222,235,0)0,#d5deeb 80%,#d5deeb 100%);left:-43px}
 .list-version-container .list-version-inner-container{vertical-align:middle;display:table-cell}
 .list-version-container .list-version-inner-container .version-status{text-transform:uppercase;font-size:12px;font-weight:700;line-height:13px}
 .list-version-container .list-version-inner-container .revision-delta{font-size:9px;font-weight:600}
-.list-version-container:before{background:url(../images/tooltips/published-arrow-end@2x.png)center left no-repeat;background-size:21px 44px;left:-20px;transition:.25s all ease-in-out}
-.list-version-container:after,.list-version-container:before{height:100%;content:"";width:21px;position:absolute;top:0;cursor:pointer;z-index:1;-moz-transition:.25s all ease-in-out;-webkit-transition:.25s all ease-in-out;-o-transition:.25s all ease-in-out;-ms-transition:.25s all ease-in-out}
-.list-version-container:after{left:-5px;transition:.25s all ease-in-out;background:url(../images/icons/tick-status@2x.png)center left no-repeat;background-size:20px 16px}
+.list-version-container:before{background:url(../images/tooltips/published-arrow-end@2x.png)center left no-repeat;background-size:21px 44px;position:absolute;left:-20px}
+.list-version-container:after{position:absolute;left:-5px;background:url(../images/icons/tick-status@2x.png)center left no-repeat;background-size:20px 16px}
 .list-version-container.is-hover{margin-right:0!important}
 .list-version-container.confirm,.list-version-container.live{background-color:#55c45f}
 .list-version-container.confirm:before,.list-version-container.live:before{background-image:url(../images/tooltips/live-arrow-end@2x.png)}
 .list-version-container.draft{background-color:#4eb7cd}
 .list-version-container.draft:before{background-image:url(../images/tooltips/draft-arrow-end@2x.png)}
-.list-version-container.draft:after{width:52px;background:url(../images/icons/edit-white.svg)-16px center no-repeat;background-size:cover}
+.list-version-container.draft:after{width:52px;background:url(../images/icons/edit-white.svg)-16px center no-repeat}
 .list-version-container.superseded{background-color:#d6915e}
 .list-version-container.scheduled{background-color:#c96aa4}
 .list-version-container.scheduled:before{background-image:url(../images/tooltips/scheduled-arrow-end@2x.png)}
@@ -67,10 +69,9 @@ body.theme-simple{height:100%}
 .small-list.list-version-container{height:100%;padding-top:9px;padding-left:23px}
 .small-list.list-version-container .fadding-container{left:-30px;width:25px}
 .small-list.list-version-container:after{left:-8px;background-size:17px 14px}
+.list-version-container.draft:after{background-size:cover}
 .user-main-alert-container{padding-left:0;padding-right:0;margin-bottom:30px}
 .user-registered-date{font-size:12px;text-align:right;color:#9fa7b7;padding-bottom:25px;font-weight:600}
-@media (min-width:768px){.cd-header .header-inner-container{width:750px}
-}
-@media (min-width:992px){.cd-header .header-inner-container{width:970px}
-}
+@media (min-width:768px){.cd-header .header-inner-container{width:750px}}
+@media (min-width:992px){.cd-header .header-inner-container{width:970px}}
 .cd-header .header-inner-container{-moz-transition:5s height;-webkit-transition:5s height;-o-transition:5s height;-ms-transition:5s height;transition:5s height}
