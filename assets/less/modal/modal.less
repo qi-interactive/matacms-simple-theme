@@ -1,7 +1,7 @@
 @import "../imports/variables.less";
 @import "../imports/mixins.less";
 
-.modal-content {
+.modal-content, #redactor-modal {
 	background: @blue-corn;
 	color: @white;
 	border-radius: 3px;
@@ -39,7 +39,7 @@
 		}
 	}
 	
-	.modal-body {
+	.modal-body, section {
 		padding: 0px 50px 35px 50px;
 		text-align: center;
 
@@ -113,7 +113,7 @@
 			}
 		}
 	}
-	.modal-header  {
+	.modal-header, header {
 		padding: 29px 15px 29px 50px;
 		border: 0px;
 		text-align: left;
@@ -148,6 +148,36 @@
 		}
 
 	}
+
+	header {
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: @proxima-bold;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+
+	#redactor-modal-close {
+		color: #fff;
+		opacity: 1;
+		text-shadow: none;
+		font-size: 0px;
+		margin-top: 0px;
+		min-height: 0px;
+		background-image: url(../../images/icons/close.svg);
+		background-repeat: no-repeat;
+		background-size: 13px ;
+		background-position: center;
+		width: 30px;
+		height: 30px;
+		right: 15px;
+
+		&:hover {
+			opacity: 0.7;
+			background-color: transparent;
+		}
+	}
+
 }
 
 .modal-backdrop.in {
@@ -282,5 +312,17 @@
 	background-color: @alice-blue !important;
 }
 
+#redactor-modal-image-droparea, #redactor-modal-file-upload-box {
+	background-color: @midnight-blue;
+}
 
+#redactor-droparea {
+	border-color: @purple;
+}
+
+#redactor-modal-box {
+	background: rgba(0,0,0,0.6);
+}
+
+@import "wysiwyg-modal.less";
 @import "modal_mobile.less";
