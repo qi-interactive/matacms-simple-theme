@@ -52,7 +52,7 @@ body.theme-simple{height:100%}
 .list-version-container .list-version-inner-container .version-status{text-transform:uppercase;font-size:12px;font-weight:700;line-height:13px}
 .list-version-container .list-version-inner-container .revision-delta{font-size:9px;font-weight:600}
 .list-version-container:before{background:url(../images/tooltips/published-arrow-end@2x.png)center left no-repeat;background-size:21px 44px;left:-20px;transition:.25s all ease-in-out}
-.list-version-container:after,.list-version-container:before{content:"";height:100%;width:21px;position:absolute;top:0;cursor:pointer;z-index:1;-moz-transition:.25s all ease-in-out;-webkit-transition:.25s all ease-in-out;-o-transition:.25s all ease-in-out;-ms-transition:.25s all ease-in-out}
+.list-version-container:after,.list-version-container:before{height:100%;content:"";width:21px;position:absolute;top:0;cursor:pointer;z-index:1;-moz-transition:.25s all ease-in-out;-webkit-transition:.25s all ease-in-out;-o-transition:.25s all ease-in-out;-ms-transition:.25s all ease-in-out}
 .list-version-container:after{left:-5px;transition:.25s all ease-in-out;background:url(../images/icons/tick-status@2x.png)center left no-repeat;background-size:20px 16px}
 .list-version-container.is-hover{margin-right:0!important}
 .list-version-container.confirm,.list-version-container.live{background-color:#55c45f}
@@ -64,6 +64,9 @@ body.theme-simple{height:100%}
 .list-version-container.scheduled{background-color:#c96aa4}
 .list-version-container.scheduled:before{background-image:url(../images/tooltips/scheduled-arrow-end@2x.png)}
 .list-version-container.scheduled:after{background:url(../images/icons/clock-status@2x.png)center left no-repeat;background-size:21px 21px}
+.small-list.list-version-container{height:100%;padding-top:9px;padding-left:23px}
+.small-list.list-version-container .fadding-container{left:-30px;width:25px}
+.small-list.list-version-container:after{left:-8px;background-size:17px 14px}
 .user-main-alert-container{padding-left:0;padding-right:0;margin-bottom:30px}
 .user-registered-date{font-size:12px;text-align:right;color:#9fa7b7;padding-bottom:25px;font-weight:600}
 @media (min-width:768px){.cd-header .header-inner-container{width:750px}
