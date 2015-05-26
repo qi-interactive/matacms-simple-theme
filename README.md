@@ -20,7 +20,9 @@ Installation
 Changelog
 ---------
 
-## TBD
+## 1.0.6-alpha, May 26, 2015
+
+- Styling changes.
 
 - Set datetimepicker z-index to be higher than imperavi
 
