@@ -1,3 +1,4 @@
+.bootstrap-datetimepicker-widget{z-index:1100}
 .bootstrap-datetimepicker-widget.dropdown-menu{background-color:#d5deeb;color:#343c55}
 .bootstrap-datetimepicker-widget.dropdown-menu.bottom:before{border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid #d5deeb;border-bottom-color:rgba(0,0,0,.2);top:-7px;left:7px}
 .bootstrap-datetimepicker-widget.dropdown-menu.bottom:after{border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid #d5deeb;top:-6px;left:8px}
