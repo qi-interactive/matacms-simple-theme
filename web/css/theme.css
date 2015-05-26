@@ -33,7 +33,7 @@ body.theme-simple{height:100%}
 .fadding-container{height:100%;background-image:linear-gradient(rgba(213,222,235,0)0,#d5deeb 80%,#d5deeb 100%);width:44px;position:absolute;top:0;right:0}
 .alert{border:0;border-bottom:2px solid #55c45f;border-radius:2px;font-size:14px;background-color:#343c55;margin-bottom:0;padding:12px 15px}
 .alert-success{border-color:#55c45f;color:#55c45f}
-.alert-error{border-color:#ff6b6b;color:#ff6b6b;font-weight:700}
+.alert-danger{border-color:#ff6b6b;color:#ff6b6b;font-weight:500}
 .cd-header{height:auto;padding:25px 0}
 .cd-header .header-inner-container{max-width:900px;padding-right:15px;opacity:0;padding-left:15px;margin-right:auto;margin-left:auto}
 .cd-header .header-inner-container h1{font-size:26px;font-weight:700;color:#fff;max-width:75%;text-transform:uppercase;line-height:30px;display:inline-block}
