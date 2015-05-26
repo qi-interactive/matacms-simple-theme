@@ -67,6 +67,7 @@ body.theme-simple{height:100%}
 .small-list.list-version-container{height:100%;padding-top:9px;padding-left:23px}
 .small-list.list-version-container .fadding-container{left:-30px;width:25px}
 .small-list.list-version-container:after{left:-8px;background-size:17px 14px}
+.list-version-container.draft:after,.small-list.list-version-container.draft:after{background-size:cover}
 .user-main-alert-container{padding-left:0;padding-right:0;margin-bottom:30px}
 .user-registered-date{font-size:12px;text-align:right;color:#9fa7b7;padding-bottom:25px;font-weight:600}
 @media (min-width:768px){.cd-header .header-inner-container{width:750px}
