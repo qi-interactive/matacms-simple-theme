@@ -1,7 +1,7 @@
 .smooth-sortable{max-width:520px}
-.smooth-sortable li{padding:10px 30px 10px 20px;color:#343c55}
-.smooth-sortable li .svg-icon-container{position:absolute;right:0;top:0;width:30px;height:100%;background:#d5deeb}
-.smooth-sortable li svg{width:17px;right:10px;top:14px;position:absolute}
+.smooth-sortable li{padding:10px 20px 10px 35px;color:#343c55}
+.smooth-sortable li .svg-icon-container{position:absolute;left:0;top:0;width:30px;height:100%;background:#d5deeb}
+.smooth-sortable li svg{width:17px;left:6px;top:14px;position:absolute}
 .smooth-sortable li svg .rearrangeable-icon polyline{stroke:#60a5bc}
 .smooth-sortable li svg .tick-icon{display:none}
 .smooth-sortable li:after{display:block;content:"";position:absolute;top:0;right:68px;height:100%;width:13px;opacity:.5;background-size:13px 13px}

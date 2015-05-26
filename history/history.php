@@ -44,6 +44,10 @@ $environmentModule = \Yii::$app->getModule("environment");
 				</span>
 			</div>
 
+			<?php if(!$environmentModule->hasEnvironmentBehavior($revision->DocumentId->getModel())): ?>
+				<div class="fadding-container"> </div>
+			<?php endif; ?>
+
 			<?php if($environmentModule->hasEnvironmentBehavior($revision->DocumentId->getModel())):
 
 			$ie = ItemEnvironment::find()->where([
