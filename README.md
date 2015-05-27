@@ -20,6 +20,11 @@ Installation
 Changelog
 ---------
 
+
+## 1.0.7-alpha, May 27, 2015
+
+- Styling changes.
+
 ## 1.0.6-alpha, May 26, 2015
 
 - Styling changes.
