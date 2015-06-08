@@ -20,6 +20,9 @@ Installation
 Changelog
 ---------
 
+## 1.0.8-alpha, June 9, 2015
+
+- Added function to show specific subnavigation
 
 ## 1.0.7-alpha, May 27, 2015
 
