@@ -22,7 +22,7 @@ Changelog
 
 ## 1.0.8.1-alpha, June 9, 2015
 
-- Fixed a bug with buttons being hidden below the fold until the window is reasized
+- Fixed a bug with buttons being hidden below the fold until the window is resized
 
 ## 1.0.8-alpha, June 9, 2015
 
