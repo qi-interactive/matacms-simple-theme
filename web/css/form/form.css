@@ -82,7 +82,7 @@ button.btn-primary[disabled]{opacity:.45}
 .selectize-dropdown-content{padding:0}
 .selectize-control.single .selectize-input.items.has-options.full.has-items{background:#d5deeb}
 .form-row{margin:0;clear:both}
-.form-group.submit-form-group{background:0 0;float:none;clear:both;padding-left:0}
+.form-group.submit-form-group{background:0 0;float:none;clear:both;padding-left:0;	min-height: 130px;}
 .form-group{float:none;clear:both;position:relative}
 .btn.btn-info{background:#a28ddf;font-size:14px}
 .btn.btn-info:hover{background:#8376b4}

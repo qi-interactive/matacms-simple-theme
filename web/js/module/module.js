@@ -9,7 +9,7 @@
 
  	var el = $("h1").first();
 
- 	if (el) {
+ 	if (el && parent.mata.simpleTheme.header != undefined) {
  		parent.mata.simpleTheme.header.setText(el.html()).show();
  		el.hide();
  	}
