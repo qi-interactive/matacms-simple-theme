@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.0.8.2-alpha, June 24, 2015
+
+- Added name for iframe (needed for acceptance tests to switch into iframe)
+
 ## 1.0.8.1-alpha, June 9, 2015
 
 - Fixed a bug with buttons being hidden below the fold until the window is resized
