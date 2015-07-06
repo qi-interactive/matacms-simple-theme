@@ -10,7 +10,7 @@ Simple Theme module is a basic theme for MATA CMS.
 Installation
 ------------
 
-- Add the module using composer: 
+- Add the module using composer:
 
 ```json
 "matacms/matacms-simple-theme": "~1.0.0"
@@ -19,6 +19,10 @@ Installation
 
 Changelog
 ---------
+
+## 1.0.8.3-alpha, July 6, 2015
+
+- Added form hint with tooltip styling, updates 
 
 ## 1.0.8.2-alpha, June 24, 2015
 

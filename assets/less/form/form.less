@@ -309,7 +309,7 @@ button.btn-primary[disabled] {
 
 
 .selectize-control.single, .selectize-control.single {
-	.selectize-input,  .selectize-input.input-active, 
+	.selectize-input,  .selectize-input.input-active,
 	.selectize-control .selectize-input.full {
 		width: 100%;
 		color: @blue-corn;
@@ -365,7 +365,7 @@ button.btn-primary[disabled] {
 
 
 .selectize-control.multi {
-	
+
 	:not(.has-items) {
 		input {
 			width: 80% !important;
@@ -382,8 +382,8 @@ button.btn-primary[disabled] {
 		input {
 			width: 0px !important;
 		}
-	}	
-	
+	}
+
 
 
 
@@ -484,6 +484,17 @@ button.btn-primary[disabled] {
 	position: relative;
 }
 
+.form-group .hint-block {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-image: url(../../images/icons/hint-small.svg);
+	background-size: 18px 18px;
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+}
+
 .btn.btn-info {
 	.light-purple-background-link();
 	font-size: 14px;
@@ -518,7 +529,7 @@ button.btn-primary[disabled] {
 		display: none;
 	}
 
-	.qq-upload-spinner {	
+	.qq-upload-spinner {
 		height: 3px;
 		width: 0%;
 		background: #b471a3;
@@ -591,7 +602,7 @@ button.btn-primary[disabled] {
 	display: none !important;
 }
 .qq-upload-spinner {
-	
+
 	height: 3px;
 	width: 0%;
 	background: #b471a3;
@@ -717,8 +728,8 @@ img.current-media {
 	height: 100%;
 	border-radius: 2px;
 	content: '';
-	-webkit-box-sizing: content-box; 
-	-moz-box-sizing: content-box; 
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
 
@@ -870,6 +881,20 @@ img.current-media {
 
 #redactor-droparea-placeholder {
 	color: @white;
+}
+
+.tooltip.in {
+	opacity: 1;
+}
+
+.tooltip.bottom .tooltip-arrow, .tooltip.top .tooltip-arrow {
+	border-top-color: #9fa7b7;
+	border-bottom-color: #9fa7b7;
+}
+
+.tooltip-inner {
+	background-color: #9fa7b7;
+	color: #343c55;
 }
 
 @import "form_desktop.less";

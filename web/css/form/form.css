@@ -82,8 +82,9 @@ button.btn-primary[disabled]{opacity:.45}
 .selectize-dropdown-content{padding:0}
 .selectize-control.single .selectize-input.items.has-options.full.has-items{background:#d5deeb}
 .form-row{margin:0;clear:both}
-.form-group.submit-form-group{background:0 0;float:none;clear:both;padding-left:0;	min-height: 130px;}
+.form-group.submit-form-group{background:0 0;float:none;clear:both;padding-left:0;min-height:130px}
 .form-group{float:none;clear:both;position:relative}
+.form-group .hint-block{position:absolute;top:5px;right:5px;background-image:url(../../images/icons/hint-small.svg);background-size:18px 18px;background-repeat:no-repeat;width:18px;height:18px}
 .btn.btn-info{background:#a28ddf;font-size:14px}
 .btn.btn-info:hover{background:#8376b4}
 #upload-image-container-modal .qq-upload-button{height:100%;width:inherit;padding:0;border-bottom:none}
@@ -137,7 +138,7 @@ img.current-media{margin-bottom:10px}
 .search-input-container .search-input:-ms-input-placeholder{color:#343c55}
 .search-input-container .search-input::-webkit-input-placeholder{color:#343c55}
 .search-input-container .search-submit-btn{padding:0;margin:0;position:absolute;width:45px;top:0;right:0;height:100%;background:#343c55;border-radius:0 2px 2px 0}
-.search-input-container .search-submit-btn input[type=submit]{outline:0;border:none;background:url(../../images/search/search.svg)center center no-repeat;background-size:24px;padding:0;margin:0;width:100%;height:100%}
+.search-input-container .search-submit-btn input[type=submit]{outline:0;border:none;background:url(../../images/search/search.svg) center center no-repeat;background-size:24px;padding:0;margin:0;width:100%;height:100%}
 .add-media-inner-wrapper{width:100%;display:table-cell;vertical-align:middle}
 .add-media-inner-wrapper .hi-icon-effect-2{width:100%;vertical-align:top;line-height:0;display:block;margin-bottom:20px}
 .add-media-inner-wrapper span{display:block;line-height:16px;color:#8376b4;font-size:14px;font-weight:700}
@@ -147,6 +148,9 @@ img.current-media{margin-bottom:10px}
 .btn-danger:hover,.btn.btn-danger:hover{background:#bd5659}
 #redactor-modal-box label{color:#fff;text-align:left}
 #redactor-droparea-placeholder{color:#fff}
+.tooltip.in{opacity:1}
+.tooltip.bottom .tooltip-arrow,.tooltip.top .tooltip-arrow{border-top-color:#9fa7b7;border-bottom-color:#9fa7b7}
+.tooltip-inner{background-color:#9fa7b7;color:#343c55}
 @media (max-width:768px){.form-group.partial-max-width-item{width:100%}
 .form-group.partial-max-width-item:last-child{margin-left:0}
 }
