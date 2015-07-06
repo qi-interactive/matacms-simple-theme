@@ -1,5 +1,37 @@
 @import "../imports/variables.less";
 @import "../imports/mixins.less";
 
+#redactor-modal-image-insert {
 
+	#redactor-droparea-placeholder {
+		display: table;
+		width: 200px;
+		margin: 0 auto;
+		position: relative;
+
+		input[type=file] {
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			font-family: Arial;
+			font-size: 118px;
+			margin: 0px;
+			padding: 0px;
+			cursor: pointer;
+			opacity: 0;
+			height: 100%;
+			width: 100%;
+			left: 0px;
+			z-index: 1;
+		}
+
+		&:hover {
+			.hi-icon:after {
+				.transform(scale(0.85));
+			}
+		}
+
+	}
+
+}
 
