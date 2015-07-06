@@ -30,7 +30,7 @@ mata.form.trackFormChange = function() {
 		setTimeout(function() {
 			if(mata.form.hasChanged)
 				mata.form.hasChanged = false;
-		},100);		
+		},100);
 	});
 
 }
@@ -46,7 +46,7 @@ mata.form.setFormGroups = function() {
 				$(this).addClass('partial-max-width-item');
 			}
 
-			if(formGroups.eq(index-1).hasClass('field-media') && formGroups.eq(index).hasClass('field-media')) {
+			if(!formGroups.eq(index-2).hasClass('field-media') && formGroups.eq(index-1).hasClass('field-media') && formGroups.eq(index).hasClass('field-media')) {
 				$(this).prev().addBack().wrapAll('<div class="form-row" />');
 				return;
 			}
@@ -54,7 +54,7 @@ mata.form.setFormGroups = function() {
 			if(formGroups.eq(index).hasClass('field-media') && !formGroups.eq(index+1).hasClass('field-media')) {
 				$(this).addBack().wrapAll('<div class="form-row" />');
 				return;
-			}			
+			}
 
 			if($(this).hasClass('partial-max-width-item') && $(this).prev().hasClass('partial-max-width-item')) {
 				$(this).prev().addBack().wrapAll('<div class="form-row" />');
