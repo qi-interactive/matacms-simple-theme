@@ -52,6 +52,98 @@
 
 }
 
+
+#redactor-modal-image-edit {
+
+	label input[type="checkbox"] {
+		display: none;
+	}
+
+	.checkbox-wrapper {
+		padding-left: 0px;
+	}
+
+	label input[type="checkbox"] + div {
+		height: 20px;
+		width: 20px;
+		background: @midnight-blue;
+		border-radius: 2px;
+		position: relative;
+		cursor: pointer;
+		display: inline-block;
+		text-align: center;
+		line-height: 60px;
+		.transition(all 0.3s);
+		vertical-align: middle;
+		border: 2px solid  @midnight-blue;
+
+		.fa {
+			font-size: 12px;
+			color: @slate-grey;
+			opacity: 0;
+			top: 2px;
+			position: absolute;
+			line-height: 16px;
+			left: 2px;
+			right: auto;
+			width: 12px;
+			height: 12px;
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			opacity: 0;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			background: @alice-blue;
+		}
+
+		&:after {
+			font-family: FontAwesome;
+			content: "\f00c";
+			display: none;
+			opacity: 0;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			color: #fff;
+			line-height: 32px;
+			text-align: center;       
+		}
+
+	}
+
+	label input[type="checkbox"]:checked + div {
+		background: transparent;
+
+		&:before {
+			opacity: 1;
+			.animation(show-a 0.3s);
+		}
+
+		.fa {
+			opacity: 1;
+			.animation(show-b 0.3s);
+		}
+	}
+
+}
+
+.checkbox-label {
+	vertical-align: middle;
+	padding-left: 12px;
+	font-weight: 600;
+	color: rgb(159, 167, 183);
+	font-size: 13px;
+}
+
+
 #redactor-modal-body {
 	position: relative;
 }
@@ -69,4 +161,100 @@
 		background: #b471a3;
 	}
 }
+#redactor-modal {
+	width: auto !important;
+	margin: 10px !important;
+}
+
+
+#redactor-modal-image-droparea, #redactor-modal-file-upload-box {
+	background-color: @midnight-blue;
+}
+
+
+#redactor-modal-box {
+	background: rgba(0,0,0,0.6);
+}
+
+#redactor-modal footer button.redactor-modal-close-btn,
+.redactor-modal-close-btn
+{
+	background: @slate-grey;
+	color: @midnight-blue;
+
+	&:hover {
+		opacity: 0.7;
+		background: @slate-grey;
+		color: @midnight-blue;
+	}
+}
+
+.redactor-modal-delete-btn, #redactor-modal footer button.redactor-modal-delete-btn {
+	color: @white;
+	float: right;
+	font-size: 0px;
+	background: url(../../images/icons/delete-white.svg) center right no-repeat;
+	background-size: 24px 24px;
+	width: 24px !important;
+	height: 24px;
+	min-width: 0px;
+	margin-right: 0px;
+
+
+	&:hover {
+		color: @white;
+		float: right;
+		font-size: 0px;
+		background: url(../../images/icons/delete-white.svg) center right no-repeat;
+		background-size: 24px 24px;
+		width: 24px !important;
+		height: 24px;
+		min-width: 0px;
+		margin-right: 0px;
+	}
+}
+
+.redactor-modal-action-btn,  #redactor-modal footer button.redactor-modal-action-btn {
+	.aqua-background-link();
+	color: @white;
+
+	&:hover {
+		color: @white;
+	}
+}
+
+.redactor-modal-delete-btn, #redactor-modal footer {
+	padding: 0 50px 35px;
+}
+
+.redactor-modal-delete-btn, #redactor-modal footer button {
+	width: auto !important;
+	min-width: 133px;
+	margin-right: 5px;
+
+	&:last-child {
+		margin-right: 0px;
+	}
+}
+
+.redactor-clip-link, #redactor-modal #redactor-modal-list a.redactor-clip-link {
+	border-radius: 2px;
+	font-size: 14px;
+	font-weight: 600;
+	color: @blue-corn;
+	background: @azure;
+
+	&:hover {
+		background: @alice-blue;
+	}
+}
+
+
+#redactor-modal #redactor-modal-list {
+	margin-bottom: 0px;
+}
+
+
+
+
 

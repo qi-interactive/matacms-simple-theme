@@ -38,7 +38,7 @@ body.theme-simple{height:100%}
 .cd-header .header-inner-container h1 span{text-transform:lowercase}
 .cd-header .header-inner-container .hi-icon-effect-2{display:inline-block;float:right;margin-top:5px}
 .cd-header .header-inner-container .hi-icon-effect-2 .hi-icon{box-shadow:0 0 0 2px #c96aa4}
-.cd-header .header-inner-container .hi-icon-effect-2 .hi-icon:before{background-image:url(../images/icons/versions.png)}
+.cd-header .header-inner-container .hi-icon-effect-2 .hi-icon:before{background-image:url(../images/icons/versions.svg)}
 .cd-header .header-inner-container .hi-icon-effect-2 .hi-icon:after{background-color:#c96aa4}
 .cd-header #header-content-container{position:absolute;top:0;height:46px;right:5%}
 .back-btn{display:inline-block;font-weight:700;text-transform:uppercase;font-size:14px;padding-top:20px;position:relative;padding-left:20px}

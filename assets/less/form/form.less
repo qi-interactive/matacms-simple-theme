@@ -28,7 +28,8 @@ label {
 	line-height: normal;
 }
 
-input, textarea, .redactor-editor, .redactor-box, .redactor-box textarea, input.form-control, .selectize-input, .selectize-dropdown, textarea.form-control {
+input, textarea, .redactor-editor, .redactor-box, .redactor-box textarea, input.form-control, .selectize-input, .selectize-dropdown, textarea.form-control,
+#redactor-modal input[type="text"], #redactor-modal input[type="password"], #redactor-modal input[type="email"], #redactor-modal input[type="url"] {
 	font-weight: @proxima-semibold;
 	background: @alice-blue;
 	outline: none;
@@ -44,6 +45,7 @@ input, textarea, .redactor-editor, .redactor-box, .redactor-box textarea, input.
 		outline: none;
 	}
 }
+
 
 input, input.form-control {
 	height: 38px;
@@ -94,7 +96,10 @@ input, input.form-control {
 
 
 
-button, button.btn-primary, .btn, .btn[type="submit"] {
+button, button.btn-primary, .btn, .btn[type="submit"], #redactor-image-editter,
+#redactor-modal footer button.redactor-modal-close-btn,
+.redactor-modal-close-btn, .redactor-modal-delete-btn, #redactor-modal footer button.redactor-modal-delete-btn,
+.redactor-modal-action-btn,  #redactor-modal footer button.redactor-modal-action-btn {
 	.aqua-background-link();
 	border: 0px;
 	border-radius: 2px;
@@ -109,13 +114,18 @@ button, button.btn-primary, .btn, .btn[type="submit"] {
 	color: @white;
 	text-transform: uppercase;
 }
-.btn[type="submit"] {
+.btn[type="submit"], #redactor-image-editter {
 	margin-right: 8px;
 	height: 45px;
 	padding: 5px 17px;
 	text-transform: uppercase;
 	min-width: 130px;
 	line-height: 37px;
+}
+
+#redactor-image-editter {
+	margin-right: 0px;
+	text-align: center;
 }
 
 button[type="submit"] {
@@ -877,6 +887,10 @@ img.current-media {
 #redactor-modal-box label {
 	color: @white;
 	text-align: left;
+	padding: 0px 13px;
+	padding-top: 5px;
+	padding-bottom: 3px;
+	margin: 0px !important;
 }
 
 #redactor-droparea-placeholder {
@@ -896,5 +910,21 @@ img.current-media {
 	background-color: #9fa7b7;
 	color: #343c55;
 }
+
+#redactor-image-box {
+	outline: 2px dashed @purple;
+}
+
+.redactor-toolbar-tooltip {
+	background: @azure;
+	color: @blue-corn;
+}
+
+#redactor-modal input[type="text"]:focus, #redactor-modal input[type="password"]:focus, #redactor-modal input[type="email"]:focus, #redactor-modal input[type="url"]:focus, #redactor-modal textarea:focus {
+	border-color: transparent;
+	box-shadow: none;
+}
+
+
 
 @import "form_desktop.less";

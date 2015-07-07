@@ -2,8 +2,8 @@ a#versions-link,label{color:#fff}
 .hi-icon:before,label{-webkit-font-smoothing:antialiased}
 a#back-to-list-view{color:#fff;font-size:15px;text-transform:uppercase}
 label{font-weight:700;font-size:18px;padding:0 13px;-moz-osx-font-smoothing:grayscale;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;margin:0;line-height:normal}
-.redactor-box,.redactor-box textarea,.redactor-editor,.selectize-dropdown,.selectize-input,input,input.form-control,textarea,textarea.form-control{font-weight:600;background:#d5deeb;outline:0;font-size:18px;color:#343c55;margin:0;padding:13px;border:none;-webkit-appearance:none;border-radius:2px}
-.redactor-box textarea:focus,.redactor-box:focus,.redactor-editor:focus,.selectize-dropdown:focus,.selectize-input:focus,input.form-control:focus,input:focus,textarea.form-control:focus,textarea:focus{outline:0}
+#redactor-modal input[type=text],#redactor-modal input[type=password],#redactor-modal input[type=email],#redactor-modal input[type=url],.redactor-box,.redactor-box textarea,.redactor-editor,.selectize-dropdown,.selectize-input,input,input.form-control,textarea,textarea.form-control{font-weight:600;background:#d5deeb;outline:0;font-size:18px;color:#343c55;margin:0;padding:13px;border:none;-webkit-appearance:none;border-radius:2px}
+#redactor-modal input[type=text]:focus,#redactor-modal input[type=password]:focus,#redactor-modal input[type=email]:focus,#redactor-modal input[type=url]:focus,.redactor-box textarea:focus,.redactor-box:focus,.redactor-editor:focus,.selectize-dropdown:focus,.selectize-input:focus,input.form-control:focus,input:focus,textarea.form-control:focus,textarea:focus{outline:0}
 input,input.form-control{height:38px}
 .redactor-editor blockquote,.redactor-editor div,.redactor-editor dl,.redactor-editor figure,.redactor-editor ol,.redactor-editor p,.redactor-editor pre,.redactor-editor table,.redactor-editor ul{font-family:proxima-nova}
 .has-error .checkbox,.has-error .checkbox-inline,.has-error .control-label,.has-error .help-block,.has-error .radio,.has-error .radio-inline,.has-error.checkbox label,.has-error.checkbox-inline label,.has-error.radio label,.has-error.radio-inline label{color:#fff;box-shadow:none;outline:0}
@@ -13,9 +13,10 @@ input,input.form-control{height:38px}
 .has-error .form-control,.has-error .form-control:focus{box-shadow:none;border-bottom:2px solid #ff6b6b;outline:0}
 .form-control,.form-control:focus{box-shadow:none}
 .has-success .form-control,.has-success .form-control:focus,.selectize-input.focus,.selectize-input:focus{box-shadow:none;border:0;outline:0}
-.btn,.btn[type=submit],button,button.btn-primary{background:#4eb7cd;border:0;border-radius:2px;font-weight:700;letter-spacing:0;font-size:14px;outline:0;min-height:38px;padding:8px 20px;width:auto;display:inline-block;color:#fff;text-transform:uppercase}
-.btn:hover,.btn[type=submit]:hover,button.btn-primary:hover,button:hover{background:#539fb8}
-.btn[type=submit]{margin-right:8px;height:45px;padding:5px 17px;text-transform:uppercase;min-width:130px;line-height:37px}
+#redactor-image-editter,#redactor-modal footer button.redactor-modal-action-btn,#redactor-modal footer button.redactor-modal-close-btn,#redactor-modal footer button.redactor-modal-delete-btn,.btn,.btn[type=submit],.redactor-modal-action-btn,.redactor-modal-close-btn,.redactor-modal-delete-btn,button,button.btn-primary{background:#4eb7cd;border:0;border-radius:2px;font-weight:700;letter-spacing:0;font-size:14px;outline:0;min-height:38px;padding:8px 20px;width:auto;display:inline-block;color:#fff;text-transform:uppercase}
+#redactor-image-editter:hover,#redactor-modal footer button.redactor-modal-action-btn:hover,#redactor-modal footer button.redactor-modal-close-btn:hover,#redactor-modal footer button.redactor-modal-delete-btn:hover,.btn:hover,.btn[type=submit]:hover,.redactor-modal-action-btn:hover,.redactor-modal-close-btn:hover,.redactor-modal-delete-btn:hover,button.btn-primary:hover,button:hover{background:#539fb8}
+#redactor-image-editter,.btn[type=submit]{margin-right:8px;height:45px;padding:5px 17px;text-transform:uppercase;min-width:130px;line-height:37px}
+#redactor-image-editter{margin-right:0;text-align:center}
 button[type=submit]{text-transform:uppercase;min-height:45px}
 .btn-primary:active,.btn.active.focus,.btn.active:focus,.btn.focus,.btn:active,.btn:active.focus,.btn:active:focus,.btn:focus{box-shadow:none;background:#4eb7cd;outline:0}
 .btn-primary:active:hover,.btn.active.focus:hover,.btn.active:focus:hover,.btn.focus:hover,.btn:active.focus:hover,.btn:active:focus:hover,.btn:active:hover,.btn:focus:hover{background:#539fb8}
@@ -146,11 +147,14 @@ img.current-media{margin-bottom:10px}
 .redactor-toolbar{position:relative!important;top:0!important;width:auto!important}
 .btn-danger,.btn.btn-danger{background:#ff6b6b}
 .btn-danger:hover,.btn.btn-danger:hover{background:#bd5659}
-#redactor-modal-box label{color:#fff;text-align:left}
+#redactor-modal-box label{color:#fff;text-align:left;padding:5px 13px 3px;margin:0!important}
 #redactor-droparea-placeholder{color:#fff}
 .tooltip.in{opacity:1}
 .tooltip.bottom .tooltip-arrow,.tooltip.top .tooltip-arrow{border-top-color:#9fa7b7;border-bottom-color:#9fa7b7}
 .tooltip-inner{background-color:#9fa7b7;color:#343c55}
+#redactor-image-box{outline:#8376b4 dashed 2px}
+.redactor-toolbar-tooltip{background:#9fa7b7;color:#343c55}
+#redactor-modal input[type=text]:focus,#redactor-modal input[type=password]:focus,#redactor-modal input[type=email]:focus,#redactor-modal input[type=url]:focus,#redactor-modal textarea:focus{border-color:transparent;box-shadow:none}
 @media (max-width:768px){.form-group.partial-max-width-item{width:100%}
 .form-group.partial-max-width-item:last-child{margin-left:0}
 }
