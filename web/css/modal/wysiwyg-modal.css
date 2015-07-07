@@ -1,3 +1,9 @@
-#redactor-modal-image-insert #redactor-droparea-placeholder{display:table;width:200px;margin:0 auto;position:relative}
-#redactor-modal-image-insert #redactor-droparea-placeholder input[type=file]{position:absolute;right:0;top:0;font-family:Arial;font-size:118px;margin:0;padding:0;cursor:pointer;opacity:0;height:100%;width:100%;left:0;z-index:1}
-#redactor-modal-image-insert #redactor-droparea-placeholder:hover .hi-icon:after{-moz-transform:scale(.85);-webkit-transform:scale(.85);-o-transform:scale(.85);-ms-transform:scale(.85);transform:scale(.85)}
+#redactor-modal-image-insert #redactor-droparea{border-color:transparent;padding:22px}
+#redactor-modal-image-insert #redactor-droparea #redactor-droparea-placeholder{display:table;width:200px;margin:0 auto;position:relative}
+#redactor-modal-image-insert #redactor-droparea #redactor-droparea-placeholder input[type=file]{position:absolute;right:0;top:0;font-family:Arial;font-size:118px;margin:0;padding:0;cursor:pointer;opacity:0;height:100%;width:100%;left:0;z-index:1}
+#redactor-modal-image-insert #redactor-droparea #redactor-droparea-placeholder:hover .hi-icon:after{-moz-transform:scale(.85);-webkit-transform:scale(.85);-o-transform:scale(.85);-ms-transform:scale(.85);transform:scale(.85)}
+#redactor-modal-image-insert #redactor-droparea #redactor-droparea-placeholder .add-media-inner-wrapper .hi-icon-effect-2{margin-bottom:0;padding-left:0;padding-right:0}
+#redactor-modal-image-insert #redactor-droparea.drag-drop,#redactor-modal-image-insert #redactor-droparea.drag-hover{border-color:#8376b4;background:#212635}
+#redactor-modal-body{position:relative}
+#redactor-progress{position:absolute;top:-86px;left:0;width:100%;z-index:1000000;height:3px;border-radius:14px}
+#redactor-progress span{background:#b471a3}
