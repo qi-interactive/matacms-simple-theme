@@ -18,6 +18,7 @@ class CalendarAsset extends AssetBundle
 
     public $css = [
     'css/calendar/calendar.css',
+    'css/calendar/calendar-module.css',
     ];
 
     public $js = [

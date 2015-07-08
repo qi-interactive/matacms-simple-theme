@@ -1,0 +1,7 @@
+.module-calendar section{border:none;background-color:#535d7c;margin-bottom:15px;border-radius:2px;padding-bottom:37px}
+.module-calendar section header.calendar-date{padding:20px 37px;color:#d5deeb;background-color:#535d7c;border-color:#5f6885;font-weight:700;font-size:18px;border-bottom:2px solid #5f6885;border-top-left-radius:3px;border-top-right-radius:3px}
+.module-calendar section .calendar-event{margin:37px 37px 15px;padding:4px 4px 4px 20px}
+.module-calendar section .calendar-event:last-child{margin-bottom:0}
+.module-calendar section .calendar-event .time{font-weight:600;font-size:14px;margin-right:20px}
+.module-calendar section .calendar-event .module{background:#4eb7cd;text-transform:uppercase;min-width:105px;color:#fff;font-weight:600;font-size:12px;display:inline-block;text-align:center;position:relative;z-index:1}
+.module-calendar section .calendar-event .event-label{font-size:14px;font-weight:500;display:inline-block;padding-top:10px;padding-bottom:10px}

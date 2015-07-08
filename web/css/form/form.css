@@ -4,9 +4,9 @@ a#versions-link,label{color:#fff}
 .hi-icon:before,label{-webkit-font-smoothing:antialiased}
 a#back-to-list-view{color:#fff;font-size:15px;text-transform:uppercase}
 label{font-weight:700;font-size:18px;padding:0 13px;-moz-osx-font-smoothing:grayscale;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;margin:0;line-height:normal}
-.redactor-box,.redactor-box textarea,.redactor-editor,.selectize-dropdown,.selectize-input,input,input.form-control,textarea,textarea.form-control{font-weight:600;background:#d5deeb;outline:0;font-size:18px;color:#343c55;margin:0;padding:13px;border:none;-webkit-appearance:none;border-radius:2px}
-.redactor-box textarea:focus,.redactor-box:focus,.redactor-editor:focus,.selectize-dropdown:focus,.selectize-input:focus,input.form-control:focus,input:focus,textarea.form-control:focus,textarea:focus{outline:0}
-input,input.form-control{height:38px}
+.module-calendar section .event-label,.redactor-box,.redactor-box textarea,.redactor-editor,.selectize-dropdown,.selectize-input,input,input.form-control,textarea,textarea.form-control{font-weight:600;background:#d5deeb;outline:0;font-size:18px;color:#343c55;margin:0;padding:13px;border:none;-webkit-appearance:none;border-radius:2px}
+.module-calendar section .event-label:focus,.redactor-box textarea:focus,.redactor-box:focus,.redactor-editor:focus,.selectize-dropdown:focus,.selectize-input:focus,input.form-control:focus,input:focus,textarea.form-control:focus,textarea:focus{outline:0}
+.module-calendar section .event-label,input,input.form-control{height:38px}
 .redactor-editor blockquote,.redactor-editor div,.redactor-editor dl,.redactor-editor figure,.redactor-editor ol,.redactor-editor p,.redactor-editor pre,.redactor-editor table,.redactor-editor ul{font-family:proxima-nova}
 .has-error .checkbox,.has-error .checkbox-inline,.has-error .control-label,.has-error .help-block,.has-error .radio,.has-error .radio-inline,.has-error.checkbox label,.has-error.checkbox-inline label,.has-error.radio label,.has-error.radio-inline label{color:#fff;box-shadow:none;outline:0}
 .help-block{margin:0;font-size:13px;line-height:23px}

@@ -75,3 +75,4 @@ body.theme-simple{height:100%}
 @media (min-width:768px){.cd-header .header-inner-container{width:750px}}
 @media (min-width:992px){.cd-header .header-inner-container{width:970px}}
 .cd-header .header-inner-container{-moz-transition:5s height;-webkit-transition:5s height;-o-transition:5s height;-ms-transition:5s height;transition:5s height}
+.empty{color:#d5deeb;padding-top:25px}
