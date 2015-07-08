@@ -96,7 +96,7 @@ input, input.form-control {
 
 
 
-button, button.btn-primary, .btn, .btn[type="submit"], #redactor-image-editter,
+button, button.btn-primary, .btn, .btn[type="submit"],
 #redactor-modal footer button.redactor-modal-close-btn,
 .redactor-modal-close-btn, .redactor-modal-delete-btn, #redactor-modal footer button.redactor-modal-delete-btn,
 .redactor-modal-action-btn,  #redactor-modal footer button.redactor-modal-action-btn {
@@ -114,7 +114,7 @@ button, button.btn-primary, .btn, .btn[type="submit"], #redactor-image-editter,
 	color: @white;
 	text-transform: uppercase;
 }
-.btn[type="submit"], #redactor-image-editter {
+.btn[type="submit"] {
 	margin-right: 8px;
 	height: 45px;
 	padding: 5px 17px;
@@ -126,6 +126,22 @@ button, button.btn-primary, .btn, .btn[type="submit"], #redactor-image-editter,
 #redactor-image-editter {
 	margin-right: 0px;
 	text-align: center;
+	font-size: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-color: transparent;
+
+	.hi-icon {
+		box-shadow: 0 0 0 2px @aqua;
+	}
+	.hi-icon:after {
+		background-color: @aqua;
+	}
+
+	.hi-icon:before {
+		background-image: url(../../images/icons/edit-btn-asset.svg);
+	}
 }
 
 button[type="submit"] {
@@ -427,7 +443,7 @@ button.btn-primary[disabled] {
 	border-bottom-right-radius: 0px;
 }
 
-.selectize-dropdown [data-selectable], .selectize-dropdown .optgroup-header {
+.selectize-dropdown [data-selectable], .selectize-dropdown .optgroup-header, .redactor-dropdown a {
 	padding-left: 13px;
 	color: @blue-corn;
 	background: @azure;
@@ -442,7 +458,21 @@ button.btn-primary[disabled] {
 
 	&:hover {
 		background: @alice-blue;
+		color: @blue-corn;
 	}
+}
+
+.redactor-dropdown a:hover {
+	color: @blue-corn !important;
+}
+
+.redactor-toolbar li a:active, .redactor-toolbar li a.redactor-act {
+	background-color: #2b3145;
+	color: @white;
+}
+
+.redactor-dropdown.redactor-dropdown-box-link {
+	background: @azure;
 }
 
 .selectize-dropdown, .selectize-dropdown.form-control {
@@ -925,6 +955,13 @@ img.current-media {
 	box-shadow: none;
 }
 
+#redactor-modal textarea {
+	border: 0px;
+	box-shadow: none;
+	background-color: @alice-blue;
+	padding: 13px;
+	border-radius: 2px;
+}
 
 
 @import "form_desktop.less";

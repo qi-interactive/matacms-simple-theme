@@ -1,7 +1,7 @@
 #redactor-modal,.modal-content{background:#343c55;color:#fff;border-radius:3px;border:0;box-shadow:0}
 #redactor-modal #media-type-buttons,.modal-content #media-type-buttons{width:100%;height:auto}
-#redactor-modal .form-group,.modal-content .form-group{text-align:left;background:#212635}
-#redactor-modal .form-group input,.modal-content .form-group input{font-size:14px;font-weight:500}
+#redactor-modal #redactor-modal-video-insert,#redactor-modal .form-group,.modal-content #redactor-modal-video-insert,.modal-content .form-group{text-align:left;background:#212635}
+#redactor-modal #redactor-modal-video-insert input,#redactor-modal .form-group input,.modal-content #redactor-modal-video-insert input,.modal-content .form-group input{font-size:14px;font-weight:500}
 #redactor-modal #media-type-buttons a.hi-icon-effect-2,#redactor-modal a.hi-icon-effect-2,.modal-content #media-type-buttons a.hi-icon-effect-2,.modal-content a.hi-icon-effect-2{display:block;width:100%;border:0;border-radius:2px;float:none;color:#fff;padding:24px 15px 22px;height:110px;margin:20px 0 0}
 #redactor-modal #media-type-buttons a.hi-icon-effect-2:hover,#redactor-modal a.hi-icon-effect-2:hover,.modal-content #media-type-buttons a.hi-icon-effect-2:hover,.modal-content a.hi-icon-effect-2:hover{color:#fff}
 #redactor-modal #media-type-buttons a.hi-icon-effect-2:first-child,#redactor-modal a.hi-icon-effect-2:first-child,.modal-content #media-type-buttons a.hi-icon-effect-2:first-child,.modal-content a.hi-icon-effect-2:first-child{margin-top:0}
@@ -47,6 +47,7 @@
 .video-url .video-preview-container iframe{width:120px;height:100%;margin:0 auto}
 .video-url .form-group.field-videourlform-videourl{text-align:left;background:#212635}
 .player .video-wrapper .video{background-color:#d5deeb!important}
+#redactor-modal section#redactor-modal-video-insert,#redactor-modal-video-insert{padding:0 4px 4px;margin-left:50px;margin-right:50px;margin-bottom:35px}
 #redactor-modal-image-insert #redactor-droparea{border-color:transparent;padding:22px}
 #redactor-modal-image-insert #redactor-droparea #redactor-droparea-placeholder{display:table;width:200px;margin:0 auto;position:relative}
 #redactor-modal-image-insert #redactor-droparea #redactor-droparea-placeholder input[type=file]{position:absolute;right:0;top:0;font-family:Arial;font-size:118px;margin:0;padding:0;cursor:pointer;opacity:0;height:100%;width:100%;left:0;z-index:1}

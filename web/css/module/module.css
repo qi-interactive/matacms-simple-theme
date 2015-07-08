@@ -1,13 +1,13 @@
 .redactor-toolbar li a,.versions,.versions:focus,.versions:hover,h1{color:#fff}
 body,html{background-color:#5f6885}
-.form-group,.redactor-toolbar{background:#343c55}
 h1{font-size:26px;font-weight:700;margin-bottom:23px;text-transform:uppercase;display:none}
 .container{padding-bottom:30px}
-.form-group{padding:0 4px 4px;border-radius:2px}
-.form-group label{font-size:13px;padding-top:5px;padding-bottom:3px;line-height:23px}
-.form-group .redactor-box,.form-group .redactor-box textarea,.form-group .redactor-editor,.form-group input,.form-group input.form-control,.form-group textarea{font-size:14px;font-weight:500}
-.form-group .redactor-editor{-moz-appearance:textfield-multiline;-webkit-appearance:textarea;resize:vertical;overflow:auto;padding-left:0;padding-bottom:0;padding-right:0}
+#redactor-modal-video-insert,.form-group{padding:0 4px 4px;background:#343c55;border-radius:2px}
+#redactor-modal-video-insert label,.form-group label{font-size:13px;padding-top:5px;padding-bottom:3px;line-height:23px}
+#redactor-modal-video-insert .redactor-box,#redactor-modal-video-insert .redactor-box textarea,#redactor-modal-video-insert .redactor-editor,#redactor-modal-video-insert input,#redactor-modal-video-insert input.form-control,#redactor-modal-video-insert textarea,.form-group .redactor-box,.form-group .redactor-box textarea,.form-group .redactor-editor,.form-group input,.form-group input.form-control,.form-group textarea{font-size:14px;font-weight:500}
+#redactor-modal-video-insert .redactor-editor,.form-group .redactor-editor{-moz-appearance:textfield-multiline;-webkit-appearance:textarea;resize:vertical;overflow:auto;padding-left:0;padding-bottom:0;padding-right:0}
 .redactor-box{margin-bottom:0}
+.redactor-toolbar{background:#343c55}
 .redactor-toolbar li a:hover{background-color:#2b3145}
 input[type=checkbox]{height:auto;background:0 0;-webkit-appearance:checkbox}
 .badge{height:21px;line-height:1.5}
