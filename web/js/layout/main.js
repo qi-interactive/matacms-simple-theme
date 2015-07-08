@@ -156,6 +156,11 @@ jQuery(document).ready(function($) {
 		});
 		return this;
 	};
+
+	mata.showSubNav = function(subnavId) {
+		$('.cd-3d-nav-trigger').click();
+		showSubnav(subnavId);
+	}
 });
 
 

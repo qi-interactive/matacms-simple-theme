@@ -10,7 +10,7 @@ Simple Theme module is a basic theme for MATA CMS.
 Installation
 ------------
 
-- Add the module using composer: 
+- Add the module using composer:
 
 ```json
 "matacms/matacms-simple-theme": "~1.0.0"
@@ -19,6 +19,26 @@ Installation
 
 Changelog
 ---------
+
+## 1.0.8.3-alpha, July 6, 2015
+
+- Added form hint with tooltip styling, updates 
+
+## 1.0.8.2-alpha, June 24, 2015
+
+- Added name for iframe (needed for acceptance tests to switch into iframe)
+
+## 1.0.8.1-alpha, June 9, 2015
+
+- Fixed a bug with buttons being hidden below the fold until the window is resized
+
+## 1.0.8-alpha, June 9, 2015
+
+- Added function to show specific subnavigation
+
+## 1.0.7-alpha, May 27, 2015
+
+- Styling changes.
 
 ## 1.0.6-alpha, May 26, 2015
 

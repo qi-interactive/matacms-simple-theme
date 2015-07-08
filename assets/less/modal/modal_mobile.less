@@ -1,7 +1,15 @@
+@media (min-width: 768px) {
+	#redactor-modal {
+		width: 600px !important;
+		margin: 30px auto !important;
+	}
+}
+
+
 @media (min-width: 555px) {
-	.modal-dialog {
-		width: 529px;
-		margin: 30px auto;
+	.modal-dialog, 	#redactor-modal {
+		width: 529px !important;
+		margin: 30px auto !important;
 	}
 }
 
@@ -9,6 +17,13 @@
 @media (max-width: 554px) {
 	.modal-content .modal-body .hi-icon-effect-2 .inner-container {
 		max-width: 100%;
+	}
+
+}
+@media (max-width: 530px) {
+	.redactor-modal-delete-btn, #redactor-modal footer button {
+		width: 100% !important;
+		margin-bottom: 10px;
 	}
 
 }

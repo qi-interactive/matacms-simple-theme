@@ -44,4 +44,4 @@ header.cd-header {
 
 </style>
 
-<iframe src="site/welcome" id="mata-content"></iframe>
+<iframe src="site/welcome" id="mata-content" name="mata-content"></iframe>

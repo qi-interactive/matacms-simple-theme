@@ -11,7 +11,7 @@ a#versions-link {
 	color: @white;
 }
 
-label {
+label, .module-social .table.detail-view tbody tr th {
 	color: @white;
 	font-weight: @proxima-bold;
 	font-size: @font-size-second-base;
@@ -29,7 +29,8 @@ label {
 }
 
 input, textarea, .redactor-editor, .redactor-box, .redactor-box textarea, input.form-control, .selectize-input, .selectize-dropdown, textarea.form-control,
-.module-calendar section .event-label {
+#redactor-modal input[type="text"], #redactor-modal input[type="password"], #redactor-modal input[type="email"], #redactor-modal input[type="url"],
+.module-social .table.detail-view tbody tr td {
 	font-weight: @proxima-semibold;
 	background: @alice-blue;
 	outline: none;
@@ -46,7 +47,8 @@ input, textarea, .redactor-editor, .redactor-box, .redactor-box textarea, input.
 	}
 }
 
-input, input.form-control, .module-calendar section .event-label {
+
+input, input.form-control {
 	height: 38px;
 }
 
@@ -95,7 +97,10 @@ input, input.form-control, .module-calendar section .event-label {
 
 
 
-button, button.btn-primary, .btn, .btn[type="submit"] {
+button, button.btn-primary, .btn, .btn[type="submit"],
+#redactor-modal footer button.redactor-modal-close-btn,
+.redactor-modal-close-btn, .redactor-modal-delete-btn, #redactor-modal footer button.redactor-modal-delete-btn,
+.redactor-modal-action-btn,  #redactor-modal footer button.redactor-modal-action-btn {
 	.aqua-background-link();
 	border: 0px;
 	border-radius: 2px;
@@ -117,6 +122,27 @@ button, button.btn-primary, .btn, .btn[type="submit"] {
 	text-transform: uppercase;
 	min-width: 130px;
 	line-height: 37px;
+}
+
+#redactor-image-editter {
+	margin-right: 0px;
+	text-align: center;
+	font-size: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-color: transparent;
+
+	.hi-icon {
+		box-shadow: 0 0 0 2px @aqua;
+	}
+	.hi-icon:after {
+		background-color: @aqua;
+	}
+
+	.hi-icon:before {
+		background-image: url(../../images/icons/edit-btn-asset.svg);
+	}
 }
 
 button[type="submit"] {
@@ -310,7 +336,7 @@ button.btn-primary[disabled] {
 
 
 .selectize-control.single, .selectize-control.single {
-	.selectize-input,  .selectize-input.input-active, 
+	.selectize-input,  .selectize-input.input-active,
 	.selectize-control .selectize-input.full {
 		width: 100%;
 		color: @blue-corn;
@@ -366,7 +392,7 @@ button.btn-primary[disabled] {
 
 
 .selectize-control.multi {
-	
+
 	:not(.has-items) {
 		input {
 			width: 80% !important;
@@ -383,8 +409,8 @@ button.btn-primary[disabled] {
 		input {
 			width: 0px !important;
 		}
-	}	
-	
+	}
+
 
 
 
@@ -418,7 +444,7 @@ button.btn-primary[disabled] {
 	border-bottom-right-radius: 0px;
 }
 
-.selectize-dropdown [data-selectable], .selectize-dropdown .optgroup-header {
+.selectize-dropdown [data-selectable], .selectize-dropdown .optgroup-header, .redactor-dropdown a {
 	padding-left: 13px;
 	color: @blue-corn;
 	background: @azure;
@@ -433,7 +459,26 @@ button.btn-primary[disabled] {
 
 	&:hover {
 		background: @alice-blue;
+		color: @blue-corn;
 	}
+}
+
+.redactor-dropdown a {
+	height: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.redactor-dropdown a:hover {
+	color: @blue-corn !important;
+}
+
+.redactor-toolbar li a:active, .redactor-toolbar li a.redactor-act {
+	background-color: #2b3145;
+	color: @white;
+}
+
+.redactor-dropdown.redactor-dropdown-box-link {
+	background: @azure;
 }
 
 .selectize-dropdown, .selectize-dropdown.form-control {
@@ -476,12 +521,24 @@ button.btn-primary[disabled] {
 	float: none;
 	clear: both;
 	padding-left: 0px;
+	min-height: 130px;
 }
 
 .form-group {
 	float: none;
 	clear: both;
 	position: relative;
+}
+
+.form-group .hint-block {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-image: url(../../images/icons/hint-small.svg);
+	background-size: 18px 18px;
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
 }
 
 .btn.btn-info {
@@ -518,7 +575,7 @@ button.btn-primary[disabled] {
 		display: none;
 	}
 
-	.qq-upload-spinner {	
+	.qq-upload-spinner {
 		height: 3px;
 		width: 0%;
 		background: #b471a3;
@@ -591,7 +648,7 @@ button.btn-primary[disabled] {
 	display: none !important;
 }
 .qq-upload-spinner {
-	
+
 	height: 3px;
 	width: 0%;
 	background: #b471a3;
@@ -717,8 +774,8 @@ img.current-media {
 	height: 100%;
 	border-radius: 2px;
 	content: '';
-	-webkit-box-sizing: content-box; 
-	-moz-box-sizing: content-box; 
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
 
@@ -864,7 +921,52 @@ img.current-media {
 }
 
 #redactor-modal-box label {
-	color: black;
+	color: @white;
+	text-align: left;
+	padding: 0px 13px;
+	padding-top: 5px;
+	padding-bottom: 3px;
+	margin: 0px !important;
+}
+
+#redactor-droparea-placeholder {
+	color: @white;
+}
+
+.tooltip.in {
+	opacity: 1;
+}
+
+.tooltip.bottom .tooltip-arrow, .tooltip.top .tooltip-arrow {
+	border-top-color: #9fa7b7;
+	border-bottom-color: #9fa7b7;
+}
+
+.tooltip-inner {
+	background-color: #9fa7b7;
+	color: #343c55;
+}
+
+#redactor-image-box {
+	outline: 2px dashed @purple;
+}
+
+.redactor-toolbar-tooltip {
+	background: @azure;
+	color: @blue-corn;
+}
+
+#redactor-modal input[type="text"]:focus, #redactor-modal input[type="password"]:focus, #redactor-modal input[type="email"]:focus, #redactor-modal input[type="url"]:focus, #redactor-modal textarea:focus {
+	border-color: transparent;
+	box-shadow: none;
+}
+
+#redactor-modal textarea {
+	border: 0px;
+	box-shadow: none;
+	background-color: @alice-blue;
+	padding: 13px;
+	border-radius: 2px;
 }
 
 

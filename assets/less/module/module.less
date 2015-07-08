@@ -21,7 +21,7 @@ h1 {
 	// 	color: @white;
 	// }
 }
-.form-group {
+.form-group, #redactor-modal-video-insert, .module-social .table.detail-view tbody tr {
 	padding: 0px 4px 4px 4px;
 	background: @blue-corn;
 	border-radius: 2px;
@@ -62,6 +62,10 @@ h1 {
 
 		a {
 			color: @white;
+
+			&:hover {
+				background-color: #2b3145;
+			}
 		}
 	}
 }
@@ -93,5 +97,43 @@ input[type="checkbox"] {
 
 	&:hover, &:focus {
 		color: @white;
+	}
+}
+
+
+
+/* Form/Social modules */
+.module-social {
+	background: @night-lake;
+	padding: 37px;
+
+	.table.detail-view {
+		border: 0px;
+		border-collapse: separate;
+		border-spacing: 0 15px;
+
+		tbody {
+			border: 0px;
+			tr {
+				border: 0px;
+
+				th {
+					border: 0px;
+					font-size: 13px;
+					padding-top: 5px;
+					padding-bottom: 3px;
+					line-height: 23px;
+					vertical-align: middle;
+					min-width: 205px;
+				}
+				td {
+					border: 0px;
+					font-size: 14px;
+					font-weight: 500;
+					vertical-align: middle;
+				}
+
+			}
+		}
 	}
 }
