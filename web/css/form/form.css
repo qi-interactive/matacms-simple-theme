@@ -82,6 +82,7 @@ button.btn-primary[disabled]{opacity:.45}
 .selectize-control .selectize-input.input-active,.selectize-control.single .selectize-input.input-active{border-bottom-left-radius:0;border-bottom-right-radius:0}
 .redactor-dropdown a,.selectize-dropdown .optgroup-header,.selectize-dropdown [data-selectable]{color:#343c55;background:#9fa7b7;font-size:14px;font-weight:500;height:30px;min-height:30px;line-height:32px;padding:0 38px 0 13px}
 .redactor-dropdown a:hover,.selectize-dropdown .optgroup-header:hover,.selectize-dropdown [data-selectable]:hover{background:#d5deeb;color:#343c55}
+.redactor-dropdown a{height:auto;padding-top:5px;padding-bottom:5px}
 .redactor-dropdown a:hover{color:#343c55!important}
 .redactor-toolbar li a.redactor-act,.redactor-toolbar li a:active{background-color:#2b3145;color:#fff}
 .redactor-dropdown.redactor-dropdown-box-link{background:#9fa7b7}
