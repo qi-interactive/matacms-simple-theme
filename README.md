@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.0.8.4-alpha, July 9, 2015
+
+- Styling changes.
+
 ## 1.0.8.3-alpha, July 6, 2015
 
 - Added form hint with tooltip styling, updates 
