@@ -28,11 +28,10 @@ $loginAsset = LoginAsset::register($this);
 
 ?>
 
-<?= $this->render('/_alert', ['module' => Yii::$app->getModule('user')]) ?>
 <div class="row">
 
 	<h1 class="logo">
-		<img src="<?= $loginAsset->baseUrl ?>/images/login/gear-mata-logo@2x.png" alt="mata-cms"/> 
+		<img src="<?= $loginAsset->baseUrl ?>/images/login/gear-mata-logo@2x.png" alt="mata-cms"/>
 	</h1>
 
 	<div class="panel panel-default">
@@ -41,12 +40,22 @@ $loginAsset = LoginAsset::register($this);
 		</div>
 
 
-		<?php if ($model->hasErrors()): 
+		<?php if ($model->hasErrors()):
 		$firstError = current(current($model->getErrors()));
 		?>
 		<div style="display: block" id="header-spacer"><?= $firstError ?></div>
 
 	<?php endif;?>
+
+	<?php if (\Yii::$app->getModule('user')->enableFlashMessages): ?>
+		<?php foreach (Yii::$app->session->getAllFlashes() as $type => $message): ?>
+			<?php if (in_array($type, ['success', 'danger', 'warning', 'info'])): ?>
+				<div style="display: block" id="header-spacer">
+					<?= $message ?>
+				</div>
+			<?php endif ?>
+		<?php endforeach ?>
+	<?php endif ?>
 
 	<div class="panel-body">
 		<?php $form = ActiveForm::begin([
