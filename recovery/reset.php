@@ -65,7 +65,7 @@ $recoveryAsset = RecoveryAsset::register($this);
 
 		   <?= $form->field($model, 'password')->passwordInput() ?>
 
-		   <?= Html::submitButton(Yii::t('user', 'Finish'), ['class' => 'btn btn-success btn-block']) ?><br>
+		   <?= Html::submitButton(Yii::t('user', 'Reset'), ['class' => 'btn btn-success btn-block']) ?><br>
 
 		   <?php ActiveForm::end(); ?>
 		</div>
