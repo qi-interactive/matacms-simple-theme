@@ -29,6 +29,7 @@ html>body{background:#485274;display:table}
 .field-login-form-rememberme label:hover input[type=checkbox]+div:before{opacity:1;-moz-transition:opacity .3s;-webkit-transition:opacity .3s;-o-transition:opacity .3s;-ms-transition:opacity .3s;transition:opacity .3s}
 form{margin-top:15px}
 #header-spacer{display:none;background:#343c55;width:100%;color:#ff6b6b;padding:15px 37px;font-size:14px;text-align:left;font-weight:700;border-bottom:2px solid #535d7c}
+#header-spacer.alert-info,#header-spacer.alert-success{color:#55c45f}
 form#login-form label span{vertical-align:middle;padding-left:12px;font-weight:600;color:#9fa7b7}
 form#login-form label{padding-left:0;padding-right:0}
 form#login-form .input{position:relative;z-index:1;display:inline-block;margin:0;width:100%;vertical-align:top}

@@ -49,7 +49,7 @@ $recoveryAsset = RecoveryAsset::register($this);
        <?php if (\Yii::$app->getModule('user')->enableFlashMessages): ?>
            <?php foreach (Yii::$app->session->getAllFlashes() as $type => $message): ?>
                <?php if (in_array($type, ['success', 'danger', 'warning', 'info'])): ?>
-                   <div style="display: block" id="header-spacer">
+                   <div style="display: block" id="header-spacer" class="alert-<?= $type; ?>">
                        <?= $message ?>
                    </div>
                <?php endif ?>

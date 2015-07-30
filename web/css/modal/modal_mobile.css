@@ -1,8 +1,13 @@
-@media (min-width:768px){#redactor-modal{width:600px!important;margin:30px auto!important}}
-@media (min-width:555px){#redactor-modal,.modal-dialog{width:529px!important;margin:30px auto!important}}
-@media (max-width:554px){.modal-content .modal-body .hi-icon-effect-2 .inner-container{max-width:100%}}
-@media (max-width:530px){#redactor-modal footer button,.redactor-modal-delete-btn{width:100%!important;margin-bottom:10px}}
+@media (min-width:768px){#redactor-modal{width:600px!important;margin:30px auto!important}
+}
+@media (min-width:555px){#redactor-modal,.modal-dialog{width:529px!important;margin:30px auto!important}
+}
+@media (max-width:554px){.modal-content .modal-body .hi-icon-effect-2 .inner-container{max-width:100%}
+}
+@media (max-width:530px){#redactor-modal footer button,.redactor-modal-delete-btn{width:100%!important;margin-bottom:10px}
+}
 @media (max-width:488px){#edit-image-container-modal .file-uploader{text-align:center;min-height:295px}
 #edit-image-container-modal .file-uploader .fine-uploader .add-media-inner-wrapper{float:none;width:100%;display:block}
 #edit-image-container-modal .file-uploader .qq-upload-button{float:none;padding-top:0;position:absolute!important;bottom:0;width:200px;display:block;margin:0 auto 0 -100px;left:50%}
-#edit-image-container-modal .file-uploader .img-container{left:50%;margin-left:-60px}}
+#edit-image-container-modal .file-uploader .img-container{left:50%;margin-left:-60px}
+}

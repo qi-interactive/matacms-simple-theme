@@ -2,7 +2,7 @@
 #redactor-modal #media-type-buttons,.modal-content #media-type-buttons{width:100%;height:auto}
 #redactor-modal #redactor-modal-video-insert,#redactor-modal .form-group,.modal-content #redactor-modal-video-insert,.modal-content .form-group{text-align:left;background:#212635}
 #redactor-modal #redactor-modal-video-insert input,#redactor-modal .form-group input,.modal-content #redactor-modal-video-insert input,.modal-content .form-group input{font-size:14px;font-weight:500}
-#redactor-modal #media-type-buttons a.hi-icon-effect-2,#redactor-modal a.hi-icon-effect-2,.modal-content #media-type-buttons a.hi-icon-effect-2,.modal-content a.hi-icon-effect-2{display:block;width:100%;border:0;border-radius:2px;float:none;margin:20px 0 0;color:#fff;padding:24px 15px 22px;height:110px}
+#redactor-modal #media-type-buttons a.hi-icon-effect-2,#redactor-modal a.hi-icon-effect-2,.modal-content #media-type-buttons a.hi-icon-effect-2,.modal-content a.hi-icon-effect-2{display:block;width:100%;border:0;border-radius:2px;float:none;color:#fff;padding:24px 15px 22px;height:110px;margin:20px 0 0}
 #redactor-modal #media-type-buttons a.hi-icon-effect-2:hover,#redactor-modal a.hi-icon-effect-2:hover,.modal-content #media-type-buttons a.hi-icon-effect-2:hover,.modal-content a.hi-icon-effect-2:hover{color:#fff}
 #redactor-modal #media-type-buttons a.hi-icon-effect-2:first-child,#redactor-modal a.hi-icon-effect-2:first-child,.modal-content #media-type-buttons a.hi-icon-effect-2:first-child,.modal-content a.hi-icon-effect-2:first-child{margin-top:0}
 #redactor-modal .modal-body,#redactor-modal section,.modal-content .modal-body,.modal-content section{padding:0 50px 35px;text-align:center}
@@ -17,14 +17,13 @@
 #redactor-modal .modal-body .hi-icon-effect-2.interview .hi-icon:before,#redactor-modal section .hi-icon-effect-2.interview .hi-icon:before,.modal-content .modal-body .hi-icon-effect-2.interview .hi-icon:before,.modal-content section .hi-icon-effect-2.interview .hi-icon:before{background-image:url(../../images/interview/interview.svg);background-size:50px}
 #redactor-modal .modal-body .hi-icon-effect-2.upload-img .hi-icon:before,#redactor-modal section .hi-icon-effect-2.upload-img .hi-icon:before,.modal-content .modal-body .hi-icon-effect-2.upload-img .hi-icon:before,.modal-content section .hi-icon-effect-2.upload-img .hi-icon:before{background-image:url(../../images/carousel/image.svg);background-size:50px}
 #redactor-modal .modal-body .hi-icon-effect-2.video-url .hi-icon:before,#redactor-modal section .hi-icon-effect-2.video-url .hi-icon:before,.modal-content .modal-body .hi-icon-effect-2.video-url .hi-icon:before,.modal-content section .hi-icon-effect-2.video-url .hi-icon:before{background-image:url(../../images/carousel/video.svg);background-size:50px}
-#redactor-modal #redactor-modal-close,#redactor-modal .modal-header .close,#redactor-modal header .close,.modal-content #redactor-modal-close,.modal-content .modal-header .close,.modal-content header .close{-moz-transition:.3s -moz-transform ease;-webkit-transition:.3s -webkit-transform ease;-o-transition:.3s -o-transform ease;-ms-transition:.3s -ms-transform ease;background-image:url(../../images/icons/close.svg);background-size:13px}
 #redactor-modal .modal-body .btn,#redactor-modal .modal-body .btn[type=submit],#redactor-modal .modal-body button,#redactor-modal .modal-body button.btn-primary,#redactor-modal section .btn,#redactor-modal section .btn[type=submit],#redactor-modal section button,#redactor-modal section button.btn-primary,.modal-content .modal-body .btn,.modal-content .modal-body .btn[type=submit],.modal-content .modal-body button,.modal-content .modal-body button.btn-primary,.modal-content section .btn,.modal-content section .btn[type=submit],.modal-content section button,.modal-content section button.btn-primary{display:block}
 #redactor-modal .modal-header,#redactor-modal header,.modal-content .modal-header,.modal-content header{padding:29px 15px 29px 50px;border:0;text-align:left}
 #redactor-modal .modal-header h3,#redactor-modal header h3,.modal-content .modal-header h3,.modal-content header h3{margin-right:15px;text-transform:uppercase;font-size:20px;font-weight:700;margin-bottom:0;margin-top:0}
-#redactor-modal .modal-header .close,#redactor-modal header .close,.modal-content .modal-header .close,.modal-content header .close{color:#fff;opacity:1;text-shadow:none;font-size:0;margin-top:-21px;min-height:0;background-repeat:no-repeat;background-position:center;width:30px;height:30px;transition:.3s transform ease}
+#redactor-modal .modal-header .close,#redactor-modal header .close,.modal-content .modal-header .close,.modal-content header .close{color:#fff;opacity:1;text-shadow:none;font-size:0;margin-top:-21px;min-height:0;background-image:url(../../images/icons/close.svg);background-repeat:no-repeat;background-size:13px;background-position:center;width:30px;height:30px;-moz-transition:.3s -moz-transform ease;-webkit-transition:.3s -webkit-transform ease;-o-transition:.3s -o-transform ease;-ms-transition:.3s -ms-transform ease;transition:.3s transform ease}
 #redactor-modal .modal-header .close:hover,#redactor-modal header .close:hover,.modal-content .modal-header .close:hover,.modal-content header .close:hover{opacity:1;background-color:transparent;-moz-transform:rotate(90deg);-webkit-transform:rotate(90deg);-o-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
 #redactor-modal header,.modal-content header{text-transform:uppercase;font-size:20px;font-weight:700;margin-bottom:0;margin-top:0}
-#redactor-modal #redactor-modal-close,.modal-content #redactor-modal-close{color:#fff;opacity:1;text-shadow:none;font-size:0;margin-top:0;min-height:0;background-repeat:no-repeat;background-position:center;width:30px;height:30px;right:15px;transition:.3s transform ease}
+#redactor-modal #redactor-modal-close,.modal-content #redactor-modal-close{color:#fff;opacity:1;text-shadow:none;font-size:0;margin-top:0;min-height:0;background-image:url(../../images/icons/close.svg);background-repeat:no-repeat;background-size:13px;background-position:center;width:30px;height:30px;right:15px;-moz-transition:.3s -moz-transform ease;-webkit-transition:.3s -webkit-transform ease;-o-transition:.3s -o-transform ease;-ms-transition:.3s -ms-transform ease;transition:.3s transform ease}
 #redactor-modal #redactor-modal-close:hover,.modal-content #redactor-modal-close:hover{opacity:1;background-color:transparent;-moz-transform:rotate(90deg);-webkit-transform:rotate(90deg);-o-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
 .modal-backdrop.in{opacity:.7}
 #edit-image-container-modal .qq-upload-drop-area,#edit-image-container-modal .qq-upload-extra-drop-area{background:#212635}
@@ -72,7 +71,7 @@ label input[type=checkbox]:checked+div .fa{opacity:1;-moz-animation:show-b .3s;-
 #redactor-modal-box{background:rgba(0,0,0,.6)}
 #redactor-modal footer button.redactor-modal-close-btn,.redactor-modal-close-btn{background:#5f6885;color:#212635}
 #redactor-modal footer button.redactor-modal-close-btn:hover,.redactor-modal-close-btn:hover{opacity:.7;background:#5f6885;color:#212635}
-#redactor-modal footer button.redactor-modal-delete-btn,#redactor-modal footer button.redactor-modal-delete-btn:hover,.redactor-modal-delete-btn,.redactor-modal-delete-btn:hover{color:#fff;float:right;font-size:0;background:url(../../images/icons/delete-white.svg)center right no-repeat;background-size:24px 24px;width:24px!important;height:24px;min-width:0;margin-right:0}
+#redactor-modal footer button.redactor-modal-delete-btn,#redactor-modal footer button.redactor-modal-delete-btn:hover,.redactor-modal-delete-btn,.redactor-modal-delete-btn:hover{color:#fff;float:right;font-size:0;background:url(../../images/icons/delete-white.svg) center right no-repeat;background-size:24px 24px;width:24px!important;height:24px;min-width:0;margin-right:0}
 #redactor-modal footer button.redactor-modal-action-btn,.redactor-modal-action-btn{background:#4eb7cd;color:#fff}
 #redactor-modal footer button.redactor-modal-action-btn:hover,.redactor-modal-action-btn:hover{background:#539fb8;color:#fff}
 #redactor-modal footer,.redactor-modal-delete-btn{padding:0 50px 35px}
@@ -81,11 +80,16 @@ label input[type=checkbox]:checked+div .fa{opacity:1;-moz-animation:show-b .3s;-
 #redactor-modal #redactor-modal-list a.redactor-clip-link,.redactor-clip-link{border-radius:2px;font-size:14px;font-weight:600;color:#343c55;background:#9fa7b7}
 #redactor-modal #redactor-modal-list a.redactor-clip-link:hover,.redactor-clip-link:hover{background:#d5deeb}
 #redactor-modal #redactor-modal-list{margin-bottom:0}
-@media (min-width:768px){#redactor-modal{width:600px!important;margin:30px auto!important}}
-@media (min-width:555px){#redactor-modal,.modal-dialog{width:529px!important;margin:30px auto!important}}
-@media (max-width:554px){.modal-content .modal-body .hi-icon-effect-2 .inner-container{max-width:100%}}
-@media (max-width:530px){#redactor-modal footer button,.redactor-modal-delete-btn{width:100%!important;margin-bottom:10px}}
+@media (min-width:768px){#redactor-modal{width:600px!important;margin:30px auto!important}
+}
+@media (min-width:555px){#redactor-modal,.modal-dialog{width:529px!important;margin:30px auto!important}
+}
+@media (max-width:554px){.modal-content .modal-body .hi-icon-effect-2 .inner-container{max-width:100%}
+}
+@media (max-width:530px){#redactor-modal footer button,.redactor-modal-delete-btn{width:100%!important;margin-bottom:10px}
+}
 @media (max-width:488px){#edit-image-container-modal .file-uploader{text-align:center;min-height:295px}
 #edit-image-container-modal .file-uploader .fine-uploader .add-media-inner-wrapper{float:none;width:100%;display:block}
 #edit-image-container-modal .file-uploader .qq-upload-button{float:none;padding-top:0;position:absolute!important;bottom:0;width:200px;display:block;margin:0 auto 0 -100px;left:50%}
-#edit-image-container-modal .file-uploader .img-container{left:50%;margin-left:-60px}}
+#edit-image-container-modal .file-uploader .img-container{left:50%;margin-left:-60px}
+}
