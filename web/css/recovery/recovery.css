@@ -1,4 +1,4 @@
-.btn.btn-primary.btn-block,.container,html,html>body{width:100%}
+.container,html,html>body{width:100%}
 html>body{background:#485274;display:table}
 .container{text-align:left;padding-top:131px;padding-bottom:100px}
 .logo{color:#fff;text-align:center;margin-bottom:72px;margin-top:0}
@@ -7,20 +7,20 @@ html>body{background:#485274;display:table}
 .panel .panel-heading{background:#5f6885;border:0;padding:20px 37px;border-bottom:2px solid #485274;text-align:left}
 .panel .panel-heading h3{font-size:24px;color:#d5deeb;font-weight:700;letter-spacing:0}
 .panel .panel-body{padding:0 37px}
-#forgotten-password-bar{background:#212635;padding:24px 37px;margin:31px 0 0;text-align:left;font-weight:600}
-#forgotten-password-bar a{color:#9fa7b7;font-weight:600;line-height:26px}
-#forgotten-password-bar a:hover{color:#858b99;text-decoration:none}
-#forgotten-password-bar .col-md-6{padding-right:0;padding-left:0}
-#forgotten-password-bar #footer-caption{color:#4d7877;font-size:12px;float:right}
-#forgotten-password-bar #footer-caption span{padding-right:5px}
-#forgotten-password-bar #footer-caption img{width:26px}
-#forgotten-password-bar #get-in-touch-container{font-size:14px;float:right;display:none;font-weight:600}
-#forgotten-password-bar #get-in-touch-container span{color:#9fa7b7;font-size:14px}
-#forgotten-password-bar #get-in-touch-container a{color:#ff6b6b;font-size:14px}
-#forgotten-password-bar #get-in-touch-container a:hover{color:#bd5659}
+#footer-bar{background:#212635;padding:24px 37px;margin:31px 0 0;text-align:left;font-weight:600}
+#footer-bar a{color:#9fa7b7;font-weight:600;line-height:26px}
+#footer-bar a:hover{color:#858b99;text-decoration:none}
+#footer-bar .col-md-6{padding-right:0;padding-left:0}
+#footer-bar #footer-caption{color:#4d7877;font-size:12px;float:right}
+#footer-bar #footer-caption span{padding-right:5px}
+#footer-bar #footer-caption img{width:26px}
+#footer-bar #get-in-touch-container{font-size:14px;float:right;display:none;font-weight:600}
+#footer-bar #get-in-touch-container span{color:#9fa7b7;font-size:14px}
+#footer-bar #get-in-touch-container a{color:#ff6b6b;font-size:14px}
+#footer-bar #get-in-touch-container a:hover{color:#bd5659}
 #submit-remember-me-container{margin-top:39px}
-.form-group{margin-bottom:20px;background:0 0;height:auto;border-radius:0;padding:0}
-.form-group label{font-size:inherit}
+.form-group{padding:0 4px 4px;background:#343c55;border-radius:2px}
+.form-group label{font-size:13px;padding-top:5px;padding-bottom:3px;line-height:23px}
 .field-login-form-rememberme{font-size:12px;color:#9fa7b7;font-weight:600;margin-top:13px;text-align:left}
 .field-login-form-rememberme:hover{color:#858b99}
 .field-login-form-rememberme input,.field-login-form-rememberme label{cursor:pointer}
@@ -47,8 +47,8 @@ form#login-form .input--filled .input__field--ichiro,form#login-form .input__fie
 form#login-form .input--filled .input__label--ichiro,form#login-form .input__field--ichiro:focus+.input__label--ichiro{cursor:default;pointer-events:none}
 form#login-form .input--filled .input__label--ichiro::before,form#login-form .input__field--ichiro:focus+.input__label--ichiro::before{-webkit-transform:scale3d(1,1.5,1);transform:scale3d(1,1.5,1)}
 form#login-form .input--filled .input__label-content--ichiro,form#login-form .input__field--ichiro:focus+.input__label--ichiro .input__label-content--ichiro{-webkit-transform:translate3d(0,-1.8em,0) scale3d(.8,.8,1) translateZ(1px);transform:translate3d(0,-1.8em,0) scale3d(.8,.8,1) translateZ(1px)}
-body.login-form-error #forgotten-password-bar #get-in-touch-container,body.login-form-error #header-spacer{display:block}
-body.login-form-error #forgotten-password-bar #footer-caption,label input[type=checkbox]{display:none}
+body.login-form-error #footer-bar #get-in-touch-container,body.login-form-error #header-spacer{display:block}
+body.login-form-error #footer-bar #footer-caption,label input[type=checkbox]{display:none}
 label input[type=checkbox]+div{height:20px;width:20px;background:#343c55;border-radius:2px;position:relative;cursor:pointer;display:inline-block;text-align:center;line-height:60px;-moz-transition:all .3s;-webkit-transition:all .3s;-o-transition:all .3s;-ms-transition:all .3s;transition:all .3s;vertical-align:middle;border:2px solid #343c55}
 label input[type=checkbox]+div .fa{font-size:12px;color:#5f6885;opacity:0;top:2px;position:absolute;line-height:16px;left:2px;right:auto;width:12px;height:12px}
 label input[type=checkbox]+div:before{content:"";display:block;opacity:0;height:100%;width:100%;position:absolute;top:0;right:0;background:#d5deeb}
@@ -56,5 +56,5 @@ label input[type=checkbox]+div:after{font-family:FontAwesome;content:"\f00c";dis
 label input[type=checkbox]:checked+div{background:0 0}
 label input[type=checkbox]:checked+div:before{opacity:1;-moz-animation:show-a .3s;-webkit-animation:show-a .3s;-o-animation:show-a .3s;-ms-animation:show-a .3s;animation:show-a .3s}
 label input[type=checkbox]:checked+div .fa{opacity:1;-moz-animation:show-b .3s;-webkit-animation:show-b .3s;-o-animation:show-b .3s;-ms-animation:show-b .3s;animation:show-b .3s}
-.btn,.btn[type=submit],.qq-upload-button,button,button.btn-primary{background:#4eb7cd;border:0;border-radius:2px;font-weight:700;letter-spacing:0;font-size:15px;outline:0;min-height:38px;padding:8px 20px;width:auto;display:inline-block;line-height:normal}
-.btn:hover,.btn[type=submit]:hover,.qq-upload-button:hover,button.btn-primary:hover,button:hover{background:#539fb8}
+.btn,.btn[type=submit],.qq-upload-button,button,button.imary{background:#4eb7cd;border:0;border-radius:2px;font-weight:700;letter-spacing:0;font-size:15px;outline:0;min-height:38px;padding:8px 20px;width:auto;display:inline-block;line-height:normal}
+.btn:hover,.btn[type=submit]:hover,.qq-upload-button:hover,button.imary:hover,button:hover{background:#539fb8}

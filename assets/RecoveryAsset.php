@@ -10,20 +10,19 @@ namespace matacms\theme\simple\assets;
 
 use yii\web\AssetBundle;
 
-class ModuleUpdateAsset extends AssetBundle
-{
+class RecoveryAsset extends AssetBundle {
 
     public $sourcePath = '@vendor/matacms/matacms-simple-theme/web';
 
     public $css = [
+        'css/recovery/recovery.css',
     ];
+
     public $js = [
-    	'js/module/moduleUpdate.js',
     ];
 
     public $depends = [
-   		'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapPluginAsset'
+        'matacms\theme\simple\assets\ThemeAsset',
     ];
 
 }

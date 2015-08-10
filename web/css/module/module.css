@@ -2,10 +2,10 @@
 body,html{background-color:#5f6885}
 h1{font-size:26px;font-weight:700;margin-bottom:23px;text-transform:uppercase;display:none}
 .container{padding-bottom:30px}
-#redactor-modal-video-insert,.form-group,.module-social .table.detail-view tbody tr{padding:0 4px 4px;background:#343c55;border-radius:2px}
-#redactor-modal-video-insert label,.form-group label,.module-social .table.detail-view tbody tr label{font-size:13px;padding-top:5px;padding-bottom:3px;line-height:23px}
-#redactor-modal-video-insert .module-calendar section .event-label,#redactor-modal-video-insert .redactor-box,#redactor-modal-video-insert .redactor-box textarea,#redactor-modal-video-insert .redactor-editor,#redactor-modal-video-insert input,#redactor-modal-video-insert input.form-control,#redactor-modal-video-insert textarea,.form-group .module-calendar section .event-label,.form-group .redactor-box,.form-group .redactor-box textarea,.form-group .redactor-editor,.form-group input,.form-group input.form-control,.form-group textarea,.module-social .table.detail-view tbody tr .module-calendar section .event-label,.module-social .table.detail-view tbody tr .redactor-box,.module-social .table.detail-view tbody tr .redactor-box textarea,.module-social .table.detail-view tbody tr .redactor-editor,.module-social .table.detail-view tbody tr input,.module-social .table.detail-view tbody tr input.form-control,.module-social .table.detail-view tbody tr textarea{font-size:14px;font-weight:500}
-#redactor-modal-video-insert .redactor-editor,.form-group .redactor-editor,.module-social .table.detail-view tbody tr .redactor-editor{-moz-appearance:textfield-multiline;-webkit-appearance:textarea;resize:vertical;overflow:auto;padding-left:0;padding-bottom:0;padding-right:0}
+#redactor-modal-video-insert,.form-group,.module-entry-detail-view .table.detail-view tbody tr{padding:0 4px 4px;background:#343c55;border-radius:2px}
+#redactor-modal-video-insert label,.form-group label,.module-entry-detail-view .table.detail-view tbody tr label{font-size:13px;padding-top:5px;padding-bottom:3px;line-height:23px}
+#redactor-modal-video-insert .module-calendar section .event-label,#redactor-modal-video-insert .redactor-box,#redactor-modal-video-insert .redactor-box textarea,#redactor-modal-video-insert .redactor-editor,#redactor-modal-video-insert input,#redactor-modal-video-insert input.form-control,#redactor-modal-video-insert textarea,.form-group .module-calendar section .event-label,.form-group .redactor-box,.form-group .redactor-box textarea,.form-group .redactor-editor,.form-group input,.form-group input.form-control,.form-group textarea,.module-entry-detail-view .table.detail-view tbody tr .module-calendar section .event-label,.module-entry-detail-view .table.detail-view tbody tr .redactor-box,.module-entry-detail-view .table.detail-view tbody tr .redactor-box textarea,.module-entry-detail-view .table.detail-view tbody tr .redactor-editor,.module-entry-detail-view .table.detail-view tbody tr input,.module-entry-detail-view .table.detail-view tbody tr input.form-control,.module-entry-detail-view .table.detail-view tbody tr textarea{font-size:14px;font-weight:500}
+#redactor-modal-video-insert .redactor-editor,.form-group .redactor-editor,.module-entry-detail-view .table.detail-view tbody tr .redactor-editor{-moz-appearance:textfield-multiline;-webkit-appearance:textarea;resize:vertical;overflow:auto;padding-left:0;padding-bottom:0;padding-right:0}
 .redactor-box{margin-bottom:0}
 .redactor-toolbar{background:#343c55}
 .redactor-toolbar li a:hover{background-color:#2b3145}
@@ -13,8 +13,8 @@ input[type=checkbox]{height:auto;background:0 0;-webkit-appearance:checkbox}
 .badge{height:21px;line-height:1.5}
 .badge.live{background:#55c45f}
 .badge.draft{background:#d6915e}
-.module-social{background:#535d7c;padding:37px}
-.module-social .table.detail-view{border:0;border-collapse:separate;border-spacing:0 15px}
-.module-social .table.detail-view tbody,.module-social .table.detail-view tbody tr{border:0}
-.module-social .table.detail-view tbody tr th{border:0;font-size:13px;padding-top:5px;padding-bottom:3px;line-height:23px;vertical-align:middle;min-width:205px}
-.module-social .table.detail-view tbody tr td{border:0;font-size:14px;font-weight:500;vertical-align:middle}
+.module-entry-detail-view{background:#535d7c;padding:37px}
+.module-entry-detail-view .table.detail-view{border:0;border-collapse:separate;border-spacing:0 15px}
+.module-entry-detail-view .table.detail-view tbody,.module-entry-detail-view .table.detail-view tbody tr{border:0}
+.module-entry-detail-view .table.detail-view tbody tr th{border:0;font-size:13px;padding-top:5px;padding-bottom:3px;line-height:23px;vertical-align:middle;min-width:205px}
+.module-entry-detail-view .table.detail-view tbody tr td{border:0;font-size:14px;font-weight:500;vertical-align:middle}
