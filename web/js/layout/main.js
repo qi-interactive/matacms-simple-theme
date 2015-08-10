@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
 	}).resize();
 
 	function toggle3dBlock(addOrRemove) {
-		if(typeof(addOrRemove)==='undefined') addOrRemove = true;	
+		if(typeof(addOrRemove)==='undefined') addOrRemove = true;
 		$('.cd-header').toggleClass('nav-is-visible', addOrRemove);
 		$('main').toggleClass('nav-is-visible', addOrRemove);
 		$('.cd-3d-nav-container').toggleClass('nav-is-visible', addOrRemove);
@@ -69,7 +69,7 @@ jQuery(document).ready(function($) {
 
 	function showSubnav(subnavId) {
 		var overlay = $("#subnav-overlay");
-		
+
 		overlay.find("> div").hide();
 		overlay.css({
 			height: $(window).height() - $("nav").height(),
@@ -113,12 +113,12 @@ jQuery(document).ready(function($) {
 				});
 			}
 		}
-		
+
 	}
 
 	mata.addActiveStateToMenuItemsOnLoad = function(controllerIdParam) {
 
-		$('a[data-module-name]', window.top.document).each(function(index, value) { 
+		$('a[data-module-name]', window.top.document).each(function(index, value) {
 
 			if ($(this).attr("data-module-name") == controllerIdParam) {
 				$(this).parent('li').addClass("cd-active").siblings('li').removeClass('cd-active');
@@ -132,7 +132,7 @@ jQuery(document).ready(function($) {
 	//this function update the .cd-marker position
 	function updateSelectedNav(type) {
 		var selectedItem = $('.cd-selected'),
-		selectedItemPosition = selectedItem.index() + 1, 
+		selectedItemPosition = selectedItem.index() + 1,
 		leftPosition = selectedItem.offset().left,
 		backgroundColor = selectedItem.data('color');
 

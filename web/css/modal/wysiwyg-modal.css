@@ -22,7 +22,7 @@ label input[type=checkbox]:checked+div .fa{opacity:1;-moz-animation:show-b .3s;-
 #redactor-modal-box{background:rgba(0,0,0,.6)}
 #redactor-modal footer button.redactor-modal-close-btn,.redactor-modal-close-btn{background:#5f6885;color:#212635}
 #redactor-modal footer button.redactor-modal-close-btn:hover,.redactor-modal-close-btn:hover{opacity:.7;background:#5f6885;color:#212635}
-#redactor-modal footer button.redactor-modal-delete-btn,#redactor-modal footer button.redactor-modal-delete-btn:hover,.redactor-modal-delete-btn,.redactor-modal-delete-btn:hover{color:#fff;float:right;font-size:0;background:url(../../images/icons/delete-white.svg)center right no-repeat;background-size:24px 24px;width:24px!important;height:24px;min-width:0;margin-right:0}
+#redactor-modal footer button.redactor-modal-delete-btn,#redactor-modal footer button.redactor-modal-delete-btn:hover,.redactor-modal-delete-btn,.redactor-modal-delete-btn:hover{color:#fff;float:right;font-size:0;background:url(../../images/icons/delete-white.svg) center right no-repeat;background-size:24px 24px;width:24px!important;height:24px;min-width:0;margin-right:0}
 #redactor-modal footer button.redactor-modal-action-btn,.redactor-modal-action-btn{background:#4eb7cd;color:#fff}
 #redactor-modal footer button.redactor-modal-action-btn:hover,.redactor-modal-action-btn:hover{background:#539fb8;color:#fff}
 #redactor-modal footer,.redactor-modal-delete-btn{padding:0 50px 35px}

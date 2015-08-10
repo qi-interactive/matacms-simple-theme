@@ -24,7 +24,7 @@ $bundle = ModuleAsset::register($this);
 <script>
 
 /**
- * Hitting any link directly will cause the layout not to show. 
+ * Hitting any link directly will cause the layout not to show.
  * Detect it, and if we are not in an iFrame redirect to layout.
  */
 if (inIframe() == false)
@@ -42,13 +42,12 @@ if (inIframe() == false)
 </script>
 
 <body>
-
 	<?php $this->beginBody() ?>
 	<?php
-	
+
 	$this->registerJs("
 
-		$(window).ready(function() {	        
+		$(window).ready(function() {
 			mata.addActiveStateToMenuItemsOnLoad('" . $this->context->module->id . "');
 		});", View::POS_READY);
 

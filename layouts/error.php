@@ -20,12 +20,11 @@ $bundle = HostAsset::register($this);
     <?php $this->head() ?>
     <link rel="icon" href="<?= $bundle->baseUrl ?>/images/favicon/mata-logo-favicon.png" type="image/png" />
 </head>
-<body class="theme-simple">
+<body class="theme-simple error-exception">
     <?php $this->beginBody() ?>
-    <?php echo $this->render("_navigation"); ?>
 
     <div id="container">
-        <main>
+        <main class="vertical-flex-grid-container">
             <?= $content ?>
         </main>
     </div>
