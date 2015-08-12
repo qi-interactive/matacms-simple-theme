@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 use mata\user\models\User;
 use matacms\theme\simple\assets\HistoryAsset;
@@ -13,10 +13,10 @@ $environmentModule = \Yii::$app->getModule("environment");
 
 ?>
 
-<h3>Versions of <?= \Yii::$app->controller->id ?>: Sample Name</h3>
+<h3>Versions of <?= \Yii::$app->controller->id ?>: <?= $documentLabel; ?></h3>
 
 <ol class="revisions overlay-list-container">
-	<?php foreach ($revisions as $revision): 
+	<?php foreach ($revisions as $revision):
 	$user = User::findOne($revision->CreatedBy);
 	$author = $user != null ? $user->getLabel() : "Deleted user";
 	$message = $revision->Revision == 1 ? "created this document" : "wrote this version";
@@ -58,10 +58,10 @@ $environmentModule = \Yii::$app->getModule("environment");
 			if ($ie != null):
 
 				?>
-			<div class="small-list list-version-container <?= strtolower($ie->Status) ?>" style="margin-right: -98px;"> 
+			<div class="small-list list-version-container <?= strtolower($ie->Status) ?>" style="margin-right: -98px;">
 				<div class="fadding-container"> </div>
 				<div class="list-version-inner-container">
-					<div class="version-status"> 
+					<div class="version-status">
 
 						<span>
 							<?= $ie->Status ?>
@@ -79,7 +79,7 @@ $environmentModule = \Yii::$app->getModule("environment");
 
 </ol>
 
-<?php 
+<?php
 
 $script = <<< JS
 
