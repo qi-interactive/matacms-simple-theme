@@ -51,10 +51,10 @@ body.login-form-error #forgotten-password-bar #get-in-touch-container,body.login
 body.login-form-error #forgotten-password-bar #footer-caption,label input[type=checkbox]{display:none}
 label input[type=checkbox]+div{height:20px;width:20px;background:#343c55;border-radius:2px;position:relative;cursor:pointer;display:inline-block;text-align:center;line-height:60px;-moz-transition:all .3s;-webkit-transition:all .3s;-o-transition:all .3s;-ms-transition:all .3s;transition:all .3s;vertical-align:middle;border:2px solid #343c55}
 label input[type=checkbox]+div .fa{font-size:12px;color:#5f6885;opacity:0;top:2px;position:absolute;line-height:16px;left:2px;right:auto;width:12px;height:12px}
-label input[type=checkbox]+div:before{content:"";display:block;opacity:0;height:100%;width:100%;position:absolute;top:0;right:0;background:#d5deeb}
+label input[type=checkbox]+div:before{content:"";display:block;opacity:0;height:100%;width:100%;position:absolute;top:0;right:0;background-color:#d5deeb;background-image:url(../../images/form/tick@2x.png);background-size:0 0;background-repeat:no-repeat;background-position:center}
 label input[type=checkbox]+div:after{font-family:FontAwesome;content:"\f00c";display:none;opacity:0;height:100%;width:100%;position:absolute;top:0;right:0;color:#fff;line-height:32px;text-align:center}
 label input[type=checkbox]:checked+div{background:0 0}
-label input[type=checkbox]:checked+div:before{opacity:1;-moz-animation:show-a .3s;-webkit-animation:show-a .3s;-o-animation:show-a .3s;-ms-animation:show-a .3s;animation:show-a .3s}
+label input[type=checkbox]:checked+div:before{background-size:12px 12px;opacity:1;-moz-animation:show-b .3s;-webkit-animation:show-b .3s;-o-animation:show-b .3s;-ms-animation:show-b .3s;animation:show-b .3s}
 label input[type=checkbox]:checked+div .fa{opacity:1;-moz-animation:show-b .3s;-webkit-animation:show-b .3s;-o-animation:show-b .3s;-ms-animation:show-b .3s;animation:show-b .3s}
 .btn,.btn[type=submit],.qq-upload-button,button,button.btn-primary{background:#4eb7cd;border:0;border-radius:2px;font-weight:700;letter-spacing:0;font-size:15px;outline:0;min-height:38px;padding:8px 20px;width:auto;display:inline-block;line-height:normal}
 .btn:hover,.btn[type=submit]:hover,.qq-upload-button:hover,button.btn-primary:hover,button:hover{background:#539fb8}

@@ -90,7 +90,7 @@ $loginAsset = LoginAsset::register($this);
 
 			<div class="row" id="submit-remember-me-container">
 				<div class="five columns">
-					<?= $form->field($model, 'rememberMe')->checkbox(['label'=>'<div><img class="fa fa-dribbble" src="'. $loginAsset->baseUrl . '/images/login/tick@2x.png" alt="tick"/></div><span>'.$model->getAttributeLabel('rememberMe'). '</span>', 'tabindex'=>"4"]) ?>
+					<?= $form->field($model, 'rememberMe')->checkbox(['label'=>'<div></div><span>'.$model->getAttributeLabel('rememberMe'). '</span>', 'tabindex'=>"4"]) ?>
 				</div>
 				<div class="seven columns">
 					<?= Html::submitButton(Yii::t('user', 'LOG IN'), ['class' => 'btn btn-primary btn-block', 'tabindex' => '3']) ?>

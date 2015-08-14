@@ -49,7 +49,6 @@ label input[type="checkbox"] {
 	display: none;
 }
 
-
 label input[type="checkbox"] + div {
 	height: 20px;
 	width: 20px;
@@ -86,7 +85,11 @@ label input[type="checkbox"] + div {
 		position: absolute;
 		top: 0px;
 		right: 0px;
-		background: @alice-blue;
+		background-color: @alice-blue;
+		background-image: url(../../images/form/tick@2x.png);
+		background-size: 0px 0px;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 
 	&:after {
@@ -107,16 +110,28 @@ label input[type="checkbox"] + div {
 }
 
 label input[type="checkbox"]:checked + div {
-	background: transparent;
+    background: transparent;
 
-	&:before {
-		opacity: 1;
-		.animation(show-a 0.3s);
-	}
+    &:before {
+		background-size: 12px 12px;
+        opacity: 1;
+        .animation(show-b 0.3s);
+    }
 
-	.fa {
-		opacity: 1;
-		.animation(show-b 0.3s);
+    .fa {
+        opacity: 1;
+        .animation(show-b 0.3s);
+    }
+}
+
+label {
+	&:hover {
+		input[type="checkbox"] + div {
+			&:before {
+				opacity: 1;
+				.transition(opacity 0.3s);
+			}
+		}
 	}
 }
 
