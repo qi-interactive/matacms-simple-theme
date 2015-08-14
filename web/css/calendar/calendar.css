@@ -1,6 +1,6 @@
-.calendar-view section{color:#D5DEEB}
-.calendar-view section header{padding:10px;border-radius:2px;background:#D5DEEB;color:#343c55;margin-bottom:5px}
+.calendar-view section{color:#d5deeb}
+.calendar-view section header{padding:10px;border-radius:2px;background:#d5deeb;color:#343c55;margin-bottom:5px}
 .calendar-view section .calendar-date .extra{margin-left:10px}
 .calendar-view section .calendar-event{padding:10px;border-radius:2px;background:#343c55;margin-bottom:5px}
 .calendar-view section .calendar-event .time{margin-right:10px}
-.calendar-view section .calendar-event .module{border-radius:2px;padding:5px;background:#D5DEEB;color:#343c55;margin-right:10px}
+.calendar-view section .calendar-event .module{border-radius:2px;padding:5px;color:#343c55;margin-right:10px}
