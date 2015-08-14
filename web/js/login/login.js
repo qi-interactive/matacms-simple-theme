@@ -23,6 +23,12 @@ window.mata = window.mata || {};
 		inputEl.addEventListener( 'blur', onInputBlur );
 	} );
 
+	setTimeout(function() {
+		[].slice.call(document.querySelectorAll('input:-webkit-autofill')).forEach( function( inputEl ) {
+			classie.add( inputEl.parentNode, 'input--filled' );
+		});
+	}, 500);
+
 	function onInputFocus( ev ) {
 		classie.add( ev.target.parentNode, 'input--filled' );
 	}
@@ -32,4 +38,5 @@ window.mata = window.mata || {};
 			classie.remove( ev.target.parentNode, 'input--filled' );
 		}
 	}
+
 })();
