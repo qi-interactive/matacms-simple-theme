@@ -47,6 +47,7 @@ if (empty($menuItems))
 			<span></span>
 		</a>
 	</div>
+	<div class="modal-backdrop fade"></div>
 </header> <!-- .cd-header -->
 
 

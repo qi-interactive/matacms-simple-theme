@@ -84,3 +84,5 @@ body.theme-simple.error-exception{background-color:#ff6b6b}
 }
 .cd-header .header-inner-container{-moz-transition:5s height;-webkit-transition:5s height;-o-transition:5s height;-ms-transition:5s height;transition:5s height}
 .empty{color:#d5deeb;padding-top:25px}
+.modal-backdrop.in-redactor{opacity:.6;-webkit-transition:opacity 0s cubic-bezier(.02,.01,.47,1);-o-transition:opacity 0s cubic-bezier(.02,.01,.47,1);transition:opacity 0s cubic-bezier(.02,.01,.47,1)}
+.modal-backdrop.out-redactor{opacity:0;-webkit-transition:opacity .2s cubic-bezier(.02,.01,.47,1);-o-transition:opacity .2s cubic-bezier(.02,.01,.47,1);transition:opacity .2s cubic-bezier(.02,.01,.47,1)}

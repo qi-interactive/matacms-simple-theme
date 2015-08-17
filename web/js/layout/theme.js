@@ -32,11 +32,11 @@ $(window).ready(function() {
 	mata.simpleTheme.addAClassToSelectizeAndFileUploaderAndUriParent();
 	mata.simpleTheme.addAClassToMainActionButtonsParent();
 	mata.simpleTheme.addSelectedAscendingDescendingClassesToSortBy();
-	$(window).on('resize', function() { 
+	$(window).on('resize', function() {
 		var btnsContainerWidth = $('.content-block-top-bar .btns-container').outerWidth(true);
 		var contentsBlockTopBarWidth = $('.content-block-top-bar').outerWidth(true);
 		var searchContainerWidth = $('.content-block-top-bar .search-container').width(((contentsBlockTopBarWidth - btnsContainerWidth) - 1) + 'px');
-		
+
 
 		if($('.content-block-top-bar .search-container').width() <= 260) {
 			$('.content-block-top-bar .search-container').css({
@@ -47,7 +47,7 @@ $(window).ready(function() {
 			searchContainerWidth;
 			$('.content-block-top-bar .search-container').css('margin-top', '0px');
 		}
-		
+
 
 	}).resize();
 	mata.simpleTheme.addHoverBehaviourToVersionTooltip();
@@ -93,7 +93,7 @@ mata.simpleTheme.addClickEventToRearrangeAndVersionsBtns = function() {
 			mata.simpleTheme.addHoverBehaviourToVersionTooltip();
 			classie.add( dropArea, 'show' );
 
-			
+
 		});
 
 	});
@@ -112,14 +112,14 @@ mata.simpleTheme.addClickEventToRearrangeAndVersionsBtns = function() {
 			mata.simpleTheme.addHoverBehaviourToVersionTooltip();
 			$('#mata-content').contents().find('ol.revisions li .list-version-container.live').trigger('mouseover');
 			classie.add(iframeDropArea, 'show');
-			
+
 		});
 
 	})
 };
 
 mata.simpleTheme.closeOverlay = function() {
-	
+
 	$('#drop-area .close-character').on('click', function() {
 		classie.remove( body, 'drag-active' );
 		classie.remove( dropArea, 'show' );
@@ -131,13 +131,77 @@ mata.simpleTheme.closeOverlay = function() {
 $(window).on("pjax:success", function() {
 
 	mata.simpleTheme.onPjaxSuccess();
-	
+
 });
+
+
+mata.simpleTheme._showParentBackdropHandler = function() {
+	$(window).one("show.bs.modal", function(e) {
+		mata.simpleTheme.showParentBackdrop(e, 'in');
+	});
+
+
+	// TO BE IMPLEMENTED AFTER IMPERAVI REDACTOR UPGRADE
+	// $(document).on("click", ".redactor-toolbar li, .redactor-dropdown a", function(e) {
+	//
+	// 	setTimeout(function() {
+	//
+	// 		if ($("#redactor-modal-close").length > 0) {
+	//
+	// 			mata.simpleTheme.showParentBackdrop(e, 'in-redactor');
+	//
+	//
+	// 			// for redactor modal-close clicked
+	// 			$(document).one("click", "#redactor-modal-close", function(e) {
+	// 				setTimeout(function() {
+	// 					$('header.cd-header div.modal-backdrop', window.parent.document).removeClass("in in-redactor").addClass("out-redactor");
+	// 				}, 20);
+	// 			})
+	//
+	// 			$(document).one("click", "#redactor-modal", function(e2) {
+	// 				console.log($(e2.target))
+	// 				// if (!$(e2.target).hasClass('redactor-modal-close-btn'))
+	// 				// {
+	// 				// 	return;
+	// 				// }
+	// 				//
+	// 				// setTimeout(function() {
+	// 				// 	$('header.cd-header div.modal-backdrop', window.parent.document).removeClass("in in-redactor").addClass("out-redactor");
+	// 				// }, 20);
+	// 			})
+	//
+	// 			// for redactor ESC pressed
+	// 			$(document).on('keyup.redactor-modal', function() {
+	// 				setTimeout(function() {
+	// 					$('header.cd-header div.modal-backdrop', window.parent.document).removeClass("in in-redactor").addClass("out-redactor");
+	// 				}, 20);
+	// 			})
+	// 		}
+	//
+	// 	}, 0)
+	//
+	// })
+}
+
+mata.simpleTheme._showParentBackdropHandler();
+
+$(window).on("hide.bs.modal", function(e) {
+	$(e.target).one("bsTransitionEnd", function(e) {
+		$('header.cd-header div.modal-backdrop', window.parent.document).removeClass("in in-redactor").addClass("out");
+	});
+
+	mata.simpleTheme._showParentBackdropHandler()
+
+});
+
+mata.simpleTheme.showParentBackdrop = function(e, cssInClass) {
+	$('header.cd-header div.modal-backdrop', window.parent.document).removeClass('out out-redactor').addClass(cssInClass);
+}
 
 mata.simpleTheme.onPjaxSuccess = function() {
 	mata.simpleTheme.addAClassToSelectizeAndFileUploaderAndUriParent();
 	mata.simpleTheme.addAClassToMainActionButtonsParent();
-	
+
 	$(window).resize();
 	mata.simpleTheme.addHoverBehaviourToVersionTooltip();
 }

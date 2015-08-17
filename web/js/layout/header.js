@@ -41,16 +41,20 @@ mata.simpleTheme.header.showBackToListView = function() {
 mata.simpleTheme.header.hideVersions = function() {
 	$("#header-inner-versions").css({
 		"opacity": 0,
-		"position": 'absolute'
+		"position": 'absolute',
+		"top": "-500px"
 	});
+	$('h1#header-inner-container-header').css({'max-width': '100%'});
 	return mata.simpleTheme.header;
 }
 
 mata.simpleTheme.header.showVersions = function() {
 	$("#header-inner-versions").css({
 		"opacity": 1,
-		"position": 'relative'
+		"position": 'relative',
+		"top": "0px"
 	});
+	$('h1#header-inner-container-header').css({'max-width': '75%'});
 	return mata.simpleTheme.header;
 }
 
