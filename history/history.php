@@ -12,81 +12,156 @@ $returnUri = Yii::$app->request->get('returnURI');
 $environmentModule = \Yii::$app->getModule("environment");
 
 ?>
-
-<h3>Versions of <?= \Yii::$app->controller->id ?>: Sample Name</h3>
-
 <ol class="revisions overlay-list-container">
-	<?php foreach ($revisions as $revision): 
-	$user = User::findOne($revision->CreatedBy);
-	$author = $user != null ? $user->getLabel() : "Deleted user";
-	$message = $revision->Revision == 1 ? "created this document" : "wrote this version";
-	?>
-
+	
 	<li>
 
-		<a href="<?= $returnUri ?>&revision=<?= $revision->Revision ?>">
-			<?php if($user->profile->getMediaAvatar()): ?>
-				<span class="avatar">
-					<img src="<?= $user->profile->getMediaAvatar()->URI ?>" alt="<?= $user->username ?>"/>
-				</span>
-			<?php endif; ?>
+		<a href="/mata-cms/post/post/update?id=1&amp;revision=4">
 			<div class="text-container">
 				<span class="author">
-					<?php echo $author; ?>
-				</span>
+					Michal Fiedorowicz				</span>
 
-				<span class="message">
-					<?php echo $message; ?>
-				</span>
+					<span class="message">
+						wrote this version				</span>
 
 
-				<span title="<?php echo $revision->DateCreated; ?>" class="date">
-				</span>
-			</div>
-
-			<?php if(!$environmentModule->hasEnvironmentBehavior($revision->DocumentId->getModel())): ?>
-				<div class="fadding-container"> </div>
-			<?php endif; ?>
-
-			<?php if($environmentModule->hasEnvironmentBehavior($revision->DocumentId->getModel())):
-
-			$ie = ItemEnvironment::find()->where([
-				"DocumentId" => $revision->DocumentId,
-				"Revision" => $revision->Revision,
-				])->one();
-
-			if ($ie != null):
-
-				?>
-			<div class="small-list list-version-container <?= strtolower($ie->Status) ?>" style="margin-right: -98px;"> 
-				<div class="fadding-container"> </div>
-				<div class="list-version-inner-container">
-					<div class="version-status"> 
-
-						<span>
-							<?= $ie->Status ?>
-						</span>
+						<span title="2015-08-04 08:32:05" class="date">13 days ago</span>
 					</div>
 
-				</div>
-			</div>
-		<?php endif; ?>
-	<?php endif; ?>
-</a>
-</li>
 
-<?php endforeach; ?>
+					<div class="small-list list-version-container live" style="margin-right: -40px;"> 
+						<div class="fadding-container"> </div>
+						<div class="list-version-inner-container">
+							<div class="version-status"> 
 
-</ol>
+								<span>
+									LIVE						</span>
+								</div>
 
-<?php 
+							</div>
+						</div>
 
-$script = <<< JS
+					</a>
+				</li>
 
-mata.history.init();
+				<li>
 
-JS;
+					<a href="/mata-cms/post/post/update?id=1&amp;revision=3">
+						<div class="text-container">
+							<span class="author">
+								Michal Fiedorowicz				</span>
 
-$this->registerJs($script, $this::POS_READY);
+								<span class="message">
+									wrote this version				</span>
 
-?>
+
+									<span title="2015-08-04 08:31:44" class="date">13 days ago</span>
+								</div>
+
+
+								<div class="small-list list-version-container draft" style="margin-right: -54px;"> 
+									<div class="fadding-container"> </div>
+									<div class="list-version-inner-container">
+										<div class="version-status"> 
+
+											<span>
+												DRAFT						</span>
+											</div>
+
+										</div>
+									</div>
+
+								</a>
+							</li>
+
+							<li>
+
+								<a href="/mata-cms/post/post/update?id=1&amp;revision=2">
+									<div class="text-container">
+										<span class="author">
+											Will Heaverman				</span>
+
+											<span class="message">
+												wrote this version				</span>
+
+
+												<span title="2015-06-12 09:44:57" class="date">2 months ago</span>
+											</div>
+
+
+											<div class="small-list list-version-container superseded" style="margin-right: -92px;"> 
+												<div class="fadding-container"> </div>
+												<div class="list-version-inner-container">
+													<div class="version-status"> 
+
+														<span>
+															SUPERSEDED						</span>
+														</div>
+
+													</div>
+												</div>
+
+											</a>
+										</li>
+
+										<li>
+
+											<a href="/mata-cms/post/post/update?id=1&amp;revision=1">
+												<div class="text-container">
+													<span class="author">
+														Michal Fiedorowicz				</span>
+
+														<span class="message">
+															created this document				</span>
+
+
+															<span title="2015-06-05 10:33:17" class="date">2 months ago</span>
+														</div>
+
+
+														<div class="small-list list-version-container draft" style="margin-right: -54px;"> 
+															<div class="fadding-container"> </div>
+															<div class="list-version-inner-container">
+																<div class="version-status"> 
+
+																	<span>
+																		DRAFT						</span>
+																	</div>
+
+																</div>
+															</div>
+
+														</a>
+													</li>
+
+													<li>
+
+														<a href="/mata-cms/post/post/update?id=1&amp;revision=1">
+															<div class="text-container">
+																<span class="author">
+																	Michal Fiedorowicz				</span>
+
+																	<span class="message">
+																		created this document				</span>
+
+
+																		<span title="2015-06-05 10:33:17" class="date">2 months ago</span>
+																	</div>
+
+																	
+																	<div class="small-list list-version-container scheduled" style="margin-right: -54px;"> 
+																		<div class="fadding-container"> </div>
+																		<div class="list-version-inner-container">
+																			<div class="version-status"> 
+
+																				<span>
+																					SCHEDULED					</span>
+																				</div>
+
+																			</div>
+																		</div>
+
+																	</a>
+																</li>
+
+															</ol>

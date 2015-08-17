@@ -37,7 +37,7 @@ body.theme-simple{height:100%}
 .cd-header .header-inner-container{max-width:900px;padding-right:15px;opacity:0;padding-left:15px;margin-right:auto;margin-left:auto}
 .cd-header .header-inner-container h1{font-size:26px;font-weight:700;color:#fff;max-width:75%;text-transform:uppercase;line-height:30px;display:inline-block}
 .back-btn,.back-btn:focus,.back-btn:hover{color:#9fa7b7}
-.cd-header .header-inner-container h1 span{text-transform:lowercase}
+.cd-header .header-inner-container h1 span{text-transform:uppercase}
 .cd-header .header-inner-container .hi-icon-effect-2{display:inline-block;float:right;margin-top:5px}
 .cd-header .header-inner-container .hi-icon-effect-2 .hi-icon{box-shadow:0 0 0 2px #c96aa4}
 .cd-header .header-inner-container .hi-icon-effect-2 .hi-icon:before{background-image:url(../images/icons/versions.svg)}
@@ -55,7 +55,7 @@ body.theme-simple{height:100%}
 .list-version-container .list-version-inner-container .version-status{text-transform:uppercase;font-size:12px;font-weight:700;line-height:13px}
 .list-version-container .list-version-inner-container .revision-delta{font-size:9px;font-weight:600}
 .list-version-container:before{background:url(../images/tooltips/published-arrow-end@2x.png) center left no-repeat;background-size:21px 44px;left:-20px;transition:.25s all ease-in-out}
-.list-version-container:after{left:-5px;-moz-transition:.25s all ease-in-out;-webkit-transition:.25s all ease-in-out;-o-transition:.25s all ease-in-out;-ms-transition:.25s all ease-in-out;transition:.25s all ease-in-out;background:url(../images/icons/tick-status@2x.png) center left no-repeat;background-size:20px 16px}
+.list-version-container:after{left:-3px;-moz-transition:.25s all ease-in-out;-webkit-transition:.25s all ease-in-out;-o-transition:.25s all ease-in-out;-ms-transition:.25s all ease-in-out;transition:.25s all ease-in-out;background:url(../images/icons/tick-status@2x.png) center left no-repeat;background-size:18px 14px}
 .list-version-container.is-hover{margin-right:0!important}
 .list-version-container.confirm,.list-version-container.live{background-color:#55c45f}
 .list-version-container.confirm:before,.list-version-container.live:before{background-image:url(../images/tooltips/live-arrow-end@2x.png)}
@@ -65,11 +65,13 @@ body.theme-simple{height:100%}
 .list-version-container.superseded{background-color:#d6915e}
 .list-version-container.scheduled{background-color:#c96aa4}
 .list-version-container.scheduled:before{background-image:url(../images/tooltips/scheduled-arrow-end@2x.png)}
-.list-version-container.scheduled:after{background:url(../images/icons/clock-status@2x.png) center left no-repeat;background-size:21px 21px}
+.list-version-container.scheduled:after{background:url(../images/icons/scheduled@2x.png) center left no-repeat;background-size:20px 16px}
 .small-list.list-version-container{height:100%;padding-top:9px;padding-left:23px}
 .small-list.list-version-container .fadding-container{left:-30px;width:25px}
-.small-list.list-version-container:after{left:-8px;background-size:17px 14px}
-.list-version-container.draft:after,.small-list.list-version-container.draft:after{background-size:cover}
+.small-list.list-version-container:after{left:-3px;background-size:16px 13px}
+.small-list.list-version-container.draft:after{background-image:url(../images/icons/draft-underReview-pencil@2x.png);background-size:20px 16px;background-position:center left}
+.small-list.list-version-container .list-version-inner-container .version-status{line-height:14px}
+.small-list.list-version-container.scheduled:after{background-size:20px 16px}
 .user-main-alert-container{padding-left:0;padding-right:0;margin-bottom:30px}
 .user-registered-date{font-size:12px;text-align:right;color:#9fa7b7;padding-bottom:25px;font-weight:600}
 @media (min-width:768px){.cd-header .header-inner-container{width:750px}

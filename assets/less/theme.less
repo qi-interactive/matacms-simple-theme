@@ -209,7 +209,7 @@ body.theme-simple {
 			display: inline-block;
 
 			span {
-				text-transform: lowercase;
+				text-transform: uppercase;
 			}
 		}
 
@@ -329,13 +329,13 @@ body.theme-simple {
 		height: 100%;
 		width: 21px;
 		position: absolute;
-		left: -5px;
+		left: -3px;
 		top: 0px;
 		cursor: pointer;
 		z-index: 1;
 		.transition(0.25s all ease-in-out);
 		background: url(../images/icons/tick-status@2x.png) no-repeat center left;
-		background-size: 20px 16px;
+		background-size: 18px 14px;
 	}
 
 }
@@ -374,8 +374,8 @@ body.theme-simple {
 		background-image: url(../images/tooltips/scheduled-arrow-end@2x.png);
 	}
 	&:after {
-		background: url(../images/icons/clock-status@2x.png) no-repeat center left;
-		background-size: 21px 21px;
+		background: url(../images/icons/scheduled@2x.png) no-repeat center left;
+		background-size: 20px 16px;
 	}
 }
 
@@ -390,13 +390,25 @@ body.theme-simple {
 	}
 
 	&:after {
-		left: -8px;
-		background-size: 17px 14px;
+		left: -3px;
+		background-size: 16px 13px;
 	}
 
 	&.draft:after {
-		background-size: cover;
+		background-image: url(../images/icons/draft-underReview-pencil@2x.png);
+		background-size: 20px 16px;
+		background-position: center left;
 	}
+
+	.list-version-inner-container {
+		.version-status {
+			line-height: 14px;
+		}
+	}
+}
+
+.small-list.list-version-container.scheduled:after {
+	background-size: 20px 16px;
 }
 
 
