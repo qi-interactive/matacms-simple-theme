@@ -42,3 +42,5 @@ figure.effect-winston:hover p a:first-child span{-webkit-transition-delay:.25s;t
 .qq-upload-list li{width:200px;height:200px;padding:0;margin:0 auto}
 .qq-upload-drop-area,.qq-upload-extra-drop-area{background:#343c55;color:#a28ddf;border:3px dashed #a28ddf;border-radius:2px}
 .qq-upload-drop-area span,.qq-upload-extra-drop-area span{font-weight:700;font-size:16px}
+@media (max-width:480px){.module-carousel .carousel-view #add-media-container{width:200px!important}
+}

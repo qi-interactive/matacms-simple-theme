@@ -9,14 +9,10 @@ $(window).ready(function() {
 
 
 mata.simpleTheme.adjustCarouselContainerDimension = function() {
-
 	$('.module-carousel .carousel-view').each(function() {
 		var me = $(this);
-		$(window).resize(function() {
-			if ((me.find('#add-media-container').length == 1) && $(window).width() > 480) 
-				me.find('#add-media-container').width(400);
-		}).resize();
+		if ((me.find('#add-media-container').length == 1) && $(window).width() > 480) 
+			me.find('#add-media-container').width(400);
 	});
-
 };
 
