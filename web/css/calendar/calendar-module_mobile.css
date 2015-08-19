@@ -1,0 +1,12 @@
+@media (max-width:645px){.module-calendar section{padding-bottom:20px}
+.module-calendar section header.calendar-date{padding:20px}
+.module-calendar section .calendar-event{margin:20px 20px 0;padding-left:12px}
+.module-calendar section .calendar-event .event-label .right-container{margin-left:0!important}
+}
+@media (max-width:535px){.module-calendar section .calendar-event .event-time{width:12.90104%}
+.module-calendar section .calendar-event .event-label{width:85.53646%}
+}
+@media (max-width:480px){.module-calendar section .calendar-event .event-label .left-container,.module-calendar section .calendar-event .event-label .right-container{width:100%!important;margin-left:0!important}
+.module-calendar section .calendar-event .event-label .event-text{padding-top:6px;display:block}
+.module-calendar section .calendar-event .module{width:100%}
+}

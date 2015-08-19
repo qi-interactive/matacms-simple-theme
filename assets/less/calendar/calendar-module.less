@@ -2,7 +2,7 @@
 @import "../imports/mixins.less";
 
 .module-calendar {
-
+	padding-top: 30px;
 	section {
 		border: none;
 		background-color: #535d7c;
@@ -26,15 +26,22 @@
 			padding: 4px;
 			padding-left: 20px;
 
+
 			&:last-child {
 				margin-bottom: 0px;
 			}
 
-			.time {
-				font-weight: @proxima-semibold;
-				font-size: 14px;
+			.event-time {
+				vertical-align: middle;
+				padding: 10px 0px;
+				text-align: center;
+				width: 8.36458%;
+				.time {
+					font-weight: @proxima-semibold;
+					font-size: 14px;
+					white-space: nowrap;
+				}
 			}
-
 			.module {
 				background: @aqua;
 				text-transform: uppercase;
@@ -46,7 +53,9 @@
 				text-align: center;
 				position: relative;
 				z-index: 1;
-
+				padding: 3px 15px;
+				vertical-align: middle;
+				// margin-right: 22px;
 			}
 
 			section.event-wrapper {
@@ -59,10 +68,30 @@
 				font-size: 14px;
 				font-weight: 500;
 				display: inline-block;
-				padding-top: 10px;
-				padding-bottom: 10px;
-				color: red;
+				padding: 8px 10px;
+				color: @blue-corn;
+				background: @alice-blue;
+				border-radius: 2px;
+				overflow: hidden;
+				position: relative;
+				height: auto;
+				width: 90.07292%;
+
+				.left-container, .right-container {
+					display:inline-block; 
+					float: left;
+				}
+
+				.event-text {
+					vertical-align: middle;
+				}
+
+				.fadding-container {
+					width: 23px;
+				}
 			}
 		}
 	}
 }
+
+@import "calendar-module_mobile.less";
