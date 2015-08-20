@@ -15,12 +15,12 @@ class ModuleAsset extends AssetBundle {
     public $sourcePath = '@vendor/matacms/matacms-simple-theme/web';
 
     public $css = [
-    'css/module/module.css'
+    'css/module/module.css',
+    'css/form/form-module.css'
     ];
     public $js = [
     'js/module/module.js',
-    'js/layout/forms.js',
-    'js/module/carousel.js',
+    'js/layout/forms.js'
     ];
 
     public $depends = [

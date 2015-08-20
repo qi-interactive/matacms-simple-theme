@@ -22,7 +22,7 @@ class CalendarAsset extends AssetBundle
     ];
 
     public $js = [
-    'js/calendar/calendar.js'
+    'js/module/calendar.js'
     ];
 
 

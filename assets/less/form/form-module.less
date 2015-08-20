@@ -1,0 +1,34 @@
+@import "../imports/variables.less";
+@import "../imports/mixins.less";
+
+
+/* FORM MODULE */
+.module-form {
+	.details-view {
+		.item {
+			background: @blue-corn;
+			padding: 4px 4px 4px 20px;
+			border-style: 2px;
+			margin-bottom: 15px;
+			border-radius: 2px;
+
+			.item-label {
+				color: @alice-blue;
+				font-weight: @proxima-semibold;
+				padding: 8px 0px;
+			}
+
+			.info {
+				background: @alice-blue;
+				color: @blue-corn;
+				padding: 8px 10px;
+				border-top-right-radius: 2px;
+				border-bottom-right-radius: 2px;
+			}
+
+			&:last-child {
+				margin-bottom: 0px;
+			}
+		}
+	}
+}

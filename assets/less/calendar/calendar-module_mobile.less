@@ -1,0 +1,53 @@
+@import "../imports/variables.less";
+@import "../imports/mixins.less";
+
+@media (max-width: 645px) {
+	.module-calendar section {
+		.calendar-event {
+			padding-left: 12px;
+
+			.event-label {
+				.right-container {
+					margin-left: 0px !important;
+				}
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: 535px) {
+	.module-calendar section {
+		.calendar-event {
+			.event-time {
+				width: 12.90104%;
+			}
+			.event-label {
+				width: 85.53646%;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 480px) {
+	.module-calendar section {
+		.calendar-event {
+			.event-label {
+
+				.right-container, .left-container {
+					width: 100% !important;
+					margin-left: 0px!important;
+				}
+				.event-text {
+					padding-top: 6px;
+					display: block;
+				}
+			}
+			.module {
+				width: 100%;
+			}
+		}
+	}
+}
