@@ -187,3 +187,6 @@ function addHeightToContainer(that) {
 		$('#container').height(that.height() - $('.cd-header').outerHeight(true));
 	}
 }
+
+
+
