@@ -51,7 +51,21 @@ $(window).ready(function() {
 
 	}).resize();
 	mata.simpleTheme.addHoverBehaviourToVersionTooltip();
+
+
+	// mata.simpleTheme.hideModalBackDropContainer();
+
 })
+
+//To be confirmed with Michal to see if both backdrop and overlay-container exist on the same page
+// mata.simpleTheme.hideModalBackDropContainer = function() {
+// 	$('#drop-area.overlay-container').length > 0 ?
+// 	$('header.cd-header div.modal-backdrop', window.parent.document).css('visibility', 'hidden') :
+// 	$('header.cd-header div.modal-backdrop', window.parent.document).css('visibility', 'visible');
+
+// }
+
+
 
 mata.simpleTheme.addHoverBehaviourToVersionTooltip = function() {
 	$('.list-version-container').each(function(el) {

@@ -13,7 +13,7 @@ $environmentModule = \Yii::$app->getModule("environment");
 
 ?>
 
-<h3>Versions of <?= \Yii::$app->controller->id ?>: <?= $documentLabel; ?></h3>
+<h3>Versions</h3>
 
 <ol class="revisions overlay-list-container">
 	<?php foreach ($revisions as $revision):
