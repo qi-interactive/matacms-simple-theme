@@ -1,6 +1,4 @@
-@media (max-width:645px){.module-calendar section{padding-bottom:20px}
-.module-calendar section header.calendar-date{padding:20px}
-.module-calendar section .calendar-event{margin:20px 20px 0;padding-left:12px}
+@media (max-width:645px){.module-calendar section .calendar-event{padding-left:12px}
 .module-calendar section .calendar-event .event-label .right-container{margin-left:0!important}
 }
 @media (max-width:535px){.module-calendar section .calendar-event .event-time{width:12.90104%}

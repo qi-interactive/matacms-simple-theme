@@ -100,41 +100,39 @@ input[type="checkbox"] {
 	}
 }
 
-
-
-/* Form/Social modules */
-
-.module-entry-detail-view {
-	background: @night-lake;
-	padding: 37px;
-
-	.table.detail-view {
-		border: 0px;
-		border-collapse: separate;
-		border-spacing: 0 15px;
-
-		tbody {
-			border: 0px;
-			tr {
-				border: 0px;
-
-				th {
-					border: 0px;
-					font-size: 13px;
-					padding-top: 5px;
-					padding-bottom: 3px;
-					line-height: 23px;
-					vertical-align: middle;
-					min-width: 205px;
-				}
-				td {
-					border: 0px;
-					font-size: 14px;
-					font-weight: 500;
-					vertical-align: middle;
-				}
-
-			}
-		}
-	}
+.module-calendar section header.calendar-date,
+.container.module-user .panel-heading {
+	padding: 20px 37px;
 }
+
+.container.module-user .panel-body, .module-form .module-entry-detail-view, .module-calendar .panel-body {
+	padding: 37px;
+}
+
+.module-calendar, .module-form .module-entry-detail-view  {
+	margin-top: 30px;
+}
+.container.module-user .panel, .module-calendar section, 
+.container.module-user .panel-heading, .module-calendar section header.calendar-date, 
+.module-form .module-entry-detail-view {
+	background-color: @night-lake;
+}
+
+.container.module-user .panel, .module-calendar section,
+.module-form .module-entry-detail-view {
+	border-radius: 2px;
+}
+
+.container.module-user .panel-heading, .module-calendar section header.calendar-date {
+	border-bottom: 2px solid @slate-grey;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-color: @slate-grey;
+	font-weight: @proxima-bold;
+	font-size: @font-size-second-base;
+	color: @alice-blue;
+}
+
+@import "module_mobile.less";
+
+

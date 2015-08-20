@@ -1,10 +1,10 @@
 .container.module-user{max-width:930px}
-.container.module-user .panel-body{padding:37px}
 .container.module-user .panel-body .form-group:last-child{margin-bottom:0}
 .container.module-user .alert-section{background:0 0}
 .container.module-user .alert-section .alert:first-child{margin-bottom:15px}
-.container.module-user .panel-heading{padding:20px 37px;color:#d5deeb;background-color:#535d7c;border-color:#5f6885;font-weight:700;font-size:18px;border-width:2px}
-.container.module-user .panel{border:none;background-color:#535d7c;margin-bottom:37px;border-radius:2px}
+.container.module-user .panel{border:none;margin-bottom:37px}
 .container.module-user a.btn{margin-right:8px;height:45px;padding:5px 17px;text-transform:uppercase;min-width:130px;line-height:37px}
 .container.module-user a.btn:last-child{margin-right:0}
 .container.module-user .form-group.submit-form-group{padding-left:37px}
+@media (max-width:645px){.container.module-user .form-group.submit-form-group{padding-left:20px}
+}
