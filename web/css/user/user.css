@@ -6,5 +6,6 @@
 .container.module-user a.btn{margin-right:8px;height:45px;padding:5px 17px;text-transform:uppercase;min-width:130px;line-height:37px}
 .container.module-user a.btn:last-child{margin-right:0}
 .container.module-user .form-group.submit-form-group{padding-left:37px}
+.container.module-user .field-user-roleassignments .role-assigments{background:#9fa7b7}
 @media (max-width:645px){.container.module-user .form-group.submit-form-group{padding-left:20px}
 }

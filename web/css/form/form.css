@@ -1,10 +1,10 @@
 a#back-to-list-view{color:#fff;font-size:15px;text-transform:uppercase}
 a#versions-link{color:#fff}
 .module-entry-detail-view .table.detail-view tbody tr th,label{color:#fff;font-weight:700;font-size:18px;padding:0 13px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;margin:0;line-height:normal}
-.role-assigments{padding:0 13px}
+.role-assigments{padding:10px 13px}
 .role-assigments .level-1{padding:0 13px 0 32px}
 .checkbox-label,.role-assigments .checkbox-label{padding-left:12px;font-weight:600;vertical-align:middle}
-.role-assigments .checkbox-label{color:#fff;font-size:13px}
+.role-assigments .checkbox-label{color:#212635;font-size:13px}
 label input[type=checkbox]{display:none}
 label input[type=checkbox]+div{height:20px;width:20px;background:#212635;border-radius:2px;position:relative;cursor:pointer;display:inline-block;text-align:center;line-height:60px;-moz-transition:all .3s;-webkit-transition:all .3s;-o-transition:all .3s;-ms-transition:all .3s;transition:all .3s;vertical-align:middle;border:2px solid #212635}
 label input[type=checkbox]+div .fa{font-size:12px;color:#5f6885;opacity:0;top:2px;position:absolute;line-height:16px;left:2px;right:auto;width:12px;height:12px}
