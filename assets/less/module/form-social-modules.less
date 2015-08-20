@@ -1,9 +1,7 @@
 @import "../imports/variables.less";
 @import "../imports/mixins.less";
 
-
-/* FORM MODULE */
-.module-form {
+.module-form, .module-social {
 	.details-view {
 		.item {
 			background: @blue-corn;
@@ -12,10 +10,20 @@
 			margin-bottom: 15px;
 			border-radius: 2px;
 
+			.row {
+				display: table;
+				width: 100%;
+			}
+
 			.item-label {
 				color: @alice-blue;
 				font-weight: @proxima-semibold;
 				padding: 8px 0px;
+				background: @blue-corn;
+				vertical-align: top;
+				display: table-cell;
+				float: none;
+				padding-right: 20px;
 			}
 
 			.info {
@@ -24,6 +32,10 @@
 				padding: 8px 10px;
 				border-top-right-radius: 2px;
 				border-bottom-right-radius: 2px;
+				vertical-align: top;
+				display: table-cell;
+				float: none;
+				width: 100%;
 			}
 
 			&:last-child {

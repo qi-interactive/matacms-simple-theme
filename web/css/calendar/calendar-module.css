@@ -1,4 +1,4 @@
-.module-calendar .calendar-view section header{margin-bottom:0}
+.module-calendar .calendar-view section header.calendar-date{margin-bottom:0;text-transform:uppercase}
 .module-calendar section{border:none;margin-bottom:15px}
 .module-calendar section .calendar-event{padding:4px 4px 4px 20px}
 .module-calendar section .calendar-event:last-child{margin-bottom:0}

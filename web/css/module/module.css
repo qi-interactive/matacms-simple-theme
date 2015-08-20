@@ -14,10 +14,10 @@ input[type=checkbox]{height:auto;background:0 0;-webkit-appearance:checkbox}
 .badge.live{background:#55c45f}
 .badge.draft{background:#d6915e}
 .container.module-user .panel-heading,.module-calendar section header.calendar-date{padding:20px 37px}
-.container.module-user .panel-body,.module-calendar .panel-body,.module-form .module-entry-detail-view{padding:37px}
-.module-calendar,.module-form .module-entry-detail-view{margin-top:30px}
-.container.module-user .panel,.container.module-user .panel-heading,.module-calendar section,.module-calendar section header.calendar-date,.module-form .module-entry-detail-view{background-color:#535d7c}
-.container.module-user .panel,.module-calendar section,.module-form .module-entry-detail-view{border-radius:2px}
+.container.module-user .panel-body,.module-calendar .panel-body,.module-form .module-entry-detail-view,.module-social .module-entry-detail-view{padding:37px}
+.module-calendar,.module-form .module-entry-detail-view,.module-social .module-entry-detail-view{margin-top:30px}
+.container.module-user .panel,.container.module-user .panel-heading,.module-calendar section,.module-calendar section header.calendar-date,.module-form .module-entry-detail-view,.module-social .module-entry-detail-view{background-color:#535d7c}
+.container.module-user .panel,.module-calendar section,.module-form .module-entry-detail-view,.module-social .module-entry-detail-view{border-radius:2px}
 .container.module-user .panel-heading,.module-calendar section header.calendar-date{border-bottom:2px solid #5f6885;border-top-left-radius:3px;border-top-right-radius:3px;border-color:#5f6885;font-weight:700;font-size:18px;color:#d5deeb}
-@media (max-width:645px){.container.module-user .panel-body,.container.module-user .panel-heading,.module-calendar .panel-body,.module-calendar section header.calendar-date,.module-entry-detail-view,.module-form .module-entry-detail-view{padding:20px}
+@media (max-width:645px){.container.module-user .panel-body,.container.module-user .panel-heading,.module-calendar .panel-body,.module-calendar section header.calendar-date,.module-entry-detail-view,.module-form .module-entry-detail-view,.module-social .module-entry-detail-view{padding:20px}
 }
