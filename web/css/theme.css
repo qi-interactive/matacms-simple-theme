@@ -39,7 +39,7 @@ body.theme-simple.error-exception{background-color:#ff6b6b}
 .alert{border:0;border-bottom:2px solid #55c45f;border-radius:2px;font-size:14px;background-color:#343c55;margin-bottom:0;padding:12px 15px}
 .alert-success{border-color:#55c45f;color:#55c45f}
 .alert-danger{border-color:#ff6b6b;color:#ff6b6b;font-weight:500}
-.cd-header{height:auto;padding:25px 0}
+.cd-header{height:auto;padding:25px 0 55px}
 .cd-header .header-inner-container{max-width:900px;padding-right:15px;opacity:0;padding-left:15px;margin-right:auto;margin-left:auto}
 .cd-header .header-inner-container h1{font-size:26px;font-weight:700;color:#fff;max-width:75%;text-transform:uppercase;line-height:30px;display:inline-block}
 .back-btn,.back-btn:focus,.back-btn:hover{color:#9fa7b7}
@@ -83,8 +83,22 @@ body.theme-simple.error-exception{background-color:#ff6b6b}
 .small-list.list-version-container.scheduled:after{background-size:20px 16px}
 .user-main-alert-container{padding-left:0;padding-right:0;margin-bottom:30px}
 .user-registered-date{font-size:12px;text-align:right;color:#9fa7b7;padding-bottom:25px;font-weight:600}
-@media (max-width:1126px){.cd-header .header-inner-container{position:relative}
-.cd-header .header-inner-container .hi-icon-effect-2{float:none;margin-top:0;position:absolute!important;top:auto!important;bottom:-15px;right:15px}
+@media (max-width:1126px){.cd-header .header-inner-container{position:relative;padding-left:0;padding-right:0}
+.cd-header .header-inner-container .hi-icon-effect-2{float:none;margin-top:0;position:absolute!important;top:auto!important;bottom:-30px}
+.cd-header #header-content-container{right:7px;width:100%}
+header.cd-header{max-width:900px;padding-left:15px;padding-right:15px;margin-right:auto;margin-left:auto}
+}
+@media (max-width:1126px) and (min-width:992px){.cd-header .header-inner-container{padding-left:0;padding-right:0}
+.cd-header .header-inner-container .hi-icon-effect-2{right:30px}
+header.cd-header{width:970px}
+}
+@media (max-width:991px){.cd-header .header-inner-container .hi-icon-effect-2{right:15px}
+}
+@media (max-width:991px) and (min-width:768px){.cd-header .header-inner-container{padding-left:0;padding-right:0}
+.cd-header .header-inner-container .hi-icon-effect-2{right:30px}
+body header.cd-header{width:750px}
+}
+@media (max-width:767px){.cd-header .header-inner-container .hi-icon-effect-2{right:0}
 }
 @media (min-width:768px){.cd-header .header-inner-container{width:750px}
 }
