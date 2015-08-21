@@ -44,7 +44,7 @@ mata.simpleTheme.header.hideVersions = function() {
 		"position": 'absolute',
 		"top": "-500px"
 	});
-	$('h1#header-inner-container-header').css({'max-width': '100%'});
+	$('h1#header-inner-container-header').css({'max-width': '85%'});
 	return mata.simpleTheme.header;
 }
 
@@ -54,7 +54,7 @@ mata.simpleTheme.header.showVersions = function() {
 		"position": 'relative',
 		"top": "0px"
 	});
-	$('h1#header-inner-container-header').css({'max-width': '75%'});
+	$('h1#header-inner-container-header').css({'max-width': '85%'});
 	return mata.simpleTheme.header;
 }
 

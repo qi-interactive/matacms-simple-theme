@@ -3,6 +3,9 @@ input:-webkit-autofill,input:-webkit-autofill:focus,select:-webkit-autofill,text
 body,html{overflow:auto;height:100%;font-family:proxima-nova}
 a,a:focus,a:hover{outline:0;text-decoration:none}
 li{list-style-type:none}
+@media (max-width:1126px){.cd-header .header-inner-container{position:relative}
+.cd-header .header-inner-container .hi-icon-effect-2{float:none;margin-top:0;position:absolute!important;top:auto!important;bottom:-15px;right:15px}
+}
 @media (min-width:768px){.cd-header .header-inner-container{width:750px}
 }
 @media (min-width:992px){.cd-header .header-inner-container{width:970px}

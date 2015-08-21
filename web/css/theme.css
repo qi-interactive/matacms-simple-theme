@@ -68,6 +68,9 @@ body.theme-simple.error-exception{background-color:#ff6b6b}
 .list-version-container.draft{background-color:#4eb7cd}
 .list-version-container.draft:before{background-image:url(../images/tooltips/draft-arrow-end@2x.png)}
 .list-version-container.draft:after{width:52px;background:url(../images/icons/edit-white.svg) -16px center no-repeat;background-size:cover}
+.list-version-container.block{background-color:#ff6b6b}
+.list-version-container.block:before{background-image:url(../images/tooltips/blocked-arrow-end@2x.png)}
+.list-version-container.block:after{background:url(../images/icons/blocked-status@2x.png) center left no-repeat;background-size:20px 16px}
 .list-version-container.superseded{background-color:#d6915e}
 .list-version-container.scheduled{background-color:#c96aa4}
 .list-version-container.scheduled:before{background-image:url(../images/tooltips/scheduled-arrow-end@2x.png)}
@@ -80,6 +83,9 @@ body.theme-simple.error-exception{background-color:#ff6b6b}
 .small-list.list-version-container.scheduled:after{background-size:20px 16px}
 .user-main-alert-container{padding-left:0;padding-right:0;margin-bottom:30px}
 .user-registered-date{font-size:12px;text-align:right;color:#9fa7b7;padding-bottom:25px;font-weight:600}
+@media (max-width:1126px){.cd-header .header-inner-container{position:relative}
+.cd-header .header-inner-container .hi-icon-effect-2{float:none;margin-top:0;position:absolute!important;top:auto!important;bottom:-15px;right:15px}
+}
 @media (min-width:768px){.cd-header .header-inner-container{width:750px}
 }
 @media (min-width:992px){.cd-header .header-inner-container{width:970px}

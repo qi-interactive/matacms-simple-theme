@@ -4,3 +4,5 @@
 .module-form .details-view .item .info,.module-social .details-view .item .info{background:#d5deeb;color:#343c55;padding:8px 10px;border-top-right-radius:2px;border-bottom-right-radius:2px;vertical-align:top;display:table-cell;float:none;width:100%}
 .module-form .details-view .item:last-child,.module-social .details-view .item:last-child{margin-bottom:0}
 .social-post-img{max-width:200px}
+@media (max-width:645px){.module-form .details-view .item .item-label,.module-social .details-view .item .item-label{font-size:13px}
+}
