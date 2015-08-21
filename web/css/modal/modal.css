@@ -47,6 +47,8 @@
 .video-url .form-group.field-videourlform-videourl{text-align:left;background:#212635}
 .player .video-wrapper .video{background-color:#d5deeb!important}
 #redactor-modal section#redactor-modal-video-insert,#redactor-modal-video-insert{padding:0 4px 4px;margin-left:50px;margin-right:50px;margin-bottom:35px}
+.modal-backdrop.fade{visibility:hidden}
+.modal-backdrop.fade.in{visibility:visible}
 #redactor-modal-image-insert #redactor-droparea{border-color:transparent;padding:22px}
 #redactor-modal-image-insert #redactor-droparea #redactor-droparea-placeholder{display:table;width:200px;margin:0 auto;position:relative}
 #redactor-modal-image-insert #redactor-droparea #redactor-droparea-placeholder input[type=file]{position:absolute;right:0;top:0;font-family:Arial;font-size:118px;margin:0;padding:0;cursor:pointer;opacity:0;height:100%;width:100%;left:0;z-index:1}
