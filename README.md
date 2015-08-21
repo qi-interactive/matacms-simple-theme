@@ -20,13 +20,17 @@ Installation
 Changelog
 ---------
 
+## 1.0.9-alpha, August 21, 2015
+
+- Multiple style and javascript changes.
+
 ## 1.0.8.4-alpha, July 9, 2015
 
 - Styling changes.
 
 ## 1.0.8.3-alpha, July 6, 2015
 
-- Added form hint with tooltip styling, updates 
+- Added form hint with tooltip styling, updates
 
 ## 1.0.8.2-alpha, June 24, 2015
 
