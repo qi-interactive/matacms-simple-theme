@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.0.9.1-alpha, August 25, 2015
+
+- Removed XML declarations
+
 ## 1.0.9-alpha, August 21, 2015
 
 - Multiple style and javascript changes.
