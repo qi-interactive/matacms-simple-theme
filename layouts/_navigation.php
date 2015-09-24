@@ -77,13 +77,21 @@ if (empty($menuItems))
 		<div id="subnav-<?php echo $module ?>" class="subnav-item">
 
 			<?php
-
 			foreach ($items as $item):
-				?>
+			?>
 
-			<li><a href="<?= $item["url"] ?>" <?php if(isset($item["class"])) echo 'class="' . $item['class']  . '"'; ?>>
+			<li>
+				<a href="<?= $item["url"] ?>" <?php if(isset($item["class"])) echo 'class="' . $item['class']  . '"'; ?>>
 				<?= file_get_contents($item["icon"]) ?>
-				<?= $item["label"] ?></a></li>
+				<?= $item["label"] ?></a>
+				<?php if(isset($item["additionalLinks"])): ?>
+					<div class="additional-links">
+					<?php foreach ($item["additionalLinks"] as $additionalLink): ?>
+						<a href="<?= $additionalLink["url"] ?>" <?php if(isset($additionalLink["class"])) echo 'class="' . $additionalLink['class']  . '"'; ?>><?= $additionalLink["label"] ?></a>
+					<?php endforeach; ?>
+					</div>
+				<?php endif; ?>
+			</li>
 			<?php endforeach; ?>
 
 		</div>

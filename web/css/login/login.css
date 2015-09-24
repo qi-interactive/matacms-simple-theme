@@ -7,10 +7,10 @@ html>body{background:#485274;display:table}
 .panel .panel-heading{background:#5f6885;border:0;padding:20px 37px;border-bottom:2px solid #485274;text-align:left}
 .panel .panel-heading h3{font-size:24px;color:#d5deeb;font-weight:700;letter-spacing:0}
 .panel .panel-body{padding:0 37px}
+#forgotten-password-bar .col-md-6,form#login-form label{padding-left:0;padding-right:0}
 #forgotten-password-bar{background:#212635;padding:24px 37px;margin:31px 0 0;text-align:left;font-weight:600}
 #forgotten-password-bar a{color:#9fa7b7;font-weight:600;line-height:26px}
 #forgotten-password-bar a:hover{color:#858b99;text-decoration:none}
-#forgotten-password-bar .col-md-6{padding-right:0;padding-left:0}
 #forgotten-password-bar #footer-caption{color:#4d7877;font-size:12px;float:right}
 #forgotten-password-bar #footer-caption span{padding-right:5px}
 #forgotten-password-bar #footer-caption img{width:26px}
@@ -31,7 +31,6 @@ form{margin-top:15px}
 #header-spacer{display:none;background:#343c55;width:100%;color:#ff6b6b;padding:15px 37px;font-size:14px;text-align:left;font-weight:700;border-bottom:2px solid #535d7c}
 #header-spacer.alert-info,#header-spacer.alert-success{color:#55c45f}
 form#login-form label span{vertical-align:middle;padding-left:12px;font-weight:600;color:#9fa7b7}
-form#login-form label{padding-left:0;padding-right:0}
 form#login-form .input{position:relative;z-index:1;display:inline-block;margin:0;width:100%;vertical-align:top}
 form#login-form .input__field{position:relative;display:block;float:right;width:60%}
 form#login-form .input__label{display:inline-block;width:40%}

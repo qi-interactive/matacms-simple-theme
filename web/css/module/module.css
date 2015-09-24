@@ -1,22 +1,23 @@
 .redactor-toolbar li a,.versions,.versions:focus,.versions:hover,h1{color:#fff}
 body,html{background-color:#5f6885}
 h1{font-size:26px;font-weight:700;margin-bottom:23px;text-transform:uppercase;display:none}
+.container.module-contentBlock .panel-default .simple-list-container:last-child,.redactor-box{margin-bottom:0}
 .container{padding-bottom:30px}
 #redactor-modal-video-insert,.form-group,.module-entry-detail-view .table.detail-view tbody tr{padding:0 4px 4px;background:#343c55;border-radius:2px}
 #redactor-modal-video-insert label,.form-group label,.module-entry-detail-view .table.detail-view tbody tr label{font-size:13px;padding-top:5px;padding-bottom:3px;line-height:23px}
 #redactor-modal-video-insert .module-calendar section .event-label,#redactor-modal-video-insert .redactor-box,#redactor-modal-video-insert .redactor-box textarea,#redactor-modal-video-insert .redactor-editor,#redactor-modal-video-insert input,#redactor-modal-video-insert input.form-control,#redactor-modal-video-insert textarea,.form-group .module-calendar section .event-label,.form-group .redactor-box,.form-group .redactor-box textarea,.form-group .redactor-editor,.form-group input,.form-group input.form-control,.form-group textarea,.module-entry-detail-view .table.detail-view tbody tr .module-calendar section .event-label,.module-entry-detail-view .table.detail-view tbody tr .redactor-box,.module-entry-detail-view .table.detail-view tbody tr .redactor-box textarea,.module-entry-detail-view .table.detail-view tbody tr .redactor-editor,.module-entry-detail-view .table.detail-view tbody tr input,.module-entry-detail-view .table.detail-view tbody tr input.form-control,.module-entry-detail-view .table.detail-view tbody tr textarea{font-size:14px;font-weight:500}
 #redactor-modal-video-insert .redactor-editor,.form-group .redactor-editor,.module-entry-detail-view .table.detail-view tbody tr .redactor-editor{-moz-appearance:textfield-multiline;-webkit-appearance:textarea;resize:vertical;overflow:auto;padding-left:0;padding-bottom:0;padding-right:0}
-.redactor-box{margin-bottom:0}
 .redactor-toolbar{background:#343c55}
 .redactor-toolbar li a:hover{background-color:#2b3145}
 input[type=checkbox]{height:auto;background:0 0;-webkit-appearance:checkbox}
 .badge{height:21px;line-height:1.5}
 .badge.live{background:#55c45f}
 .badge.draft{background:#d6915e}
-.container.module-user .panel-heading,.module-calendar section header.calendar-date{padding:20px 37px}
-.container.module-user .panel-body,.module-calendar .panel-body,.module-form .module-entry-detail-view,.module-social .module-entry-detail-view{padding:37px}
-.container.module-user .panel,.container.module-user .panel-heading,.module-calendar section,.module-calendar section header.calendar-date,.module-form .module-entry-detail-view,.module-social .module-entry-detail-view{background-color:#535d7c}
-.container.module-user .panel,.module-calendar section,.module-form .module-entry-detail-view,.module-social .module-entry-detail-view{border-radius:2px}
-.container.module-user .panel-heading,.module-calendar section header.calendar-date{border-bottom:2px solid #5f6885;border-top-left-radius:3px;border-top-right-radius:3px;border-color:#5f6885;font-weight:700;font-size:18px;color:#d5deeb}
+.container.module-contentBlock .panel-default{border-color:transparent}
+.container.module-contentBlock .panel-heading,.container.module-user .panel-heading,.module-calendar section header.calendar-date{padding:20px 37px;background-color:#535d7c}
+.container.module-contentBlock .panel-body,.container.module-user .panel-body,.module-calendar .panel-body,.module-form .module-entry-detail-view,.module-social .module-entry-detail-view{padding:37px}
+.container.module-contentBlock .panel,.container.module-user .panel,.container.module-user .panel-heading,.module-calendar section,.module-calendar section header.calendar-date,.module-form .module-entry-detail-view,.module-social .module-entry-detail-view{background-color:#535d7c}
+.container.module-contentBlock .panel,.container.module-user .panel,.module-calendar section,.module-form .module-entry-detail-view,.module-social .module-entry-detail-view{border-radius:2px}
+.container.module-contentBlock .panel-heading,.container.module-user .panel-heading,.module-calendar section header.calendar-date{border-bottom:2px solid #5f6885;border-top-left-radius:3px;border-top-right-radius:3px;border-color:#5f6885;font-weight:700;font-size:18px;color:#d5deeb}
 @media (max-width:645px){.container.module-user .panel-body,.container.module-user .panel-heading,.module-calendar .panel-body,.module-calendar section header.calendar-date,.module-entry-detail-view,.module-form .module-entry-detail-view,.module-social .module-entry-detail-view{padding:20px}
 }

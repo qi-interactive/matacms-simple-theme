@@ -20,8 +20,10 @@ Installation
 Changelog
 ---------
 
-## 1.0.9.1-alpha, August 25, 2015
+## 1.0.9.1-alpha, September 24, 2015
 
+- Added additional links for subnavigation items
+- Styling changes
 - Removed XML declarations
 
 ## 1.0.9-alpha, August 21, 2015

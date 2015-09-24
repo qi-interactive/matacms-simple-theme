@@ -100,28 +100,40 @@ input[type="checkbox"] {
 	}
 }
 
-.module-calendar section header.calendar-date,
-.container.module-user .panel-heading {
-	padding: 20px 37px;
+.container.module-contentBlock .panel-default {
+    border-color: transparent;
 }
 
-.container.module-user .panel-body, .module-form .module-entry-detail-view, .module-calendar .panel-body,
+.container.module-contentBlock .panel-default .simple-list-container:last-child {
+	margin-bottom: 0px;
+}
+
+.module-calendar section header.calendar-date,
+.container.module-user .panel-heading,
+.container.module-contentBlock .panel-heading {
+	padding: 20px 37px;
+	background-color: #535d7c;
+}
+
+.container.module-contentBlock .panel-body, .container.module-user .panel-body, .module-form .module-entry-detail-view, .module-calendar .panel-body,
 .module-social .module-entry-detail-view {
 	padding: 37px;
 }
 
-.container.module-user .panel, .module-calendar section, 
-.container.module-user .panel-heading, .module-calendar section header.calendar-date, 
+.container.module-contentBlock .panel,
+.container.module-user .panel, .module-calendar section,
+.container.module-user .panel-heading, .module-calendar section header.calendar-date,
 .module-form .module-entry-detail-view, .module-social .module-entry-detail-view {
 	background-color: @night-lake;
 }
 
+.container.module-contentBlock .panel,
 .container.module-user .panel, .module-calendar section,
 .module-form .module-entry-detail-view, .module-social .module-entry-detail-view {
 	border-radius: 2px;
 }
 
-.container.module-user .panel-heading, .module-calendar section header.calendar-date {
+.container.module-contentBlock .panel-heading, .container.module-user .panel-heading, .module-calendar section header.calendar-date {
 	border-bottom: 2px solid @slate-grey;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
@@ -132,5 +144,3 @@ input[type="checkbox"] {
 }
 
 @import "module_mobile.less";
-
-
