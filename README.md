@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.0.9.2-alpha, September 29, 2015
+
+- Added assets for matacms-language module
+
 ## 1.0.9.1-alpha, September 24, 2015
 
 - Added additional links for subnavigation items
