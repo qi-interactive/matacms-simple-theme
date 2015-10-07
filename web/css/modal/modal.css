@@ -1,4 +1,4 @@
-#redactor-modal,.modal-content{background:#343c55;color:#fff;border-radius:3px;border:0;box-shadow:0}
+#redactor-modal,.modal-content{background:#343C55;color:#fff;border-radius:3px;border:0;box-shadow:0}
 #redactor-modal #media-type-buttons,.modal-content #media-type-buttons{width:100%;height:auto}
 #redactor-modal #redactor-modal-video-insert,#redactor-modal .form-group,.modal-content #redactor-modal-video-insert,.modal-content .form-group{text-align:left;background:#212635}
 #redactor-modal #redactor-modal-video-insert input,#redactor-modal .form-group input,.modal-content #redactor-modal-video-insert input,.modal-content .form-group input{font-size:14px;font-weight:500}
@@ -29,7 +29,7 @@
 #edit-image-container-modal .qq-upload-drop-area,#edit-image-container-modal .qq-upload-extra-drop-area{background:#212635}
 #edit-image-container-modal .file-uploader{background:#212635;width:100%;margin-bottom:20px;display:block;height:165px;text-align:left;border-radius:2px;position:relative}
 #edit-image-container-modal .file-uploader .qq-uploader{height:100%}
-#edit-image-container-modal .file-uploader .img-container{background:#d5deeb;display:inline-block;position:absolute;height:120px;width:120px;left:22px;top:22px;bottom:22px}
+#edit-image-container-modal .file-uploader .img-container{background:#D5DEEB;display:inline-block;position:absolute;height:120px;width:120px;left:22px;top:22px;bottom:22px}
 #edit-image-container-modal .file-uploader .img-container img{display:block;max-width:100%;position:absolute;margin:auto;top:0;left:0;right:0;bottom:0;max-height:100%}
 #edit-image-container-modal .file-uploader .qq-upload-button{background:0 0;padding:22px;display:inline-block;width:auto;float:right;height:auto;border-bottom:0;outline:0}
 #edit-image-container-modal .file-uploader .fine-uploader{display:inline-block;vertical-align:top;width:100%;height:100%}
@@ -42,10 +42,10 @@
 #update-carousel-item-form .form-group{text-align:left}
 .video-url{width:100%}
 .video-url .video-preview-container{width:100%;background:#212635;height:165px;padding:22px}
-.video-url .video-preview-container #player,.video-url .video-preview-container .fallback,.video-url .video-preview-container body,.video-url .video-preview-container html,.video-url .video-preview-container iframe{background:#d5deeb}
+.video-url .video-preview-container #player,.video-url .video-preview-container .fallback,.video-url .video-preview-container body,.video-url .video-preview-container html,.video-url .video-preview-container iframe{background:#D5DEEB}
 .video-url .video-preview-container iframe{width:120px;height:100%;margin:0 auto}
 .video-url .form-group.field-videourlform-videourl{text-align:left;background:#212635}
-.player .video-wrapper .video{background-color:#d5deeb!important}
+.player .video-wrapper .video{background-color:#D5DEEB!important}
 #redactor-modal section#redactor-modal-video-insert,#redactor-modal-video-insert{padding:0 4px 4px;margin-left:50px;margin-right:50px;margin-bottom:35px}
 .modal-backdrop.fade{visibility:hidden}
 .modal-backdrop.fade.in{visibility:visible}
@@ -57,8 +57,8 @@
 #redactor-modal-image-insert #redactor-droparea.drag-drop,#redactor-modal-image-insert #redactor-droparea.drag-hover{border-color:#8376b4;background:#212635}
 label input[type=checkbox]{display:none}
 label input[type=checkbox]+div{height:20px;width:20px;background:#212635;border-radius:2px;position:relative;cursor:pointer;display:inline-block;text-align:center;line-height:60px;-moz-transition:all .3s;-webkit-transition:all .3s;-o-transition:all .3s;-ms-transition:all .3s;transition:all .3s;vertical-align:middle;border:2px solid #212635}
-label input[type=checkbox]+div .fa{font-size:12px;color:#5f6885;opacity:0;top:2px;position:absolute;line-height:16px;left:2px;right:auto;width:12px;height:12px}
-label input[type=checkbox]+div:before{content:"";display:block;opacity:0;height:100%;width:100%;position:absolute;top:0;right:0;background-color:#d5deeb;background-image:url(../../images/form/tick@2x.png);background-size:0 0;background-repeat:no-repeat;background-position:center}
+label input[type=checkbox]+div .fa{font-size:12px;color:#5F6885;opacity:0;top:2px;position:absolute;line-height:16px;left:2px;right:auto;width:12px;height:12px}
+label input[type=checkbox]+div:before{content:"";display:block;opacity:0;height:100%;width:100%;position:absolute;top:0;right:0;background-color:#D5DEEB;background-image:url(../../images/form/tick@2x.png);background-size:0 0;background-repeat:no-repeat;background-position:center}
 label input[type=checkbox]+div:after{font-family:FontAwesome;content:"\f00c";display:none;opacity:0;height:100%;width:100%;position:absolute;top:0;right:0;color:#fff;line-height:32px;text-align:center}
 label input[type=checkbox]:checked+div{background:0 0}
 label input[type=checkbox]:checked+div:before{background-size:12px 12px;opacity:1;-moz-animation:show-b .3s;-webkit-animation:show-b .3s;-o-animation:show-b .3s;-ms-animation:show-b .3s;animation:show-b .3s}
@@ -72,16 +72,16 @@ label:hover input[type=checkbox]+div:before{opacity:1;-moz-transition:opacity .3
 #redactor-modal{width:auto!important;margin:10px!important}
 #redactor-modal-file-upload-box,#redactor-modal-image-droparea{background-color:#212635}
 #redactor-modal-box{background:rgba(0,0,0,.6)}
-#redactor-modal footer button.redactor-modal-close-btn,.redactor-modal-close-btn{background:#5f6885;color:#212635}
-#redactor-modal footer button.redactor-modal-close-btn:hover,.redactor-modal-close-btn:hover{opacity:.7;background:#5f6885;color:#212635}
+#redactor-modal footer button.redactor-modal-close-btn,.redactor-modal-close-btn{background:#5F6885;color:#212635}
+#redactor-modal footer button.redactor-modal-close-btn:hover,.redactor-modal-close-btn:hover{opacity:.7;background:#5F6885;color:#212635}
 #redactor-modal footer button.redactor-modal-delete-btn,#redactor-modal footer button.redactor-modal-delete-btn:hover,.redactor-modal-delete-btn,.redactor-modal-delete-btn:hover{color:#fff;float:right;font-size:0;background:url(../../images/icons/delete-white.svg) center right no-repeat;background-size:24px 24px;width:24px!important;height:24px;min-width:0;margin-right:0}
-#redactor-modal footer button.redactor-modal-action-btn,.redactor-modal-action-btn{background:#4eb7cd;color:#fff}
-#redactor-modal footer button.redactor-modal-action-btn:hover,.redactor-modal-action-btn:hover{background:#539fb8;color:#fff}
+#redactor-modal footer button.redactor-modal-action-btn,.redactor-modal-action-btn{background:#4EB7CD;color:#fff}
+#redactor-modal footer button.redactor-modal-action-btn:hover,.redactor-modal-action-btn:hover{background:#539FB8;color:#fff}
 #redactor-modal footer,.redactor-modal-delete-btn{padding:0 50px 35px}
 #redactor-modal footer button,.redactor-modal-delete-btn{width:auto!important;min-width:133px;margin-right:5px}
 #redactor-modal footer button:last-child,.redactor-modal-delete-btn:last-child{margin-right:0}
-#redactor-modal #redactor-modal-list a.redactor-clip-link,.redactor-clip-link{border-radius:2px;font-size:14px;font-weight:600;color:#343c55;background:#9fa7b7}
-#redactor-modal #redactor-modal-list a.redactor-clip-link:hover,.redactor-clip-link:hover{background:#d5deeb}
+#redactor-modal #redactor-modal-list a.redactor-clip-link,.redactor-clip-link{border-radius:2px;font-size:14px;font-weight:600;color:#343C55;background:#9FA7B7}
+#redactor-modal #redactor-modal-list a.redactor-clip-link:hover,.redactor-clip-link:hover{background:#D5DEEB}
 #redactor-modal #redactor-modal-list{margin-bottom:0}
 @media (min-width:768px){#redactor-modal{width:600px!important;margin:30px auto!important}
 }

@@ -1,6 +1,6 @@
 .smooth-sortable{max-width:520px}
-.smooth-sortable li{padding:10px 20px 10px 35px;color:#343c55}
-.smooth-sortable li .svg-icon-container{position:absolute;left:0;top:0;width:30px;height:100%;background:#d5deeb}
+.smooth-sortable li{padding:10px 20px 10px 35px;color:#343C55}
+.smooth-sortable li .svg-icon-container{position:absolute;left:0;top:0;width:30px;height:100%;background:#D5DEEB}
 .smooth-sortable li svg{width:17px;left:6px;top:14px;position:absolute}
 .smooth-sortable li svg .rearrangeable-icon polyline{stroke:#60a5bc}
 .smooth-sortable li svg .tick-icon{display:none}

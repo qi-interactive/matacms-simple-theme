@@ -4,9 +4,9 @@
 .module-calendar section .calendar-event:last-child{margin-bottom:0}
 .module-calendar section .calendar-event .event-time{vertical-align:middle;padding:10px 0;text-align:center;width:8.36458%}
 .module-calendar section .calendar-event .event-time .time{font-weight:600;font-size:14px;white-space:nowrap}
-.module-calendar section .calendar-event .module{background:#4eb7cd;text-transform:uppercase;min-width:105px;color:#fff;font-weight:600;font-size:12px;display:inline-block;text-align:center;position:relative;z-index:1;padding:3px 15px;vertical-align:middle}
-.module-calendar section .calendar-event section.event-wrapper{background:#d5deeb;padding-bottom:0;float:left}
-.module-calendar section .calendar-event .event-label{font-size:14px;font-weight:500;display:inline-block;padding:8px 10px;color:#343c55;background:#d5deeb;border-radius:2px;overflow:hidden;position:relative;height:auto;width:90.07292%}
+.module-calendar section .calendar-event .module{background:#4EB7CD;text-transform:uppercase;min-width:105px;color:#fff;font-weight:600;font-size:12px;display:inline-block;text-align:center;position:relative;z-index:1;padding:3px 15px;vertical-align:middle}
+.module-calendar section .calendar-event section.event-wrapper{background:#D5DEEB;padding-bottom:0;float:left}
+.module-calendar section .calendar-event .event-label{font-size:14px;font-weight:500;display:inline-block;padding:8px 10px;color:#343C55;background:#D5DEEB;border-radius:2px;overflow:hidden;position:relative;height:auto;width:90.07292%}
 .module-calendar section .calendar-event .event-label .left-container,.module-calendar section .calendar-event .event-label .right-container{display:inline-block;float:left}
 .module-calendar section .calendar-event .event-label .event-text{vertical-align:middle}
 .module-calendar section .calendar-event .event-label .fadding-container{width:23px}

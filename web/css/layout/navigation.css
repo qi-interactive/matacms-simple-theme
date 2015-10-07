@@ -578,11 +578,11 @@ svg path, svg rect, svg line, svg polyline, polygon, g, circle {
 }
 
 #subnav-overlay li div.additional-links {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #subnav-overlay li div.additional-links a {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 #subnav-overlay li a {
@@ -597,6 +597,7 @@ svg path, svg rect, svg line, svg polyline, polygon, g, circle {
   position: relative;
   z-index: 99;
 }
+
 
 .cd-marker {
   /* line at the bottom of nav selected item */
@@ -637,6 +638,94 @@ svg path, svg rect, svg line, svg polyline, polygon, g, circle {
   border: 10px solid transparent;
   border-bottom-color: inherit;
 }
+
+
+/* these are the colors of the markers - line + arrow */
+.color-1 {
+  color: #A28DDF;
+  background-color: #A28DDF;
+}
+
+.color-2 {
+  color: #C96AA4;
+  background-color: #C96AA4;
+}
+
+.color-3 {
+  color: #D6915E;
+  background-color: #D6915E;
+}
+
+.color-4 {
+  color: #4EB7CD;
+  background-color: #4EB7CD;
+}
+
+.color-5 {
+  color: #55C45F;
+  background-color: #55C45F;
+}
+
+.color-6 {
+  color: #FF6B6B;
+  background-color: #FF6B6B;
+}
+
+.color-7 {
+  color: #A28DDF;
+  background-color: #A28DDF;
+}
+
+.color-8 {
+  color: #C96AA4;
+  background-color: #C96AA4;
+}
+
+.color-9 {
+  color: #D6915E;
+  background-color: #D6915E;
+}
+
+.color-10 {
+  color: #4EB7CD;
+  background-color: #4EB7CD;
+}
+
+.color-11 {
+  color: #55C45F;
+  background-color: #55C45F;
+}
+
+.color-12 {
+  color: #FF6B6B;
+  background-color: #FF6B6B;
+}
+
+.color-14 {
+  color: #A28DDF;
+  background-color: #A28DDF;
+}
+
+.color-15 {
+  color: #C96AA4;
+  background-color: #C96AA4;
+}
+
+.color-16 {
+  color: #D6915E;
+  background-color: #D6915E;
+}
+
+.color-17 {
+  color: #4EB7CD;
+  background-color: #4EB7CD;
+}
+
+.color-18 {
+  color: #55C45F;
+  background-color: #55C45F;
+}
+
 .nav-is-visible .cd-marker {
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -645,74 +734,6 @@ svg path, svg rect, svg line, svg polyline, polygon, g, circle {
   transform: translateZ(0);
 }
 
-/* these are the colors of the markers - line + arrow */
-.color-1 {
-  color: #A28DDF;
-}
-
-.color-2 {
-  color: #C96AA4;
-}
-
-.color-3 {
-  color: #D6915E;
-}
-
-.color-4 {
-  color: #4EB7CD;
-}
-
-.color-5 {
-  color: #55C45F;
-}
-
-.color-6 {
-  color: #FF6B6B;
-}
-
-.color-7 {
-  color: #A28DDF;
-}
-
-.color-8 {
-  color: #C96AA4;
-}
-
-.color-9 {
-  color: #D6915E;
-}
-
-.color-10 {
-  color: #4EB7CD;
-}
-
-.color-11 {
-  color: #55C45F;
-}
-
-.color-12 {
-  color: #FF6B6B;
-}
-
-.color-14 {
-  color: #A28DDF;
-}
-
-.color-15 {
-  color: #C96AA4;
-}
-
-.color-16 {
-  color: #D6915E;
-}
-
-.color-17 {
-  color: #4EB7CD;
-}
-
-.color-18 {
-  color: #55C45F;
-}
 
 
 main {
