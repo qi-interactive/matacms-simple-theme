@@ -13,10 +13,14 @@ use yii\web\AssetBundle;
 class LanguageIndexAsset extends AssetBundle
 {
 
-    public $sourcePath = '@vendor/matacms/matacms-simple-theme/web';
+	public $sourcePath = '@vendor/matacms/matacms-simple-theme/web';
 
-    public $css = [
-	    'css/language/language.css',
-    ];
+	public $css = [
+	'css/language/language.css',
+	];
+
+	public $js = [
+	'js/module/language.js',
+	];
 
 }

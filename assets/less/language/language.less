@@ -23,6 +23,35 @@
 			margin-bottom: 15px;
 		}
 
+		.info {
+			position: relative;
+			.transition(background-image 0.3s);
+
+			button {
+				position: absolute;
+				right: -80px;
+				height: 100%;
+				width: 80px;
+				.transition(right 0.3s);
+				top: 0px;
+			}
+
+			&.save-btn {
+				padding-right: 30px;
+				button {
+					right: 0px;
+				}
+			}
+
+			&.saved {
+				padding-right: 30px;
+				background-image: url(../../images/form/tick@2x.png);
+				background-repeat: no-repeat;
+				background-position: 98% center;
+				background-size: 12px;
+			}
+		}
+
 		.form-group {
 			margin: 0px;
 			background: transparent;
@@ -32,7 +61,7 @@
 			input {
 				padding: 0px;
 				height: auto;
-				margin: 0px
+				margin: 0px;
 			}
 
 			label {
