@@ -16,7 +16,7 @@ class ModuleAsset extends AssetBundle {
 
     public $css = [
     'css/module/module.css',
-    'css/module/form-social-modules.css'
+    'css/module/details-view.css'
     ];
     public $js = [
     'js/module/module.js',

@@ -1,3 +1,7 @@
 .container.module-language #select-language{margin:15px 0}
 .container.module-language #select-language span{color:#fff;margin-right:20px}
 .container.module-language #select-language a.btn.btn-selected{background-color:#FF6B6B}
+.container.module-language .details-view .item,.container.module-language .details-view .item:last-child{margin-bottom:15px}
+.container.module-language .details-view .item .form-group{margin:0;background:0 0;border-radius:0;padding:0}
+.container.module-language .details-view .item .form-group input{padding:0;height:auto;margin:0}
+.container.module-language .details-view .item .form-group label{display:none}
