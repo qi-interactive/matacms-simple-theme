@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.0.9.3-alpha, October 8, 2015
+
+- Styling changes.
+
 ## 1.0.9.2-alpha, September 29, 2015
 
 - Added assets for matacms-language module
