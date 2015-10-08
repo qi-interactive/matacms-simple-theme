@@ -2,11 +2,12 @@
 .container.module-language #select-language span{color:#fff;margin-right:20px}
 .container.module-language #select-language a.btn.btn-selected{background-color:#FF6B6B}
 .container.module-language .details-view .item,.container.module-language .details-view .item:last-child{margin-bottom:15px}
-.container.module-language .details-view .item .info{position:relative;-moz-transition:background-image .3s;-webkit-transition:background-image .3s;-o-transition:background-image .3s;-ms-transition:background-image .3s;transition:background-image .3s}
+.container.module-language .details-view .item .info{position:relative;-moz-transition:background-image .3s;-webkit-transition:background-image .3s;-o-transition:background-image .3s;-ms-transition:background-image .3s;transition:background-image .3s;padding:0}
 .container.module-language .details-view .item .info button{position:absolute;right:-80px;height:100%;width:80px;-moz-transition:right .3s;-webkit-transition:right .3s;-o-transition:right .3s;-ms-transition:right .3s;transition:right .3s;top:0}
-.container.module-language .details-view .item .info.save-btn{padding-right:30px}
+.container.module-language .details-view .item .info.save-btn input{padding-right:85px}
 .container.module-language .details-view .item .info.save-btn button{right:0}
-.container.module-language .details-view .item .info.saved{padding-right:30px;background-image:url(../../images/form/tick@2x.png);background-repeat:no-repeat;background-position:98% center;background-size:12px}
+.container.module-language .details-view .item .info.saved{background-image:url(../../images/form/tick@2x.png);background-repeat:no-repeat;background-position:98% center;background-size:12px}
+.container.module-language .details-view .item .info.saved input{width:94%}
 .container.module-language .details-view .item .form-group{margin:0;background:0 0;border-radius:0;padding:0}
-.container.module-language .details-view .item .form-group input{padding:0;height:auto;margin:0}
+.container.module-language .details-view .item .form-group input{height:auto;margin:0;padding:8px 10px}
 .container.module-language .details-view .item .form-group label{display:none}

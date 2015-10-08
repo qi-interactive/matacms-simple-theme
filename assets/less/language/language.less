@@ -26,6 +26,7 @@
 		.info {
 			position: relative;
 			.transition(background-image 0.3s);
+			padding: 0px;
 
 			button {
 				position: absolute;
@@ -37,14 +38,18 @@
 			}
 
 			&.save-btn {
-				padding-right: 30px;
+				input {
+					padding-right: 85px;
+				}
 				button {
 					right: 0px;
 				}
 			}
 
 			&.saved {
-				padding-right: 30px;
+				input {
+					width: 94%;
+				}
 				background-image: url(../../images/form/tick@2x.png);
 				background-repeat: no-repeat;
 				background-position: 98% center;
@@ -62,6 +67,7 @@
 				padding: 0px;
 				height: auto;
 				margin: 0px;
+				padding: 8px 10px;
 			}
 
 			label {
