@@ -201,6 +201,10 @@ mata.simpleTheme.showParentBackdrop = function(e, cssInClass) {
 	$('header.cd-header div.modal-backdrop', window.parent.document).removeClass('out out-redactor').addClass(cssInClass);
 }
 
+mata.simpleTheme.hideParentBackdrop = function() {
+	$('header.cd-header div.modal-backdrop', window.parent.document).removeClass('in').addClass('out');
+}
+
 mata.simpleTheme.onPjaxSuccess = function() {
 	mata.simpleTheme.addAClassToSelectizeAndFileUploaderAndUriParent();
 	mata.simpleTheme.addAClassToMainActionButtonsParent();
@@ -208,6 +212,10 @@ mata.simpleTheme.onPjaxSuccess = function() {
 	$(window).resize();
 	mata.simpleTheme.addHoverBehaviourToVersionTooltip();
 }
+
+$(window).on('unload',function() {
+	mata.simpleTheme.hideParentBackdrop();
+});
 
 
 mata.simpleTheme.addSelectedAscendingDescendingClassesToSortBy = function() {
