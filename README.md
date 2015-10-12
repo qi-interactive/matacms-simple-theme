@@ -20,8 +20,9 @@ Installation
 Changelog
 ---------
 
-## TO BE RELEASED, October 8, 2015
+## 1.0.9.4-alpha, October 12, 2015
 
+- Styling changes.
 - Added mata.simpleTheme.hideParentBackdrop() function that runs on window unload event
 
 ## 1.0.9.3-alpha, October 8, 2015
