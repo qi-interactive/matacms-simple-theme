@@ -31,3 +31,6 @@
 .simple-list-container .list-contents-container{padding:0 49px 0 19px;height:100%;display:table;width:100%}
 .simple-list-container .list-contents-container .list-label{border-bottom:0;display:table-cell;vertical-align:middle}
 .simple-list-container .list-contents-container.thumbnail-active{padding-left:78px}
+.list-view .language-versions li.available {
+    text-decoration: underline;
+}
