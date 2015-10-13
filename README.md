@@ -20,7 +20,7 @@ Installation
 Changelog
 ---------
 
-## 1.0.9.4-alpha, October 13, 2015
+## 1.0.9.5-alpha, October 13, 2015
 
 - Updated theme.js (added mata.simpleTheme.reloadRearrangeData(url))
 
