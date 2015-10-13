@@ -83,6 +83,14 @@ function addHoverEffectToVersionsTooltip(el) {
 	})
 }
 
+mata.simpleTheme.reloadRearrangeData = function(url) {
+
+	$('#drop-area .main-body').empty();
+
+	$.ajax(url).done(function(data) {
+		$('#drop-area .main-body').html(data);
+	});
+}
 
 mata.simpleTheme.addClickEventToRearrangeAndVersionsBtns = function() {
 
@@ -95,8 +103,6 @@ mata.simpleTheme.addClickEventToRearrangeAndVersionsBtns = function() {
 			$('#drop-area .main-body').html(data);
 			mata.simpleTheme.addHoverBehaviourToVersionTooltip();
 			classie.add( dropArea, 'show' );
-
-
 		});
 
 	});
