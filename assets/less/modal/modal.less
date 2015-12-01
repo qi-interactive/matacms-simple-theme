@@ -206,10 +206,6 @@ body.mata-cms {
 
 	}
 
-	.modal-backdrop.in {
-		opacity: 0.7;
-	}
-
 	#edit-image-container-modal {
 
 		.qq-upload-drop-area, .qq-upload-extra-drop-area {
@@ -347,14 +343,19 @@ body.mata-cms {
 		margin-bottom: 35px;
 	}
 
-	.modal-backdrop.fade {
-		visibility: hidden;
-	}
-	.modal-backdrop.fade.in {
-		visibility: visible;
-	}
+
 }
 
+.modal-backdrop.in {
+	opacity: 0.7;
+}
+
+.modal-backdrop.fade {
+	visibility: hidden;
+}
+.modal-backdrop.fade.in {
+	visibility: visible;
+}
 
 @import "wysiwyg-modal.less";
 @import "modal_mobile.less";
