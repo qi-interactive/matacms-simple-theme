@@ -41,7 +41,7 @@ $bundle = ModuleAsset::register($this);
 
 </script>
 
-<body>
+<body class="mata-cms">
 	<?php $this->beginBody() ?>
 	<?php
 

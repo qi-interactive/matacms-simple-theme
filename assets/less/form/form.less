@@ -143,12 +143,11 @@ label {
 	font-size: 13px;
 }
 
-.checkbox-wrapper, #redactor-modal-box label.checkbox-wrapper {
+.checkbox-wrapper, body.mata-cms #redactor-modal-box label.checkbox-wrapper {
 	padding-left: 0px;
 }
 
-input, textarea, .redactor-editor, .redactor-box, .redactor-box textarea, input.form-control, .selectize-input, .selectize-dropdown, textarea.form-control,
-#redactor-modal input[type="text"], #redactor-modal input[type="password"], #redactor-modal input[type="email"], #redactor-modal input[type="url"],
+input, textarea, input.form-control, .selectize-input, .selectize-dropdown, textarea.form-control,
 .module-entry-detail-view .table.detail-view tbody tr td, .module-entry-detail-view section .event-label {
 	font-weight: @proxima-semibold;
 	background: @alice-blue;
@@ -166,12 +165,32 @@ input, textarea, .redactor-editor, .redactor-box, .redactor-box textarea, input.
 	}
 }
 
+body.mata-cms {
+	.redactor-editor, .redactor-box, .redactor-box textarea, #redactor-modal input[type="text"], #redactor-modal input[type="password"], #redactor-modal input[type="email"], #redactor-modal input[type="url"] {
+		background: @alice-blue;
+		outline: none;
+		font-size: @font-size-second-base;
+		color: @blue-corn;
+		margin: 0px;
+		padding: 13px;
+		border: none;
+		-webkit-appearance: none; /* for box shadows to show on iOS */
+		border-radius: 2px;
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
 input, input.form-control, .module-calendar section .event-label {
 	height: 38px;
 }
 
-.redactor-editor div, .redactor-editor p, .redactor-editor ul, .redactor-editor ol, .redactor-editor table, .redactor-editor dl, .redactor-editor figure, .redactor-editor blockquote, .redactor-editor pre {
-	font-family: @font-family-base;
+body.mata-cms {
+	.redactor-editor div, .redactor-editor p, .redactor-editor ul, .redactor-editor ol, .redactor-editor table, .redactor-editor dl, .redactor-editor figure, .redactor-editor blockquote, .redactor-editor pre {
+		font-family: @font-family-base;
+	}
 }
 
 
@@ -215,10 +234,7 @@ input, input.form-control, .module-calendar section .event-label {
 
 
 
-button, button.btn-primary, .btn, .btn[type="submit"],
-#redactor-modal footer button.redactor-modal-close-btn,
-.redactor-modal-close-btn, .redactor-modal-delete-btn, #redactor-modal footer button.redactor-modal-delete-btn,
-.redactor-modal-action-btn,  #redactor-modal footer button.redactor-modal-action-btn {
+button, button.btn-primary, .btn, .btn[type="submit"] {
 	.aqua-background-link();
 	border: 0px;
 	border-radius: 2px;
@@ -233,6 +249,26 @@ button, button.btn-primary, .btn, .btn[type="submit"],
 	color: @white;
 	text-transform: uppercase;
 }
+body.mata-cms {
+	#redactor-modal footer button.redactor-modal-close-btn,
+	.redactor-modal-close-btn, .redactor-modal-delete-btn, #redactor-modal footer button.redactor-modal-delete-btn,
+	.redactor-modal-action-btn,  #redactor-modal footer button.redactor-modal-action-btn {
+		.aqua-background-link();
+		border: 0px;
+		border-radius: 2px;
+		font-weight: @proxima-bold;
+		letter-spacing: 0px;
+		font-size: 14px;
+		outline: none;
+		min-height: 38px;
+		padding: 8px 20px;
+		width: auto;
+		display: inline-block;
+		color: @white;
+		text-transform: uppercase;
+	}
+}
+
 .btn[type="submit"] {
 	margin-right: 8px;
 	height: 45px;
@@ -242,7 +278,7 @@ button, button.btn-primary, .btn, .btn[type="submit"],
 	line-height: 37px;
 }
 
-#redactor-image-editter {
+body.mata-cms #redactor-image-editter {
 	margin-right: 0px;
 	text-align: center;
 	font-size: 0;
@@ -561,7 +597,7 @@ button.btn-primary[disabled] {
 	border-bottom-right-radius: 0px;
 }
 
-.selectize-dropdown [data-selectable], .selectize-dropdown .optgroup-header, .redactor-dropdown a {
+.selectize-dropdown [data-selectable], .selectize-dropdown .optgroup-header {
 	padding-left: 13px;
 	color: @blue-corn;
 	background: @azure;
@@ -580,23 +616,49 @@ button.btn-primary[disabled] {
 	}
 }
 
-.redactor-dropdown a {
-	height: auto;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-.redactor-dropdown a:hover {
-	color: @blue-corn !important;
+body.mata-cms {
+	.redactor-dropdown a {
+		padding-left: 13px;
+		color: @blue-corn;
+		background: @azure;
+		font-size: 14px;
+		font-weight: 500;
+		height: 30px;
+		min-height: 30px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		line-height: 32px;
+		padding-right: 38px;
+
+		&:hover {
+			background: @alice-blue;
+			color: @blue-corn;
+		}
+	}
+
+	.redactor-dropdown a {
+		height: auto;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.redactor-dropdown a:hover {
+		color: @blue-corn !important;
+	}
+
+	.redactor-toolbar li a:active, .redactor-toolbar li a.redactor-act {
+		background-color: #2b3145;
+		color: @white;
+	}
+
+	.redactor-dropdown.redactor-dropdown-box-link {
+		background: @azure;
+	}
 }
 
-.redactor-toolbar li a:active, .redactor-toolbar li a.redactor-act {
-	background-color: #2b3145;
-	color: @white;
-}
 
-.redactor-dropdown.redactor-dropdown-box-link {
-	background: @azure;
-}
+
+
+
 
 .selectize-dropdown, .selectize-dropdown.form-control {
 	color: @blue-corn;
@@ -1031,27 +1093,41 @@ img.current-media {
 }
 
 
-.redactor-toolbar {
-	position: relative !important;
-	top: 0px !important;
-	width: auto !important;
+body.mata-cms {
+	.redactor-toolbar {
+		position: relative !important;
+		top: 0px !important;
+		width: auto !important;
+		text-align: left;
+	}
 }
 
 .btn-danger, .btn.btn-danger {
 	.coral-background-link();
 }
 
-#redactor-modal-box label {
-	color: @white;
-	text-align: left;
-	padding: 0px 13px;
-	padding-top: 5px;
-	padding-bottom: 3px;
-	margin: 0px !important;
-}
+body.mata-cms {
+	#redactor-modal-box label {
+		color: @white;
+		text-align: left;
+		padding: 0px 13px;
+		padding-top: 5px;
+		padding-bottom: 3px;
+		margin: 0px !important;
+	}
 
-#redactor-droparea-placeholder {
-	color: @white;
+	#redactor-droparea-placeholder {
+		color: @white;
+	}
+
+	#redactor-image-box {
+		outline: 2px dashed @purple;
+	}
+
+	.redactor-toolbar-tooltip {
+		background: @azure;
+		color: @blue-corn;
+	}
 }
 
 .tooltip.in {
@@ -1068,29 +1144,21 @@ img.current-media {
 	color: #343c55;
 }
 
-#redactor-image-box {
-	outline: 2px dashed @purple;
+body.mata-cms {
+	#redactor-modal input[type="text"]:focus, #redactor-modal input[type="password"]:focus, #redactor-modal input[type="email"]:focus, #redactor-modal input[type="url"]:focus, #redactor-modal textarea:focus {
+		border-color: transparent;
+		box-shadow: none;
+	}
+
+	#redactor-modal textarea {
+		border: 0px;
+		box-shadow: none;
+		background-color: @alice-blue;
+		padding: 13px;
+		border-radius: 2px;
+	}
+
 }
-
-.redactor-toolbar-tooltip {
-	background: @azure;
-	color: @blue-corn;
-}
-
-#redactor-modal input[type="text"]:focus, #redactor-modal input[type="password"]:focus, #redactor-modal input[type="email"]:focus, #redactor-modal input[type="url"]:focus, #redactor-modal textarea:focus {
-	border-color: transparent;
-	box-shadow: none;
-}
-
-#redactor-modal textarea {
-	border: 0px;
-	box-shadow: none;
-	background-color: @alice-blue;
-	padding: 13px;
-	border-radius: 2px;
-}
-
-
 
 
 @import "form_desktop.less";

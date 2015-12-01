@@ -189,32 +189,21 @@ label {
 	background: rgba(0,0,0,0.6);
 }
 
-#redactor-modal footer button.redactor-modal-close-btn,
-.redactor-modal-close-btn
-{
-	background: @slate-grey;
-	color: @midnight-blue;
-
-	&:hover {
-		opacity: 0.7;
+body.mata-cms {
+	#redactor-modal footer button.redactor-modal-close-btn,
+	.redactor-modal-close-btn
+	{
 		background: @slate-grey;
 		color: @midnight-blue;
+
+		&:hover {
+			opacity: 0.7;
+			background: @slate-grey;
+			color: @midnight-blue;
+		}
 	}
-}
 
-.redactor-modal-delete-btn, #redactor-modal footer button.redactor-modal-delete-btn {
-	color: @white;
-	float: right;
-	font-size: 0px;
-	background: url(../../images/icons/delete-white.svg) center right no-repeat;
-	background-size: 24px 24px;
-	width: 24px !important;
-	height: 24px;
-	min-width: 0px;
-	margin-right: 0px;
-
-
-	&:hover {
+	.redactor-modal-delete-btn, #redactor-modal footer button.redactor-modal-delete-btn {
 		color: @white;
 		float: right;
 		font-size: 0px;
@@ -224,8 +213,22 @@ label {
 		height: 24px;
 		min-width: 0px;
 		margin-right: 0px;
+
+
+		&:hover {
+			color: @white;
+			float: right;
+			font-size: 0px;
+			background: url(../../images/icons/delete-white.svg) center right no-repeat;
+			background-size: 24px 24px;
+			width: 24px !important;
+			height: 24px;
+			min-width: 0px;
+			margin-right: 0px;
+		}
 	}
 }
+
 
 .redactor-modal-action-btn,  #redactor-modal footer button.redactor-modal-action-btn {
 	.aqua-background-link();
@@ -240,15 +243,18 @@ label {
 	padding: 0 50px 35px;
 }
 
-.redactor-modal-delete-btn, #redactor-modal footer button {
-	width: auto !important;
-	min-width: 133px;
-	margin-right: 5px;
+body.mata-cms {
+	.redactor-modal-delete-btn, #redactor-modal footer button {
+		width: auto !important;
+		min-width: 133px;
+		margin-right: 5px;
 
-	&:last-child {
-		margin-right: 0px;
+		&:last-child {
+			margin-right: 0px;
+		}
 	}
 }
+
 
 .redactor-clip-link, #redactor-modal #redactor-modal-list a.redactor-clip-link {
 	border-radius: 2px;
