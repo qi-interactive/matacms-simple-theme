@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.0.9.7-alpha, November 30, 2015
+
+- Styling changes.
+
 ## 1.0.9.6-alpha, October 13, 2015
 
 - Updated language.js
