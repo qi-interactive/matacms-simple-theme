@@ -15,7 +15,7 @@ $bundle = ModuleAsset::register($this);
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?= Html::csrfMetaTags() ?>
 	<title><?= Html::encode($this->title) ?></title>
-	<script src="//use.typekit.net/xnl0kun.js"></script>
+	<script src="//use.typekit.net/<?= \matacms\theme\simple\Theme::getTypeKitCode() ?>.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	<?php $this->head() ?>
 	<link rel="icon" href="<?= $bundle->baseUrl ?>/images/favicon/mata-logo-favicon.png" type="image/png" />

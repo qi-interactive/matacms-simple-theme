@@ -16,7 +16,7 @@ $bundle = ThemeAsset::register($this);
 	<?= Html::csrfMetaTags() ?>
 	<title><?= Html::encode($this->title) ?></title>
 
-	<script src="//use.typekit.net/xnl0kun.js"></script>
+	<script src="//use.typekit.net/<?= \matacms\theme\simple\Theme::getTypeKitCode() ?>.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 
 	<?php $this->head() ?>
