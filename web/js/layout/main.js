@@ -171,13 +171,21 @@ $(window).ready(function() {
 		addHeightToContainer(that);
 	});
 
+	mata.simpleTheme.adjustIframeHeight();
+
+
+});
+
+mata.simpleTheme.iframe.load(function() {
+	mata.simpleTheme.adjustIframeHeight();
+});
+
+mata.simpleTheme.adjustIframeHeight = function() {
 	$(window).resize(function() {
 		that = $(this);
 		addHeightToContainer(that)
 	}).resize();
-
-
-});
+}
 
 
 function addHeightToContainer(that) {
@@ -187,6 +195,3 @@ function addHeightToContainer(that) {
 		$('#container').height(that.height() - $('.cd-header').outerHeight(true));
 	}
 }
-
-
-

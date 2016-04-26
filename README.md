@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.0.9.9-alpha, April 26, 2016
+
+- Fix for container height
+
 ## 1.0.9.8-alpha, March 2, 2016
 
 - Added MATACMS_TYPEKIT_CODE as a Setting for Typekit in layouts
