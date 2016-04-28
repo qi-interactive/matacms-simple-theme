@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.1.0.0-alpha, April 28, 2016
+
+- Styling updates for carousels
+
 ## 1.0.9.9-alpha, April 26, 2016
 
 - Fix for container height
