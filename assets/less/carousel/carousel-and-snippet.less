@@ -41,6 +41,14 @@
 .sortable.grid li {
 	float: none;
 	vertical-align: middle;
+
+	&.sortable-dragging {
+
+		.grid-item {
+			position: initial;
+		}
+
+	}
 }
 
 .carousel-view {
@@ -68,16 +76,6 @@
 	list-style: none;
 	text-align: center;
 	display: block;
-}
-
-.img-container {
-	height: 100%;
-	// display: table-cell;
-	// vertical-align: middle;
-	-webkit-transition: opacity 0.45s;
-	transition: opacity 0.45s;
-	width: 100%;
-
 }
 
 /* Common style */
@@ -154,6 +152,14 @@
 figure.effect-winston {
 	background: @alice-blue;
 	text-align: left;
+	position: initial;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	-webkit-transition: opacity 0.45s;
+	transition: opacity 0.45s;
 }
 
 figure.effect-winston img {
@@ -251,34 +257,44 @@ figure.effect-winston p a span{
 	transform: translate3d(0,-50px,0);
 }
 
-figure.effect-winston:hover .img-container {
+div.img-container {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	-webkit-transition: opacity 0.45s;
+	transition: opacity 0.45s;
+}
+
+figure.effect-winston.hover .img-container {
 	opacity: 0.8;
 }
 
-figure.effect-winston:hover .caption-text {
+figure.effect-winston.hover .caption-text {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 	bottom: 0px;
 }
 
-figure.effect-winston:hover figcaption::before {
+figure.effect-winston.hover figcaption::before {
 	opacity: 0.8;
 	-webkit-transform: rotate3d(0,0,1,30deg);
 	transform: rotate3d(0,0,1,30deg);
 }
 
-figure.effect-winston:hover p span {
+figure.effect-winston.hover p span {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 
-figure.effect-winston:hover p a:last-child span {
+figure.effect-winston.hover p a:last-child span {
 	-webkit-transition-delay: 0.15s;
 	transition-delay: 0.15s;
 }
 
-figure.effect-winston:hover p a:first-child span {
+figure.effect-winston.hover p a:first-child span {
 	-webkit-transition-delay: 0.25s;
 	transition-delay: 0.25s;
 }
@@ -354,5 +370,3 @@ figure.effect-winston:hover p a:first-child span {
 
 
 @import "carousel-and-snippet_mobile.less";
-
-
