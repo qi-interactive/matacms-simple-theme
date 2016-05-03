@@ -1,25 +1,24 @@
 .sortable li,.sortable li:focus,.sortable li:hover{background-color:#343C55}
+.carousel-view ul,.sortable li{margin-bottom:0}
+.carousel-view,.carousel-view ul,.grid-item figure{text-align:center}
 .grid-item figure,.sortable li{cursor:pointer;overflow:hidden}
-.sortable li{border:0;float:none;display:inline-block;padding:0;margin-bottom:0;width:200px;height:200px;margin-top:8px}
+.sortable li{border:0;float:none;display:inline-block;padding:0;width:200px;height:200px;margin-top:8px}
 .sortable li:focus .hi-icon:after,.sortable li:hover .hi-icon:after{-webkit-transform:scale(.85);-moz-transform:scale(.85);-ms-transform:scale(.85);transform:scale(.85)}
 .sortable li:hover .icons-container:before{opacity:.7;-webkit-transform:rotate3d(0,0,1,20deg);transform:rotate3d(0,0,1,20deg)}
 .sortable.grid{font-size:0}
 .sortable.grid li{float:none;vertical-align:middle}
 .sortable.grid li.sortable-dragging .grid-item{position:initial}
-.grid-item,.grid-item figure,.sortable.grid li .grid-item{position:relative;text-align:center;width:100%;height:100%}
-.carousel-view{text-align:center}
-.carousel-view ul{text-align:center;margin-bottom:0}
 #add-media{width:100%;height:100%;display:table}
-.grid-item,.sortable.grid li .grid-item{clear:both;margin:0 auto;max-width:100%;list-style:none;display:block}
-.grid-item figure{float:left;background:#fff;display:table}
+.grid-item,.sortable.grid li .grid-item{position:relative;clear:both;margin:0 auto;height:200px;width:200px;list-style:none;text-align:center;display:block}
+.grid-item figure{position:relative;float:left;height:100%;width:100%;background:#fff;display:table}
 .grid-item figure img,.sortable.grid li .grid-item img{display:block;max-width:100%;position:absolute;margin:auto;top:0;left:0;right:0;bottom:0;max-height:none}
-.grid-item figure figcaption{padding:0;color:#343C55;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+.grid-item figure figcaption{padding:0;color:#343C55;-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:hidden}
 .grid-item figure figcaption::after,.grid-item figure figcaption::before{pointer-events:none}
 .grid-item figure figcaption,.grid-item figure figcaption>a{position:absolute;top:0;left:0;width:100%;height:100%}
 .grid-item figure figcaption>a{z-index:1000;text-indent:200%;white-space:nowrap;font-size:0;opacity:0}
 .grid-item figure .caption-text,.grid-item figure p{margin:0}
 .grid-item figure p{letter-spacing:1px;font-size:68.5%}
-figure.effect-winston{background:center no-repeat #D5DEEB;text-align:left;position:initial;background-size:contain;width:200px;height:200px;-webkit-transition:opacity .45s;transition:opacity .45s}
+figure.effect-winston{background:center no-repeat #D5DEEB;text-align:left;position:initial;background-size:contain;-webkit-transition:opacity .45s;transition:opacity .45s;overflow:hidden}
 figure.effect-winston img{-webkit-transition:opacity .45s;transition:opacity .45s;-webkit-backface-visibility:hidden;backface-visibility:hidden}
 figure.effect-winston figcaption::before{width:100%;height:100%;position:absolute;top:-187px;left:76px;background:url(../../images/carousel/triangle.svg) center center no-repeat;background-size:200px 200px;content:'';-webkit-transition:opacity .45s,-webkit-transform .45s;transition:opacity .45s,transform .45s;-webkit-transform:rotate3d(0,0,1,0deg);transform:rotate3d(0,0,1,0deg);-webkit-transform-origin:0 100%;transform-origin:0 100%;z-index:1}
 figure.effect-winston .caption-text{-webkit-transition:all .35s;transition:all .35s;-webkit-transform:translate3d(0,33px,0);transform:translate3d(0,33px,0);font-weight:500;font-size:12px;height:33px;width:100%;background:rgba(255,255,255,.8);padding:0 10px;position:absolute;bottom:0;overflow:hidden;z-index:1}

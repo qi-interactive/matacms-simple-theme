@@ -131,6 +131,11 @@ jQuery(document).ready(function($) {
 
 	//this function update the .cd-marker position
 	function updateSelectedNav(type) {
+
+
+		if($('.cd-selected').length == 0)
+			return;
+
 		var selectedItem = $('.cd-selected'),
 		selectedItemPosition = selectedItem.index() + 1,
 		leftPosition = selectedItem.offset().left,

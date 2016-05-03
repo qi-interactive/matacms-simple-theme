@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.1.0.2-alpha, May 2, 2016
+
+- Updated styling and javascript for carousels and snippets
+
 ## 1.1.0.1-alpha, April 28, 2016
 
 - Styling updates for carousels
