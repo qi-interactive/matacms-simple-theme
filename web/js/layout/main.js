@@ -200,3 +200,13 @@ function addHeightToContainer(that) {
 		$('#container').height(that.height() - $('.cd-header').outerHeight(true));
 	}
 }
+
+mata.getEntryDateOffset = function() {
+    var d = new Date();
+    var retVal = d.getTimezoneOffset() * -1 / 60;
+
+    if (retVal > 0 || retVal == 0)
+        retVal = "+" + retVal;
+
+    return retVal;
+}

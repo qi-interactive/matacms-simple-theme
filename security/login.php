@@ -87,7 +87,7 @@ $loginAsset = LoginAsset::register($this);
 			</span>
 			<!-- 	<div class="help-block"></div> -->
 			<?= $form->endField(); ?>
-
+			<input type="hidden" name="<?= Html::getInputName($model, 'offsetFromUTC'); ?>" />
 			<div class="row" id="submit-remember-me-container">
 				<div class="five columns">
 					<?= $form->field($model, 'rememberMe')->checkbox(['label'=>'<div></div><span>'.$model->getAttributeLabel('rememberMe'). '</span>', 'tabindex'=>"4"]) ?>
@@ -113,3 +113,9 @@ $loginAsset = LoginAsset::register($this);
 		'baseAuthUrl' => ['/user/security/auth']
 		]) ?>
 	</div>
+
+<?php
+$this->registerJs("
+	$('[name=\"" . Html::getInputName($model, 'offsetFromUTC') . "\"]').val(mata.getEntryDateOffset());
+");
+?>

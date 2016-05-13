@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.1.0.3-alpha, May 13, 2016
+
+- Added collection of user's offsetFromUTC on login
+
 ## 1.1.0.2-alpha, May 2, 2016
 
 - Updated styling and javascript for carousels and snippets
