@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.1.0.4-alpha, June 8, 2016
+
+- Styling update for selectize
+
 ## 1.1.0.3-alpha, May 13, 2016
 
 - Added collection of user's offsetFromUTC on login
