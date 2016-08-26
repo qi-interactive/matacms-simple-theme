@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.1.0.5-alpha, August 26, 2016
+
+- Bugfix
+
 ## 1.1.0.4-alpha, June 8, 2016
 
 - Styling update for selectize
