@@ -7,18 +7,31 @@ $(window).ready(function() {
 	mata.form.trackFormChange();
 	mata.form.setFormGroups();
 
-	$('.back-btn', window.parent.document).on('click', function () {
-		return mata.form.checkFormChange();
+	$('.back-btn', window.parent.document).on('mousedown', function () {
+		if (mata.form.checkFormChange() == false) {
+
+            e.stopPropagation();
+            e.preventDefault();
+            return false;
+        }
 	});
 	$(window.parent.document).trigger('myCustomTrigger');
 });
 
 $(window.parent).on('popstate pushstate', function(e) {
-	return mata.form.checkFormChange();
+	if (mata.form.checkFormChange() == false) {
+        e.stopPropagation();
+        e.preventDefault();
+        return false;
+    }
 });
 
-$("#w0 a, #subnav-overlay a, .cd-3d-nav a", window.parent.document).on("click", function() {
-	return mata.form.checkFormChange();
+$("#w0 a, #subnav-overlay a, .cd-3d-nav a", window.parent.document).on("mousedown", function() {
+	if (mata.form.checkFormChange() == false) {
+        e.stopPropagation();
+        e.preventDefault();
+        return false;
+    }
 });
 
 mata.form.trackFormChange = function() {

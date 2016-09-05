@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.1.0.6-alpha, September 5, 2016
+
+- Updated js/layout/forms.js
+
 ## 1.1.0.5-alpha, August 26, 2016
 
 - Bugfix
