@@ -28,11 +28,9 @@ $(window).ready(function() {
 })
 
 mata.simpleTheme.navigator.navigate = function(href) {
-
+	mata.simpleTheme.iframe.attr("src", href);
 	mata.simpleTheme.navigator.updateURL(href)
 	mata.simpleTheme.ajaxLoader.run();
-
-	mata.simpleTheme.iframe.attr("src", href);
 }
 
 mata.simpleTheme.navigator.updateURL = function(href) {

@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.1.0.7-alpha, September 27, 2016
+
+- Navigation fix for Firefox
+
 ## 1.1.0.6-alpha, September 5, 2016
 
 - Updated js/layout/forms.js
