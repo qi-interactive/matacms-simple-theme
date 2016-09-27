@@ -28,9 +28,14 @@ $(window).ready(function() {
 })
 
 mata.simpleTheme.navigator.navigate = function(href) {
-	mata.simpleTheme.iframe.attr("src", href);
+
 	mata.simpleTheme.navigator.updateURL(href)
 	mata.simpleTheme.ajaxLoader.run();
+	mata.simpleTheme.iframe.attr("src", href);
+	/**
+	 *  Firefox does not refresh content automatically, the below will force-refresh the iframe.
+	 */
+	mata.simpleTheme.iframe[0].contentDocument.location.href = href;
 }
 
 mata.simpleTheme.navigator.updateURL = function(href) {

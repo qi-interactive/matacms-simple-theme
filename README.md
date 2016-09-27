@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.1.0.8-alpha, September 27, 2016
+
+- Navigation fix for Firefox
+
 ## 1.1.0.7-alpha, September 27, 2016
 
 - Navigation fix for Firefox
