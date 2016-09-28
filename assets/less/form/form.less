@@ -165,6 +165,10 @@ input, textarea, input.form-control, .selectize-input, .selectize-dropdown, text
 	}
 }
 
+input, input.form-control, .selectize-input {
+	padding: 0 13px;
+}
+
 body.mata-cms {
 	.redactor-editor, .redactor-box, .redactor-box textarea, #redactor-modal input[type="text"], #redactor-modal input[type="password"], #redactor-modal input[type="email"], #redactor-modal input[type="url"] {
 		background: @alice-blue;
@@ -180,6 +184,10 @@ body.mata-cms {
 		&:focus {
 			outline: none;
 		}
+	}
+
+	#redactor-modal input[type="text"], #redactor-modal input[type="password"], #redactor-modal input[type="email"], #redactor-modal input[type="url"] {
+		padding: 0 13px;
 	}
 }
 
@@ -1179,6 +1187,13 @@ body.mata-cms {
 		background-color: @alice-blue;
 		padding: 13px;
 		border-radius: 2px;
+	}
+
+	#redactor-modal input[type="text"],
+	#redactor-modal input[type="password"],
+	#redactor-modal input[type="email"],
+	#redactor-modal input[type="url"] {
+		padding: 0 13px;
 	}
 
 }

@@ -19,6 +19,7 @@ label:hover input[type=checkbox]+div:before{opacity:1;-moz-transition:opacity .3
 .checkbox-wrapper,body.mata-cms #redactor-modal-box label.checkbox-wrapper{padding-left:0}
 .module-entry-detail-view .table.detail-view tbody tr td,.module-entry-detail-view section .event-label,.selectize-dropdown,.selectize-input,input,input.form-control,textarea,textarea.form-control{font-weight:600;background:#D5DEEB;outline:0;font-size:18px;color:#343C55;margin:0;padding:13px;border:none;-webkit-appearance:none;border-radius:2px}
 .module-entry-detail-view .table.detail-view tbody tr td:focus,.module-entry-detail-view section .event-label:focus,.selectize-dropdown:focus,.selectize-input:focus,input.form-control:focus,input:focus,textarea.form-control:focus,textarea:focus{outline:0}
+.selectize-input,input,input.form-control{padding:0 13px}
 body.mata-cms #redactor-modal input[type=text],body.mata-cms #redactor-modal input[type=password],body.mata-cms #redactor-modal input[type=email],body.mata-cms #redactor-modal input[type=url],body.mata-cms .redactor-box,body.mata-cms .redactor-box textarea,body.mata-cms .redactor-editor{background:#D5DEEB;outline:0;font-size:14px;color:#343C55;margin:0;padding:13px;border:none;-webkit-appearance:none;border-radius:2px}
 body.mata-cms #redactor-modal input[type=text]:focus,body.mata-cms #redactor-modal input[type=password]:focus,body.mata-cms #redactor-modal input[type=email]:focus,body.mata-cms #redactor-modal input[type=url]:focus,body.mata-cms .redactor-box textarea:focus,body.mata-cms .redactor-box:focus,body.mata-cms .redactor-editor:focus{outline:0}
 .module-calendar section .event-label,input,input.form-control{height:38px}
@@ -184,6 +185,7 @@ body.mata-cms .redactor-toolbar-tooltip{background:#9FA7B7;color:#343C55}
 .tooltip-inner{background-color:#9fa7b7;color:#343c55}
 body.mata-cms #redactor-modal input[type=text]:focus,body.mata-cms #redactor-modal input[type=password]:focus,body.mata-cms #redactor-modal input[type=email]:focus,body.mata-cms #redactor-modal input[type=url]:focus,body.mata-cms #redactor-modal textarea:focus{border-color:transparent;box-shadow:none}
 body.mata-cms #redactor-modal textarea{border:0;box-shadow:none;background-color:#D5DEEB;padding:13px;border-radius:2px}
+body.mata-cms #redactor-modal input[type=text],body.mata-cms #redactor-modal input[type=password],body.mata-cms #redactor-modal input[type=email],body.mata-cms #redactor-modal input[type=url]{padding:0 13px}
 @media (max-width:768px){.form-group.partial-max-width-item{width:100%}
 .form-group.partial-max-width-item:last-child{margin-left:0}
 }
