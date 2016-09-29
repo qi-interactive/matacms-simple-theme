@@ -13,7 +13,7 @@ mata.simpleTheme.navigator.handleLink = function() {
 }
 
 $(window).ready(function() {
-	$("#w0 a, #subnav-overlay a").on("click", mata.simpleTheme.navigator.handleLink);
+	$(document).on("click", "#w0 a, #subnav-overlay a", mata.simpleTheme.navigator.handleLink);
 
 	mata.simpleTheme.iframe.on("load", function() {
 		mata.simpleTheme.iframe.trigger(mata.simpleTheme.events.IFRAME_LOADED);

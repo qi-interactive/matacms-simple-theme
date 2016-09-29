@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.1.1.0-alpha, September 29, 2016
+
+- Bug fixes 
+
 ## 1.1.0.9-alpha, September 28, 2016
 
 - Styling fixes for inputs

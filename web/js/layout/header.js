@@ -4,7 +4,7 @@ mata.simpleTheme.header = {};
 
 $(window).ready(function() {
 
-	$("#header-inner-container .back-btn").on("click", mata.simpleTheme.navigator.handleLink);
+	$(document).on("click", "#header-inner-container .back-btn", mata.simpleTheme.navigator.handleLink);
 
 })
 
