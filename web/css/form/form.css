@@ -122,6 +122,7 @@ body.mata-cms .redactor-dropdown.redactor-dropdown-box-link{background:#9FA7B7}
 #upload-image-container-modal .qq-upload-spinner.success{background:#78b572}
 #add-media-container .qq-upload-spinner{top:0}
 .qq-upload-button{height:200px;width:200px;background:#343C55;outline:0;padding:0;display:table;margin:0 auto;border:0}
+.qq-upload-button input[qq-button-id]{width:100%}
 .qq-upload-button .hi-icon{z-index:0}
 .qq-upload-button:hover .hi-icon:after{-webkit-transform:scale(.85);-moz-transform:scale(.85);-ms-transform:scale(.85);transform:scale(.85)}
 .btn.btn-info{margin-left:-3px}
