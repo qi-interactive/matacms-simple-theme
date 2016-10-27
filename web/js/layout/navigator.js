@@ -13,7 +13,7 @@ mata.simpleTheme.navigator.handleLink = function() {
 }
 
 $(window).ready(function() {
-	$("#w0 a, #subnav-overlay a").on("click", mata.simpleTheme.navigator.handleLink);
+	$(document).on("click", "#w0 a, #subnav-overlay a", mata.simpleTheme.navigator.handleLink);
 
 	mata.simpleTheme.iframe.on("load", function() {
 		mata.simpleTheme.iframe.trigger(mata.simpleTheme.events.IFRAME_LOADED);
@@ -31,8 +31,11 @@ mata.simpleTheme.navigator.navigate = function(href) {
 
 	mata.simpleTheme.navigator.updateURL(href)
 	mata.simpleTheme.ajaxLoader.run();
-
 	mata.simpleTheme.iframe.attr("src", href);
+	/**
+	 *  Firefox does not refresh content automatically, the below will force-refresh the iframe.
+	 */
+	mata.simpleTheme.iframe[0].contentDocument.location.href = href;
 }
 
 mata.simpleTheme.navigator.updateURL = function(href) {

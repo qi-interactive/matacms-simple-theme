@@ -16,8 +16,8 @@ jQuery(document).ready(function($) {
 	//select a new item from the 3d navigation
 
 
-	$('.cd-3d-nav a').on('click', function(e) {
-
+	$(document).on('click', '.cd-3d-nav a', function(e) {
+		console.log(1)
 		if ($(this).attr("data-subnav") != null) {
 			showSubnav($(this).attr("data-subnav"))
 			e.stopPropagation();
@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
 	})
 
 
-	$('.cd-3d-nav a').on('mouseover', function(e) {
+	$(document).on('mouseover', '.cd-3d-nav a', function(e) {
 		var selected = $(this);
 		selected.parent('li').addClass('cd-selected').siblings('li').removeClass('cd-selected');
 		updateSelectedNav();

@@ -7,14 +7,12 @@ $(window).ready(function() {
 	mata.form.trackFormChange();
 	mata.form.setFormGroups();
 
-	$('.back-btn', window.parent.document).on('mousedown', function () {
+	$('.back-btn', parent.document).on('click', function (e) {
 		if (mata.form.checkFormChange() == false) {
-
-            e.stopPropagation();
-            e.preventDefault();
             return false;
         }
 	});
+
 	$(window.parent.document).trigger('myCustomTrigger');
 });
 
@@ -26,13 +24,29 @@ $(window.parent).on('popstate pushstate', function(e) {
     }
 });
 
-$("#w0 a, #subnav-overlay a, .cd-3d-nav a", window.parent.document).on("mousedown", function() {
+// $("#w0 a, #subnav-overlay a, .cd-3d-nav a", parent.document).on("click", function(e) {
+// 	if (mata.form.checkFormChange() == false) {
+// 		console.log(this, 'click', false)
+// 		e.stopPropagation();
+// 		e.preventDefault();
+//         return false;
+//     }
+// });
+
+$(".cd-3d-nav a", parent.document).on("click", function(e) {
 	if (mata.form.checkFormChange() == false) {
-        e.stopPropagation();
-        e.preventDefault();
-        return false;
-    }
+		return false;
+	}
 });
+
+// $(".cd-3d-nav a", parent.document).on("mouseover mouseout", function(e) {
+// 	if (mata.form.hasChanged) {
+// 		console.log(this, e, false)
+// 		e.stopPropagation();
+// 		e.preventDefault();
+//         return false;
+//     }
+// });
 
 mata.form.trackFormChange = function() {
 	$('.container form input, .container form select, .container form textarea').on("change keyup paste", function() {
