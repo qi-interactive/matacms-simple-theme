@@ -32,9 +32,11 @@ body.mata-cms .redactor-editor blockquote,body.mata-cms .redactor-editor div,bod
 .form-control,.form-control:focus{box-shadow:none}
 .has-success .form-control,.has-success .form-control:focus,.selectize-input.focus,.selectize-input:focus{box-shadow:none;border:0;outline:0}
 .btn,.btn[type=submit],button,button.btn-primary{background:#4EB7CD;border:0;border-radius:2px;font-weight:700;letter-spacing:0;font-size:14px;outline:0;min-height:38px;padding:8px 20px;width:auto;display:inline-block;color:#fff;text-transform:uppercase}
-.btn:hover,.btn[type=submit]:hover,button.btn-primary:hover,button:hover{background:#539FB8}
+.btn:active:hover,.btn:focus:hover,.btn:hover,.btn[type=submit]:active:hover,.btn[type=submit]:focus:hover,.btn[type=submit]:hover,button.btn-primary:active:hover,button.btn-primary:focus:hover,button.btn-primary:hover,button:active:hover,button:focus:hover,button:hover{background:#539FB8}
+.btn:active,.btn:active:focus,.btn:focus,.btn[type=submit]:active,.btn[type=submit]:active:focus,.btn[type=submit]:focus,button.btn-primary:active,button.btn-primary:active:focus,button.btn-primary:focus,button:active,button:active:focus,button:focus{background:#4EB7CD}
 body.mata-cms #redactor-modal footer button.redactor-modal-action-btn,body.mata-cms #redactor-modal footer button.redactor-modal-close-btn,body.mata-cms #redactor-modal footer button.redactor-modal-delete-btn,body.mata-cms .redactor-modal-action-btn,body.mata-cms .redactor-modal-close-btn,body.mata-cms .redactor-modal-delete-btn{background:#4EB7CD;border:0;border-radius:2px;font-weight:700;letter-spacing:0;font-size:14px;outline:0;min-height:38px;padding:8px 20px;width:auto;display:inline-block;color:#fff;text-transform:uppercase}
-body.mata-cms #redactor-modal footer button.redactor-modal-action-btn:hover,body.mata-cms #redactor-modal footer button.redactor-modal-close-btn:hover,body.mata-cms #redactor-modal footer button.redactor-modal-delete-btn:hover,body.mata-cms .redactor-modal-action-btn:hover,body.mata-cms .redactor-modal-close-btn:hover,body.mata-cms .redactor-modal-delete-btn:hover{background:#539FB8}
+body.mata-cms #redactor-modal footer button.redactor-modal-action-btn:active:hover,body.mata-cms #redactor-modal footer button.redactor-modal-action-btn:focus:hover,body.mata-cms #redactor-modal footer button.redactor-modal-action-btn:hover,body.mata-cms #redactor-modal footer button.redactor-modal-close-btn:active:hover,body.mata-cms #redactor-modal footer button.redactor-modal-close-btn:focus:hover,body.mata-cms #redactor-modal footer button.redactor-modal-close-btn:hover,body.mata-cms #redactor-modal footer button.redactor-modal-delete-btn:active:hover,body.mata-cms #redactor-modal footer button.redactor-modal-delete-btn:focus:hover,body.mata-cms #redactor-modal footer button.redactor-modal-delete-btn:hover,body.mata-cms .redactor-modal-action-btn:active:hover,body.mata-cms .redactor-modal-action-btn:focus:hover,body.mata-cms .redactor-modal-action-btn:hover,body.mata-cms .redactor-modal-close-btn:active:hover,body.mata-cms .redactor-modal-close-btn:focus:hover,body.mata-cms .redactor-modal-close-btn:hover,body.mata-cms .redactor-modal-delete-btn:active:hover,body.mata-cms .redactor-modal-delete-btn:focus:hover,body.mata-cms .redactor-modal-delete-btn:hover{background:#539FB8}
+body.mata-cms #redactor-modal footer button.redactor-modal-action-btn:active,body.mata-cms #redactor-modal footer button.redactor-modal-action-btn:active:focus,body.mata-cms #redactor-modal footer button.redactor-modal-action-btn:focus,body.mata-cms #redactor-modal footer button.redactor-modal-close-btn:active,body.mata-cms #redactor-modal footer button.redactor-modal-close-btn:active:focus,body.mata-cms #redactor-modal footer button.redactor-modal-close-btn:focus,body.mata-cms #redactor-modal footer button.redactor-modal-delete-btn:active,body.mata-cms #redactor-modal footer button.redactor-modal-delete-btn:active:focus,body.mata-cms #redactor-modal footer button.redactor-modal-delete-btn:focus,body.mata-cms .redactor-modal-action-btn:active,body.mata-cms .redactor-modal-action-btn:active:focus,body.mata-cms .redactor-modal-action-btn:focus,body.mata-cms .redactor-modal-close-btn:active,body.mata-cms .redactor-modal-close-btn:active:focus,body.mata-cms .redactor-modal-close-btn:focus,body.mata-cms .redactor-modal-delete-btn:active,body.mata-cms .redactor-modal-delete-btn:active:focus,body.mata-cms .redactor-modal-delete-btn:focus{background:#4EB7CD}
 .btn[type=submit]{margin-right:8px;height:45px;padding:5px 17px;text-transform:uppercase;min-width:130px;line-height:37px}
 body.mata-cms #redactor-image-editter{margin-right:0;text-align:center;font-size:0;background-repeat:no-repeat;background-position:center;background-size:contain;background-color:transparent}
 body.mata-cms #redactor-image-editter .hi-icon{box-shadow:0 0 0 2px #4EB7CD}
@@ -113,7 +115,8 @@ body.mata-cms .redactor-dropdown.redactor-dropdown-box-link{background:#9FA7B7}
 .form-group{float:none;clear:both;position:relative}
 .form-group .hint-block{position:absolute;top:5px;right:5px;background-image:url(../../images/icons/hint-small.svg);background-size:18px 18px;background-repeat:no-repeat;width:18px;height:18px}
 .btn.btn-info{background:#A28DDF;font-size:14px}
-.btn.btn-info:hover{background:#8376b4}
+.btn.btn-info:active:hover,.btn.btn-info:focus:hover,.btn.btn-info:hover{background:#8376b4}
+.btn.btn-info:active,.btn.btn-info:active:focus,.btn.btn-info:focus{background:#A28DDF}
 #upload-image-container-modal .qq-upload-button{height:100%;width:inherit;padding:0;border-bottom:none}
 #upload-image-container-modal .qq-upload-drop-area,#upload-image-container-modal .qq-upload-extra-drop-area{background:#343C55;color:#A28DDF;border:3px dashed #A28DDF;border-radius:2px}
 #upload-image-container-modal .qq-upload-drop-area span,#upload-image-container-modal .qq-upload-extra-drop-area span{font-weight:700;font-size:16px}
@@ -127,13 +130,17 @@ body.mata-cms .redactor-dropdown.redactor-dropdown-box-link{background:#9FA7B7}
 .qq-upload-button:hover .hi-icon:after{-webkit-transform:scale(.85);-moz-transform:scale(.85);-ms-transform:scale(.85);transform:scale(.85)}
 .btn.btn-info{margin-left:-3px}
 .btn.publish-btn{background-color:#55C45F}
-.btn.publish-btn:hover{background-color:#469450}
+.btn.publish-btn:active:hover,.btn.publish-btn:focus:hover,.btn.publish-btn:hover{background-color:#469450}
+.btn.publish-btn:active,.btn.publish-btn:active:focus,.btn.publish-btn:focus{background-color:#55C45F}
 .btn.schedule-btn{background-color:#C96AA4}
-.btn.schedule-btn:hover{background-color:#9E5D8B}
+.btn.schedule-btn:active:hover,.btn.schedule-btn:focus:hover,.btn.schedule-btn:hover{background-color:#9E5D8B}
+.btn.schedule-btn:active,.btn.schedule-btn:active:focus,.btn.schedule-btn:focus{background-color:#C96AA4}
 .btn.review-btn{background:#D6915E}
-.btn.review-btn:hover{background:#AA7C5d}
+.btn.review-btn:active:hover,.btn.review-btn:focus:hover,.btn.review-btn:hover{background:#AA7C5d}
+.btn.review-btn:active,.btn.review-btn:active:focus,.btn.review-btn:focus{background:#D6915E}
 .btn.cancel.btn{background:#FF6B6B}
-.btn.cancel.btn:hover{background:#BD5659}
+.btn.cancel.btn:active:hover,.btn.cancel.btn:focus:hover,.btn.cancel.btn:hover{background:#BD5659}
+.btn.cancel.btn:active,.btn.cancel.btn:active:focus,.btn.cancel.btn:focus{background:#FF6B6B}
 .selectize-control.plugin-remove_button [data-value] .remove{width:25px;line-height:28px}
 .qq-progress-bar-container-selector{background-image:none!important;display:none!important}
 .qq-upload-spinner{height:3px;width:0;background:#b471a3;-webkit-transition:width .4s;transition:width .4s;opacity:1;display:block!important;position:absolute;top:-31px}
@@ -176,7 +183,8 @@ img.current-media{margin-bottom:10px}
 .datetimepicker-field-wrapper{position:relative}
 body.mata-cms .redactor-toolbar{position:relative!important;top:0!important;width:auto!important;text-align:left}
 .btn-danger,.btn.btn-danger{background:#FF6B6B}
-.btn-danger:hover,.btn.btn-danger:hover{background:#BD5659}
+.btn-danger:active:hover,.btn-danger:focus:hover,.btn-danger:hover,.btn.btn-danger:active:hover,.btn.btn-danger:focus:hover,.btn.btn-danger:hover{background:#BD5659}
+.btn-danger:active,.btn-danger:active:focus,.btn-danger:focus,.btn.btn-danger:active,.btn.btn-danger:active:focus,.btn.btn-danger:focus{background:#FF6B6B}
 body.mata-cms #redactor-modal-box label{color:#fff;text-align:left;padding:5px 13px 3px;margin:0!important}
 body.mata-cms #redactor-droparea-placeholder{color:#fff}
 body.mata-cms #redactor-image-box{outline:#8376b4 dashed 2px}

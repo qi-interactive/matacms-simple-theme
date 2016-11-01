@@ -25,7 +25,9 @@ body.mata-cms #redactor-modal footer button.redactor-modal-close-btn,body.mata-c
 body.mata-cms #redactor-modal footer button.redactor-modal-close-btn:hover,body.mata-cms .redactor-modal-close-btn:hover{opacity:.7;background:#5F6885;color:#212635}
 body.mata-cms #redactor-modal footer button.redactor-modal-delete-btn,body.mata-cms #redactor-modal footer button.redactor-modal-delete-btn:hover,body.mata-cms .redactor-modal-delete-btn,body.mata-cms .redactor-modal-delete-btn:hover{color:#fff;float:right;font-size:0;background:url(../../images/icons/delete-white.svg) center right no-repeat;background-size:24px 24px;width:24px!important;height:24px;min-width:0;margin-right:0}
 #redactor-modal footer button.redactor-modal-action-btn,.redactor-modal-action-btn{background:#4EB7CD;color:#fff}
-#redactor-modal footer button.redactor-modal-action-btn:hover,.redactor-modal-action-btn:hover{background:#539FB8;color:#fff}
+#redactor-modal footer button.redactor-modal-action-btn:active:hover,#redactor-modal footer button.redactor-modal-action-btn:focus:hover,#redactor-modal footer button.redactor-modal-action-btn:hover,.redactor-modal-action-btn:active:hover,.redactor-modal-action-btn:focus:hover,.redactor-modal-action-btn:hover{background:#539FB8}
+#redactor-modal footer button.redactor-modal-action-btn:active,#redactor-modal footer button.redactor-modal-action-btn:active:focus,#redactor-modal footer button.redactor-modal-action-btn:focus,.redactor-modal-action-btn:active,.redactor-modal-action-btn:active:focus,.redactor-modal-action-btn:focus{background:#4EB7CD}
+#redactor-modal footer button.redactor-modal-action-btn:hover,.redactor-modal-action-btn:hover{color:#fff}
 #redactor-modal footer,.redactor-modal-delete-btn{padding:0 50px 35px}
 body.mata-cms #redactor-modal footer button,body.mata-cms .redactor-modal-delete-btn{width:auto!important;min-width:133px;margin-right:5px}
 body.mata-cms #redactor-modal footer button:last-child,body.mata-cms .redactor-modal-delete-btn:last-child{margin-right:0}

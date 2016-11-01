@@ -10,22 +10,26 @@ html>body{background:#485274;display:table}
 #forgotten-password-bar .col-md-6,form#login-form label{padding-left:0;padding-right:0}
 #forgotten-password-bar{background:#212635;padding:24px 37px;margin:31px 0 0;text-align:left;font-weight:600}
 #forgotten-password-bar a{color:#9FA7B7;font-weight:600;line-height:26px}
-#forgotten-password-bar a:hover{color:#858B99;text-decoration:none}
+#forgotten-password-bar a:active:hover,#forgotten-password-bar a:focus:hover,#forgotten-password-bar a:hover{color:#858B99}
+#forgotten-password-bar a:active,#forgotten-password-bar a:active:focus,#forgotten-password-bar a:focus{color:#9FA7B7}
+#forgotten-password-bar a:hover{text-decoration:none}
 #forgotten-password-bar #footer-caption{color:#4D7877;font-size:12px;float:right}
 #forgotten-password-bar #footer-caption span{padding-right:5px}
 #forgotten-password-bar #footer-caption img{width:26px}
 #forgotten-password-bar #get-in-touch-container{font-size:14px;float:right;display:none;font-weight:600}
 #forgotten-password-bar #get-in-touch-container span{color:#9FA7B7;font-size:14px}
 #forgotten-password-bar #get-in-touch-container a{color:#FF6B6B;font-size:14px}
-#forgotten-password-bar #get-in-touch-container a:hover{color:#BD5659}
+#forgotten-password-bar #get-in-touch-container a:active:hover,#forgotten-password-bar #get-in-touch-container a:focus:hover,#forgotten-password-bar #get-in-touch-container a:hover{color:#BD5659}
+#forgotten-password-bar #get-in-touch-container a:active,#forgotten-password-bar #get-in-touch-container a:active:focus,#forgotten-password-bar #get-in-touch-container a:focus{color:#FF6B6B}
 #submit-remember-me-container{margin-top:39px}
 .form-group{margin-bottom:20px;background:0 0;height:auto;border-radius:0;padding:0}
 .form-group label{font-size:inherit}
 .field-login-form-rememberme{font-size:12px;color:#9FA7B7;font-weight:600;margin-top:13px;text-align:left}
-.field-login-form-rememberme:hover{color:#858B99}
+.field-login-form-rememberme:active:hover,.field-login-form-rememberme:focus:hover,.field-login-form-rememberme:hover{color:#858B99}
+.field-login-form-rememberme label span,.field-login-form-rememberme:active,.field-login-form-rememberme:active:focus,.field-login-form-rememberme:focus{color:#9FA7B7}
 .field-login-form-rememberme input,.field-login-form-rememberme label{cursor:pointer}
-.field-login-form-rememberme label span{color:#9FA7B7}
-.field-login-form-rememberme label span:hover{color:#858B99}
+.field-login-form-rememberme label span:active:hover,.field-login-form-rememberme label span:focus:hover,.field-login-form-rememberme label span:hover{color:#858B99}
+.field-login-form-rememberme label span:active,.field-login-form-rememberme label span:active:focus,.field-login-form-rememberme label span:focus{color:#9FA7B7}
 .field-login-form-rememberme label:hover input[type=checkbox]+div:before{opacity:1;-moz-transition:opacity .3s;-webkit-transition:opacity .3s;-o-transition:opacity .3s;-ms-transition:opacity .3s;transition:opacity .3s}
 form{margin-top:15px}
 #header-spacer{display:none;background:#343C55;width:100%;color:#FF6B6B;padding:15px 37px;font-size:14px;text-align:left;font-weight:700;border-bottom:2px solid #535d7c}
@@ -56,4 +60,5 @@ label input[type=checkbox]:checked+div{background:0 0}
 label input[type=checkbox]:checked+div:before{background-size:12px 12px;opacity:1;-moz-animation:show-b .3s;-webkit-animation:show-b .3s;-o-animation:show-b .3s;-ms-animation:show-b .3s;animation:show-b .3s}
 label input[type=checkbox]:checked+div .fa{opacity:1;-moz-animation:show-b .3s;-webkit-animation:show-b .3s;-o-animation:show-b .3s;-ms-animation:show-b .3s;animation:show-b .3s}
 .btn,.btn[type=submit],.qq-upload-button,button,button.btn-primary{background:#4EB7CD;border:0;border-radius:2px;font-weight:700;letter-spacing:0;font-size:15px;outline:0;min-height:38px;padding:8px 20px;width:auto;display:inline-block;line-height:normal}
-.btn:hover,.btn[type=submit]:hover,.qq-upload-button:hover,button.btn-primary:hover,button:hover{background:#539FB8}
+.btn:active:hover,.btn:focus:hover,.btn:hover,.btn[type=submit]:active:hover,.btn[type=submit]:focus:hover,.btn[type=submit]:hover,.qq-upload-button:active:hover,.qq-upload-button:focus:hover,.qq-upload-button:hover,button.btn-primary:active:hover,button.btn-primary:focus:hover,button.btn-primary:hover,button:active:hover,button:focus:hover,button:hover{background:#539FB8}
+.btn:active,.btn:active:focus,.btn:focus,.btn[type=submit]:active,.btn[type=submit]:active:focus,.btn[type=submit]:focus,.qq-upload-button:active,.qq-upload-button:active:focus,.qq-upload-button:focus,button.btn-primary:active,button.btn-primary:active:focus,button.btn-primary:focus,button:active,button:active:focus,button:focus{background:#4EB7CD}

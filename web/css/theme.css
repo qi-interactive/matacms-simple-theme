@@ -26,8 +26,10 @@ body.theme-simple.error-exception{background-color:#FF6B6B}
 .content-block-top-bar .top-bar-sort-by-container ul li a,.content-block-top-bar .top-bar-sort-by-container ul li:first-child{font-weight:600;font-size:12px;line-height:20px;padding:3px 21px 2px 5px}
 .content-block-top-bar .top-bar-sort-by-container ul li{display:inline-block}
 .content-block-top-bar .top-bar-sort-by-container ul li a{color:#9FA7B7;cursor:pointer;display:block}
-.content-block-top-bar .top-bar-sort-by-container ul li a.asc,.content-block-top-bar .top-bar-sort-by-container ul li a.desc,.content-block-top-bar .top-bar-sort-by-container ul li a:hover{color:#D5DEEB}
 .alert button.close,.content-block-top-bar .top-bar-sort-by-container ul li .sort-by-label.selected-ascending:after,.content-block-top-bar .top-bar-sort-by-container ul li .sort-by-label.selected-descending:after,.content-block-top-bar .top-bar-sort-by-container ul li:first-child.selected-ascending:after,.content-block-top-bar .top-bar-sort-by-container ul li:first-child.selected-descending:after{display:none}
+.content-block-top-bar .top-bar-sort-by-container ul li a:active:hover,.content-block-top-bar .top-bar-sort-by-container ul li a:focus:hover,.content-block-top-bar .top-bar-sort-by-container ul li a:hover{color:#858B99}
+.content-block-top-bar .top-bar-sort-by-container ul li a:active,.content-block-top-bar .top-bar-sort-by-container ul li a:active:focus,.content-block-top-bar .top-bar-sort-by-container ul li a:focus{color:#9FA7B7}
+.content-block-top-bar .top-bar-sort-by-container ul li a.asc,.content-block-top-bar .top-bar-sort-by-container ul li a.desc,.content-block-top-bar .top-bar-sort-by-container ul li a:hover{color:#D5DEEB}
 .content-block-top-bar .top-bar-sort-by-container ul li a:after{content:'';width:0;height:0;position:absolute;top:10px;margin-left:6px}
 .list-version-container:after,.list-version-container:before{content:"";width:21px;height:100%}
 .content-block-top-bar .top-bar-sort-by-container ul li a.asc:after{border-left:5px solid transparent;border-right:5px solid transparent;border-top:6px solid #D5DEEB}
@@ -42,18 +44,20 @@ body.theme-simple.error-exception{background-color:#FF6B6B}
 .cd-header{height:auto;padding:25px 0 55px}
 .cd-header .header-inner-container{max-width:900px;padding-right:15px;opacity:0;padding-left:15px;margin-right:auto;margin-left:auto}
 .cd-header .header-inner-container h1{font-size:26px;font-weight:700;color:#fff;max-width:75%;text-transform:uppercase;line-height:30px;display:inline-block}
-.back-btn,.back-btn:focus,.back-btn:hover{color:#9FA7B7}
 .cd-header .header-inner-container h1 span{text-transform:uppercase}
 .cd-header .header-inner-container .hi-icon-effect-2{display:inline-block;float:right;margin-top:5px}
 .cd-header .header-inner-container .hi-icon-effect-2 .hi-icon{box-shadow:0 0 0 2px #C96AA4}
 .cd-header .header-inner-container .hi-icon-effect-2 .hi-icon:before{background-image:url(../images/icons/versions.svg)}
 .cd-header .header-inner-container .hi-icon-effect-2 .hi-icon:after{background-color:#C96AA4}
 .cd-header #header-content-container{position:absolute;top:0;height:46px;right:5%}
-.back-btn{display:inline-block;font-weight:700;text-transform:uppercase;font-size:14px;padding-top:20px;position:relative;padding-left:20px}
+.back-btn{display:inline-block;color:#9FA7B7;font-weight:700;text-transform:uppercase;font-size:14px;padding-top:20px;position:relative;padding-left:20px}
+.back-btn:active:hover,.back-btn:focus:hover,.back-btn:hover{color:#858B99}
+.back-btn:active,.back-btn:active:focus,.back-btn:focus,.back-btn:hover{color:#9FA7B7}
 .back-btn svg{height:42px;position:absolute;left:-15px;top:5px}
 .list-version-container,.list-version-container:after,.list-version-container:before{position:absolute;top:0;cursor:pointer;z-index:1}
 .back-btn svg polyline{stroke:#9FA7B7!important}
-.back-btn:focus:hover,.back-btn:hover:hover{color:#858B99}
+.back-btn:focus:active:hover,.back-btn:focus:focus:hover,.back-btn:focus:hover,.back-btn:hover:active:hover,.back-btn:hover:focus:hover,.back-btn:hover:hover{color:#858B99}
+.back-btn:focus:active,.back-btn:focus:active:focus,.back-btn:focus:focus,.back-btn:hover:active,.back-btn:hover:active:focus,.back-btn:hover:focus{color:#9FA7B7}
 .back-btn:focus svg polyline,.back-btn:hover svg polyline{stroke:#858B99!important}
 .list-version-container{background-color:#55C45F;color:#fff;right:0;height:44px;display:table;padding:11px 13px 7px 28px;margin-right:-108px;transition:.25s all ease-in-out}
 .list-version-container .fadding-container{height:98%;background-image:linear-gradient(rgba(213,222,235,0) 0,#d5deeb 80%,#d5deeb 100%);left:-43px}
