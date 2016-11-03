@@ -195,6 +195,8 @@ body.mata-cms .redactor-toolbar-tooltip{background:#9FA7B7;color:#343C55}
 body.mata-cms #redactor-modal input[type=text]:focus,body.mata-cms #redactor-modal input[type=password]:focus,body.mata-cms #redactor-modal input[type=email]:focus,body.mata-cms #redactor-modal input[type=url]:focus,body.mata-cms #redactor-modal textarea:focus{border-color:transparent;box-shadow:none}
 body.mata-cms #redactor-modal textarea{border:0;box-shadow:none;background-color:#D5DEEB;padding:13px;border-radius:2px}
 body.mata-cms #redactor-modal input[type=text],body.mata-cms #redactor-modal input[type=password],body.mata-cms #redactor-modal input[type=email],body.mata-cms #redactor-modal input[type=url]{padding:0 13px}
+.file-uploader .fine-uploader{padding:5px;text-align:center}
+.file-uploader .fine-uploader .qq-upload-button,.file-uploader .fine-uploader .qq-upload-list{display:inline-table;vertical-align:top}
 @media (max-width:768px){.form-group.partial-max-width-item{width:100%}
 .form-group.partial-max-width-item:last-child{margin-left:0}
 }
