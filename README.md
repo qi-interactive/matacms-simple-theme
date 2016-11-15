@@ -20,6 +20,10 @@ Installation
 Changelog
 ---------
 
+## 1.1.1.2-alpha, November 11, 2016
+
+- Styling updates
+
 ## 1.1.1.1-alpha, October 27, 2016
 
 - Styling updates
