@@ -2,14 +2,14 @@
 .carousel-view ul,.sortable li{margin-bottom:0}
 .carousel-view,.carousel-view ul,.grid-item figure{text-align:center}
 .grid-item figure,.sortable li{cursor:pointer;overflow:hidden}
-.sortable li{border:0;float:none;display:inline-block;padding:0;width:200px;height:200px;margin-top:8px}
+.sortable li{border:0;float:none;display:inline-block;padding:0;width:175px;height:175px;margin-top:8px}
 .sortable li:focus .hi-icon:after,.sortable li:hover .hi-icon:after{-webkit-transform:scale(.85);-moz-transform:scale(.85);-ms-transform:scale(.85);transform:scale(.85)}
 .sortable li:hover .icons-container:before{opacity:.7;-webkit-transform:rotate3d(0,0,1,20deg);transform:rotate3d(0,0,1,20deg)}
 .sortable.grid{font-size:0}
 .sortable.grid li{float:none;vertical-align:middle}
 .sortable.grid li.sortable-dragging .grid-item{position:initial}
 #add-media{width:100%;height:100%;display:table}
-.grid-item,.sortable.grid li .grid-item{position:relative;clear:both;margin:0 auto;height:200px;width:200px;list-style:none;text-align:center;display:block}
+.grid-item,.sortable.grid li .grid-item{position:relative;clear:both;margin:0 auto;height:175px;width:175px;list-style:none;text-align:center;display:block}
 .grid-item figure{position:relative;float:left;height:100%;width:100%;background:#fff;display:table}
 .grid-item figure img,.sortable.grid li .grid-item img{display:block;max-width:100%;position:absolute;margin:auto;top:0;left:0;right:0;bottom:0;max-height:none}
 .grid-item figure figcaption{padding:0;color:#343C55;-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:hidden}
@@ -20,14 +20,14 @@
 .grid-item figure p{letter-spacing:1px;font-size:68.5%}
 figure.effect-winston{background:center no-repeat #D5DEEB;text-align:left;position:initial;background-size:contain;-webkit-transition:opacity .45s;transition:opacity .45s;overflow:hidden}
 figure.effect-winston img{-webkit-transition:opacity .45s;transition:opacity .45s;-webkit-backface-visibility:hidden;backface-visibility:hidden}
-figure.effect-winston figcaption::before{width:100%;height:100%;position:absolute;top:-187px;left:76px;background:url(../../images/carousel/triangle.svg) center center no-repeat;background-size:200px 200px;content:'';-webkit-transition:opacity .45s,-webkit-transform .45s;transition:opacity .45s,transform .45s;-webkit-transform:rotate3d(0,0,1,0deg);transform:rotate3d(0,0,1,0deg);-webkit-transform-origin:0 100%;transform-origin:0 100%;z-index:1}
+figure.effect-winston figcaption::before{width:100%;height:100%;position:absolute;top:-160px;left:76px;background:url(../../images/carousel/triangle.svg) center center no-repeat;background-size:175px 175px;content:'';-webkit-transition:opacity .45s,-webkit-transform .45s;transition:opacity .45s,transform .45s;-webkit-transform:rotate3d(0,0,1,0deg);transform:rotate3d(0,0,1,0deg);-webkit-transform-origin:0 100%;transform-origin:0 100%;z-index:1}
 figure.effect-winston .caption-text{-webkit-transition:all .35s;transition:all .35s;-webkit-transform:translate3d(0,33px,0);transform:translate3d(0,33px,0);font-weight:500;font-size:12px;height:33px;width:100%;background:rgba(255,255,255,.8);padding:0 10px;position:absolute;bottom:0;overflow:hidden;z-index:1}
 figure.effect-winston .caption-text span{white-space:nowrap;width:100%;display:block;overflow:hidden;line-height:36px}
 figure.effect-winston .caption-text .fadding-container{width:25px;background-image:linear-gradient(to left,rgba(255,255,255,.8) 100%,rgba(255,255,255,0) 80%,rgba(255,255,255,.8) 0)}
 figure.effect-winston p{position:absolute;right:0;top:0;padding:0 1.5em 7% 0;z-index:1}
 figure.effect-winston a{margin:0 10px;color:#343C55;font-size:170%}
 figure.effect-winston p a span{opacity:0;-webkit-transition:opacity .35s,-webkit-transform .35s;transition:opacity .35s,transform .35s;-webkit-transform:translate3d(0,-50px,0);transform:translate3d(0,-50px,0)}
-div.img-container{background-position:center;background-size:contain;background-repeat:no-repeat;width:200px;height:200px;-webkit-transition:opacity .45s;transition:opacity .45s}
+div.img-container{background-position:center;background-size:contain;background-repeat:no-repeat;width:175px;height:175px;-webkit-transition:opacity .45s;transition:opacity .45s}
 figure.effect-winston.hover .img-container{opacity:.8}
 figure.effect-winston.hover .caption-text{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);bottom:0}
 figure.effect-winston.hover figcaption::before{opacity:.8;-webkit-transform:rotate3d(0,0,1,30deg);transform:rotate3d(0,0,1,30deg)}
@@ -40,7 +40,7 @@ figure.effect-winston.hover p a:first-child span{-webkit-transition-delay:.25s;t
 .sortable.grid li a.edit-media span,li a.edit-media span{background-image:url(../../images/icons/edit.svg);display:block;background-size:132%;background-repeat:no-repeat;background-position:center;height:21px;width:32px}
 .qq-drop-processing-selector.qq-drop-processing,.qq-upload-file,.qq-upload-size{display:none}
 #container .qq-upload-list li.qq-upload-success{background-color:transparent;margin:0 auto}
-.qq-upload-list li{width:200px;height:200px;padding:0;margin:0 auto}
+.qq-upload-list li{width:175px;height:175px;padding:0;margin:0 auto;msrgin-top:0}
 .qq-upload-drop-area,.qq-upload-extra-drop-area{background:#343C55;color:#A28DDF;border:3px dashed #A28DDF;border-radius:2px}
 .qq-upload-drop-area span,.qq-upload-extra-drop-area span{font-weight:700;font-size:16px}
 @media (max-width:480px){.module-carousel .carousel-view #add-media-container{width:200px!important}
